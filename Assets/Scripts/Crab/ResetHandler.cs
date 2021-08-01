@@ -17,6 +17,10 @@ public class ResetHandler : MonoBehaviour
         {
             Checkpoint_Position = new Vector3(0,5,0);
         }
+        if (LoadGame.IsContinuing)
+        {
+            Reset();
+        }
     }
     void Update()
     {
