@@ -6,6 +6,6 @@ PhysicsMaterial2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Glass
-  friction: 0.01
-  bounciness: 0.001
+  m_Name: Ice
+  friction: 0
+  bounciness: 0
