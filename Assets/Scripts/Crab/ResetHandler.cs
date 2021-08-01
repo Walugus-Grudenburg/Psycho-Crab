@@ -15,7 +15,7 @@ public class ResetHandler : MonoBehaviour
         LoadResetData();
         if (!HasDataSaved)
         {
-            Checkpoint_Position = new Vector3(0,5,0);
+            ResetCheckpointToDefault();
         }
         if (LoadGame.IsContinuing)
         {
@@ -65,6 +65,10 @@ public class ResetHandler : MonoBehaviour
         {
             HasDataSaved = false;
         }
+    }
+    public void ResetCheckpointToDefault()
+    {
+        Checkpoint_Position = new Vector3(0, 5, 0);
     }
 }
 
