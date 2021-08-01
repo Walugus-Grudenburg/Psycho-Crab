@@ -57,8 +57,8 @@ InputManager:
     m_Name: Joystick Y0
     descriptiveName: Left Claw Y (Buttons)
     descriptiveNegativeName: 
-    negativeButton: s
-    positiveButton: w
+    negativeButton: w
+    positiveButton: s
     altNegativeButton: 
     altPositiveButton: 
     gravity: 3

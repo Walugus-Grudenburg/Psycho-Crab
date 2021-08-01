@@ -30717,10 +30717,10 @@ PolygonCollider2D:
     - - {x: 17.98761, y: -4.38107}
       - {x: 24.853386, y: -37.021572}
       - {x: -13.245924, y: 55.416588}
-      - {x: -13.999289, y: 95.39433}
-      - {x: 36.086285, y: -9.176258}
-      - {x: 18.867071, y: -4.6140804}
-      - {x: 18.2182, y: -4.4421644}
+      - {x: -5.2215242, y: 191.1164}
+      - {x: 96.240204, y: -22.66394}
+      - {x: 21.790106, y: -5.2694817}
+      - {x: 18.984606, y: -4.6140075}
       - {x: 17.98761, y: -4.38107}
 --- !u!114 &681159125
 MonoBehaviour:
@@ -30767,7 +30767,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: -13.999289, y: 95.39433, z: 0}
+    - position: {x: -5.2215242, y: 191.1164, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -30777,7 +30777,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 36.086285, y: -9.176258, z: 0}
+    - position: {x: 97.51532, y: -25.340721, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -30849,8 +30849,8 @@ SpriteShapeRenderer:
   m_ShapeTexture: {fileID: 2800000, guid: fee4c301baca13848989ebbcc5d305fa, type: 3}
   m_Sprites: []
   m_LocalAABB:
-    m_Center: {x: 11.043497, y: 29.186382, z: 0}
-    m_Extent: {x: 25.042786, y: 66.207954, z: 0}
+    m_Center: {x: 42.134697, y: 77.04741, z: 0}
+    m_Extent: {x: 55.380623, y: 114.068985, z: 0}
 --- !u!1 &691733897
 GameObject:
   m_ObjectHideFlags: 0
