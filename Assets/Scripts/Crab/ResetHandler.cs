@@ -22,9 +22,15 @@ public class ResetHandler : MonoBehaviour
     {
         if (Input.GetButtonDown("Reset Button"))
         {
-            gameObject.transform.position = Checkpoint_Position;
+            Reset();
         }
     }
+
+    public void Reset()
+    {
+        gameObject.transform.position = Checkpoint_Position;
+    }
+
     public void SaveResetData()
     {
         BinaryFormatter formatter = new BinaryFormatter();
