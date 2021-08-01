@@ -6,6 +6,10 @@
 Assets/AssetStoreTools*
 Assets/Sounds/Ambience
 Assets/Sounds/SFX
+Assets/Sounds/Ambience.meta
+Assets/Sounds/SFX.meta
+
+*.log
 
 # Visual Studio cache directory
 .vs/
@@ -26,7 +30,6 @@ ExportedObj/
 *.pdb
 *.opendb
 *.VC.db
-*.log
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -38,5 +41,3 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
-Assets/Sounds/Ambience.meta
-Assets/Sounds/SFX.meta
