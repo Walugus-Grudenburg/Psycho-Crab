@@ -42,6 +42,6 @@ public class DisableControlsDuringCutscene : MonoBehaviour
             leg.GetComponent<CrabLeg>().enabled = true;
         }
         Body.GetComponent<SpookyJump>().enabled = true;
-        Body.GetComponent<ResetHandler>().enabled = false;
+        Body.GetComponent<ResetHandler>().enabled = true;
     }
 }
