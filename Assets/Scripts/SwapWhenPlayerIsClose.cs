@@ -22,7 +22,7 @@ public class SwapWhenPlayerIsClose : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") & (FarObject.activeInHierarchy | FarObject.activeInHierarchy))
+        if (collision.CompareTag("Player") & (FarObject.activeInHierarchy | !CloseObject.activeInHierarchy))
         {
             FarObject.SetActive(false);
             CloseObject.SetActive(true);
