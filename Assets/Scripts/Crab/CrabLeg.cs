@@ -53,6 +53,11 @@ public class CrabLeg : MonoBehaviour
     void Stick(Collision2D collision, AudioSource sound, float pitchmulti = 1f)
     {
         SticktoCollisionFirst(collision);
+        StickDetector stickdetector = collision.gameObject.GetComponent<StickDetector>();
+        if (stickdetector)
+        {
+            stickdetector.Detected = true;
+        }
         IsSticking = true;
         sound.pitch = pitchmulti;
         sound.Play();
@@ -65,7 +70,7 @@ public class CrabLeg : MonoBehaviour
         {
             BoostStrength = 2;
         }
-        if (collision.gameObject.CompareTag("Area Child"))
+        if (collision.gameObject.CompareTag("Area Child") | collision.gameObject.CompareTag("Cutscene NPC"))
         {
             BoostStrength = 3;
         }

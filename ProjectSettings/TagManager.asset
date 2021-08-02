@@ -11,6 +11,7 @@ TagManager:
   - Area Detection
   - Area Child
   - Area Parent
+  - Cutscene NPC
   layers:
   - Default
   - TransparentFX
