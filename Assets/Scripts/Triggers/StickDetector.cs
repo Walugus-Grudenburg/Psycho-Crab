@@ -20,6 +20,7 @@ public class StickDetector : MonoBehaviour
             {
                 Script.enabled = true;
             }
+            Destroy(gameObject.GetComponent<StickDetector>());
         }
     }
 }

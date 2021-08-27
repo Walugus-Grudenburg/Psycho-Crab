@@ -7,10 +7,13 @@ public class Play_Sound_on_Collision : MonoBehaviour
     public float minforce;
     public float minpitch;
     public float maxpitch;
-    AudioSource Hitsound;
+    public AudioSource Hitsound;
     void Start()
     {
-        Hitsound = GetComponent<AudioSource>();
+        if (!Hitsound)
+        {
+            Hitsound = GetComponent<AudioSource>();
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
