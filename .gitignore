@@ -3,11 +3,13 @@
 [Oo]bj/
 [Bb]uild/
 [Bb]uilds/
+[Ll]ogs/
 Assets/AssetStoreTools*
 Assets/Sounds/Ambience
 Assets/Sounds/SFX
 Assets/Sounds/Ambience.meta
 Assets/Sounds/SFX.meta
+
 
 *.log
 
