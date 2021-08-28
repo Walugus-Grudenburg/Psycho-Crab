@@ -5,8 +5,8 @@ using UnityEngine;
 public class CrabLeg : MonoBehaviour
 {
 
-    HingeJoint2D stickjoint; // The joint for sticking when the claw is sticking
-    float moveforce; // Force to move with when moving
+    public HingeJoint2D stickjoint; // The joint for sticking when the claw is sticking
+    float moveforce;
     public bool IsLeftLeg;
     Rigidbody2D rb2d;
     public AudioSource sticksound;
@@ -17,7 +17,8 @@ public class CrabLeg : MonoBehaviour
     private bool IsWaitingToStick;
     private bool IsWaitingToUnStick;
     private bool IsInGoo;
-    IEnumerator StickAfterTime(float time) // Sticks after a time in seconds
+
+    IEnumerator StickAfterTime(float time) // Allows unsticking after a time in seconds
     {
         if (IsWaitingToStick)
             yield break;
@@ -26,11 +27,12 @@ public class CrabLeg : MonoBehaviour
         yield return new WaitForSeconds(time);
 
         // Code to execute after the delay
-
+        stickjoint.autoConfigureConnectedAnchor = false; // Disables auto reconfigure now that joint is settled
         IsWaitingToStick = false;
         IsUnstickReady = true;
     }
-    IEnumerator UnStickAfterTime(float time) // Unsticks after a time in seconds
+
+    IEnumerator UnStickAfterTime(float time) // Allows sticking after a time in seconds
     {
         if (IsWaitingToUnStick)
             yield break;
@@ -43,38 +45,62 @@ public class CrabLeg : MonoBehaviour
         IsWaitingToUnStick = false;
         IsSticking = false;
     }
-    void  SticktoCollisionFirst(Collision2D collision) // Sticks to the first object in a collision
+
+    void  SticktoCollisionFirst(Collision2D collision) // Creates the joint for sticking
     {
         stickjoint = gameObject.AddComponent<HingeJoint2D>(); // Creates a hinge joint
         stickjoint.enableCollision = true; // Enables collision with object
         stickjoint.connectedBody = collision.gameObject.GetComponent<Rigidbody2D>(); // Connects the hinge joint to the other object
         stickjoint.anchor = gameObject.transform.InverseTransformPoint(collision.GetContact(0).point); // Changes the anchor to the collison point
     }
+
     void Stick(Collision2D collision, AudioSource sound, float pitchmulti = 1f)
     {
         SticktoCollisionFirst(collision);
+        // Activates a stickdetector script if attatched
         StickDetector stickdetector = collision.gameObject.GetComponent<StickDetector>();
         if (stickdetector)
         {
             stickdetector.Detected = true;
         }
-        IsSticking = true;
+
+        // Plays the sound
         sound.pitch = pitchmulti;
         sound.Play();
+
         StartCoroutine(StickAfterTime(0.25f));
-        if (collision.gameObject.CompareTag("Terrain"))
+        IsSticking = true;
+
+        // Sets strength based on object it's sticking to
+        // 0 is weakest and unsuitable for movement
+        // 1 is way stronger though a little weak for vertical climbing
+        // 2 is even stronger, enough to easily climb vertically
+        // 3 is about halfway between 0 and 1, strong enough to make some jumps
+        switch (collision.gameObject.tag)
         {
-            BoostStrength = 1;
+            default:
+                BoostStrength = 0;
+                break;
+
+            case "Terrain":
+                BoostStrength = 1;
+                break;
+
+            case "Vertical Terrain":
+                BoostStrength = 2;
+                break;
+
+            case "Area Child":
+                BoostStrength = 3;
+                break;
+
+            case "Cutscene NPC":
+                BoostStrength = 3;
+                break;
         }
-        if (collision.gameObject.CompareTag("Vertical Terrain"))
-        {
-            BoostStrength = 2;
-        }
-        if (collision.gameObject.CompareTag("Area Child") | collision.gameObject.CompareTag("Cutscene NPC"))
-        {
-            BoostStrength = 3;
-        }
+
     }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -83,12 +109,17 @@ public class CrabLeg : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frames
+    // Update is called once per frame
     void Update()
     {
         if (((Input.GetButtonDown("Joystick Click 0") & IsLeftLeg) || (Input.GetButtonDown("Joystick Click 1") & IsLeftLeg == false)) & IsUnstickReady) // Checks if stick is pressed
         {
                 Unstick(sticksound);
+        }
+        if (Input.GetButtonDown("Reset Button"))
+        {
+            StopAllCoroutines();
+            Unstick(sticksound);
         }
 
         if (IsLeftLeg)
@@ -128,7 +159,7 @@ public class CrabLeg : MonoBehaviour
                     Stick(collision, sticksound);
                 }
             }
-            if (IsInGoo & !collision.gameObject.CompareTag("Player"))  
+            if (IsInGoo & !collision.gameObject.CompareTag("Player"))
             {
                 Stick(collision, sticksound, 0.5f);
                 wetsound.pitch = 0.05f;
@@ -154,12 +185,12 @@ public class CrabLeg : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Water")) // Checks if underwater, and if so, play the sound
+        if (collision.CompareTag("Water")) // Checks if underwater, and if so, play the sound
         {
             wetsound.pitch = 0.5f;
             wetsound.Play();
         }
-        if (collision.gameObject.CompareTag("Goo"))
+        if (collision.CompareTag("Goo")) // Same with goo
         {
             IsInGoo = true;
             wetsound.pitch = 0.1f;
@@ -169,11 +200,11 @@ public class CrabLeg : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Water") & IsUnstickReady) // Checks if underwater, and if so, stop sticking
+        if (collision.CompareTag("Water") & IsUnstickReady) // Checks if underwater, and if so, stop sticking
         {
             Unstick(wetsound);
         }
-        if (collision.gameObject.CompareTag("Goo"))
+        if (collision.CompareTag("Goo"))
         {
             IsInGoo = true;
         }
@@ -181,14 +212,19 @@ public class CrabLeg : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        IsInGoo = false;
+        if (collision.CompareTag("Goo")) {
+            IsInGoo = false;
+        }
     }
+
     void Unstick(AudioSource sound)
     {
+        IsUnstickReady = false;
+        if (stickjoint) {
             Destroy(stickjoint);
-            IsUnstickReady = false;
             sound.pitch = 0.75f;
             sound.Play();
-            StartCoroutine(UnStickAfterTime(0.25f));
+        }
+        StartCoroutine(UnStickAfterTime(0.25f));
     }
 }

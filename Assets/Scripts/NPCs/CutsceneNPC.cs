@@ -8,10 +8,19 @@ public class CutsceneNPC : MonoBehaviour
     public Vector3 Rotation;
     public float Speed;
     public Rigidbody2D RigidBody;
+    public bool IsEvil;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (IsEvil)
+        {
+            Invoke("DisableThis", 1f);
+        }
+    }
+
+    void DisableThis()
+    {
+        enabled = false;
     }
 
     // Update is called once per frame

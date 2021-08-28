@@ -23,9 +23,12 @@ public class NPC_Checkpoint : MonoBehaviour
     {
         if (collision.CompareTag("Cutscene NPC")) {
         CutsceneNPC NPC = collision.GetComponent<CutsceneNPC>();
-        NPC.Direction = Direction;
-        NPC.Rotation = Rotation;
-        NPC.Speed = Speed;
+            if (!NPC.IsEvil)
+            {
+                NPC.Direction = Direction;
+                NPC.Rotation = Rotation;
+                NPC.Speed = Speed;
+            }
         }
     }
 }
