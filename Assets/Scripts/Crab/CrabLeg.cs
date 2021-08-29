@@ -129,7 +129,7 @@ public class CrabLeg : MonoBehaviour
             if (BoostStrength == 0) boostforce = 504.8f; // Sets the force to the joystick direction
             else if (BoostStrength == 1) boostforce = 4048f; // Increases the force if the leg is boosted
             else if (BoostStrength == 2) boostforce = 4633f; // Increases it more for bigger boost
-            else if (BoostStrength == 3) boostforce = 1808f; // Increase it less for riding despawnables
+            else if (BoostStrength == 3) boostforce = 2408f; // Increase it less for riding despawnables
             moveforce = Mathf.Clamp(-Input.GetAxis("Joystick X0") - Input.GetAxis("Joystick Y0"), -1 , 1) * Time.deltaTime * boostforce;
             if (IsInGoo) moveforce /= 2;
             rb2d.AddTorque(moveforce, ForceMode2D.Impulse);
@@ -141,7 +141,7 @@ public class CrabLeg : MonoBehaviour
             if (BoostStrength == 0) boostforce = 504.8f; // Sets the force to the joystick direction
             else if (BoostStrength == 1) boostforce = 4048f;  // Increases the force if the leg is boosted
             else if (BoostStrength == 2) boostforce = 4633f; // Increases it more for bigger boost
-            else if (BoostStrength == 3) boostforce = 1808f; // Increase it less for riding despawnables
+            else if (BoostStrength == 3) boostforce = 2408f; // Increase it less for riding despawnables
             moveforce = Mathf.Clamp(-Input.GetAxis("Joystick X1") + Input.GetAxis("Joystick Y1"), -1 , 1) * Time.deltaTime * boostforce; 
             if (IsInGoo) moveforce /= 2;
             rb2d.AddTorque(moveforce, ForceMode2D.Impulse);

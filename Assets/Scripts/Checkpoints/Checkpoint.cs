@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Checkpoint : MonoBehaviour
 {
-    public ResetHandler Handler;
     private Vector3 Checkpoint_Position;
     public bool DebugActivate;
     // Start is called before the first frame update
@@ -16,16 +15,16 @@ public class Checkpoint : MonoBehaviour
     {
         if (DebugActivate)
         {
-            Handler.Checkpoint_Position = Checkpoint_Position;
-            Handler.SaveResetData();
+            ProgressHandler.Checkpoint_Position = Checkpoint_Position;
+            ProgressHandler.SaveProgressData();
             DebugActivate = false;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player")){
-            Handler.Checkpoint_Position = Checkpoint_Position;
-            Handler.SaveResetData();
+            ProgressHandler.Checkpoint_Position = Checkpoint_Position;
+            ProgressHandler.SaveProgressData();
         }
     }
 }

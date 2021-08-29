@@ -15,20 +15,30 @@ public class SpookifyCrab : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (ProgressHandler.Spookify)
+        {
+            Spookify();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            foreach (SpookyScript part in PartsToSpook)
-            {
-                part.Spookify();
-            }
-            Jump.Active = true;
-            Jump.Recharge = true;
-            Destroy(gameObject.GetComponent<SpookifyCrab>());
+            ProgressHandler.SetUnlockJumping(true);
+            ProgressHandler.Spookify = true;
         }
+    }
+
+    public void Spookify()
+    {
+        ProgressHandler.Spookify = false;
+        foreach (SpookyScript part in PartsToSpook)
+        {
+            part.Spookify();
+        }
+        Jump.Active = true;
+        Jump.Recharge = true;
+        Destroy(gameObject.GetComponent<SpookifyCrab>());
     }
 }

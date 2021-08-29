@@ -5,17 +5,20 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using UnityEngine;
 
-public class ResetHandler : MonoBehaviour
+public class ProgressHandler : MonoBehaviour
 {
-    public Vector3 Checkpoint_Position;
-    private bool HasDataSaved;
+    public static Vector3 Checkpoint_Position;
+    public bool IgnoreControls;
+    public static bool JumpUnlocked;
+    public static bool Spookify;
+    private static bool HasDataSaved;
     // Start is called before the first frame update
     void Start()
     {
-        LoadResetData();
+        LoadProgressData();
         if (!HasDataSaved)
         {
-            ResetCheckpointToDefault();
+            ResetProgressToDefault();
         }
         if (LoadGame.IsContinuing)
         {
@@ -24,7 +27,7 @@ public class ResetHandler : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetButtonDown("Reset Button"))
+        if (Input.GetButtonDown("Reset Button") && !IgnoreControls)
         {
             Reset();
         }
@@ -35,7 +38,7 @@ public class ResetHandler : MonoBehaviour
         gameObject.transform.position = Checkpoint_Position;
     }
 
-    public void SaveResetData()
+    public static void SaveProgressData()
     {
         BinaryFormatter formatter = new BinaryFormatter();
         FileStream file = File.Create(Application.persistentDataPath
@@ -43,11 +46,12 @@ public class ResetHandler : MonoBehaviour
         ResetData data = new ResetData();
         data.SavedCheckpointPositionX = Checkpoint_Position.x;
         data.SavedCheckpointPositionY = Checkpoint_Position.y;
+        data.JumpUnlocked = JumpUnlocked;
         formatter.Serialize(file, data);
         file.Close();
     }
 
-    public void LoadResetData()
+    public static void LoadProgressData()
     {
         if (File.Exists(Application.persistentDataPath
                        + "/ResetData.dat"))
@@ -58,7 +62,8 @@ public class ResetHandler : MonoBehaviour
                        File.Open(Application.persistentDataPath
                        + "/ResetData.dat", FileMode.Open);
             ResetData data = (ResetData)formatter.Deserialize(file);
-            Checkpoint_Position = new Vector3 (data.SavedCheckpointPositionX,data.SavedCheckpointPositionY, 0);
+            Checkpoint_Position = new Vector3(data.SavedCheckpointPositionX, data.SavedCheckpointPositionY, 0);
+            JumpUnlocked = data.JumpUnlocked;
             file.Close();
         }
         else
@@ -66,9 +71,22 @@ public class ResetHandler : MonoBehaviour
             HasDataSaved = false;
         }
     }
-    public void ResetCheckpointToDefault()
+
+    public static void ResetProgressToDefault()
     {
         Checkpoint_Position = new Vector3(0, 5, 0);
+        JumpUnlocked = false;
+    }
+
+    public static void SetUnlockJumping(bool value)
+    {
+        JumpUnlocked = value;
+        SaveProgressData();
+    }
+
+    public static void ToggleSpookify()
+    {
+        Spookify = !Spookify;
     }
 }
 
@@ -77,4 +95,5 @@ public class ResetData
 {
     public float SavedCheckpointPositionX;
     public float SavedCheckpointPositionY;
+    public bool JumpUnlocked;
 }

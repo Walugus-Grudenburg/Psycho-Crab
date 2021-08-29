@@ -5910,7 +5910,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c46fd3ef976c84fa77f5d235f4a94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Handler: {fileID: 455425741}
   DebugActivate: 0
 --- !u!61 &91456676
 BoxCollider2D:
@@ -6786,7 +6785,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c46fd3ef976c84fa77f5d235f4a94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Handler: {fileID: 455425741}
   DebugActivate: 0
 --- !u!61 &121776246
 BoxCollider2D:
@@ -12821,8 +12819,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -699560767
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7b46f31e9dc178a4d890be52e3344f2b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -18527,7 +18525,6 @@ GameObject:
   - component: {fileID: 317620059}
   - component: {fileID: 317620062}
   - component: {fileID: 317620061}
-  - component: {fileID: 317620060}
   m_Layer: 0
   m_Name: Spooky Checkpoint 4
   m_TagString: Untagged
@@ -18551,25 +18548,6 @@ Transform:
   m_Father: {fileID: 504121081}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &317620060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 317620058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e73eb9d245b5c7045a6186425505c361, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PartsToSpook:
-  - {fileID: 455425743}
-  - {fileID: 1618181778}
-  - {fileID: 1540639611}
-  - {fileID: 1601685579}
-  - {fileID: 193624938}
-  Jump: {fileID: 455425744}
 --- !u!114 &317620061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18582,7 +18560,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c46fd3ef976c84fa77f5d235f4a94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Handler: {fileID: 455425741}
   DebugActivate: 0
 --- !u!61 &317620062
 BoxCollider2D:
@@ -22476,7 +22453,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c46fd3ef976c84fa77f5d235f4a94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Handler: {fileID: 455425741}
   DebugActivate: 0
 --- !u!61 &425177785
 BoxCollider2D:
@@ -23612,10 +23588,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 455425736}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0b918b7ed422264c8f62e345d1fc3c3, type: 3}
+  m_Script: {fileID: 11500000, guid: f6d2c22ff7363c844a5d5350b5495bc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Checkpoint_Position: {x: 0, y: 0, z: 0}
 --- !u!114 &455425742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36262,7 +36237,6 @@ GameObject:
   - component: {fileID: 672907003}
   - component: {fileID: 672907006}
   - component: {fileID: 672907005}
-  - component: {fileID: 672907004}
   m_Layer: 0
   m_Name: Checkpoint 16
   m_TagString: Untagged
@@ -36286,25 +36260,6 @@ Transform:
   m_Father: {fileID: 504121081}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &672907004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 672907002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e73eb9d245b5c7045a6186425505c361, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PartsToSpook:
-  - {fileID: 455425743}
-  - {fileID: 1618181778}
-  - {fileID: 1540639611}
-  - {fileID: 1601685579}
-  - {fileID: 193624938}
-  Jump: {fileID: 455425744}
 --- !u!114 &672907005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36317,7 +36272,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c46fd3ef976c84fa77f5d235f4a94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Handler: {fileID: 455425741}
   DebugActivate: 0
 --- !u!61 &672907006
 BoxCollider2D:
@@ -38773,7 +38727,6 @@ GameObject:
   - component: {fileID: 718552119}
   - component: {fileID: 718552122}
   - component: {fileID: 718552121}
-  - component: {fileID: 718552120}
   m_Layer: 0
   m_Name: Spooky Checkpoint 3
   m_TagString: Untagged
@@ -38797,25 +38750,6 @@ Transform:
   m_Father: {fileID: 504121081}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &718552120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718552118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e73eb9d245b5c7045a6186425505c361, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PartsToSpook:
-  - {fileID: 455425743}
-  - {fileID: 1618181778}
-  - {fileID: 1540639611}
-  - {fileID: 1601685579}
-  - {fileID: 193624938}
-  Jump: {fileID: 455425744}
 --- !u!114 &718552121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38828,7 +38762,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c46fd3ef976c84fa77f5d235f4a94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Handler: {fileID: 455425741}
   DebugActivate: 0
 --- !u!61 &718552122
 BoxCollider2D:
@@ -38968,7 +38901,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c46fd3ef976c84fa77f5d235f4a94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Handler: {fileID: 455425741}
   DebugActivate: 0
 --- !u!61 &721186328
 BoxCollider2D:
@@ -40314,7 +40246,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c46fd3ef976c84fa77f5d235f4a94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Handler: {fileID: 455425741}
   DebugActivate: 0
 --- !u!61 &751765181
 BoxCollider2D:
@@ -44332,7 +44263,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c46fd3ef976c84fa77f5d235f4a94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Handler: {fileID: 455425741}
   DebugActivate: 0
 --- !u!61 &846826308
 BoxCollider2D:
@@ -47649,7 +47579,6 @@ GameObject:
   - component: {fileID: 909109805}
   - component: {fileID: 909109807}
   - component: {fileID: 909109806}
-  - component: {fileID: 909109808}
   m_Layer: 0
   m_Name: Checkpoint 15
   m_TagString: Untagged
@@ -47685,7 +47614,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c46fd3ef976c84fa77f5d235f4a94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Handler: {fileID: 455425741}
   DebugActivate: 0
 --- !u!61 &909109807
 BoxCollider2D:
@@ -47713,25 +47641,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.2, y: 3}
   m_EdgeRadius: 0
---- !u!114 &909109808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 909109804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e73eb9d245b5c7045a6186425505c361, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PartsToSpook:
-  - {fileID: 455425743}
-  - {fileID: 1618181778}
-  - {fileID: 1540639611}
-  - {fileID: 1601685579}
-  - {fileID: 193624938}
-  Jump: {fileID: 455425744}
 --- !u!1 &923170785
 GameObject:
   m_ObjectHideFlags: 0
@@ -50362,7 +50271,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c46fd3ef976c84fa77f5d235f4a94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Handler: {fileID: 455425741}
   DebugActivate: 0
 --- !u!61 &979128681
 BoxCollider2D:
@@ -51618,7 +51526,6 @@ GameObject:
   - component: {fileID: 999307048}
   - component: {fileID: 999307052}
   - component: {fileID: 999307051}
-  - component: {fileID: 999307053}
   m_Layer: 0
   m_Name: Spooky Checkpoint 2
   m_TagString: Untagged
@@ -51654,7 +51561,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c46fd3ef976c84fa77f5d235f4a94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Handler: {fileID: 455425741}
   DebugActivate: 0
 --- !u!61 &999307052
 BoxCollider2D:
@@ -51682,25 +51588,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.2, y: 3}
   m_EdgeRadius: 0
---- !u!114 &999307053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 999307047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e73eb9d245b5c7045a6186425505c361, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PartsToSpook:
-  - {fileID: 455425743}
-  - {fileID: 1618181778}
-  - {fileID: 1540639611}
-  - {fileID: 1601685579}
-  - {fileID: 193624938}
-  Jump: {fileID: 455425744}
 --- !u!1 &1010240248
 GameObject:
   m_ObjectHideFlags: 0
@@ -51855,7 +51742,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c46fd3ef976c84fa77f5d235f4a94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Handler: {fileID: 455425741}
   DebugActivate: 0
 --- !u!1 &1014452823
 GameObject:
@@ -60135,7 +60021,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c46fd3ef976c84fa77f5d235f4a94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Handler: {fileID: 455425741}
   DebugActivate: 0
 --- !u!61 &1183237326
 BoxCollider2D:
@@ -63798,7 +63683,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c46fd3ef976c84fa77f5d235f4a94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Handler: {fileID: 455425741}
   DebugActivate: 0
 --- !u!61 &1249137899
 BoxCollider2D:
@@ -64087,7 +63971,7 @@ MonoBehaviour:
   m_SplineDetail: 16
   m_AdaptiveUV: 1
   m_StretchUV: 0
-  m_WorldSpaceUV: 0
+  m_WorldSpaceUV: 1
   m_CornerAngleThreshold: 30
   m_ColliderDetail: 16
   m_ColliderOffset: 0
@@ -75025,7 +74909,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c46fd3ef976c84fa77f5d235f4a94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Handler: {fileID: 455425741}
   DebugActivate: 0
 --- !u!61 &1491421920
 BoxCollider2D:
@@ -78549,7 +78432,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c46fd3ef976c84fa77f5d235f4a94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Handler: {fileID: 455425741}
   DebugActivate: 0
 --- !u!61 &1544830427
 BoxCollider2D:
@@ -81383,7 +81265,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c46fd3ef976c84fa77f5d235f4a94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Handler: {fileID: 455425741}
   DebugActivate: 0
 --- !u!61 &1591609036
 BoxCollider2D:
@@ -96200,7 +96081,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -96475,7 +96356,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c46fd3ef976c84fa77f5d235f4a94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Handler: {fileID: 455425741}
   DebugActivate: 0
 --- !u!61 &1915437627
 BoxCollider2D:

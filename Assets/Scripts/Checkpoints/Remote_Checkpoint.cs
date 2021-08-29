@@ -5,7 +5,7 @@ using UnityEngine;
 public class Remote_Checkpoint : MonoBehaviour
 {
     public Checkpoint Destination;
-    public ResetHandler CrabToWarp;
+    public ProgressHandler CrabToWarp;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,8 +22,8 @@ public class Remote_Checkpoint : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            CrabToWarp.Checkpoint_Position = Destination.gameObject.transform.position;
-            CrabToWarp.SaveResetData();
+            ProgressHandler.Checkpoint_Position = Destination.gameObject.transform.position;
+            ProgressHandler.SaveProgressData();
             CrabToWarp.Reset();
         }
     }
