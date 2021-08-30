@@ -96,7 +96,7 @@ PolygonCollider2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6715907022957046759}
   m_Enabled: 1
-  m_Density: 3
+  m_Density: 1.4
   m_Material: {fileID: 6200000, guid: 16553cb35b5fc2747bce8f884aed5b17, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
@@ -152,7 +152,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 31.045345
+  m_Mass: 14.487827
   m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 0

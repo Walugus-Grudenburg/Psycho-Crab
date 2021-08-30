@@ -7,6 +7,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3436985680796440112, guid: 29095950e803c1443af3f0e6f764295f,
+        type: 3}
+      propertyPath: m_Mass
+      value: 20.696896
+      objectReference: {fileID: 0}
     - target: {fileID: 3436985680796440113, guid: 29095950e803c1443af3f0e6f764295f,
         type: 3}
       propertyPath: m_RootOrder
@@ -66,6 +71,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FlipX
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436985680796440115, guid: 29095950e803c1443af3f0e6f764295f,
+        type: 3}
+      propertyPath: m_Density
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3436985680796440116, guid: 29095950e803c1443af3f0e6f764295f,
         type: 3}

@@ -17,6 +17,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Seagull Left
       objectReference: {fileID: 0}
+    - target: {fileID: 789974609370985276, guid: b56fe13bb4e3fa2439ec34065568663a,
+        type: 3}
+      propertyPath: m_Mass
+      value: 20.696896
+      objectReference: {fileID: 0}
     - target: {fileID: 789974609370985277, guid: b56fe13bb4e3fa2439ec34065568663a,
         type: 3}
       propertyPath: m_RootOrder
@@ -76,6 +81,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FlipX
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 789974609370985279, guid: b56fe13bb4e3fa2439ec34065568663a,
+        type: 3}
+      propertyPath: m_Density
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b56fe13bb4e3fa2439ec34065568663a, type: 3}
