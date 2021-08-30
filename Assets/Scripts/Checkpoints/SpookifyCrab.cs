@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SpookifyCrab : MonoBehaviour
 {
+    public bool DebugActivate;
     public SpookyScript[] PartsToSpook;
     public SpookyJump Jump;
     // Start is called before the first frame update
@@ -15,7 +16,7 @@ public class SpookifyCrab : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (ProgressHandler.Spookify)
+        if (ProgressHandler.Spookify || DebugActivate)
         {
             Spookify();
         }
@@ -25,13 +26,16 @@ public class SpookifyCrab : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            ProgressHandler.SetUnlockJumping(true);
             ProgressHandler.Spookify = true;
         }
     }
 
     public void Spookify()
     {
+        if (!ProgressHandler.JumpUnlocked) 
+        { 
+            ProgressHandler.SetUnlockJumping(true);
+        }
         ProgressHandler.Spookify = false;
         foreach (SpookyScript part in PartsToSpook)
         {

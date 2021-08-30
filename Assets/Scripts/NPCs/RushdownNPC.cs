@@ -8,10 +8,20 @@ public class RushdownNPC : MonoBehaviour
     public float Speed;
     public GameObject Target;
     public Rigidbody2D RigidBody;
+    public float SpeedFloor;
+    public float SpeedCeling;
     // Start is called before the first frame update
     void Start()
     {
-
+        if (!Target)
+        {
+            AreaParent ParentScript = gameObject.transform.parent.GetComponent<AreaParent>();
+            if (ParentScript)
+            {
+                Target = ParentScript.Target;
+                Speed = Random.Range(SpeedFloor, SpeedCeling);
+            }
+        }
     }
 
     // Update is called once per frame

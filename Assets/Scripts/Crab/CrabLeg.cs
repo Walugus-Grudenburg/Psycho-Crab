@@ -175,11 +175,14 @@ public class CrabLeg : MonoBehaviour
             BoostStrength = 0;
             if (stickjoint!= null) Destroy(stickjoint);
             HingeJoint2D[] hinges = GetComponents<HingeJoint2D>();
-            if (hinges.Length > 1) for (int i = 1; i < hinges.Length; i++) Destroy(hinges[i]);
+            if (hinges.Length > 1) for (int i = 1; i < hinges.Length;) Destroy(hinges[i]);
         }
         else if (stickjoint == null)
         {
+            BoostStrength = 0;
             UnStickAfterTime(0);
+            HingeJoint2D[] hinges = GetComponents<HingeJoint2D>();
+            if (hinges.Length > 1) for (int i = 1; i < hinges.Length;) Destroy(hinges[i]);
         }
     }
 

@@ -9,7 +9,10 @@ public class AreaParent : MonoBehaviour
     public float SpawnXMax;
     public float SpawnYMin;
     public float SpawnYMax;
+    public GameObject Target;
     public int DesiredChildCount;
+    public float DeactivationDistance;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +22,7 @@ public class AreaParent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        while (gameObject.transform.childCount < DesiredChildCount)
+        while (gameObject.transform.childCount < DesiredChildCount && Vector3.Distance(transform.position, Target.transform.position) < DeactivationDistance)
         {
             SpawnChild();
         }

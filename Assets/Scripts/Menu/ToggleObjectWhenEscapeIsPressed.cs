@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ToggleObjectWhenEscapeIsPressed : MonoBehaviour
 {
-    public GameObject ObjectToToggle;
+    public GameObject[] ObjectsToToggle;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +16,13 @@ public class ToggleObjectWhenEscapeIsPressed : MonoBehaviour
     {
         if (Input.GetButtonDown("Cancel"))
         {
-            ObjectToToggle.SetActive(!ObjectToToggle.activeInHierarchy);
+            foreach (GameObject Object in ObjectsToToggle)
+            {
+                if (Object)
+                {
+                    Object.SetActive(!Object.activeInHierarchy);
+                }
+            }
         }   
     }
 }

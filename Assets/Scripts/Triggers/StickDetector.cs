@@ -18,7 +18,9 @@ public class StickDetector : MonoBehaviour
         if (Detected){
             foreach (MonoBehaviour Script in ScriptsToWakeUp)
             {
-                Script.enabled = true;
+                if (Script) { 
+                    Script.enabled = true;
+                }
             }
             Destroy(gameObject.GetComponent<StickDetector>());
         }
