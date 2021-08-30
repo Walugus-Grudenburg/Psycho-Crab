@@ -50169,6 +50169,8 @@ MonoBehaviour:
   ObjectToSpawn:
   - {fileID: 4016846436041463065, guid: e5844f182762b6546bbd527df334a09a, type: 3}
   - {fileID: 2521797004964801675, guid: 78927d436b2006e4f8cad646b3e77f81, type: 3}
+  - {fileID: 2521797004964801675, guid: 78927d436b2006e4f8cad646b3e77f81, type: 3}
+  - {fileID: 5615020817198770487, guid: 0809579e00f72f847a7dcf8b7adc508d, type: 3}
   - {fileID: 5615020817198770487, guid: 0809579e00f72f847a7dcf8b7adc508d, type: 3}
   - {fileID: 5615020817198770487, guid: 0809579e00f72f847a7dcf8b7adc508d, type: 3}
   SpawnXMin: -70
@@ -50176,7 +50178,7 @@ MonoBehaviour:
   SpawnYMin: -50
   SpawnYMax: 0
   Target: {fileID: 455425736}
-  DesiredChildCount: 40
+  DesiredChildCount: 30
   DeactivationDistance: 1000
 --- !u!61 &850135283
 BoxCollider2D:
