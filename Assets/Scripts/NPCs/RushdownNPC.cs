@@ -6,6 +6,7 @@ public class RushdownNPC : MonoBehaviour
 {
     private Vector2 Direction;
     public float Speed;
+    public float ShoveTime;
     public GameObject Target;
     public Rigidbody2D RigidBody;
     public float SpeedFloor;
@@ -30,5 +31,19 @@ public class RushdownNPC : MonoBehaviour
         Direction = (Target.transform.position - transform.position).normalized;
         RigidBody.MovePosition(RigidBody.position + (new Vector2(Direction.x, Direction.y) * Speed * Time.fixedDeltaTime));
         transform.rotation = Quaternion.LookRotation(Direction) * Quaternion.Euler(0,90,0);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            StartCoroutine(DestroyAfterTime(ShoveTime));
+        }   
+    }
+
+    IEnumerator DestroyAfterTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Destroy(gameObject);
     }
 }

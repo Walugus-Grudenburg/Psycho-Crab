@@ -74,7 +74,7 @@ public class ProgressHandler : MonoBehaviour
 
     public static void ResetProgressToDefault()
     {
-        Checkpoint_Position = new Vector3(0, 5, 0);
+        ResetCheckpointData();
         JumpUnlocked = false;
     }
 
@@ -87,6 +87,11 @@ public class ProgressHandler : MonoBehaviour
     public static void ToggleSpookify()
     {
         Spookify = !Spookify;
+    }
+
+    public static void ResetCheckpointData()
+    {
+        Checkpoint_Position = new Vector3(0, 5, 0);
     }
 }
 
