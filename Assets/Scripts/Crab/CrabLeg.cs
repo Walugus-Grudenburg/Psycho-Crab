@@ -50,7 +50,10 @@ public class CrabLeg : MonoBehaviour
     {
         stickjoint = gameObject.AddComponent<HingeJoint2D>(); // Creates a hinge joint
         stickjoint.enableCollision = true; // Enables collision with object
-        stickjoint.connectedBody = collision.gameObject.GetComponent<Rigidbody2D>(); // Connects the hinge joint to the other object
+        if (collision.gameObject.GetComponent<Rigidbody2D>())
+        { 
+            stickjoint.connectedBody = collision.gameObject.GetComponent<Rigidbody2D>(); // Connects the hinge joint to the other object
+        } 
         stickjoint.anchor = gameObject.transform.InverseTransformPoint(collision.GetContact(0).point); // Changes the anchor to the collison point
     }
 
@@ -116,11 +119,6 @@ public class CrabLeg : MonoBehaviour
         {
                 Unstick(sticksound);
         }
-        if (Input.GetButtonDown("Reset Button"))
-        {
-            StopAllCoroutines();
-            Unstick(sticksound);
-        }
 
         if (IsLeftLeg)
         {
@@ -159,7 +157,7 @@ public class CrabLeg : MonoBehaviour
                     Stick(collision, sticksound);
                 }
             }
-            if (IsInGoo & !collision.gameObject.CompareTag("Player"))
+            if (IsInGoo & !collision.gameObject.CompareTag("Player") & !IsSticking)
             {
                 Stick(collision, sticksound, 0.5f);
                 wetsound.pitch = 0.05f;
@@ -220,13 +218,16 @@ public class CrabLeg : MonoBehaviour
         }
     }
 
-    void Unstick(AudioSource sound)
+    public void Unstick(AudioSource sound)
     {
         IsUnstickReady = false;
         if (stickjoint) {
             Destroy(stickjoint);
-            sound.pitch = 0.75f;
-            sound.Play();
+            if (sound)
+            {
+                sound.pitch = 0.75f;
+                sound.Play();
+            }
         }
         StartCoroutine(UnStickAfterTime(0.25f));
     }

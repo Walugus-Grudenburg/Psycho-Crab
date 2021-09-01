@@ -9,6 +9,7 @@ public class ProgressHandler : MonoBehaviour
 {
     public static Vector3 Checkpoint_Position;
     public bool IgnoreControls;
+    public CrabLeg[] Legs;
     public static bool JumpUnlocked;
     public static bool Spookify;
     private static bool HasDataSaved;
@@ -36,6 +37,13 @@ public class ProgressHandler : MonoBehaviour
     public void Reset()
     {
         gameObject.transform.position = Checkpoint_Position;
+        foreach (CrabLeg leg in Legs)
+        {
+            if (leg.stickjoint)
+            {
+                leg.Unstick(null);
+            }
+        }
     }
 
     public static void SaveProgressData()

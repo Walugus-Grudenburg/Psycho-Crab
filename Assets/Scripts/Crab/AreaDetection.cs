@@ -19,7 +19,7 @@ public class AreaDetection : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Area Parent"))
+        if (collision.CompareTag("Area Parent") || collision.CompareTag("Camera Zoom"))
         {
             Cam.orthographicSize += ZoomAmount;
         }
@@ -46,7 +46,7 @@ public class AreaDetection : MonoBehaviour
                 audiosrc.volume = 0;
             }
         }
-        else if (collision.CompareTag("Area Parent"))
+        else if (collision.CompareTag("Area Parent") || collision.CompareTag("Camera Zoom"))
         {
             Cam.orthographicSize -= ZoomAmount;
         }

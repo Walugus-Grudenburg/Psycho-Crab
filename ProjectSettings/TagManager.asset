@@ -12,6 +12,7 @@ TagManager:
   - Area Child
   - Area Parent
   - Cutscene NPC
+  - Camera Zoom
   layers:
   - Default
   - TransparentFX
