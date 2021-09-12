@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ToggleObjectWhenEscapeIsPressed : MonoBehaviour
 {
     public GameObject[] ObjectsToToggle;
+    public Button ButtonToSelect;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,12 @@ public class ToggleObjectWhenEscapeIsPressed : MonoBehaviour
                 {
                     Object.SetActive(!Object.activeInHierarchy);
                 }
+            }
+            if (ButtonToSelect)
+            {
+                ButtonToSelect.interactable = false;
+                ButtonToSelect.interactable = true;
+                ButtonToSelect.Select();
             }
         }   
     }
