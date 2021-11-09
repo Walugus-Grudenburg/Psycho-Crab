@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CrabLeg : MonoBehaviour
 {
-
     public HingeJoint2D stickjoint; // The joint for sticking when the claw is sticking
     float moveforce;
     public bool IsLeftLeg;
@@ -112,10 +111,11 @@ public class CrabLeg : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        if (((Input.GetButtonDown("Joystick Click 0") & IsLeftLeg) || (Input.GetButtonDown("Joystick Click 1") & IsLeftLeg == false)) & IsUnstickReady) // Checks if stick is pressed
+        Controls controls = ProgressHandler.controls;
+        if (((controls.Crab.ClickLeft.triggered && IsLeftLeg) || (controls.Crab.ClickRight.triggered && IsLeftLeg == false)) & IsUnstickReady) // Checks if stick is pressed
         {
                 Unstick(sticksound);
         }
@@ -128,7 +128,7 @@ public class CrabLeg : MonoBehaviour
             else if (BoostStrength == 1) boostforce = 4748f; // Increases the force if the leg is boosted
             else if (BoostStrength == 2) boostforce = 6233f; // Increases it more for bigger boost
             else if (BoostStrength == 3) boostforce = 3508f; // Increase it less for riding despawnables
-            moveforce = Mathf.Clamp(-Input.GetAxis("Joystick X0") - Input.GetAxis("Joystick Y0"), -1 , 1) * Time.deltaTime * boostforce;
+            moveforce = Mathf.Clamp(-controls.Crab.LeftLeg.ReadValue<float>(), -1 , 1) * Time.deltaTime * boostforce;
             if (IsInGoo) moveforce /= 2;
             rb2d.AddTorque(moveforce, ForceMode2D.Impulse);
         }
@@ -140,17 +140,33 @@ public class CrabLeg : MonoBehaviour
             else if (BoostStrength == 1) boostforce = 4748f;  // Increases the force if the leg is boosted
             else if (BoostStrength == 2) boostforce = 6233f; // Increases it more for bigger boost
             else if (BoostStrength == 3) boostforce = 3508f; // Increase it less for riding despawnables
-            moveforce = Mathf.Clamp(-Input.GetAxis("Joystick X1") + Input.GetAxis("Joystick Y1"), -1 , 1) * Time.deltaTime * boostforce; 
+            moveforce = Mathf.Clamp(-controls.Crab.RightLeg.ReadValue<float>(), -1 , 1) * Time.deltaTime * boostforce; 
             if (IsInGoo) moveforce /= 2;
             rb2d.AddTorque(moveforce, ForceMode2D.Impulse);
+        }
+
+        if (IsSticking == false)
+        {
+            BoostStrength = 0;
+            if (stickjoint != null) Destroy(stickjoint);
+            HingeJoint2D[] hinges = GetComponents<HingeJoint2D>();
+            if (hinges.Length > 1) for (int i = 1; i < hinges.Length;) Destroy(hinges[i]);
+        }
+        else if (stickjoint == null)
+        {
+            BoostStrength = 0;
+            UnStickAfterTime(0);
+            HingeJoint2D[] hinges = GetComponents<HingeJoint2D>();
+            if (hinges.Length > 1) for (int i = 1; i < hinges.Length;) Destroy(hinges[i]);
         }
     }
     // OnCollisionStay is called once per frame while objects are colliding
     void OnCollisionStay2D(Collision2D collision)
     {
+        Controls controls = ProgressHandler.controls;
         if (IsSticking == false)
         {
-            if ((Input.GetButton("Joystick Click 0") & IsLeftLeg) || (Input.GetButton("Joystick Click 1") & IsLeftLeg == false)) // Checks if stick is pressed
+            if ((Mathf.Approximately(controls.Crab.ClickLeft.ReadValue<float>(), 1) & IsLeftLeg) || (Mathf.Approximately(controls.Crab.ClickRight.ReadValue<float>(), 1) & IsLeftLeg == false)) // Checks if stick is pressed
             {
                 if (collision.gameObject.CompareTag("Player") == false) // Checks that the object isn't a player
                 {
@@ -163,24 +179,6 @@ public class CrabLeg : MonoBehaviour
                 wetsound.pitch = 0.05f;
                 wetsound.Play();
             }
-        }
-    }
-    // LateUpdate is called every frame, after Update
-    void LateUpdate()
-    {
-        if (IsSticking == false) 
-        {
-            BoostStrength = 0;
-            if (stickjoint!= null) Destroy(stickjoint);
-            HingeJoint2D[] hinges = GetComponents<HingeJoint2D>();
-            if (hinges.Length > 1) for (int i = 1; i < hinges.Length;) Destroy(hinges[i]);
-        }
-        else if (stickjoint == null)
-        {
-            BoostStrength = 0;
-            UnStickAfterTime(0);
-            HingeJoint2D[] hinges = GetComponents<HingeJoint2D>();
-            if (hinges.Length > 1) for (int i = 1; i < hinges.Length;) Destroy(hinges[i]);
         }
     }
 

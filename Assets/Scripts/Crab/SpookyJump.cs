@@ -19,7 +19,7 @@ public class SpookyJump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Jump") & Active & Charged > 0)
+        if (ProgressHandler.controls.Crab.Jump.triggered && Active & Charged > 0)
         {
             foreach (Rigidbody2D part in JumpParts)
             {

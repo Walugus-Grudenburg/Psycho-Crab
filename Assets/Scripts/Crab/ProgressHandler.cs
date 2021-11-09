@@ -4,9 +4,11 @@ using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ProgressHandler : MonoBehaviour
 {
+    public static Controls controls;
     public static Vector3 Checkpoint_Position;
     public bool IgnoreControls;
     public CrabLeg[] Legs;
@@ -16,6 +18,8 @@ public class ProgressHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        controls = new Controls();
+        controls.Enable();
         LoadProgressData();
         if (!HasDataSaved)
         {
@@ -28,7 +32,7 @@ public class ProgressHandler : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetButtonDown("Reset Button") && !IgnoreControls)
+        if (controls.Crab.Reset.triggered && !IgnoreControls)
         {
             Reset();
         }

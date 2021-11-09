@@ -3635,6 +3635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IgnoreControls: 1
+  Legs: []
 --- !u!1 &780435490
 GameObject:
   m_ObjectHideFlags: 0
@@ -4766,16 +4767,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 966336856}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HorizontalAxis: Joystick X0
-  m_VerticalAxis: Joystick Y0
-  m_SubmitButton: Accept
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_ActionsAsset: {fileID: -944628639613478452, guid: db30a6da807549448b2352dca211cc99,
+    type: 3}
+  m_PointAction: {fileID: 0}
+  m_MoveAction: {fileID: -2250188739719683950, guid: db30a6da807549448b2352dca211cc99,
+    type: 3}
+  m_SubmitAction: {fileID: 6580737126068718596, guid: db30a6da807549448b2352dca211cc99,
+    type: 3}
+  m_CancelAction: {fileID: -6733565321104649512, guid: db30a6da807549448b2352dca211cc99,
+    type: 3}
+  m_LeftClickAction: {fileID: 0}
+  m_MiddleClickAction: {fileID: 0}
+  m_RightClickAction: {fileID: 0}
+  m_ScrollWheelAction: {fileID: 0}
+  m_TrackedDevicePositionAction: {fileID: 0}
+  m_TrackedDeviceOrientationAction: {fileID: 0}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 1
 --- !u!114 &966336858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9217,7 +9230,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1604855278
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9257,8 +9270,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Credits:\n\nZapsplat.com for:\n  All the SFX\n  Seagull samples \n    
-    in the song \n      Trashbirds \n      Attack"
+  m_text: "Credits:\n\nZapsplat.com for:\n  All the SFX\n  Seagull samples"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
