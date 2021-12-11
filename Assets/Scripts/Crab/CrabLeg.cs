@@ -16,6 +16,7 @@ public class CrabLeg : MonoBehaviour
     private bool IsWaitingToStick;
     private bool IsWaitingToUnStick;
     private bool IsInGoo;
+    private bool RigidConnection;
 
     IEnumerator StickAfterTime(float time) // Allows unsticking after a time in seconds
     {
@@ -26,9 +27,8 @@ public class CrabLeg : MonoBehaviour
         yield return new WaitForSeconds(time);
 
         // Code to execute after the delay
-        stickjoint.autoConfigureConnectedAnchor = false; // Disables auto reconfigure now that joint is settled
+        if (stickjoint) stickjoint.autoConfigureConnectedAnchor = false; // Disables auto reconfigure now that joint is settled
         IsWaitingToStick = false;
-        IsUnstickReady = true;
     }
 
     IEnumerator UnStickAfterTime(float time) // Allows sticking after a time in seconds
@@ -71,6 +71,7 @@ public class CrabLeg : MonoBehaviour
         sound.Play();
 
         StartCoroutine(StickAfterTime(0.25f));
+        IsUnstickReady = true;
         IsSticking = true;
 
         // Sets strength based on object it's sticking to
@@ -144,8 +145,23 @@ public class CrabLeg : MonoBehaviour
             if (IsInGoo) moveforce /= 2;
             rb2d.AddTorque(moveforce, ForceMode2D.Impulse);
         }
+        foreach (HingeJoint2D hinge in GetComponents<HingeJoint2D>())
+        {
+            if (RigidConnection && !hinge.connectedBody)
+            {
+                Unstick(null);
+            }
 
-        if (IsSticking == false)
+            if (hinge.connectedBody)
+            {
+                if (!hinge.connectedBody.CompareTag("Player")) RigidConnection = true;
+            }
+            else if (!hinge.connectedBody)
+            {
+                RigidConnection = false;
+            }
+        }
+        if ((BoostStrength != 0) && (!stickjoint || !IsSticking || gameObject.GetComponents<HingeJoint2D>().Length < 2))
         {
             BoostStrength = 0;
             if (stickjoint != null) 
@@ -153,8 +169,7 @@ public class CrabLeg : MonoBehaviour
                 Destroy(stickjoint);
                 stickjoint = null;
             }
-            HingeJoint2D[] hinges = GetComponents<HingeJoint2D>();
-            if (hinges.Length > 1) for (int i = 1; i < hinges.Length;) Destroy(hinges[i]);
+            StartCoroutine(UnStickAfterTime(0.25f));
         }
     }
     // OnCollisionStay is called once per frame while objects are colliding
