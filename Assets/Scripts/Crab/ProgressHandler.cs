@@ -12,8 +12,10 @@ public class ProgressHandler : MonoBehaviour
     public static Vector3 Checkpoint_Position;
     public bool IgnoreControls;
     public CrabLeg[] Legs;
+    public GameObject[] Moneys;
     public static bool JumpUnlocked;
     public static bool Spookify;
+    public static bool MoneyUnlocked;
     private static bool HasDataSaved;
     // Start is called before the first frame update
     void Start()
@@ -28,6 +30,13 @@ public class ProgressHandler : MonoBehaviour
         if (LoadGame.IsContinuing)
         {
             Reset();
+        }
+        if (MoneyUnlocked)
+        {
+            foreach (GameObject Money in Moneys)
+            {
+                Money.SetActive(true);
+            }
         }
     }
     void Update()
@@ -59,6 +68,7 @@ public class ProgressHandler : MonoBehaviour
         data.SavedCheckpointPositionX = Checkpoint_Position.x;
         data.SavedCheckpointPositionY = Checkpoint_Position.y;
         data.JumpUnlocked = JumpUnlocked;
+        data.MoneyUnlocked = MoneyUnlocked;
         formatter.Serialize(file, data);
         file.Close();
     }
@@ -76,6 +86,7 @@ public class ProgressHandler : MonoBehaviour
             ResetData data = (ResetData)formatter.Deserialize(file);
             Checkpoint_Position = new Vector3(data.SavedCheckpointPositionX, data.SavedCheckpointPositionY, 0);
             JumpUnlocked = data.JumpUnlocked;
+            MoneyUnlocked = data.MoneyUnlocked;
             file.Close();
         }
         else
@@ -88,11 +99,18 @@ public class ProgressHandler : MonoBehaviour
     {
         ResetCheckpointData();
         JumpUnlocked = false;
+        
     }
 
     public static void SetUnlockJumping(bool value)
     {
         JumpUnlocked = value;
+        SaveProgressData();
+    }
+
+    public static void SetUnlockMoney(bool value)
+    {
+        MoneyUnlocked = value;
         SaveProgressData();
     }
 
@@ -104,6 +122,7 @@ public class ProgressHandler : MonoBehaviour
     public static void ResetCheckpointData()
     {
         Checkpoint_Position = new Vector3(0, 5, 0);
+        MoneyUnlocked = false;
     }
 }
 
@@ -113,4 +132,5 @@ public class ResetData
     public float SavedCheckpointPositionX;
     public float SavedCheckpointPositionY;
     public bool JumpUnlocked;
+    public bool MoneyUnlocked;
 }
