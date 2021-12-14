@@ -5,6 +5,7 @@ using UnityEngine;
 public class MoneyfyCrab : MonoBehaviour
 {
     public GameObject[] Moneys;
+    public GameObject SignToRotate;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,7 @@ public class MoneyfyCrab : MonoBehaviour
         { 
             Money.SetActive(true); 
         }
+        SignToRotate.transform.Rotate(0,0,180);
         ProgressHandler.SetUnlockMoney(true);
     }
 }

@@ -12,10 +12,14 @@ public class ProgressHandler : MonoBehaviour
     public static Vector3 Checkpoint_Position;
     public bool IgnoreControls;
     public CrabLeg[] Legs;
+    public LoadGame loader;
     public GameObject[] Moneys;
+    public GameObject SignToRotate;
     public static bool JumpUnlocked;
     public static bool Spookify;
     public static bool MoneyUnlocked;
+    public static bool BatcrabUnlocked;
+    public static bool GullcrabUnlocked;
     private static bool HasDataSaved;
     // Start is called before the first frame update
     void Start()
@@ -37,6 +41,7 @@ public class ProgressHandler : MonoBehaviour
             {
                 Money.SetActive(true);
             }
+            SignToRotate.transform.Rotate(0, 0, 180);
         }
     }
     void Update()
@@ -57,6 +62,11 @@ public class ProgressHandler : MonoBehaviour
                 leg.Unstick(null);
             }
         }
+        
+        if (SatanScript.HasChaseStarted)
+        {
+            loader.LoadLevel();
+        }
     }
 
     public static void SaveProgressData()
@@ -69,6 +79,8 @@ public class ProgressHandler : MonoBehaviour
         data.SavedCheckpointPositionY = Checkpoint_Position.y;
         data.JumpUnlocked = JumpUnlocked;
         data.MoneyUnlocked = MoneyUnlocked;
+        data.GullcrabUnlocked = GullcrabUnlocked;
+        data.BatcrabUnlocked = BatcrabUnlocked;
         formatter.Serialize(file, data);
         file.Close();
     }
@@ -87,6 +99,8 @@ public class ProgressHandler : MonoBehaviour
             Checkpoint_Position = new Vector3(data.SavedCheckpointPositionX, data.SavedCheckpointPositionY, 0);
             JumpUnlocked = data.JumpUnlocked;
             MoneyUnlocked = data.MoneyUnlocked;
+            GullcrabUnlocked = data.GullcrabUnlocked;
+            BatcrabUnlocked = data.BatcrabUnlocked;
             file.Close();
         }
         else
@@ -114,6 +128,17 @@ public class ProgressHandler : MonoBehaviour
         SaveProgressData();
     }
 
+    public static void SetUnlockGC(bool value)
+    {
+        GullcrabUnlocked = value;
+        SaveProgressData();
+    }
+
+    public static void SetUnlockBC(bool value)
+    {
+        BatcrabUnlocked = value;
+        SaveProgressData();
+    }
     public static void ToggleSpookify()
     {
         Spookify = !Spookify;
@@ -133,4 +158,6 @@ public class ResetData
     public float SavedCheckpointPositionY;
     public bool JumpUnlocked;
     public bool MoneyUnlocked;
+    public bool BatcrabUnlocked;
+    public bool GullcrabUnlocked;
 }

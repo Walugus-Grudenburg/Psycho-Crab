@@ -180,12 +180,12 @@ public class CrabLeg : MonoBehaviour
         {
             if ((Mathf.Approximately(controls.Crab.ClickLeft.ReadValue<float>(), 1) & IsLeftLeg) || (Mathf.Approximately(controls.Crab.ClickRight.ReadValue<float>(), 1) & IsLeftLeg == false)) // Checks if stick is pressed
             {
-                if (collision.gameObject.CompareTag("Player") == false) // Checks that the object isn't a player
+                if (!collision.gameObject.CompareTag("Player") && !collision.gameObject.CompareTag("Ungrabbable")) // Checks that the object isn't a player
                 {
                     Stick(collision, sticksound);
                 }
             }
-            if (IsInGoo & !collision.gameObject.CompareTag("Player") & !IsSticking)
+            if (IsInGoo & !collision.gameObject.CompareTag("Player") && !collision.gameObject.CompareTag("Ungrabbable") && !IsSticking)
             {
                 Stick(collision, sticksound, 0.5f);
                 wetsound.pitch = 0.05f;

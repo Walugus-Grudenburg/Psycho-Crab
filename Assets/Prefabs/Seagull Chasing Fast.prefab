@@ -27,6 +27,46 @@ PrefabInstance:
       propertyPath: m_Density
       value: 0.7
       objectReference: {fileID: 0}
+    - target: {fileID: 6715907022957046752, guid: 8466cdc8ae6ccb54abc0c80c813acd67,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[22].x
+      value: 3.2155762
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715907022957046752, guid: 8466cdc8ae6ccb54abc0c80c813acd67,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[22].y
+      value: 2.1802979
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715907022957046752, guid: 8466cdc8ae6ccb54abc0c80c813acd67,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[23].x
+      value: 3.2155762
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715907022957046752, guid: 8466cdc8ae6ccb54abc0c80c813acd67,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[23].y
+      value: 2.1802979
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715907022957046752, guid: 8466cdc8ae6ccb54abc0c80c813acd67,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[24].x
+      value: 3.2155762
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715907022957046752, guid: 8466cdc8ae6ccb54abc0c80c813acd67,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[24].y
+      value: 2.1802979
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715907022957046752, guid: 8466cdc8ae6ccb54abc0c80c813acd67,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[25].x
+      value: 3.2155762
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715907022957046752, guid: 8466cdc8ae6ccb54abc0c80c813acd67,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[25].y
+      value: 2.1802979
+      objectReference: {fileID: 0}
     - target: {fileID: 6715907022957046754, guid: 8466cdc8ae6ccb54abc0c80c813acd67,
         type: 3}
       propertyPath: m_RootOrder
@@ -85,7 +125,7 @@ PrefabInstance:
     - target: {fileID: 6715907022957046755, guid: 8466cdc8ae6ccb54abc0c80c813acd67,
         type: 3}
       propertyPath: m_Mass
-      value: 7.2439137
+      value: 7.359812
       objectReference: {fileID: 0}
     - target: {fileID: 6715907022957046759, guid: 8466cdc8ae6ccb54abc0c80c813acd67,
         type: 3}

@@ -26,7 +26,7 @@ public class SwapWhenPlayerIsClose : MonoBehaviour
         {
             FarObject.SetActive(false);
             CloseObject.SetActive(true);
-            SwapSound.Play();
+            if (SwapSound) SwapSound.Play();
         }
     }
 

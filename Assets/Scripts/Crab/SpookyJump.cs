@@ -10,6 +10,7 @@ public class SpookyJump : MonoBehaviour
     public int Charged;
     public Rigidbody2D[] JumpParts;
     public AudioSource ChargedSound;
+    public float ChargeMulti;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,18 +24,19 @@ public class SpookyJump : MonoBehaviour
         {
             foreach (Rigidbody2D part in JumpParts)
             {
-                part.AddForce(gameObject.transform.up * 5000f * (0.9f + (Charged * 0.2f)));
+                part.AddForce(gameObject.transform.up * 5000f * (0.9f + (Charged * (0.2f * Mathf.Clamp(((Charged - 5) * 0.15f), 1, 9999999)))));
             }
             Cam.orthographicSize -= 2f * Charged;
             Charged = 0;
             StopAllCoroutines();
-            StartCoroutine(RechargeAfterTime(3));
+            StartCoroutine(RechargeAfterTime(4.3f - ChargeMulti * 1.3f));
         }
         else if (Recharge && Charged == 0)
         {
             Recharge = false;
-            StartCoroutine(RechargeAfterTime(1));
+            StartCoroutine(RechargeAfterTime(1 / ChargeMulti));
         }
+
         IEnumerator RechargeAfterTime(float time)
         {
             yield return new WaitForSeconds(time);
@@ -42,9 +44,9 @@ public class SpookyJump : MonoBehaviour
             Cam.orthographicSize += 2f;
             ChargedSound.pitch = 2f + (Charged * 0.25f);
             ChargedSound.Play();
-            if (Charged < 5)
+            if (Charged < 5 * ChargeMulti)
             {
-                StartCoroutine(RechargeAfterTime(1 + Charged));
+                StartCoroutine(RechargeAfterTime((1 + Charged / ChargeMulti) / ChargeMulti));
             }
         }
     }
