@@ -51,7 +51,7 @@ public class SatanScript : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(20f);
+            yield return new WaitForSeconds(18f);
             SatanChaseScript.Speed += 0.5f;
         }
     }
