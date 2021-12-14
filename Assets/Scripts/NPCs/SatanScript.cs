@@ -5,6 +5,7 @@ using UnityEngine;
 public class SatanScript : MonoBehaviour
 {
     public static bool HasChaseStarted;
+    public HingeJoint2D[] CrabLegs;
     public GameObject[] ObjectsToDestroy;
     public GameObject[] ObjectsToActivate;
     public RushdownNPC SatanChaseScript;
@@ -34,6 +35,11 @@ public class SatanScript : MonoBehaviour
         foreach (GameObject obj in ObjectsToActivate)
         {
             obj.SetActive(true);
+        }
+
+        foreach (HingeJoint2D hinge in CrabLegs)
+        {
+            hinge.breakForce = Mathf.Infinity;
         }
 
         SatanChaseScript.Speed = 8;
