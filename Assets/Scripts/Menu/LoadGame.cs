@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class LoadGame : MonoBehaviour
 {
     public bool Continue;
-    public string SceneToLoad;
+    public static string SceneToLoad = "World 1";
     public static bool IsContinuing;
     // Start is called before the first frame update
     void Start()

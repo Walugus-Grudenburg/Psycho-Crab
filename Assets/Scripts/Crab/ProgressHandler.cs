@@ -41,7 +41,7 @@ public class ProgressHandler : MonoBehaviour
             {
                 Money.SetActive(true);
             }
-            SignToRotate.transform.Rotate(0, 0, 180);
+            if (SignToRotate) SignToRotate.transform.Rotate(0, 0, 180);
         }
     }
     void Update()

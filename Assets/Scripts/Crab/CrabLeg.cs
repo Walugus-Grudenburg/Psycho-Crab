@@ -10,6 +10,7 @@ public class CrabLeg : MonoBehaviour
     Rigidbody2D rb2d;
     public AudioSource sticksound;
     public AudioSource wetsound;
+    public bool IgnoreControls;
     bool IsSticking;
     bool IsUnstickReady;
     float BoostStrength;
@@ -116,60 +117,63 @@ public class CrabLeg : MonoBehaviour
     void Update()
     {
         Controls controls = ProgressHandler.controls;
-        if (((controls.Crab.ClickLeft.triggered && IsLeftLeg) || (controls.Crab.ClickRight.triggered && IsLeftLeg == false)) & IsUnstickReady) // Checks if stick is pressed
+        if (!IgnoreControls)
         {
+            if (((controls.Crab.ClickLeft.triggered && IsLeftLeg) || (controls.Crab.ClickRight.triggered && IsLeftLeg == false)) & IsUnstickReady) // Checks if stick is pressed
+            {
                 Unstick(sticksound);
-        }
-
-        if (IsLeftLeg)
-        {
-            float boostforce = 1f;
-            // Rotates the leg in the direction of Left Stick
-            if (BoostStrength == 0) boostforce = 604.8f; // Sets the force to the joystick direction
-            else if (BoostStrength == 1) boostforce = 4748f; // Increases the force if the leg is boosted
-            else if (BoostStrength == 2) boostforce = 6233f; // Increases it more for bigger boost
-            else if (BoostStrength == 3) boostforce = 3508f; // Increase it less for riding despawnables
-            moveforce = Mathf.Clamp(-controls.Crab.LeftLeg.ReadValue<float>(), -1 , 1) * Time.deltaTime * boostforce;
-            if (IsInGoo) moveforce /= 2;
-            rb2d.AddTorque(moveforce, ForceMode2D.Impulse);
-        }
-        else
-        {
-            float boostforce = 1f;
-            // Rotates the leg in the direction of Right Stick
-            if (BoostStrength == 0) boostforce = 604.8f; // Sets the force to the joystick direction
-            else if (BoostStrength == 1) boostforce = 4748f;  // Increases the force if the leg is boosted
-            else if (BoostStrength == 2) boostforce = 6233f; // Increases it more for bigger boost
-            else if (BoostStrength == 3) boostforce = 3508f; // Increase it less for riding despawnables
-            moveforce = Mathf.Clamp(-controls.Crab.RightLeg.ReadValue<float>(), -1 , 1) * Time.deltaTime * boostforce; 
-            if (IsInGoo) moveforce /= 2;
-            rb2d.AddTorque(moveforce, ForceMode2D.Impulse);
-        }
-        foreach (HingeJoint2D hinge in GetComponents<HingeJoint2D>())
-        {
-            if (RigidConnection && !hinge.connectedBody)
-            {
-                Unstick(null);
             }
 
-            if (hinge.connectedBody)
+            if (IsLeftLeg)
             {
-                if (!hinge.connectedBody.CompareTag("Player")) RigidConnection = true;
+                float boostforce = 1f;
+                // Rotates the leg in the direction of Left Stick
+                if (BoostStrength == 0) boostforce = 604.8f; // Sets the force to the joystick direction
+                else if (BoostStrength == 1) boostforce = 4748f; // Increases the force if the leg is boosted
+                else if (BoostStrength == 2) boostforce = 6233f; // Increases it more for bigger boost
+                else if (BoostStrength == 3) boostforce = 3508f; // Increase it less for riding despawnables
+                moveforce = Mathf.Clamp(-controls.Crab.LeftLeg.ReadValue<float>(), -1, 1) * Time.deltaTime * boostforce;
+                if (IsInGoo) moveforce /= 2;
+                rb2d.AddTorque(moveforce, ForceMode2D.Impulse);
             }
-            else if (!hinge.connectedBody)
+            else
             {
-                RigidConnection = false;
+                float boostforce = 1f;
+                // Rotates the leg in the direction of Right Stick
+                if (BoostStrength == 0) boostforce = 604.8f; // Sets the force to the joystick direction
+                else if (BoostStrength == 1) boostforce = 4748f;  // Increases the force if the leg is boosted
+                else if (BoostStrength == 2) boostforce = 6233f; // Increases it more for bigger boost
+                else if (BoostStrength == 3) boostforce = 3508f; // Increase it less for riding despawnables
+                moveforce = Mathf.Clamp(-controls.Crab.RightLeg.ReadValue<float>(), -1, 1) * Time.deltaTime * boostforce;
+                if (IsInGoo) moveforce /= 2;
+                rb2d.AddTorque(moveforce, ForceMode2D.Impulse);
             }
-        }
-        if ((BoostStrength != 0) && (!stickjoint || !IsSticking || gameObject.GetComponents<HingeJoint2D>().Length < 2))
-        {
-            BoostStrength = 0;
-            if (stickjoint != null) 
+            foreach (HingeJoint2D hinge in GetComponents<HingeJoint2D>())
             {
-                Destroy(stickjoint);
-                stickjoint = null;
+                if (RigidConnection && !hinge.connectedBody)
+                {
+                    Unstick(null);
+                }
+
+                if (hinge.connectedBody)
+                {
+                    if (!hinge.connectedBody.CompareTag("Player")) RigidConnection = true;
+                }
+                else if (!hinge.connectedBody)
+                {
+                    RigidConnection = false;
+                }
             }
-            StartCoroutine(UnStickAfterTime(0.25f));
+            if ((BoostStrength != 0) && (!stickjoint || !IsSticking || gameObject.GetComponents<HingeJoint2D>().Length < 2))
+            {
+                BoostStrength = 0;
+                if (stickjoint != null)
+                {
+                    Destroy(stickjoint);
+                    stickjoint = null;
+                }
+                StartCoroutine(UnStickAfterTime(0.25f));
+            }
         }
     }
     // OnCollisionStay is called once per frame while objects are colliding

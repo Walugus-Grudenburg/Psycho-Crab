@@ -5,7 +5,6 @@ using UnityEngine;
 public class ToggleWhenUnlocked : MonoBehaviour
 {
     public enum Condition {JumpUnlocked};
-    public bool IsSoft;
     public Condition condition;
     public GameObject ObjectToToggle;
     // Start is called before the first frame update
@@ -24,7 +23,7 @@ public class ToggleWhenUnlocked : MonoBehaviour
     {
         if (condition == Condition.JumpUnlocked)
         {
-            if (!ProgressHandler.JumpUnlocked || !IsSoft)
+            if (!ProgressHandler.JumpUnlocked)
             { 
                 ObjectToToggle.SetActive(ProgressHandler.JumpUnlocked);
             }
