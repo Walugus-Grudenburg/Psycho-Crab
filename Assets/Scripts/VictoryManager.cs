@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 public class VictoryManager : MonoBehaviour
 {
     public bool IsProcessingVictory;
+    public bool DoUnlock1;
+    public bool DoUnlock2;
+    public bool DoUnlock3;
     public GameObject CrunchText;
     public GameObject Satan;
     public GameObject Sushi;
@@ -33,15 +36,25 @@ public class VictoryManager : MonoBehaviour
         Destroy(Sushi);
         CrunchText.SetActive(true);
 
-        yield return new WaitForSeconds(2);
-        UnlockText1.SetActive(true);
-        ProgressHandler.SetUnlockBC(true);
+        if (DoUnlock1) {
+            yield return new WaitForSeconds(2);
+            UnlockText1.SetActive(true);
+            ProgressHandler.SetUnlockBC(true);
+        }
+        if (DoUnlock2)
+        {
+            yield return new WaitForSeconds(2);
+            Destroy(UnlockText1);
+            UnlockText2.SetActive(true);
+            ProgressHandler.SetUnlockGC(true);
+        }
 
-        yield return new WaitForSeconds(2);
-        Destroy(UnlockText1);
-        UnlockText2.SetActive(true);
-        ProgressHandler.SetUnlockGC(true);
-
+        if (DoUnlock3)
+        {
+            yield return new WaitForSeconds(2);
+            UnlockText1.SetActive(true);
+            ProgressHandler.SetUnlockDC(true);
+        }
         yield return new WaitForSeconds(2);
         Destroy(UnlockText2);
 
@@ -49,7 +62,7 @@ public class VictoryManager : MonoBehaviour
         SceneManager.LoadScene("Title Screen", LoadSceneMode.Single);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && SatanScript.HasChaseStarted)
         {

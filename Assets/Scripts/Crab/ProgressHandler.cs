@@ -21,6 +21,7 @@ public class ProgressHandler : MonoBehaviour
     public static bool MoneyUnlocked;
     public static bool BatcrabUnlocked;
     public static bool GullcrabUnlocked;
+    public static bool DizzycrabUnlocked;
     private static bool HasDataSaved;
     // Start is called before the first frame update
     void Start()
@@ -83,6 +84,7 @@ public class ProgressHandler : MonoBehaviour
         data.GullcrabUnlocked = GullcrabUnlocked;
         data.BatcrabUnlocked = BatcrabUnlocked;
         data.SceneToLoad = SceneToLoad;
+        data.DizzycrabUnlocked = DizzycrabUnlocked;
         formatter.Serialize(file, data);
         file.Close();
     }
@@ -104,6 +106,7 @@ public class ProgressHandler : MonoBehaviour
             GullcrabUnlocked = data.GullcrabUnlocked;
             BatcrabUnlocked = data.BatcrabUnlocked;
             SceneToLoad = data.SceneToLoad;
+            DizzycrabUnlocked = data.DizzycrabUnlocked;
             file.Close();
         }
         else
@@ -144,6 +147,13 @@ public class ProgressHandler : MonoBehaviour
         BatcrabUnlocked = value;
         SaveProgressData();
     }
+
+    public static void SetUnlockDC(bool value)
+    {
+        DizzycrabUnlocked = value;
+        SaveProgressData();
+    }
+
     public static void ToggleSpookify()
     {
         Spookify = !Spookify;
@@ -165,5 +175,6 @@ public class ResetData
     public bool MoneyUnlocked;
     public bool BatcrabUnlocked;
     public bool GullcrabUnlocked;
+    public bool DizzycrabUnlocked;
     public string SceneToLoad;
 }
