@@ -206,6 +206,11 @@ PrefabInstance:
       propertyPath: ChargeMulti
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863724970548618, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863724973102357, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: BoostStrength
@@ -232,6 +237,11 @@ PrefabInstance:
       value: 'You''ve unlocked
 
         Dizzycrab?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725161021868, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725205364432, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
