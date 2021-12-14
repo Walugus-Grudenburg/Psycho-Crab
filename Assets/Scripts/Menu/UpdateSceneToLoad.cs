@@ -19,6 +19,7 @@ public class UpdateSceneToLoad : MonoBehaviour
 
     public void UpdateScene()
     {
-        LoadGame.SceneToLoad = SceneToLoad;
+        ProgressHandler.SceneToLoad = SceneToLoad;
+        ProgressHandler.SaveProgressData();
     }
 }

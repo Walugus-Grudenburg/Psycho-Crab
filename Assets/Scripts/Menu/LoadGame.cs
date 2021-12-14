@@ -6,8 +6,9 @@ using UnityEngine.SceneManagement;
 public class LoadGame : MonoBehaviour
 {
     public bool Continue;
-    public static string SceneToLoad = "World 1";
+    string SceneToLoad;
     public static bool IsContinuing;
+    public bool MenuInstead;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,9 @@ public class LoadGame : MonoBehaviour
 
     public void LoadLevel()
     {
+        SceneToLoad = ProgressHandler.SceneToLoad;
         IsContinuing = Continue;
-        SceneManager.LoadScene(SceneToLoad, LoadSceneMode.Single);
+        if (!MenuInstead) SceneManager.LoadScene(SceneToLoad, LoadSceneMode.Single);
+        else SceneManager.LoadScene("Title Screen", LoadSceneMode.Single);
     }
 }

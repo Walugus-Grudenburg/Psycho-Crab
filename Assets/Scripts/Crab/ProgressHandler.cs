@@ -15,6 +15,7 @@ public class ProgressHandler : MonoBehaviour
     public LoadGame loader;
     public GameObject[] Moneys;
     public GameObject SignToRotate;
+    public static string SceneToLoad;
     public static bool JumpUnlocked;
     public static bool Spookify;
     public static bool MoneyUnlocked;
@@ -81,6 +82,7 @@ public class ProgressHandler : MonoBehaviour
         data.MoneyUnlocked = MoneyUnlocked;
         data.GullcrabUnlocked = GullcrabUnlocked;
         data.BatcrabUnlocked = BatcrabUnlocked;
+        data.SceneToLoad = SceneToLoad;
         formatter.Serialize(file, data);
         file.Close();
     }
@@ -101,6 +103,7 @@ public class ProgressHandler : MonoBehaviour
             MoneyUnlocked = data.MoneyUnlocked;
             GullcrabUnlocked = data.GullcrabUnlocked;
             BatcrabUnlocked = data.BatcrabUnlocked;
+            SceneToLoad = data.SceneToLoad;
             file.Close();
         }
         else
@@ -113,7 +116,9 @@ public class ProgressHandler : MonoBehaviour
     {
         ResetCheckpointData();
         JumpUnlocked = false;
-        
+        BatcrabUnlocked = false;
+        GullcrabUnlocked = false;
+        SceneToLoad = "World 1";
     }
 
     public static void SetUnlockJumping(bool value)
@@ -160,4 +165,5 @@ public class ResetData
     public bool MoneyUnlocked;
     public bool BatcrabUnlocked;
     public bool GullcrabUnlocked;
+    public string SceneToLoad;
 }
