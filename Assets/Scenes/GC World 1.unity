@@ -221,6 +221,16 @@ PrefabInstance:
       propertyPath: ChargeMulti
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863724709990584, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 3.1733332
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724709990584, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.0335026
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863724709990585, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_Sprite
@@ -277,6 +287,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Offset.x
+      value: -16
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725077144011, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -378,6 +392,11 @@ PrefabInstance:
       value: 0.7176471
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725477859176, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725486333845, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_IsActive
       value: 0

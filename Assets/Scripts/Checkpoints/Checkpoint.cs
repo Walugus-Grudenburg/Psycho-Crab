@@ -20,7 +20,7 @@ public class Checkpoint : MonoBehaviour
             DebugActivate = false;
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Player")){
             ProgressHandler.Checkpoint_Position = Checkpoint_Position;
