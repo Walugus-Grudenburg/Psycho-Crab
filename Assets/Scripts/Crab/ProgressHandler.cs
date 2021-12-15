@@ -22,7 +22,6 @@ public class ProgressHandler : MonoBehaviour
     public static bool BatcrabUnlocked;
     public static bool GullcrabUnlocked;
     public static bool DizzyCrabUnlocked;
-    public static bool DarkCrabUnlocked;
     public static bool PrehistoricCrabUnlocked;
     public static bool SantaCrabUnlocked;
     private static bool HasDataSaved;
@@ -88,7 +87,6 @@ public class ProgressHandler : MonoBehaviour
         data.BatcrabUnlocked = BatcrabUnlocked;
         data.SceneToLoad = SceneToLoad;
         data.DizzycrabUnlocked = DizzyCrabUnlocked;
-        data.DarkCrabUnlocked = DarkCrabUnlocked;
         data.PrehistoricCrabUnlocked = PrehistoricCrabUnlocked;
         data.SantaCrabUnlocked = SantaCrabUnlocked;
         formatter.Serialize(file, data);
@@ -113,7 +111,6 @@ public class ProgressHandler : MonoBehaviour
             BatcrabUnlocked = data.BatcrabUnlocked;
             SceneToLoad = data.SceneToLoad;
             DizzyCrabUnlocked = data.DizzycrabUnlocked;
-            DarkCrabUnlocked = data.DarkCrabUnlocked;
             PrehistoricCrabUnlocked = data.PrehistoricCrabUnlocked;
             SantaCrabUnlocked = data.SantaCrabUnlocked;
             file.Close();
@@ -163,12 +160,6 @@ public class ProgressHandler : MonoBehaviour
         SaveProgressData();
     }
 
-    public static void SetUnlockDRC(bool value)
-    {
-        DarkCrabUnlocked = value;
-        SaveProgressData();
-    }
-
     public static void SetUnlockPHC(bool value)
     {
         PrehistoricCrabUnlocked = value;
@@ -203,7 +194,6 @@ public class ResetData
     public bool BatcrabUnlocked;
     public bool GullcrabUnlocked;
     public bool DizzycrabUnlocked;
-    public bool DarkCrabUnlocked;
     public bool PrehistoricCrabUnlocked;
     public bool SantaCrabUnlocked;
     public string SceneToLoad;

@@ -9,6 +9,7 @@ public class VictoryManager : MonoBehaviour
     public bool DoUnlock1;
     public bool DoUnlock2;
     public bool DoUnlock3;
+    public bool DoUnlock4;
     public GameObject CrunchText;
     public GameObject Satan;
     public GameObject Sushi;

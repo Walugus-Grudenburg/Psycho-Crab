@@ -44,6 +44,8 @@ public class SatanScript : MonoBehaviour
         }
 
         SatanChaseScript.Speed = 8;
+        Spooky.Active = true;
+        Spooky.Recharge = true;
         Spooky.ChargeMulti = FlightAmount;
         StartCoroutine(SpeedUpLoop());
     }

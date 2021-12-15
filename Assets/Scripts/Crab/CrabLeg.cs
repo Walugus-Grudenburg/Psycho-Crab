@@ -14,6 +14,7 @@ public class CrabLeg : MonoBehaviour
     bool IsSticking;
     bool IsUnstickReady;
     public float BoostStrength;
+    public float StrengthStrength;
     private bool IsWaitingToStick;
     private bool IsWaitingToUnStick;
     private bool IsInGoo;
@@ -160,7 +161,7 @@ public class CrabLeg : MonoBehaviour
             else if (BoostStrength == 2) boostforce = 6233f; // Increases it more for bigger boost
             else if (BoostStrength == 3) boostforce = 3508f; // Increase it less for riding despawnables
             else if (BoostStrength == -1) boostforce = 111.1f; // Decrease it for being GUllcrab
-            moveforce = Mathf.Clamp(-controls.Crab.LeftLeg.ReadValue<float>(), -1, 1) * Time.deltaTime * boostforce;
+            moveforce = Mathf.Clamp(-controls.Crab.LeftLeg.ReadValue<float>(), -1, 1) * Time.deltaTime * boostforce * StrengthStrength;
             if (IsInGoo) moveforce /= 2;
             rb2d.AddTorque(moveforce, ForceMode2D.Impulse);
         }
@@ -173,7 +174,7 @@ public class CrabLeg : MonoBehaviour
             else if (BoostStrength == 2) boostforce = 6233f; // Increases it more for bigger boost
             else if (BoostStrength == 3) boostforce = 3508f; // Increase it less for riding despawnables
             else if (BoostStrength == -1) boostforce = 111.1f; // Decrease it for being GUllcrab
-            moveforce = Mathf.Clamp(-controls.Crab.RightLeg.ReadValue<float>(), -1, 1) * Time.deltaTime * boostforce;
+            moveforce = Mathf.Clamp(-controls.Crab.RightLeg.ReadValue<float>(), -1, 1) * Time.deltaTime * boostforce * StrengthStrength;
             if (IsInGoo) moveforce /= 2;
             rb2d.AddTorque(moveforce, ForceMode2D.Impulse);
         }

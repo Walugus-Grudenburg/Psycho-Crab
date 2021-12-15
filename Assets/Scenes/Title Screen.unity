@@ -7436,7 +7436,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.92, y: 2.0844922}
+    oldSize: {x: 2.92, y: 2.084}
     newSize: {x: 2.4333334, y: 1.7366667}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -11249,7 +11249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00cea01a11198b1468ed27abb63ff946, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  condition: 5
+  condition: 4
   ObjectToToggle: {fileID: 1986703789}
 --- !u!114 &1538125825
 MonoBehaviour:
@@ -11263,7 +11263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00cea01a11198b1468ed27abb63ff946, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  condition: 4
+  condition: 0
   ObjectToToggle: {fileID: 1518333688}
 --- !u!114 &1538125826
 MonoBehaviour:
@@ -11277,7 +11277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00cea01a11198b1468ed27abb63ff946, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  condition: 6
+  condition: 5
   ObjectToToggle: {fileID: 1879729815}
 --- !u!1 &1541375396
 GameObject:
@@ -12893,7 +12893,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.92, y: 2.0844922}
+    oldSize: {x: 2.92, y: 2.084}
     newSize: {x: 2.4333334, y: 1.7366667}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
