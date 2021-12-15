@@ -30,7 +30,7 @@ public class HorizontalChild : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!collision.gameObject.CompareTag("Player") & !collision.gameObject.CompareTag("Cutscene NPC"))
+        if (!collision.gameObject.CompareTag("Ungrabbable") && !collision.gameObject.CompareTag("Player") & !collision.gameObject.CompareTag("Cutscene NPC"))
         {
             Destroy(gameObject);
         }
