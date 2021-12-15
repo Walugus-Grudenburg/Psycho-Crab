@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SpookyScript : MonoBehaviour
 {
@@ -20,6 +21,6 @@ public class SpookyScript : MonoBehaviour
 
     public void Spookify()
     {
-        Renderer.sprite = SpookyVersion;
+        if (SceneManager.GetActiveScene().name == "World 1") Renderer.sprite = SpookyVersion;
     }
 }

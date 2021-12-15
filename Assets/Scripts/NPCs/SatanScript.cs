@@ -5,6 +5,7 @@ using UnityEngine;
 public class SatanScript : MonoBehaviour
 {
     public static bool HasChaseStarted;
+    public float FlightAmount;
     public HingeJoint2D[] CrabLegs;
     public GameObject[] ObjectsToDestroy;
     public GameObject[] ObjectsToActivate;
@@ -43,7 +44,7 @@ public class SatanScript : MonoBehaviour
         }
 
         SatanChaseScript.Speed = 8;
-        Spooky.ChargeMulti = 3f;
+        Spooky.ChargeMulti = FlightAmount;
         StartCoroutine(SpeedUpLoop());
     }
 
