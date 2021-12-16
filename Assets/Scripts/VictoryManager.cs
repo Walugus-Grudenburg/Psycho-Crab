@@ -56,6 +56,14 @@ public class VictoryManager : MonoBehaviour
             UnlockText1.SetActive(true);
             ProgressHandler.SetUnlockDC(true);
         }
+
+        if (DoUnlock4)
+        {
+            yield return new WaitForSeconds(2);
+            UnlockText1.SetActive(true);
+            ProgressHandler.SetUnlockSC(true);
+        }
+
         yield return new WaitForSeconds(2);
         Destroy(UnlockText2);
 
