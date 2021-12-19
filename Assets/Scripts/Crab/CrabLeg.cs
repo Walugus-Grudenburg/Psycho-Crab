@@ -13,6 +13,7 @@ public class CrabLeg : MonoBehaviour
     public bool IgnoreSticking;
     bool IsSticking;
     bool IsUnstickReady;
+    bool IsWaterUnstickReady;
     public float BoostStrength;
     public float StrengthStrength;
     private bool IsWaitingToStick;
@@ -26,9 +27,9 @@ public class CrabLeg : MonoBehaviour
             yield break;
 
         IsWaitingToStick = true;
-        yield return new WaitForSeconds(time);
 
-        // Code to execute after the delay
+        yield return new WaitForSeconds(time);
+        IsWaterUnstickReady = true;
         if (stickjoint) stickjoint.autoConfigureConnectedAnchor = false; // Disables auto reconfigure now that joint is settled
         IsWaitingToStick = false;
     }
@@ -219,7 +220,7 @@ public class CrabLeg : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Water") & IsUnstickReady) // Checks if underwater, and if so, stop sticking
+        if (collision.CompareTag("Water") && IsUnstickReady && IsWaterUnstickReady) // Checks if underwater, and if so, stop sticking
         {
             Unstick(wetsound);
         }
@@ -239,6 +240,7 @@ public class CrabLeg : MonoBehaviour
     public void Unstick(AudioSource sound)
     {
         IsUnstickReady = false;
+        IsWaterUnstickReady = false;
         if (stickjoint) {
             Destroy(stickjoint);
             BoostStrength = 0;
