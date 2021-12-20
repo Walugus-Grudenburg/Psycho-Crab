@@ -23,11 +23,9 @@ public class CrabLeg : MonoBehaviour
 
     IEnumerator StickAfterTime(float time) // Allows unsticking after a time in seconds
     {
-        if (IsWaitingToStick)
-            yield break;
+        if (IsWaitingToStick) yield break;
 
         IsWaitingToStick = true;
-
         yield return new WaitForSeconds(time);
         IsWaterUnstickReady = true;
         if (stickjoint) stickjoint.autoConfigureConnectedAnchor = false; // Disables auto reconfigure now that joint is settled
@@ -73,7 +71,8 @@ public class CrabLeg : MonoBehaviour
         sound.pitch = pitchmulti;
         sound.Play();
 
-        StartCoroutine(StickAfterTime(0.25f));
+        if (IsInGoo) StartCoroutine(StickAfterTime(0.5f));
+        else  StartCoroutine(StickAfterTime(0.25f));
         IsUnstickReady = true;
         IsSticking = true;
 
