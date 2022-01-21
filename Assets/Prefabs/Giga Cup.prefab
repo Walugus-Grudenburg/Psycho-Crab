@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1033010357297886937}
   - component: {fileID: 1033010357297886936}
   - component: {fileID: 1033010357297886919}
+  - component: {fileID: -5993749730111444860}
   m_Layer: 0
   m_Name: Giga Cup
   m_TagString: Cutscene NPC
@@ -259,6 +260,9 @@ MonoBehaviour:
   minforce: 10
   minpitch: 1
   maxpitch: 1.4
+  minvolume: 0
+  maxvolume: 0
+  UseRandomMode: 0
   Hitsound: {fileID: 0}
 --- !u!82 &1033010357297886919
 AudioSource:
@@ -356,3 +360,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-5993749730111444860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033010357297886916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0714a9e0a8ab6b24b8b88681e2b06db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: f6aa298c5deadc344b012ed39b7f3796, type: 2}

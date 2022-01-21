@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1739032943876410393}
   - component: {fileID: 6383877992477633151}
   - component: {fileID: 8462808043873739232}
+  - component: {fileID: 97565016533406285}
   m_Layer: 0
   m_Name: Lava
   m_TagString: Untagged
@@ -222,8 +223,8 @@ PolygonCollider2D:
     - - {x: -0.30935502, y: -4.2911386}
       - {x: 5.4219303, y: -5.6221414}
       - {x: 5.634396, y: 1.5687982}
-      - {x: 9.475668, y: 5.343504}
-      - {x: -1.1832371, y: 5.375781}
+      - {x: 9.475668, y: 5.147136}
+      - {x: -0.91864055, y: 5.3727837}
       - {x: -8.204884, y: 5.4553328}
       - {x: -6.64729, y: 1.3139914}
       - {x: -6.5997357, y: -5.445432}
@@ -340,6 +341,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &97565016533406285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818446254958494357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0714a9e0a8ab6b24b8b88681e2b06db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: f6aa298c5deadc344b012ed39b7f3796, type: 2}
+  UseShapeMode: 1
 --- !u!1001 &2439619044854468361
 PrefabInstance:
   m_ObjectHideFlags: 0

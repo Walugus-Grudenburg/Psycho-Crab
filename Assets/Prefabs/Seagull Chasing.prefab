@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6715907022957046765}
   - component: {fileID: 6715907022957046766}
   - component: {fileID: 4731382997174211682}
+  - component: {fileID: 2491771074696671408}
   m_Layer: 0
   m_Name: Seagull Chasing
   m_TagString: Area Child
@@ -147,7 +148,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 14.487827
+  m_Mass: 14.719624
   m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -303,3 +304,16 @@ MonoBehaviour:
   RigidBody: {fileID: 6715907022957046755}
   SpeedFloor: 10
   SpeedCeling: 35
+--- !u!114 &2491771074696671408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6715907022957046759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0714a9e0a8ab6b24b8b88681e2b06db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: f6aa298c5deadc344b012ed39b7f3796, type: 2}

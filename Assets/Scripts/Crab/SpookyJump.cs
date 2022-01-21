@@ -11,6 +11,7 @@ public class SpookyJump : MonoBehaviour
     public Rigidbody2D[] JumpParts;
     public AudioSource ChargedSound;
     public float ChargeMulti;
+    public float Powermulti;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +25,7 @@ public class SpookyJump : MonoBehaviour
         {
             foreach (Rigidbody2D part in JumpParts)
             {
-                part.AddForce(gameObject.transform.up * 5000f * (0.9f + (Charged * (0.2f * Mathf.Clamp(((Charged - 5) * 0.15f), 1, 9999999)))));
+                part.AddForce(gameObject.transform.up * Powermulti * 5000f * (0.9f + (Charged * (0.2f * Mathf.Clamp(((Charged - 5) * 0.15f), 1, 9999999)))));
             }
             Cam.orthographicSize -= 2f * Charged;
             Charged = 0;

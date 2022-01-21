@@ -12050,12 +12050,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timemin: 0.005
   timemax: 8.005
---- !u!1 &1110641973 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7953976788133366647, guid: 3467e989d33abdf45bc5f05c58b97676,
-    type: 3}
-  m_PrefabInstance: {fileID: 3369863724896972402}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1111632704
 GameObject:
   m_ObjectHideFlags: 0
@@ -22112,7 +22106,7 @@ PrefabInstance:
     - target: {fileID: 3369863724709990591, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Moneys.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3369863724709990591, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -22319,6 +22313,28 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725077144011, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_text
+      value: 'You''ve unlocked
+
+        Santa Crab!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725077144011, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.18396229
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725077144011, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725077144011, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.33987975
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725079896266, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -32594,19 +32610,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8135214035267558038, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
-      propertyPath: ObjectsToActivate.Array.size
-      value: 10
+      propertyPath: ObjectsToDestroy.Array.size
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 8135214035267558038, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
-      propertyPath: ObjectsToActivate.Array.data[7]
+      propertyPath: ObjectsToDestroy.Array.data[32]
       value: 
-      objectReference: {fileID: 1110641973}
-    - target: {fileID: 8135214035267558038, guid: 3467e989d33abdf45bc5f05c58b97676,
-        type: 3}
-      propertyPath: ObjectsToActivate.Array.data[9]
-      value: 
-      objectReference: {fileID: 1110641973}
+      objectReference: {fileID: 288770301}
     - target: {fileID: 8438237034188086287, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: StrengthStrength

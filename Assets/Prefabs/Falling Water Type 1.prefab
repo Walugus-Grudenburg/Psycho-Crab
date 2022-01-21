@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9140981037608437445}
   - component: {fileID: 4460300733795162679}
   - component: {fileID: 753269611744534979}
+  - component: {fileID: -3891292942522183159}
   m_Layer: 0
   m_Name: Falling Water Type 1
   m_TagString: Water
@@ -242,3 +243,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-3891292942522183159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406972880464171007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0714a9e0a8ab6b24b8b88681e2b06db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: f6aa298c5deadc344b012ed39b7f3796, type: 2}
+  UseShapeMode: 1

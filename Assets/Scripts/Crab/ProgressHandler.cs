@@ -16,6 +16,7 @@ public class ProgressHandler : MonoBehaviour
     public GameObject[] Moneys;
     public GameObject SignToRotate;
     public static string SceneToLoad;
+    public static bool GameEnded;
     public static bool JumpUnlocked;
     public static bool Spookify;
     public static bool MoneyUnlocked;
@@ -58,6 +59,10 @@ public class ProgressHandler : MonoBehaviour
 
     public void Reset()
     {
+        if (GameEnded)
+        {
+            return;
+        }
         gameObject.transform.position = Checkpoint_Position;
         foreach (CrabLeg leg in Legs)
         {

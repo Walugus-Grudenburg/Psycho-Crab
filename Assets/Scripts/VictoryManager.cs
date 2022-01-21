@@ -32,6 +32,7 @@ public class VictoryManager : MonoBehaviour
         if (IsProcessingVictory) yield return null;
         IsProcessingVictory = true;
         Destroy(Satan);
+        ProgressHandler.GameEnded = true;
 
         yield return new WaitForSeconds(1);
         Destroy(Sushi);

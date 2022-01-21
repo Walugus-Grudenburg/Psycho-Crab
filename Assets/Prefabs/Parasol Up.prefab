@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -9118140536745392683}
   - component: {fileID: 4210100087547323380}
   - component: {fileID: 2904034467268794946}
+  - component: {fileID: 1782885380374757812}
   m_Layer: 0
   m_Name: Parasol Up
   m_TagString: Area Child
@@ -313,3 +314,20 @@ MonoBehaviour:
   minforce: 25
   minpitch: 0.9
   maxpitch: 1.4
+  minvolume: 0
+  maxvolume: 0
+  UseRandomMode: 0
+  Hitsound: {fileID: 0}
+--- !u!114 &1782885380374757812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3584368480964806518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0714a9e0a8ab6b24b8b88681e2b06db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: f6aa298c5deadc344b012ed39b7f3796, type: 2}

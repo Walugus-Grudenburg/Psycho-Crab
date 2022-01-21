@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2521797004964801672}
   - component: {fileID: 2521797004964801673}
   - component: {fileID: 2521797004964801674}
+  - component: {fileID: 8048711482329696275}
   m_Layer: 0
   m_Name: Falling Rock Type 2
   m_TagString: Cutscene NPC
@@ -288,6 +289,9 @@ MonoBehaviour:
   minforce: 1.25
   minpitch: 0.66
   maxpitch: 1.33
+  minvolume: 0
+  maxvolume: 0
+  UseRandomMode: 0
   Hitsound: {fileID: 0}
 --- !u!60 &2521797004964801672
 PolygonCollider2D:
@@ -365,3 +369,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8048711482329696275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2521797004964801675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0714a9e0a8ab6b24b8b88681e2b06db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: f6aa298c5deadc344b012ed39b7f3796, type: 2}
+  UseShapeMode: 1

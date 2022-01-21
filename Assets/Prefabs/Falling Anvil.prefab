@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7781476964066160612}
   - component: {fileID: 7781476964066160615}
   - component: {fileID: 3446420660112882617}
+  - component: {fileID: 3311289071677455152}
   m_Layer: 0
   m_Name: Falling Anvil
   m_TagString: Vertical Terrain
@@ -280,6 +281,9 @@ MonoBehaviour:
   minforce: 8
   minpitch: 0.4
   maxpitch: 0.6
+  minvolume: 0
+  maxvolume: 0
+  UseRandomMode: 0
   Hitsound: {fileID: 0}
 --- !u!114 &3446420660112882617
 MonoBehaviour:
@@ -295,3 +299,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timemin: 1.901
   timemax: 4.501
+--- !u!114 &3311289071677455152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7781476964066160609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0714a9e0a8ab6b24b8b88681e2b06db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: f6aa298c5deadc344b012ed39b7f3796, type: 2}
