@@ -57,7 +57,7 @@ public class CrabLeg : MonoBehaviour
         stickjoint.anchor = gameObject.transform.InverseTransformPoint(collision.GetContact(0).point); // Changes the anchor to the collison point
     }
 
-    void Stick(Collision2D collision, AudioSource sound, float pitchmulti = 1f)
+    public void Stick(Collision2D collision, AudioSource sound, float pitchmulti = 1f)
     {
         SticktoCollisionFirst(collision);
         // Activates a stickdetector script if attatched
