@@ -23,6 +23,7 @@ public class LoadGame : MonoBehaviour
 
     public void LoadLevel()
     {
+        SatanScript.HasChaseStarted = false;
         SceneToLoad = ProgressHandler.SceneToLoad;
         IsContinuing = Continue;
         if (!MenuInstead) SceneManager.LoadScene(SceneToLoad, LoadSceneMode.Single);

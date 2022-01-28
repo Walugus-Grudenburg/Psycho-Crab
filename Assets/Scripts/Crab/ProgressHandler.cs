@@ -11,12 +11,13 @@ public class ProgressHandler : MonoBehaviour
     public static Controls controls;
     public static Vector3 Checkpoint_Position;
     public bool IgnoreControls;
+    public bool ActivateDeTermination;
     public CrabLeg[] Legs;
     public LoadGame loader;
     public GameObject[] Moneys;
     public GameObject SignToRotate;
     public static string SceneToLoad;
-    public static bool GameEnded;
+    public static bool DeTermination;
     public static bool JumpUnlocked;
     public static bool Spookify;
     public static bool MoneyUnlocked;
@@ -38,7 +39,7 @@ public class ProgressHandler : MonoBehaviour
         }
         if (LoadGame.IsContinuing)
         {
-            Reset();
+            Reset(true);
         }
         if (MoneyUnlocked)
         {
@@ -51,15 +52,20 @@ public class ProgressHandler : MonoBehaviour
     }
     void Update()
     {
+        if (ActivateDeTermination)
+        {
+            DeTermination = true;
+            ActivateDeTermination = false;
+        }
         if (controls.Crab.Reset.triggered && !IgnoreControls)
         {
-            Reset();
+            Reset(true);
         }
     }
 
-    public void Reset()
+    public void Reset(bool OverrideDeTermination = false)
     {
-        if (GameEnded)
+        if (DeTermination && !OverrideDeTermination)
         {
             return;
         }
@@ -74,6 +80,7 @@ public class ProgressHandler : MonoBehaviour
         
         if (SatanScript.HasChaseStarted)
         {
+            SatanScript.HasChaseStarted = false;
             loader.LoadLevel();
         }
     }
