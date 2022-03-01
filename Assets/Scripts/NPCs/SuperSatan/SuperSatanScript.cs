@@ -102,16 +102,24 @@ public class SuperSatanScript : MonoBehaviour
             yield return new WaitForSeconds(5f);
             StartCoroutine("AnvilAttack2");
             yield return new WaitForSeconds(15f);
+            BossStage = 1;
+            ProgressHandler.SetBossStage(1);
         }
-        BossStage = 1;
-        ProgressHandler.SetBossStage(1);
-        MoveBattle(0, 1, 2, 60f);
-        Arenas[0].SetActive(true);
-        yield return new WaitForSeconds(2f);
-        StartCoroutine("AnvilAttack3");
-        yield return new WaitForSeconds(7f);
-        StartCoroutine("AnvilAttack3");
-        yield return new WaitForSeconds(10f);
+        if (BossStage < 3)
+        {
+            MoveBattle(0, 1, 2, 60f);
+            Arenas[0].SetActive(true);
+        }        
+        if (BossStage < 2)
+        {
+            yield return new WaitForSeconds(2f);
+            StartCoroutine("AnvilAttack3");
+            yield return new WaitForSeconds(7f);
+            StartCoroutine("AnvilAttack3");
+            yield return new WaitForSeconds(10f);
+            BossStage = 2;
+            ProgressHandler.SetBossStage(2);
+        }
     }
 
     public void MoveBattle(int crabindex, int bossindex, int cameraindex, float zoom)
