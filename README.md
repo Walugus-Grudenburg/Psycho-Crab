@@ -1,5 +1,5 @@
 # Psycho-Crab
-A dumb Unity game about climbing things as a crab. VERY WIP, will be released eventually. Probably.
+A dumb Unity game about climbing things as a crab. WIP, will be Early Access soon.
 
 Compiled game download at https://drive.google.com/file/d/168C4QSTiiTH6EyMF3SJoSFwDa3bS3K5q/view?usp=sharing
 
