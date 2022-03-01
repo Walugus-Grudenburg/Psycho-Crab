@@ -9,6 +9,7 @@ public class BossAttack : MonoBehaviour
     public bool UsePos;
     public bool UseRot;
     public bool ReturnOnCollision;
+    public bool IgnoreDamage;
     public ProgressHandler progress;
     // Start is called before the first frame update
     void Start()
@@ -36,7 +37,10 @@ public class BossAttack : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("Player"))
             {
-                progress.Reset();
+                if (!IgnoreDamage) 
+                { 
+                    progress.Reset(); 
+                }
             }
             else if (ReturnOnCollision)
             {

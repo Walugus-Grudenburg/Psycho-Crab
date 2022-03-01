@@ -12,10 +12,12 @@ public class ProgressHandler : MonoBehaviour
     public static Vector3 Checkpoint_Position;
     public bool IgnoreControls;
     public bool ActivateDeTermination;
+    public bool ResetLate;
     public CrabLeg[] Legs;
     public LoadGame loader;
     public GameObject[] Moneys;
     public GameObject SignToRotate;
+    public static int BossStage;
     public static string SceneToLoad;
     public static bool DeTermination;
     public static bool JumpUnlocked;
@@ -39,7 +41,7 @@ public class ProgressHandler : MonoBehaviour
         }
         if (LoadGame.IsContinuing)
         {
-            Reset(true);
+            ResetLate = true;
         }
         if (MoneyUnlocked)
         {
@@ -63,13 +65,33 @@ public class ProgressHandler : MonoBehaviour
         }
     }
 
+    private void LateUpdate()
+    {
+        if (ResetLate)
+        {
+            ResetLate = false;
+            Reset(true);
+        }
+    }
+
     public void Reset(bool OverrideDeTermination = false)
     {
         if (DeTermination && !OverrideDeTermination)
         {
             return;
         }
-        gameObject.transform.position = Checkpoint_Position;
+        Teleport(Checkpoint_Position);
+        
+        if (SatanScript.HasChaseStarted)
+        {
+            SatanScript.HasChaseStarted = false;
+            loader.LoadLevel();
+        }
+    }
+
+    public void Teleport(Vector3 Position)
+    {
+        gameObject.transform.position = Position;
         foreach (CrabLeg leg in Legs)
         {
             if (leg.stickjoint)
@@ -77,12 +99,7 @@ public class ProgressHandler : MonoBehaviour
                 leg.Unstick(null);
             }
         }
-        
-        if (SatanScript.HasChaseStarted)
-        {
-            SatanScript.HasChaseStarted = false;
-            loader.LoadLevel();
-        }
+
     }
 
     public static void SaveProgressData()
@@ -101,6 +118,7 @@ public class ProgressHandler : MonoBehaviour
         data.DizzycrabUnlocked = DizzyCrabUnlocked;
         data.PrehistoricCrabUnlocked = PrehistoricCrabUnlocked;
         data.SantaCrabUnlocked = SantaCrabUnlocked;
+        data.BossStage = BossStage;
         formatter.Serialize(file, data);
         file.Close();
     }
@@ -125,6 +143,7 @@ public class ProgressHandler : MonoBehaviour
             DizzyCrabUnlocked = data.DizzycrabUnlocked;
             PrehistoricCrabUnlocked = data.PrehistoricCrabUnlocked;
             SantaCrabUnlocked = data.SantaCrabUnlocked;
+            BossStage = data.BossStage;
             file.Close();
         }
         else
@@ -139,6 +158,11 @@ public class ProgressHandler : MonoBehaviour
         JumpUnlocked = false;
         BatcrabUnlocked = false;
         GullcrabUnlocked = false;
+        DizzyCrabUnlocked = false;
+        GullcrabUnlocked = false;
+        SantaCrabUnlocked = false;
+        PrehistoricCrabUnlocked = false;
+        BossStage = 0;
         SceneToLoad = "World 1";
     }
 
@@ -184,6 +208,12 @@ public class ProgressHandler : MonoBehaviour
         SaveProgressData();
     }
 
+    public static void SetBossStage(int value)
+    {
+        BossStage = value;
+        SaveProgressData();
+    }
+
     public static void ToggleSpookify()
     {
         Spookify = !Spookify;
@@ -193,6 +223,7 @@ public class ProgressHandler : MonoBehaviour
     {
         Checkpoint_Position = new Vector3(0, 5, 0);
         MoneyUnlocked = false;
+        BossStage = 0;
     }
 }
 
@@ -209,4 +240,5 @@ public class ResetData
     public bool PrehistoricCrabUnlocked;
     public bool SantaCrabUnlocked;
     public string SceneToLoad;
+    public int BossStage;
 }

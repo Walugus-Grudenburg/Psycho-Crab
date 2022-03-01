@@ -9,6 +9,7 @@ using TMPro;
 public class Timer : MonoBehaviour
 {
     public bool Active;
+    public float debugtime;
     static float time;
     public TextMeshProUGUI text;
     // Start is called before the first frame update
@@ -23,6 +24,7 @@ public class Timer : MonoBehaviour
         if (Active)
         {
             time += Time.deltaTime;
+            if (debugtime > 0) time = debugtime;
             SaveTimerData();
             text.text = TimeSpan.FromSeconds(Mathf.Round(time * 10f) / 10f).ToString() + ".0";
         }
