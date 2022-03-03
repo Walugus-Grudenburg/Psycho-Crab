@@ -60,50 +60,52 @@ public class CrabLeg : MonoBehaviour
     public void Stick(Collision2D collision, AudioSource sound, float pitchmulti = 1f)
     {
         SticktoCollisionFirst(collision);
-        // Activates a stickdetector script if attatched
-        StickDetector stickdetector = collision.gameObject.GetComponent<StickDetector>();
-        if (stickdetector)
+        if (stickjoint)
         {
-            stickdetector.Detected = true;
+            // Activates a stickdetector script if attatched
+            StickDetector stickdetector = collision.gameObject.GetComponent<StickDetector>();
+            if (stickdetector)
+            {
+                stickdetector.Detected = true;
+            }
+
+            // Plays the sound
+            sound.pitch = pitchmulti;
+            sound.Play();
+
+            if (IsInGoo) StartCoroutine(StickAfterTime(0.5f));
+            else StartCoroutine(StickAfterTime(0.25f));
+            IsUnstickReady = true;
+            IsSticking = true;
+
+            // Sets strength based on object it's sticking to
+            // 0 is weakest and unsuitable for movement
+            // 1 is way stronger though a little weak for vertical climbing
+            // 2 is even stronger, enough to easily climb vertically
+            // 3 is about halfway between 0 and 1, strong enough to make some jumps
+            switch (collision.gameObject.tag)
+            {
+                default:
+                    BoostStrength = 0;
+                    break;
+
+                case "Terrain":
+                    BoostStrength = 1;
+                    break;
+
+                case "Vertical Terrain":
+                    BoostStrength = 2;
+                    break;
+
+                case "Area Child":
+                    BoostStrength = 3;
+                    break;
+
+                case "Cutscene NPC":
+                    BoostStrength = 3;
+                    break;
+            }
         }
-
-        // Plays the sound
-        sound.pitch = pitchmulti;
-        sound.Play();
-
-        if (IsInGoo) StartCoroutine(StickAfterTime(0.5f));
-        else  StartCoroutine(StickAfterTime(0.25f));
-        IsUnstickReady = true;
-        IsSticking = true;
-
-        // Sets strength based on object it's sticking to
-        // 0 is weakest and unsuitable for movement
-        // 1 is way stronger though a little weak for vertical climbing
-        // 2 is even stronger, enough to easily climb vertically
-        // 3 is about halfway between 0 and 1, strong enough to make some jumps
-        switch (collision.gameObject.tag)
-        {
-            default:
-                BoostStrength = 0;
-                break;
-
-            case "Terrain":
-                BoostStrength = 1;
-                break;
-
-            case "Vertical Terrain":
-                BoostStrength = 2;
-                break;
-
-            case "Area Child":
-                BoostStrength = 3;
-                break;
-
-            case "Cutscene NPC":
-                BoostStrength = 3;
-                break;
-        }
-
     }
 
     // Start is called before the first frame update
@@ -160,7 +162,6 @@ public class CrabLeg : MonoBehaviour
             else if (BoostStrength == 1) boostforce = 4748f; // Increases the force if the leg is boosted
             else if (BoostStrength == 2) boostforce = 6233f; // Increases it more for bigger boost
             else if (BoostStrength == 3) boostforce = 3508f; // Increase it less for riding despawnables
-            else if (BoostStrength == -1) boostforce = 111.1f; // Decrease it for being GUllcrab
             moveforce = Mathf.Clamp(-controls.Crab.LeftLeg.ReadValue<float>(), -1, 1) * Time.deltaTime * boostforce * StrengthStrength;
             if (IsInGoo) moveforce /= 2;
             rb2d.AddTorque(moveforce, ForceMode2D.Impulse);
@@ -173,7 +174,6 @@ public class CrabLeg : MonoBehaviour
             else if (BoostStrength == 1) boostforce = 4748f;  // Increases the force if the leg is boosted
             else if (BoostStrength == 2) boostforce = 6233f; // Increases it more for bigger boost
             else if (BoostStrength == 3) boostforce = 3508f; // Increase it less for riding despawnables
-            else if (BoostStrength == -1) boostforce = 111.1f; // Decrease it for being GUllcrab
             moveforce = Mathf.Clamp(-controls.Crab.RightLeg.ReadValue<float>(), -1, 1) * Time.deltaTime * boostforce * StrengthStrength;
             if (IsInGoo) moveforce /= 2;
             rb2d.AddTorque(moveforce, ForceMode2D.Impulse);

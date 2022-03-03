@@ -23366,6 +23366,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863724709990562, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Powermulti
+      value: 1.25
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863724709990584, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_Density

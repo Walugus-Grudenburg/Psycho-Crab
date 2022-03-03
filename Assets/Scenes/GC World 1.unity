@@ -271,7 +271,7 @@ PrefabInstance:
     - target: {fileID: 3369863724973102357, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: BoostStrength
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3369863724973102357, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -282,6 +282,11 @@ PrefabInstance:
         type: 3}
       propertyPath: IgnoreSticking
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724973102357, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: StrengthStrength
+      value: 0.66
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725014538190, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -411,7 +416,7 @@ PrefabInstance:
     - target: {fileID: 3369863725711533626, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: BoostStrength
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725711533626, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -422,6 +427,11 @@ PrefabInstance:
         type: 3}
       propertyPath: IgnoreSticking
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725711533626, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: StrengthStrength
+      value: 0.66
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725772252426, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}

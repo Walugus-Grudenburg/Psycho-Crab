@@ -20,9 +20,4 @@ public class MusicScript : MonoBehaviour
     {
         music.enabled = MusicEnabled;
     }
-
-    public void ToggleMusic()
-    {
-        MusicEnabled = !MusicEnabled;
-    }
 }
