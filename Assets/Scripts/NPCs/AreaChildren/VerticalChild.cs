@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class VerticalChild : MonoBehaviour
 {
+    public bool DisableRandomSpeed;
     public float Speed;
     public float SpeedMulti;
     private Rigidbody2D rb;
@@ -11,7 +12,10 @@ public class VerticalChild : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        Speed = Random.Range(7f * SpeedMulti, 14f * SpeedMulti);
+        if (!DisableRandomSpeed)
+        {
+            Speed = Random.Range(7f * SpeedMulti, 14f * SpeedMulti);
+        }
     }
 
     // Update is called once per frames

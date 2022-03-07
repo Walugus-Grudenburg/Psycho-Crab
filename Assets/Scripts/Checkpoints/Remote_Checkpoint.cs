@@ -24,7 +24,7 @@ public class Remote_Checkpoint : MonoBehaviour
         {
             ProgressHandler.Checkpoint_Position = Destination.gameObject.transform.position;
             ProgressHandler.SaveProgressData();
-            CrabToWarp.Reset();
+            CrabToWarp.Reset(true);
         }
     }
 }

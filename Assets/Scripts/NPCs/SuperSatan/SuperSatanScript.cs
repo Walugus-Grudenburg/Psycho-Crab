@@ -6,7 +6,9 @@ public class SuperSatanScript : MonoBehaviour
 {
     public static int BossStage;
     public bool FightStarted;
+    bool ParasolsDone;
     public float FlightAmount;
+    public int ForceStage;
     public SpookyJump Spooky;
     public ProgressHandler progress;
     public CrabLeg[] Legs;
@@ -16,6 +18,7 @@ public class SuperSatanScript : MonoBehaviour
     public GameObject[] Anvils2;
     public GameObject[] Anvils3;
     public GameObject[] Seagulls;
+    public GameObject[] Parasols;
     public GameObject[] Waypoints;
     public GameObject[] Arenas;
     public GameObject Swing1;
@@ -33,7 +36,12 @@ public class SuperSatanScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (ForceStage > 0)
+        {
+            BossStage = ForceStage;
+            ProgressHandler.SetBossStage(ForceStage);
+            ForceStage = 0;
+        }
     }
 
     void StartFight()
@@ -120,6 +128,14 @@ public class SuperSatanScript : MonoBehaviour
             BossStage = 2;
             ProgressHandler.SetBossStage(2);
         }
+        if (BossStage < 3)
+        {
+            StartCoroutine("ParasolAttack");
+            while (!ParasolsDone)
+            {
+                yield return new WaitForSeconds(1f);
+            }
+        }
     }
 
     public void MoveBattle(int crabindex, int bossindex, int cameraindex, float zoom)
@@ -164,5 +180,20 @@ public class SuperSatanScript : MonoBehaviour
             yield return new WaitForSeconds(0.3f);
             seagull.SetActive(true);
         }
+    }
+
+    IEnumerator ParasolAttack()
+    {
+        Parasols[0].SetActive(true);
+        yield return new WaitForSeconds(4f);
+        Parasols[1].SetActive(true);
+        Parasols[2].SetActive(true);
+        yield return new WaitForSeconds(4f);
+        for (int i = 0; i < 30; i++)
+        {
+            Parasols[Random.Range(3, 6)].SetActive(true);
+            yield return new WaitForSeconds(2.6f - i * 0.085f);
+        }
+        ParasolsDone = true;
     }
 }
