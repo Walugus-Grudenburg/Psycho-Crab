@@ -13,6 +13,7 @@ public class SuperSatanScript : MonoBehaviour
     public ProgressHandler progress;
     public CrabLeg[] Legs;
     public GameObject[] ObjectsToActivate;
+    public GameObject[] Wings;
     public GameObject[] ObjectsToDestroy;
     public GameObject[] Anvils;
     public GameObject[] Anvils2;
@@ -21,6 +22,8 @@ public class SuperSatanScript : MonoBehaviour
     public GameObject[] Parasols;
     public GameObject[] Waypoints;
     public GameObject[] Arenas;
+    public GameObject[] Swans;
+    public GameObject[] Swans2;
     public GameObject Swing1;
     public GameObject BCP;
     public Follow_Position Camera;
@@ -135,6 +138,31 @@ public class SuperSatanScript : MonoBehaviour
             {
                 yield return new WaitForSeconds(1f);
             }
+            BossStage = 3;
+            ProgressHandler.SetBossStage(3);
+        }
+        if (BossStage < 4)
+        {
+            Spooky.ShutDown();
+            foreach  (GameObject wing in Wings)
+            {
+                wing.SetActive(false);
+            }
+            MoveBattle(3, 4, 5, 60f);
+            Arenas[1].SetActive(true);
+            StartCoroutine("ReleaseSwans");
+            yield return new WaitForSeconds(30f);
+            foreach (GameObject swan in Swans)
+            {
+                swan.SetActive(false);
+            }
+            yield return new WaitForSeconds(2f);
+            StartCoroutine("ReleaseSwans2");
+            yield return new WaitForSeconds(20f);
+            foreach (GameObject swan in Swans2)
+            {
+                swan.SetActive(false);
+            }
         }
     }
 
@@ -143,6 +171,7 @@ public class SuperSatanScript : MonoBehaviour
         progress.Teleport(Waypoints[crabindex].transform.position);
         gameObject.transform.position = Waypoints[bossindex].transform.position;
         BCP.transform.position = Waypoints[cameraindex].transform.position;
+        BCP.transform.parent = Waypoints[cameraindex].transform.parent;
         ZoomFixer.CamZoom = zoom;
     }
 
@@ -194,6 +223,23 @@ public class SuperSatanScript : MonoBehaviour
             Parasols[Random.Range(3, 6)].SetActive(true);
             yield return new WaitForSeconds(2.6f - i * 0.085f);
         }
-        ParasolsDone = true;
+    }
+
+    IEnumerator ReleaseSwans()
+    {
+        foreach (GameObject swan in Swans)
+        {
+            yield return new WaitForSeconds(0.1f);
+            swan.SetActive(true);
+        }
+    }
+
+    IEnumerator ReleaseSwans2()
+    {
+        foreach (GameObject swan in Swans2)
+        {
+            yield return new WaitForSeconds(0.1f);
+            swan.SetActive(true);
+        }
     }
 }

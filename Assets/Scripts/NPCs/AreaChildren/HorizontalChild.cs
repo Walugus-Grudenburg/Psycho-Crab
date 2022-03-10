@@ -5,13 +5,15 @@ using UnityEngine;
 public class HorizontalChild : MonoBehaviour
 {
     public bool IsFacingLeft;
+    public bool DontDestroyOnContact;
+    public bool FixedSpeed;
     public float Speed;
     private Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        Speed = Random.Range(10f, 20f);
+        if (FixedSpeed) Speed = Random.Range(10f, 20f);
         if (IsFacingLeft) Speed *= -1;
     }
 
@@ -30,7 +32,7 @@ public class HorizontalChild : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!collision.gameObject.CompareTag("Ungrabbable") && !collision.gameObject.CompareTag("Player") & !collision.gameObject.CompareTag("Cutscene NPC"))
+        if (!collision.gameObject.CompareTag("Ungrabbable") && !collision.gameObject.CompareTag("Player") & !collision.gameObject.CompareTag("Cutscene NPC") && !DontDestroyOnContact)
         {
             Destroy(gameObject);
         }

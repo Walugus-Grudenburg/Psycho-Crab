@@ -23,14 +23,7 @@ public class SpookyJump : MonoBehaviour
     {
         if (ProgressHandler.controls.Crab.Jump.triggered && Active & Charged > 0)
         {
-            foreach (Rigidbody2D part in JumpParts)
-            {
-                part.AddForce(gameObject.transform.up * Powermulti * 5000f * (0.9f + (Charged * (0.2f * Mathf.Clamp(((Charged - 5) * 0.15f), 1, 9999999)))));
-            }
-            Cam.orthographicSize -= 2f * Charged;
-            Charged = 0;
-            StopAllCoroutines();
-            StartCoroutine(RechargeAfterTime(4.3f - ChargeMulti * 1.3f));
+            Jump();
         }
         else if (Recharge && Charged == 0)
         {
@@ -38,17 +31,38 @@ public class SpookyJump : MonoBehaviour
             StartCoroutine(RechargeAfterTime(1 / ChargeMulti));
         }
 
-        IEnumerator RechargeAfterTime(float time)
+    }
+
+    public void Jump()
+    {
+        foreach (Rigidbody2D part in JumpParts)
         {
-            yield return new WaitForSeconds(time);
-            Charged += 1;
-            Cam.orthographicSize += 2f;
-            ChargedSound.pitch = 2f + (Charged * 0.25f);
-            ChargedSound.Play();
-            if (Charged < 5 * ChargeMulti)
-            {
-                StartCoroutine(RechargeAfterTime((1 + Charged / ChargeMulti) / ChargeMulti));
-            }
+            part.AddForce(gameObject.transform.up * Powermulti * 5000f * (0.9f + (Charged * (0.2f * Mathf.Clamp(((Charged - 5) * 0.15f), 1, 9999999)))));
+        }
+        Cam.orthographicSize -= 2f * Charged;
+        Charged = 0;
+        StopAllCoroutines();
+        StartCoroutine(RechargeAfterTime(4.3f - ChargeMulti * 1.3f));
+    }
+
+    public void ShutDown()
+    {
+        Jump();
+        StopAllCoroutines();
+        Recharge = false;
+        Active = false;
+    }
+
+    IEnumerator RechargeAfterTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Charged += 1;
+        Cam.orthographicSize += 2f;
+        ChargedSound.pitch = 2f + (Charged * 0.25f);
+        ChargedSound.Play();
+        if (Charged < 5 * ChargeMulti)
+        {
+            StartCoroutine(RechargeAfterTime((1 + Charged / ChargeMulti) / ChargeMulti));
         }
     }
 }
