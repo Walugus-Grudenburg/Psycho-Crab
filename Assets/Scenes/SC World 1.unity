@@ -2563,7 +2563,7 @@ GameObject:
   - component: {fileID: 98505971}
   m_Layer: 0
   m_Name: Piano
-  m_TagString: Boss Attack
+  m_TagString: Area Child
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8188,7 +8188,7 @@ GameObject:
   - component: {fileID: 403588944}
   m_Layer: 0
   m_Name: Piano (1)
-  m_TagString: Boss Attack
+  m_TagString: Area Child
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13770,9 +13770,10 @@ MonoBehaviour:
   Legs:
   - {fileID: 2136318124}
   - {fileID: 1832823485}
-  TiredColor1: {r: 1, g: 0.15566039, b: 0.15566039, a: 0.7058824}
-  TiredColor2: {r: 1, g: 0.27450982, b: 0.27450982, a: 0.78431374}
-  TiredColor3: {r: 1, g: 0.39215687, b: 0.39215687, a: 0.8627451}
+  TiredColor1: {r: 1, g: 0.23529412, b: 0.23529412, a: 0.7058824}
+  TiredColor2: {r: 1, g: 0.43137255, b: 0.43137255, a: 0.78431374}
+  TiredColor3: {r: 1, g: 0.5882353, b: 0.5882353, a: 0.8627451}
+  TiredColor4: {r: 1, g: 0.78431374, b: 0.78431374, a: 0.9411765}
   ObjectsToActivate:
   - {fileID: 528421316}
   - {fileID: 377503292}
@@ -13937,8 +13938,18 @@ MonoBehaviour:
   Pianos2:
   - {fileID: 98505969}
   - {fileID: 403588942}
+  FallingBodies:
+  - {fileID: 2956654831384998621, guid: e00137a43a1008e478d452dee3e085e2, type: 3}
+  - {fileID: 1493429148707079609, guid: b4c229aa9aefc9d4cbe52e22d2b8a617, type: 3}
+  - {fileID: 3111895485483613829, guid: d26aef49c4daa5044905d95ace076a2a, type: 3}
+  - {fileID: 4838507256625443846, guid: 289c7b4f56e7d5e49b9f577b41a10be3, type: 3}
+  - {fileID: 3430259443641739368, guid: a489663b527103a46a914dbfdcb2f593, type: 3}
+  - {fileID: 8269607511982525680, guid: 3dd2ab2097146eb4483e39272e257629, type: 3}
+  - {fileID: 3852500132552382980, guid: 32034a19e5f54cf439ddef375f46b610, type: 3}
+  - {fileID: 5642908228813773401, guid: c1c3ce31e81e36e418b32ae7e64aa824, type: 3}
   Swing1: {fileID: 33625131}
   BCP: {fileID: 1332483894}
+  FallingAttack: {fileID: 1908232131}
   sprite: {fileID: 1592465050}
   Camera: {fileID: 1506982656}
   ZoomFixer: {fileID: 1506982657}
@@ -30433,7 +30444,7 @@ GameObject:
   - component: {fileID: 1908232132}
   - component: {fileID: 1908232131}
   m_Layer: 0
-  m_Name: Rockfall Controller (2)
+  m_Name: Falling Attack
   m_TagString: Area Parent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

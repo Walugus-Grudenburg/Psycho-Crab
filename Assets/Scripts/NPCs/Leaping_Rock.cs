@@ -22,7 +22,7 @@ public class Leaping_Rock : MonoBehaviour
 
     void Jump()
     {
-        if (Vector2.Distance(Player.transform.position, gameObject.transform.position) <= DeactivateDistance)
+        if (!Player || Vector2.Distance(Player.transform.position, gameObject.transform.position) <= DeactivateDistance)
         {
             gameObject.GetComponent<Rigidbody2D>().velocity = (Vector2.up * JumpForce);
         }

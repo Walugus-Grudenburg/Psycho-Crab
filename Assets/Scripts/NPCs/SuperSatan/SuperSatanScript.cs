@@ -15,6 +15,7 @@ public class SuperSatanScript : MonoBehaviour
     public Color TiredColor1;
     public Color TiredColor2;
     public Color TiredColor3;
+    public Color TiredColor4;
     public GameObject[] ObjectsToActivate;
     public GameObject[] Wings;
     public GameObject[] ObjectsToDestroy;
@@ -31,8 +32,10 @@ public class SuperSatanScript : MonoBehaviour
     public GameObject[] Coral;
     public GameObject[] Pianos;
     public GameObject[] Pianos2;
+    public GameObject[] FallingBodies;
     public GameObject Swing1;
     public GameObject BCP;
+    public AreaParent FallingAttack;
     public SpriteRenderer sprite;
     public Follow_Position Camera;
     public CameraZoomFixer ZoomFixer;
@@ -242,7 +245,7 @@ public class SuperSatanScript : MonoBehaviour
             yield return new WaitForSeconds(1f);
             MoveBattle(12, 13, 14, 60f);
             Arenas[4].SetActive(true);
-            yield return new WaitForSeconds(5f);
+          //  yield return new WaitForSeconds(5f);
             Spooky.Active = true;
             Spooky.Recharge = true;
             Spooky.ChargeMulti = 2.66f;
@@ -251,10 +254,25 @@ public class SuperSatanScript : MonoBehaviour
                 wing.SetActive(true);
                 wing.transform.localScale *= 0.75f;
             }
-            yield return new WaitForSeconds(26f);
-            StartCoroutine("Pianos2Attack");
-            yield return new WaitForSeconds(22f);
+          //  yield return new WaitForSeconds(26f);
+           // StartCoroutine("Pianos2Attack");
+           // yield return new WaitForSeconds(22f);
             sprite.color = TiredColor3;
+            yield return new WaitForSeconds(1.5f);
+            FallingAttack.ObjectToSpawn = FallingBodies;
+            yield return new WaitForSeconds(5f);
+            Spooky.ChargeMulti = 3.33f;
+            foreach (GameObject wing in Wings)
+            {
+                wing.SetActive(true);
+                wing.transform.localScale *= 0.90f;
+            }
+            yield return new WaitForSeconds(16.5f);
+            StartCoroutine("Pianos2Attack");
+            yield return new WaitForSeconds(22.5f);
+            StartCoroutine("Pianos2Attack");
+            yield return new WaitForSeconds(22.5f);
+            sprite.color = TiredColor4;
         }
     }
 
