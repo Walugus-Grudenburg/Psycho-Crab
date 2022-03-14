@@ -5,6 +5,7 @@ using UnityEngine;
 public class RushdownNPC : MonoBehaviour
 {
     private Vector2 Direction;
+    public bool TurnOnly;
     public float Speed;
     public float ShoveTime;
     public GameObject Target;
@@ -29,7 +30,7 @@ public class RushdownNPC : MonoBehaviour
     void FixedUpdate()
     {
         Direction = (Target.transform.position - transform.position).normalized;
-        RigidBody.MovePosition(RigidBody.position + (new Vector2(Direction.x, Direction.y) * Speed * Time.fixedDeltaTime));
+        if (!TurnOnly) RigidBody.MovePosition(RigidBody.position + (new Vector2(Direction.x, Direction.y) * Speed * Time.fixedDeltaTime));
         transform.rotation = Quaternion.LookRotation(Direction) * Quaternion.Euler(0,90,0);
     }
 

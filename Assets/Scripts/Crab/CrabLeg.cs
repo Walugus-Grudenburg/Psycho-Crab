@@ -10,6 +10,7 @@ public class CrabLeg : MonoBehaviour
     Rigidbody2D rb2d;
     public AudioSource sticksound;
     public AudioSource wetsound;
+    private Controls controls;
     public bool IgnoreSticking;
     bool IsSticking;
     bool IsUnstickReady;
@@ -19,7 +20,7 @@ public class CrabLeg : MonoBehaviour
     private bool IsWaitingToStick;
     private bool IsWaitingToUnStick;
     private bool IsInGoo;
-    private bool RigidConnection;
+    private bool NotLimb;
 
     IEnumerator StickAfterTime(float time) // Allows unsticking after a time in seconds
     {
@@ -111,15 +112,15 @@ public class CrabLeg : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        controls = ProgressHandler.controls;
         moveforce = 1;
         IsWaitingToStick = false;
         rb2d = GetComponent<Rigidbody2D>();
     }
 
-
     void Update()
     {
-        Controls controls = ProgressHandler.controls;
+
         if (!IgnoreSticking)
         {
             if (((controls.Crab.ClickLeft.triggered && IsLeftLeg) || (controls.Crab.ClickRight.triggered && IsLeftLeg == false)) & IsUnstickReady) // Checks if stick is pressed
@@ -129,19 +130,19 @@ public class CrabLeg : MonoBehaviour
 
             foreach (HingeJoint2D hinge in GetComponents<HingeJoint2D>())
             {
-                if (RigidConnection && !hinge.connectedBody)
+                if (hinge.connectedBody)
+                {
+                    if (!hinge.connectedBody.CompareTag("Player")) NotLimb = true;
+                }
+                else if (!hinge.connectedBody)
+                {
+                    NotLimb = false;
+                }
+                if (NotLimb && (!hinge.connectedBody || !hinge.connectedBody.gameObject.activeInHierarchy))
                 {
                     Unstick(null);
                 }
 
-                if (hinge.connectedBody)
-                {
-                    if (!hinge.connectedBody.CompareTag("Player")) RigidConnection = true;
-                }
-                else if (!hinge.connectedBody)
-                {
-                    RigidConnection = false;
-                }
             }
             if ((BoostStrength != 0) && (!stickjoint || !IsSticking || gameObject.GetComponents<HingeJoint2D>().Length < 2))
             {
@@ -183,19 +184,20 @@ public class CrabLeg : MonoBehaviour
     // OnCollisionStay is called once per frame while objects are colliding
     void OnCollisionStay2D(Collision2D collision)
     {
+        Collision2D col = collision;
         Controls controls = ProgressHandler.controls;
         if (!IsSticking && !IgnoreSticking)
         {
             if ((Mathf.Approximately(controls.Crab.ClickLeft.ReadValue<float>(), 1) & IsLeftLeg) || (Mathf.Approximately(controls.Crab.ClickRight.ReadValue<float>(), 1) & IsLeftLeg == false)) // Checks if stick is pressed
             {
-                if (!collision.gameObject.CompareTag("Player") && !collision.gameObject.CompareTag("Ungrabbable")) // Checks that the object isn't a player
+                if (!col.gameObject.CompareTag("Player") && !col.gameObject.CompareTag("Ungrabbable")) // Checks that the object isn't a player
                 {
-                    Stick(collision, sticksound);
+                    Stick(col, sticksound);
                 }
             }
-            if (IsInGoo & !collision.gameObject.CompareTag("Player") && !collision.gameObject.CompareTag("Ungrabbable") && !IsSticking)
+            if (IsInGoo & !col.gameObject.CompareTag("Player") && !col.gameObject.CompareTag("Ungrabbable") && !IsSticking)
             {
-                Stick(collision, sticksound, 0.5f);
+                Stick(col, sticksound, 0.5f);
                 wetsound.pitch = 0.05f;
                 wetsound.Play();
             }

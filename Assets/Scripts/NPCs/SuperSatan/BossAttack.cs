@@ -6,6 +6,7 @@ public class BossAttack : MonoBehaviour
 {
     Vector3 ReturnPosition;
     Quaternion ReturnRotation;
+    public bool StayEnabled;
     public bool UsePos;
     public bool UseRot;
     public bool ReturnOnCollision;
@@ -28,7 +29,7 @@ public class BossAttack : MonoBehaviour
     {
         if (UsePos) gameObject.transform.position = ReturnPosition;
         if (UseRot) gameObject.transform.rotation = ReturnRotation;
-        gameObject.SetActive(false);
+        if (!StayEnabled) gameObject.SetActive(false);
     }
     
     private void OnCollisionEnter2D(Collision2D collision)

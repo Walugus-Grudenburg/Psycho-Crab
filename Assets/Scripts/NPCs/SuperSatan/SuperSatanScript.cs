@@ -12,6 +12,9 @@ public class SuperSatanScript : MonoBehaviour
     public SpookyJump Spooky;
     public ProgressHandler progress;
     public CrabLeg[] Legs;
+    public Color TiredColor1;
+    public Color TiredColor2;
+    public Color TiredColor3;
     public GameObject[] ObjectsToActivate;
     public GameObject[] Wings;
     public GameObject[] ObjectsToDestroy;
@@ -19,13 +22,18 @@ public class SuperSatanScript : MonoBehaviour
     public GameObject[] Anvils2;
     public GameObject[] Anvils3;
     public GameObject[] Seagulls;
+    public GameObject[] Seagulls2;
     public GameObject[] Parasols;
     public GameObject[] Waypoints;
     public GameObject[] Arenas;
     public GameObject[] Swans;
     public GameObject[] Swans2;
+    public GameObject[] Coral;
+    public GameObject[] Pianos;
+    public GameObject[] Pianos2;
     public GameObject Swing1;
     public GameObject BCP;
+    public SpriteRenderer sprite;
     public Follow_Position Camera;
     public CameraZoomFixer ZoomFixer;
 
@@ -133,18 +141,19 @@ public class SuperSatanScript : MonoBehaviour
         }
         if (BossStage < 3)
         {
-            StartCoroutine("ParasolAttack");
+            StartCoroutine("ParasolAttack", 30f);
             while (!ParasolsDone)
             {
                 yield return new WaitForSeconds(1f);
             }
+            ParasolsDone = false;
             BossStage = 3;
             ProgressHandler.SetBossStage(3);
         }
         if (BossStage < 4)
         {
             Spooky.ShutDown();
-            foreach  (GameObject wing in Wings)
+            foreach (GameObject wing in Wings)
             {
                 wing.SetActive(false);
             }
@@ -158,11 +167,94 @@ public class SuperSatanScript : MonoBehaviour
             }
             yield return new WaitForSeconds(2f);
             StartCoroutine("ReleaseSwans2");
-            yield return new WaitForSeconds(20f);
+            yield return new WaitForSeconds(46f);
             foreach (GameObject swan in Swans2)
             {
                 swan.SetActive(false);
             }
+            Arenas[1].SetActive(false);
+            MoveBattle(6, 7, 8, 60f);
+            Arenas[2].SetActive(true);
+            foreach (GameObject coral in Coral)
+            {
+                coral.SetActive(true);
+            }
+            yield return new WaitForSeconds(45f);
+            foreach (GameObject coral in Coral)
+            {
+                coral.SetActive(false);
+            }
+            sprite.color = TiredColor1;
+            yield return new WaitForSeconds(0.5f);
+            Spooky.Active = true;
+            Spooky.Recharge = true;
+            Spooky.ChargeMulti = FlightAmount;
+            foreach (GameObject wing in Wings)
+            {
+                wing.SetActive(true);
+            }
+            MoveBattle(0, 1, 2, 60f);
+            Arenas[0].SetActive(true);
+            yield return new WaitForSeconds(0.5f);
+            StartCoroutine("ParasolAttack", 2f);
+            while (!ParasolsDone)
+            {
+                yield return new WaitForSeconds(1f);
+            }
+            BossStage = 4;
+            ProgressHandler.SetBossStage(4);
+            yield return new WaitForSeconds(0.5f);
+            progress.Reset();
+        }
+        sprite.color = TiredColor1;
+        if (BossStage < 5)
+        {
+            StartCoroutine("SeagullAttack2");
+            yield return new WaitForSeconds(32.5f);
+            foreach (GameObject piano in Pianos)
+            {
+                piano.SetActive(true);
+            }
+            yield return new WaitForSeconds(9.5f);
+            Spooky.ShutDown();
+            foreach (GameObject wing in Wings)
+            {
+                wing.SetActive(false);
+            }
+            yield return new WaitForSeconds(0.5f);
+            MoveBattle(9, 10, 11, 80f);
+            Arenas[3].SetActive(true);
+            yield return new WaitForSeconds(8f);
+            Arenas[3].SetActive(false);
+            yield return new WaitForSeconds(0.5f);
+            sprite.color = TiredColor2;
+            BossStage = 5;
+            ProgressHandler.SetBossStage(5);
+        }
+        if (BossStage < 6)
+        {
+            sprite.color = TiredColor2;
+            Spooky.ShutDown();
+            foreach (GameObject wing in Wings)
+            {
+                wing.SetActive(false);
+            }
+            yield return new WaitForSeconds(1f);
+            MoveBattle(12, 13, 14, 60f);
+            Arenas[4].SetActive(true);
+            yield return new WaitForSeconds(5f);
+            Spooky.Active = true;
+            Spooky.Recharge = true;
+            Spooky.ChargeMulti = 2.66f;
+            foreach (GameObject wing in Wings)
+            {
+                wing.SetActive(true);
+                wing.transform.localScale *= 0.75f;
+            }
+            yield return new WaitForSeconds(26f);
+            StartCoroutine("Pianos2Attack");
+            yield return new WaitForSeconds(22f);
+            sprite.color = TiredColor3;
         }
     }
 
@@ -211,14 +303,32 @@ public class SuperSatanScript : MonoBehaviour
         }
     }
 
-    IEnumerator ParasolAttack()
+    IEnumerator SeagullAttack2()
+    {
+        foreach (GameObject seagull in Seagulls2)
+        {
+            yield return new WaitForSeconds(0.5f);
+            seagull.SetActive(true);
+        }
+    }
+
+    IEnumerator Pianos2Attack()
+    {
+        foreach (GameObject piano in Pianos2)
+        {
+            piano.SetActive(true);
+            yield return new WaitForSeconds(11f);
+        }
+    }
+
+    IEnumerator ParasolAttack(float repeattimes)
     {
         Parasols[0].SetActive(true);
         yield return new WaitForSeconds(4f);
         Parasols[1].SetActive(true);
         Parasols[2].SetActive(true);
         yield return new WaitForSeconds(4f);
-        for (int i = 0; i < 30; i++)
+        for (int i = 0; i < repeattimes; i++)
         {
             Parasols[Random.Range(3, 6)].SetActive(true);
             yield return new WaitForSeconds(2.6f - i * 0.085f);
