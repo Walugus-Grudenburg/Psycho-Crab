@@ -13,7 +13,7 @@ public class HorizontalChild : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        if (FixedSpeed) Speed = Random.Range(10f, 20f);
+        if (!FixedSpeed) Speed = Random.Range(10f, 20f);
         if (IsFacingLeft) Speed *= -1;
     }
 
