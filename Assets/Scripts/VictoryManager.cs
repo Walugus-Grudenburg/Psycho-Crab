@@ -27,8 +27,14 @@ public class VictoryManager : MonoBehaviour
         
     }
 
-    IEnumerator Victory()
+    public void Win(float time = 0f)
     {
+        StartCoroutine("Victory", 5f);
+    }
+
+    IEnumerator Victory(float time = 0f)
+    {
+        yield return new WaitForSeconds(time);
         if (IsProcessingVictory) yield return null;
         IsProcessingVictory = true;
         Destroy(Satan);

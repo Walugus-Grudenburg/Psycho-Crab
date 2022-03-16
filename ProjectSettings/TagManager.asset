@@ -15,6 +15,7 @@ TagManager:
   - Camera Zoom
   - Ungrabbable
   - Boss Attack
+  - Death Lava
   layers:
   - Default
   - TransparentFX

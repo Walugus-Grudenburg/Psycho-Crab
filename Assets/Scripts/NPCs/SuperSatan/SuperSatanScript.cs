@@ -6,6 +6,7 @@ public class SuperSatanScript : MonoBehaviour
 {
     public static int BossStage;
     public bool FightStarted;
+    public bool IsMortal;
     bool ParasolsDone;
     public float FlightAmount;
     public int ForceStage;
@@ -16,6 +17,7 @@ public class SuperSatanScript : MonoBehaviour
     public Color TiredColor2;
     public Color TiredColor3;
     public Color TiredColor4;
+    public VictoryManager Victory;
     public GameObject[] ObjectsToActivate;
     public GameObject[] Wings;
     public GameObject[] ObjectsToDestroy;
@@ -33,8 +35,12 @@ public class SuperSatanScript : MonoBehaviour
     public GameObject[] Pianos;
     public GameObject[] Pianos2;
     public GameObject[] FallingBodies;
+    public GameObject[] FallingBodiesWithSeagulls;
     public GameObject Swing1;
     public GameObject BCP;
+    public GameObject DeathLava;
+    public GameObject chicken;
+    public AudioSource EvilLaugh;
     public AreaParent FallingAttack;
     public SpriteRenderer sprite;
     public Follow_Position Camera;
@@ -77,10 +83,17 @@ public class SuperSatanScript : MonoBehaviour
         Spooky.Recharge = true;
         Spooky.ChargeMulti = FlightAmount;
         progress.IgnoreControls = true;
-        ProgressHandler.DeTermination = false;
-        SatanScript.HasChaseStarted = true;
-        Camera.ObjectToFollow = BCP;
         ZoomFixer.enabled = true;
+        if (BossStage < 6)
+        {
+            ProgressHandler.DeTermination = false;
+            Camera.ObjectToFollow = BCP;
+        }
+        else
+        {
+            ZoomFixer.CamZoom = 100f;
+        }
+        SatanScript.HasChaseStarted = true;
         StartCoroutine("BossFight");
     }
 
@@ -198,7 +211,7 @@ public class SuperSatanScript : MonoBehaviour
             }
             MoveBattle(0, 1, 2, 60f);
             Arenas[0].SetActive(true);
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(3.5f);
             StartCoroutine("ParasolAttack", 2f);
             while (!ParasolsDone)
             {
@@ -207,7 +220,7 @@ public class SuperSatanScript : MonoBehaviour
             BossStage = 4;
             ProgressHandler.SetBossStage(4);
             yield return new WaitForSeconds(0.5f);
-            progress.Reset();
+            progress.Reset(true);
         }
         sprite.color = TiredColor1;
         if (BossStage < 5)
@@ -245,7 +258,7 @@ public class SuperSatanScript : MonoBehaviour
             yield return new WaitForSeconds(1f);
             MoveBattle(12, 13, 14, 60f);
             Arenas[4].SetActive(true);
-          //  yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(5f);
             Spooky.Active = true;
             Spooky.Recharge = true;
             Spooky.ChargeMulti = 2.66f;
@@ -254,26 +267,58 @@ public class SuperSatanScript : MonoBehaviour
                 wing.SetActive(true);
                 wing.transform.localScale *= 0.75f;
             }
-          //  yield return new WaitForSeconds(26f);
-           // StartCoroutine("Pianos2Attack");
-           // yield return new WaitForSeconds(22f);
+            yield return new WaitForSeconds(26f);
+            StartCoroutine("Pianos2Attack");
+            yield return new WaitForSeconds(22f);
+            yield return new WaitForSeconds(12f);
             sprite.color = TiredColor3;
             yield return new WaitForSeconds(1.5f);
+            StartCoroutine("DestroyFallingAttackChildren");
             FallingAttack.ObjectToSpawn = FallingBodies;
-            yield return new WaitForSeconds(5f);
-            Spooky.ChargeMulti = 3.33f;
+            yield return new WaitForSeconds(3f);
+            Spooky.ChargeMulti = 4f;
             foreach (GameObject wing in Wings)
             {
-                wing.SetActive(true);
-                wing.transform.localScale *= 0.90f;
+                wing.transform.localScale *= 1.50f;
             }
-            yield return new WaitForSeconds(16.5f);
+            yield return new WaitForSeconds(18.5f);
             StartCoroutine("Pianos2Attack");
             yield return new WaitForSeconds(22.5f);
             StartCoroutine("Pianos2Attack");
             yield return new WaitForSeconds(22.5f);
             sprite.color = TiredColor4;
+            FallingAttack.ObjectToSpawn = FallingBodiesWithSeagulls;
+            while (SeagullCounter.Count < 24)
+            {
+                yield return new WaitForSeconds(1f);
+            }
+            sprite.color = Color.white;
+            yield return new WaitForSeconds(2f);
+            EvilLaugh.Play();
+            yield return new WaitForSeconds(2f);
+            BossStage = 6;
+            ProgressHandler.SetBossStage(6);
+            Spooky.ShutDown();
+            foreach (GameObject wing in Wings)
+            {
+                wing.SetActive(false);
+            }
         }
+        gameObject.GetComponent<CircleCollider2D>().enabled = false;
+        Waypoints[15].transform.position = new Vector3(Waypoints[15].transform.position.x, Waypoints[15].transform.position.y + 50f, Waypoints[15].transform.position.z);
+        MoveBattle(15, 16, 17, 100f);
+        IsMortal = true;
+        EvilLaugh.Play();
+        sprite.color = Color.white;
+        DeathLava.SetActive(true);
+        foreach (Object obj in ObjectsToActivate)
+        {
+            Destroy(obj);
+        }
+        gameObject.GetComponent<RushdownNPC>().enabled = false;
+        gameObject.GetComponent<PolygonCollider2D>().enabled = true;
+        Rigidbody2D RB = gameObject.GetComponent<Rigidbody2D>();
+        RB.isKinematic = false;
     }
 
     public void MoveBattle(int crabindex, int bossindex, int cameraindex, float zoom)
@@ -283,6 +328,25 @@ public class SuperSatanScript : MonoBehaviour
         BCP.transform.position = Waypoints[cameraindex].transform.position;
         BCP.transform.parent = Waypoints[cameraindex].transform.parent;
         ZoomFixer.CamZoom = zoom;
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Death Lava"))
+        {
+            Victory.Win(5f);
+            Destroy(sprite);
+            chicken.SetActive(true);
+        }
+    }
+
+    IEnumerator DestroyFallingAttackChildren()
+    {
+        foreach (Transform child in FallingAttack.transform)
+        {
+            Destroy(child.gameObject);
+            yield return new WaitForSeconds (1f);
+        }
     }
 
     IEnumerator AnvilAttack()
@@ -351,6 +415,7 @@ public class SuperSatanScript : MonoBehaviour
             Parasols[Random.Range(3, 6)].SetActive(true);
             yield return new WaitForSeconds(2.6f - i * 0.085f);
         }
+        ParasolsDone = true;
     }
 
     IEnumerator ReleaseSwans()

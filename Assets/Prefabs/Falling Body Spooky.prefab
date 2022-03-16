@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f41cf30f44faaf44aee6ecfe3c24b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpForce: 60
-  JumpFrequency: 60
+  JumpForce: 20
+  JumpFrequency: 4
   Player: {fileID: 0}
   DeactivateDistance: 150
 --- !u!114 &2699069813308591466

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2424290472863867576}
   m_Layer: 3
   m_Name: Crab's Right Leg (2)
-  m_TagString: Area Child
+  m_TagString: Cutscene NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -377,7 +377,7 @@ GameObject:
   - component: {fileID: 4880425308000523312}
   m_Layer: 0
   m_Name: Hat
-  m_TagString: Area Child
+  m_TagString: Cutscene NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -460,7 +460,7 @@ GameObject:
   - component: {fileID: 7726390027202276086}
   m_Layer: 0
   m_Name: Golden Coin
-  m_TagString: Area Child
+  m_TagString: Cutscene NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -638,7 +638,7 @@ GameObject:
   - component: {fileID: 5642908226724615124}
   m_Layer: 0
   m_Name: Gull Wing (1)
-  m_TagString: Area Child
+  m_TagString: Cutscene NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -724,7 +724,7 @@ GameObject:
   - component: {fileID: 5642908226786990595}
   m_Layer: 6
   m_Name: Crab's Left Arm
-  m_TagString: Area Child
+  m_TagString: Cutscene NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -901,7 +901,7 @@ GameObject:
   - component: {fileID: 5642908226830073891}
   m_Layer: 0
   m_Name: Sushi Brick
-  m_TagString: Area Child
+  m_TagString: Cutscene NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -988,7 +988,7 @@ GameObject:
   - component: {fileID: 5642908227675892955}
   m_Layer: 3
   m_Name: Crab's Left Leg
-  m_TagString: Area Child
+  m_TagString: Cutscene NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1352,7 +1352,7 @@ GameObject:
   - component: {fileID: 5642908227736940522}
   m_Layer: 6
   m_Name: Crab's Right Arm
-  m_TagString: Area Child
+  m_TagString: Cutscene NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1529,7 +1529,7 @@ GameObject:
   - component: {fileID: 5642908228514077999}
   m_Layer: 0
   m_Name: Gull Wing
-  m_TagString: Area Child
+  m_TagString: Cutscene NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1616,7 +1616,7 @@ GameObject:
   - component: {fileID: 5642908228539752440}
   m_Layer: 3
   m_Name: Crab's Right Leg
-  m_TagString: Area Child
+  m_TagString: Cutscene NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1979,7 +1979,7 @@ GameObject:
   - component: {fileID: 5642908228579690487}
   m_Layer: 0
   m_Name: Golden Coin
-  m_TagString: Area Child
+  m_TagString: Cutscene NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2162,7 +2162,7 @@ GameObject:
   - component: {fileID: -2095772820606868672}
   m_Layer: 3
   m_Name: Falling Body
-  m_TagString: Area Child
+  m_TagString: Cutscene NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2450,7 +2450,7 @@ GameObject:
   - component: {fileID: 4157216703168527017}
   m_Layer: 3
   m_Name: Crab's Right Leg (1)
-  m_TagString: Area Child
+  m_TagString: Cutscene NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2811,7 +2811,7 @@ GameObject:
   - component: {fileID: 6057165385723804142}
   m_Layer: 0
   m_Name: Monocle
-  m_TagString: Area Child
+  m_TagString: Cutscene NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2898,7 +2898,7 @@ GameObject:
   - component: {fileID: 6956805879387118972}
   m_Layer: 3
   m_Name: Crab's Left Leg (2)
-  m_TagString: Area Child
+  m_TagString: Cutscene NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3263,7 +3263,7 @@ GameObject:
   - component: {fileID: 6956805880446854161}
   m_Layer: 3
   m_Name: Crab's Left Leg (1)
-  m_TagString: Area Child
+  m_TagString: Cutscene NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
