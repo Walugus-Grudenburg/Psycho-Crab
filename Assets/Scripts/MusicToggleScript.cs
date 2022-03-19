@@ -9,7 +9,9 @@ public class MusicToggleScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        bool MusicCache = MusicScript.MusicEnabled;
         toggle.isOn = MusicScript.MusicEnabled;
+        MusicScript.MusicEnabled = MusicCache;
     }
 
     // Update is called once per frame
