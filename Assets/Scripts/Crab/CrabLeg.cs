@@ -15,12 +15,13 @@ public class CrabLeg : MonoBehaviour
     bool IsSticking;
     bool IsUnstickReady;
     bool IsWaterUnstickReady;
+    bool HasConnnectedToRB;
     public float BoostStrength;
     public float StrengthStrength;
     private bool IsWaitingToStick;
     private bool IsWaitingToUnStick;
     private bool IsInGoo;
-    private bool NotLimb;
+    private bool CheckIfSticking;
 
     IEnumerator StickAfterTime(float time) // Allows unsticking after a time in seconds
     {
@@ -132,13 +133,17 @@ public class CrabLeg : MonoBehaviour
             {
                 if (hinge.connectedBody)
                 {
-                    if (!hinge.connectedBody.CompareTag("Player")) NotLimb = true;
+                    if (!hinge.connectedBody.CompareTag("Player")) 
+                    {
+                        CheckIfSticking = true;
+                        HasConnnectedToRB = true;
+                    }
                 }
-                else if (!hinge.connectedBody)
+                else if (!hinge.connectedBody && !HasConnnectedToRB)
                 {
-                    NotLimb = false;
+                    CheckIfSticking = false;
                 }
-                if (NotLimb && (!hinge.connectedBody || !hinge.connectedBody.gameObject.activeInHierarchy))
+                if (CheckIfSticking && (!hinge.connectedBody || !hinge.connectedBody.gameObject.activeInHierarchy))
                 {
                     Unstick(null);
                 }
@@ -240,6 +245,7 @@ public class CrabLeg : MonoBehaviour
 
     public void Unstick(AudioSource sound)
     {
+        HasConnnectedToRB = false;
         IsUnstickReady = false;
         IsWaterUnstickReady = false;
         if (stickjoint) {
