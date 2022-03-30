@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Steamworks;
 
 public class LoadGame : MonoBehaviour
 {
@@ -27,6 +28,10 @@ public class LoadGame : MonoBehaviour
         SceneToLoad = ProgressHandler.SceneToLoad;
         IsContinuing = Continue;
         if (!MenuInstead) SceneManager.LoadScene(SceneToLoad, LoadSceneMode.Single);
-        else SceneManager.LoadScene("Title Screen", LoadSceneMode.Single);
+        else
+        {
+            SceneManager.LoadScene("Title Screen", LoadSceneMode.Single);
+            SteamUserStats.StoreStats();
+        }
     }
 }

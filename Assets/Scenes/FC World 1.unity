@@ -2719,6 +2719,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Template
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863726381535069, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: WinHandlerToCall
+      value: FCWinHandler
+      objectReference: {fileID: 0}
     - target: {fileID: 3419072808334328479, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_IsActive

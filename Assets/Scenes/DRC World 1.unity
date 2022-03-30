@@ -4618,6 +4618,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: f6aa298c5deadc344b012ed39b7f3796, type: 2}
+    - target: {fileID: 3369863726381535069, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: WinHandlerToCall
+      value: DRCWinHandler
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863726388987951, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_Materials.Array.data[0]

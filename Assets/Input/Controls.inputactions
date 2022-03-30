@@ -90,6 +90,17 @@
                 },
                 {
                     "name": "",
+                    "id": "ca2df2bd-09b9-473e-89ba-87a9a8b737ed",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click Left",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "14185497-d624-45d6-ba14-f138721dd389",
                     "path": "<Keyboard>/upArrow",
                     "interactions": "",
@@ -268,6 +279,17 @@
                     "name": "",
                     "id": "7ede101e-1824-4312-b6f7-506c0b772d87",
                     "path": "<Gamepad>/rightStickPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click Right",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e232cc64-fd39-459a-93c3-5d8fd31509ed",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

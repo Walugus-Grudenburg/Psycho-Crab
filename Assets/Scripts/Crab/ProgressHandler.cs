@@ -5,6 +5,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Steamworks;
 
 public class ProgressHandler : MonoBehaviour
 {
@@ -29,6 +30,7 @@ public class ProgressHandler : MonoBehaviour
     public static bool PrehistoricCrabUnlocked;
     public static bool SantaCrabUnlocked;
     private static bool HasDataSaved;
+    static int HasDefiedDeath;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +52,10 @@ public class ProgressHandler : MonoBehaviour
                 Money.SetActive(true);
             }
             if (SignToRotate) SignToRotate.transform.Rotate(0, 0, 180);
+        }
+        if (SteamManager.Initialized)
+        {
+            SteamUserStats.GetStat("Has_Defied_Death", out HasDefiedDeath);
         }
     }
     void Update()
@@ -78,6 +84,12 @@ public class ProgressHandler : MonoBehaviour
     {
         if (DeTermination && !OverrideDeTermination)
         {
+            if (HasDefiedDeath == 0)
+            {
+                HasDefiedDeath = 1;
+                SteamUserStats.SetStat("HasDefiedDeath", HasDefiedDeath);
+                SteamUserStats.StoreStats();
+            }
             return;
         }
         Teleport(Checkpoint_Position);

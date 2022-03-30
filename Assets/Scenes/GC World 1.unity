@@ -509,6 +509,11 @@ PrefabInstance:
       propertyPath: DoUnlock3
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863726381535069, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: WinHandlerToCall
+      value: GCWinHandler
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863726500286717, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_Sprite

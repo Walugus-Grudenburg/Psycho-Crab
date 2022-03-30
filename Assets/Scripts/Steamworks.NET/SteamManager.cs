@@ -68,7 +68,7 @@ public class SteamManager : MonoBehaviour {
 		}
 		s_instance = this;
 
-		if(s_EverInitialized) {
+		if (s_EverInitialized) {
 			// This is almost always an error.
 			// The most common case where this happens is when SteamManager gets destroyed because of Application.Quit(),
 			// and then some Steamworks code in some other OnDestroy gets called afterwards, creating a new SteamManager.
@@ -127,6 +127,9 @@ public class SteamManager : MonoBehaviour {
 		}
 
 		s_EverInitialized = true;
+		// WALUGUS
+		// Request stats at start of session
+		SteamUserStats.RequestCurrentStats();
 	}
 
 	// This should only ever get called on first load and after an Assembly reload, You should never Disable the Steamworks Manager yourself.

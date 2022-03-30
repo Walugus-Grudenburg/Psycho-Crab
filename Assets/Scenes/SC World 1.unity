@@ -8159,7 +8159,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2059476158}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &388293057
 BoxCollider2D:
@@ -11280,12 +11280,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &543211190 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3369863724615760707, guid: 3467e989d33abdf45bc5f05c58b97676,
-    type: 3}
-  m_PrefabInstance: {fileID: 3369863724896972402}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &552257733
 GameObject:
   m_ObjectHideFlags: 0
@@ -13925,7 +13919,7 @@ MonoBehaviour:
   - {fileID: 267200795}
   - {fileID: 532466151}
   - {fileID: 1186941865}
-  - {fileID: 543211190}
+  - {fileID: 0}
   - {fileID: 515361327}
   - {fileID: 71689808}
   - {fileID: 1436283276}
@@ -44303,6 +44297,11 @@ PrefabInstance:
         type: 3}
       propertyPath: DoUnlock2
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726381535069, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: WinHandlerToCall
+      value: SCWinHandler
       objectReference: {fileID: 0}
     - target: {fileID: 3369863726459432362, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}

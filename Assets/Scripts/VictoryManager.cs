@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Steamworks;
 
 public class VictoryManager : MonoBehaviour
 {
@@ -15,30 +16,45 @@ public class VictoryManager : MonoBehaviour
     public GameObject Sushi;
     public GameObject UnlockText1;
     public GameObject UnlockText2;
+    public string WinHandlerToCall;
+    static int NumberOfWins;
+    static int BCNumberOfWins;
+    static int DCNumberOfWins;
+    static int DRCNumberOfWins;
+    static int FCNumberOfWins;
+    static int GCNumberOfWins;
+    static int PHCNumberOfWins;
+    static int SCNumberOfWins;
+    static int RCNumberOfWins;
     // Start is called before the first frame update
     void Start()
     {
-        
+        SteamUserStats.GetStat("wins", out NumberOfWins);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+ 
     }
 
     public void Win(float time = 0f)
     {
         StartCoroutine("Victory", 5f);
     }
-
+    
     IEnumerator Victory(float time = 0f)
     {
         yield return new WaitForSeconds(time);
-        if (IsProcessingVictory) yield return null;
+        if (IsProcessingVictory) yield break;
+        StartCoroutine(WinHandlerToCall, 0f);
         IsProcessingVictory = true;
         Destroy(Satan);
+        SatanScript.HasChaseStarted = false;
         ProgressHandler.DeTermination = true;
+        NumberOfWins++;
+        SteamUserStats.SetStat("wins", NumberOfWins);
+        SteamUserStats.StoreStats();
 
         yield return new WaitForSeconds(1);
         Destroy(Sushi);
@@ -78,7 +94,7 @@ public class VictoryManager : MonoBehaviour
         SceneManager.LoadScene("Title Screen", LoadSceneMode.Single);
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && SatanScript.HasChaseStarted)
         {
@@ -86,4 +102,67 @@ public class VictoryManager : MonoBehaviour
         }
     }
 
+    IEnumerator BCWinHandler()
+    {
+        BCNumberOfWins++;
+        SteamUserStats.SetStat("BC_wins", BCNumberOfWins);
+        SteamUserStats.StoreStats();
+        yield return null;
+    }
+
+    IEnumerator DCWinHandler()
+    {
+        DCNumberOfWins++;
+        SteamUserStats.SetStat("DC_wins", DCNumberOfWins);
+        SteamUserStats.StoreStats();
+        yield return null;
+    }
+
+    IEnumerator DRCWinHandler()
+    {
+        DRCNumberOfWins++;
+        SteamUserStats.SetStat("DRC_wins", DRCNumberOfWins);
+        SteamUserStats.StoreStats();
+        yield return null;
+    }
+
+    IEnumerator FCWinHandler()
+    {
+        FCNumberOfWins++;
+        SteamUserStats.SetStat("FC_wins", FCNumberOfWins);
+        SteamUserStats.StoreStats();
+        yield return null;
+    }
+
+    IEnumerator GCWinHandler()
+    {
+        GCNumberOfWins++;
+        SteamUserStats.SetStat("GC_wins", GCNumberOfWins);
+        SteamUserStats.StoreStats();
+        yield return null;
+    }
+
+    IEnumerator PHCWinHandler()
+    {
+        PHCNumberOfWins++;
+        SteamUserStats.SetStat("PHC_wins", PHCNumberOfWins);
+        SteamUserStats.StoreStats();
+        yield return null;
+    }
+
+    IEnumerator SCWinHandler()
+    {
+        SCNumberOfWins++;
+        SteamUserStats.SetStat("SC_wins", SCNumberOfWins);
+        SteamUserStats.StoreStats();
+        yield return null;
+    }
+
+    IEnumerator RCWinHandler()
+    {
+        RCNumberOfWins++;
+        SteamUserStats.SetStat("RC_wins", RCNumberOfWins);
+        SteamUserStats.StoreStats();
+        yield return null;
+    }
 }
