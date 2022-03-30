@@ -82,7 +82,7 @@ public class VictoryManager : MonoBehaviour
     {
         if (collision.CompareTag("Player") && SatanScript.HasChaseStarted)
         {
-            StartCoroutine("Victory");
+            StartCoroutine("Victory", 0f);
         }
     }
 
