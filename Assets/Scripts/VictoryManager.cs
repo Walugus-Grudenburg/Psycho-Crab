@@ -90,6 +90,8 @@ public class VictoryManager : MonoBehaviour
         yield return new WaitForSeconds(2);
         Destroy(UnlockText2);
 
+        ProgressHandler.DeTermination = false;
+
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene("Title Screen", LoadSceneMode.Single);
     }

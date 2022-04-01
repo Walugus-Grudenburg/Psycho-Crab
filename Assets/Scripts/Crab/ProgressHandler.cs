@@ -31,6 +31,7 @@ public class ProgressHandler : MonoBehaviour
     public static bool SantaCrabUnlocked;
     private static bool HasDataSaved;
     static int HasDefiedDeath;
+    static int AllOriginalUnlocks;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,6 +57,16 @@ public class ProgressHandler : MonoBehaviour
         if (SteamManager.Initialized)
         {
             SteamUserStats.GetStat("Has_Defied_Death", out HasDefiedDeath);
+            SteamUserStats.GetStat("All_Original_Unlocks", out AllOriginalUnlocks);
+        }
+        if (AllOriginalUnlocks == 0)
+        {
+            if (BatcrabUnlocked && DizzyCrabUnlocked && GullcrabUnlocked && JumpUnlocked && PrehistoricCrabUnlocked && SantaCrabUnlocked)
+            {
+                AllOriginalUnlocks = 1;
+                SteamUserStats.SetStat("All_Original_Unlocks", AllOriginalUnlocks);
+                SteamUserStats.StoreStats();
+            }
         }
     }
     void Update()
