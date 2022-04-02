@@ -10,6 +10,10 @@ public class GrappleClaw : MonoBehaviour
     public CrabLeg LegScript;
     public HingeJoint2D ToggleJoint;
     Rigidbody2D Body;
+    public float distance;
+    public GameObject body;
+    public PolygonCollider2D coll;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +35,14 @@ public class GrappleClaw : MonoBehaviour
             {
                 Shoot();
             }
+        }
+        if (!IsShot && Vector3.Distance(transform.position, body.transform.position) >= distance)
+        {
+            coll.enabled = false;
+        }
+        else
+        {
+            coll.enabled = true;
         }
     }
 

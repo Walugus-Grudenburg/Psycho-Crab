@@ -251,25 +251,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Template
       objectReference: {fileID: 0}
-    - target: {fileID: 3369863725799106338, guid: 3467e989d33abdf45bc5f05c58b97676,
-        type: 3}
-      propertyPath: m_LocalAABB.m_Center.x
-      value: -129.55222
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369863725799106338, guid: 3467e989d33abdf45bc5f05c58b97676,
-        type: 3}
-      propertyPath: m_LocalAABB.m_Center.y
-      value: 45.39341
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369863725799106338, guid: 3467e989d33abdf45bc5f05c58b97676,
-        type: 3}
-      propertyPath: m_LocalAABB.m_Extent.x
-      value: 169.35092
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369863725799106338, guid: 3467e989d33abdf45bc5f05c58b97676,
-        type: 3}
-      propertyPath: m_LocalAABB.m_Extent.y
-      value: 97.99406
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3467e989d33abdf45bc5f05c58b97676, type: 3}

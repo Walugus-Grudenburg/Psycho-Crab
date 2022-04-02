@@ -223,6 +223,9 @@ MonoBehaviour:
   IsLeftLeg: 1
   LegScript: {fileID: 1245301081}
   ToggleJoint: {fileID: 1245301082}
+  distance: 20
+  body: {fileID: 3369863724896972405}
+  coll: {fileID: 3369863724896972403}
 --- !u!1 &1914669574 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3369863725711533616, guid: 3467e989d33abdf45bc5f05c58b97676,
@@ -262,6 +265,9 @@ MonoBehaviour:
   IsLeftLeg: 0
   LegScript: {fileID: 1914669579}
   ToggleJoint: {fileID: 1914669580}
+  distance: 20
+  body: {fileID: 3369863724896972405}
+  coll: {fileID: 3369863724896972404}
 --- !u!1001 &3369863724896972402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -340,6 +346,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_UseLimits
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724973102356, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_BreakForce
+      value: Infinity
       objectReference: {fileID: 0}
     - target: {fileID: 3369863724973102356, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -530,6 +541,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725711533621, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
+      propertyPath: m_BreakForce
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725711533621, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
       propertyPath: m_EnableCollision
       value: 0
       objectReference: {fileID: 0}
@@ -649,3 +665,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3467e989d33abdf45bc5f05c58b97676, type: 3}
+--- !u!60 &3369863724896972403 stripped
+PolygonCollider2D:
+  m_CorrespondingSourceObject: {fileID: 3369863724973102359, guid: 3467e989d33abdf45bc5f05c58b97676,
+    type: 3}
+  m_PrefabInstance: {fileID: 3369863724896972402}
+  m_PrefabAsset: {fileID: 0}
+--- !u!60 &3369863724896972404 stripped
+PolygonCollider2D:
+  m_CorrespondingSourceObject: {fileID: 3369863725711533620, guid: 3467e989d33abdf45bc5f05c58b97676,
+    type: 3}
+  m_PrefabInstance: {fileID: 3369863724896972402}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3369863724896972405 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3369863724709990586, guid: 3467e989d33abdf45bc5f05c58b97676,
+    type: 3}
+  m_PrefabInstance: {fileID: 3369863724896972402}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3369863724896972406 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3369863725772252423, guid: 3467e989d33abdf45bc5f05c58b97676,
+    type: 3}
+  m_PrefabInstance: {fileID: 3369863724896972402}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3369863724896972407 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3369863726500286718, guid: 3467e989d33abdf45bc5f05c58b97676,
+    type: 3}
+  m_PrefabInstance: {fileID: 3369863724896972402}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3369863724896972408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3369863724896972406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4121526be00946047bd5e5dec23ef9a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  body: {fileID: 3369863724896972405}
+  distance: 8
+  coll: {fileID: 3369863724896972410}
+--- !u!114 &3369863724896972409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3369863724896972407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4121526be00946047bd5e5dec23ef9a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  body: {fileID: 3369863724896972405}
+  distance: 8
+  coll: {fileID: 3369863724896972411}
+--- !u!60 &3369863724896972410 stripped
+PolygonCollider2D:
+  m_CorrespondingSourceObject: {fileID: 3369863725772252420, guid: 3467e989d33abdf45bc5f05c58b97676,
+    type: 3}
+  m_PrefabInstance: {fileID: 3369863724896972402}
+  m_PrefabAsset: {fileID: 0}
+--- !u!60 &3369863724896972411 stripped
+PolygonCollider2D:
+  m_CorrespondingSourceObject: {fileID: 3369863726500286719, guid: 3467e989d33abdf45bc5f05c58b97676,
+    type: 3}
+  m_PrefabInstance: {fileID: 3369863724896972402}
+  m_PrefabAsset: {fileID: 0}
