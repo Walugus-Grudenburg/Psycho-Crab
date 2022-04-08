@@ -149,17 +149,19 @@ public class CrabLeg : MonoBehaviour
                 }
 
             }
-            if ((BoostStrength != 0) && (!stickjoint || !IsSticking || gameObject.GetComponents<HingeJoint2D>().Length < 2))
-            {
-                BoostStrength = 0;
-                if (stickjoint != null)
-                {
-                    Destroy(stickjoint);
-                    stickjoint = null;
-                }
-                StartCoroutine(UnStickAfterTime(0.25f));
-            }
         }
+        
+        if ((BoostStrength != 0) && (!stickjoint || !IsSticking || gameObject.GetComponents<HingeJoint2D>().Length < 2))
+        {
+            BoostStrength = 0;
+            if (stickjoint != null)
+            {
+                Destroy(stickjoint);
+                stickjoint = null;
+            }
+            StartCoroutine(UnStickAfterTime(0.25f));
+        }
+
         if (IsLeftLeg)
         {
             float boostforce = 1f;

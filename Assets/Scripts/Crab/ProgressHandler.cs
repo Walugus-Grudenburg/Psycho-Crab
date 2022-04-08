@@ -29,6 +29,14 @@ public class ProgressHandler : MonoBehaviour
     public static bool DizzyCrabUnlocked;
     public static bool PrehistoricCrabUnlocked;
     public static bool SantaCrabUnlocked;
+    public static int RCFarthestCheckpoint;
+    public static int DCFarthestCheckpoint;
+    public static int DRCFarthestCheckpoint;
+    public static int BCFarthestCheckpoint;
+    public static int SCFarthestCheckpoint;
+    public static int FCFarthestCheckpoint;
+    public static int GCFarthestCheckpoint;
+    public static int PHCFarthestCheckpoint;
     private static bool HasDataSaved;
     static int HasDefiedDeath;
     static int AllOriginalUnlocks;
@@ -142,6 +150,14 @@ public class ProgressHandler : MonoBehaviour
         data.PrehistoricCrabUnlocked = PrehistoricCrabUnlocked;
         data.SantaCrabUnlocked = SantaCrabUnlocked;
         data.BossStage = BossStage;
+        data.RCFarthestCheckpoint = RCFarthestCheckpoint;
+        data.BCFarthestCheckpoint = BCFarthestCheckpoint;
+        data.DCFarthestCheckpoint = DCFarthestCheckpoint;
+        data.DRCFarthestCheckpoint = DRCFarthestCheckpoint;
+        data.FCFarthestCheckpoint = FCFarthestCheckpoint;
+        data.GCFarthestCheckpoint = GCFarthestCheckpoint;
+        data.PHCFarthestCheckpoint = PHCFarthestCheckpoint;
+        data.SCFarthestCheckpoint = SCFarthestCheckpoint;
         formatter.Serialize(file, data);
         file.Close();
     }
@@ -167,6 +183,14 @@ public class ProgressHandler : MonoBehaviour
             PrehistoricCrabUnlocked = data.PrehistoricCrabUnlocked;
             SantaCrabUnlocked = data.SantaCrabUnlocked;
             BossStage = data.BossStage;
+            RCFarthestCheckpoint = data.RCFarthestCheckpoint;
+            BCFarthestCheckpoint = data.BCFarthestCheckpoint;
+            DCFarthestCheckpoint = data.DCFarthestCheckpoint;
+            DRCFarthestCheckpoint = data.DRCFarthestCheckpoint;
+            FCFarthestCheckpoint = data.FCFarthestCheckpoint;
+            GCFarthestCheckpoint = data.GCFarthestCheckpoint;
+            PHCFarthestCheckpoint = data.PHCFarthestCheckpoint;
+            SCFarthestCheckpoint = data.SCFarthestCheckpoint;
             file.Close();
         }
         else
@@ -237,6 +261,55 @@ public class ProgressHandler : MonoBehaviour
         SaveProgressData();
     }
 
+    public static void SetBCFarthestCheckpoint(int value)
+    {
+        BCFarthestCheckpoint = value;
+        SaveProgressData();
+    }
+
+    public static void SetDCFarthestCheckpoint(int value)
+    {
+        DCFarthestCheckpoint = value;
+        SaveProgressData();
+    }
+
+    public static void SetDRCFarthestCheckpoint(int value)
+    {
+        DRCFarthestCheckpoint = value;
+        SaveProgressData();
+    }
+
+    public static void SetFCFarthestCheckpoint(int value)
+    {
+        FCFarthestCheckpoint = value;
+        SaveProgressData();
+    }
+
+    public static void SetGCFarthestCheckpoint(int value)
+    {
+        GCFarthestCheckpoint = value;
+        SaveProgressData();
+    }
+
+    public static void SetPHCFarthestCheckpoint(int value)
+    {
+        PHCFarthestCheckpoint = value;
+        SaveProgressData();
+    }
+
+    public static void SetRCFarthestCheckpoint(int value)
+    {
+        RCFarthestCheckpoint = value;
+        SaveProgressData();
+    }
+
+    public static void SetSCFarthestCheckpoint(int value)
+    {
+        SCFarthestCheckpoint = value;
+        SaveProgressData();
+    }
+
+
     public static void ToggleSpookify()
     {
         Spookify = !Spookify;
@@ -262,6 +335,14 @@ public class ResetData
     public bool DizzycrabUnlocked;
     public bool PrehistoricCrabUnlocked;
     public bool SantaCrabUnlocked;
+    public int RCFarthestCheckpoint;
+    public int DCFarthestCheckpoint;
+    public int DRCFarthestCheckpoint;
+    public int BCFarthestCheckpoint;
+    public int SCFarthestCheckpoint;
+    public int FCFarthestCheckpoint;
+    public int GCFarthestCheckpoint;
+    public int PHCFarthestCheckpoint;
     public string SceneToLoad;
     public int BossStage;
 }

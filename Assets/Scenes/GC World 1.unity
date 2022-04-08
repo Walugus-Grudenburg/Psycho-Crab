@@ -191,6 +191,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1170396511, guid: 3467e989d33abdf45bc5f05c58b97676, type: 3}
+      propertyPath: mode
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863724564501891, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_fontColor.b
@@ -205,6 +209,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontColor.r
       value: 0.7176471
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724580671791, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724583062628, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724585365900, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724620111622, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3369863724709990562, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -237,6 +261,46 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 20bd89120bf959c45be6ce23a98f61b6,
         type: 3}
+    - target: {fileID: 3369863724720963627, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724740566218, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724775458311, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724792889601, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724797352968, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724805843665, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724840435517, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724874600932, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863724924054536, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_text
@@ -256,6 +320,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontColor.r
       value: 0.7176471
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724931763831, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724948576924, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724962803359, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3369863724970548618, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -293,12 +372,27 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863725040065449, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725062980700, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725077144011, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_text
       value: 'You''ve unlocked
 
         Dizzycrab?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725125002545, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725161021868, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -350,12 +444,32 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Template
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863725226121762, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725239851353, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725261078298, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725295389404, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_text
       value: 'This should
 
         not appear!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725348459678, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725365191360, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -386,6 +500,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725488695502, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725519011941, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725520605771, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725567627407, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725652411839, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -433,12 +567,47 @@ PrefabInstance:
       propertyPath: StrengthStrength
       value: 0.66
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863725722593465, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725768070056, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725772252426, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 382a48d34886de74fbddb94396c38126,
         type: 3}
+    - target: {fileID: 3369863725821469869, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725837895305, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725861546687, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725994779956, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726063762072, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863726121588359, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_text
@@ -458,6 +627,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontColor.r
       value: 0.7176471
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726204070984, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726212010400, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726359198124, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3369863726379194673, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -513,6 +697,16 @@ PrefabInstance:
         type: 3}
       propertyPath: WinHandlerToCall
       value: GCWinHandler
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726468713829, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726497026366, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3369863726500286717, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
