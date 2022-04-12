@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4210100087547323380}
   - component: {fileID: 2904034467268794946}
   - component: {fileID: 1782885380374757812}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Parasol Up
   m_TagString: Area Child
   m_Icon: {fileID: 0}
@@ -180,6 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e7a4fb5f30f92f4cbc83d6127d29594, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DisableRandomSpeed: 0
   Speed: 0
   SpeedMulti: 1
 --- !u!50 &-9118140536745392683
@@ -331,3 +332,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mat: {fileID: 2100000, guid: f6aa298c5deadc344b012ed39b7f3796, type: 2}
+  UseShapeMode: 0

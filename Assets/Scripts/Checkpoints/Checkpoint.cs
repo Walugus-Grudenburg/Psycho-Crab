@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Checkpoint : MonoBehaviour
 {
-    public enum CheckpointMode {BC, DC, DRC, FC, GC, PHC, RC, SC};
+    public enum CheckpointMode {BC, DC, DRC, FC, GC, PHC, RC, SC, SPC};
     public CheckpointMode Checkpoint_Mode;
     private Vector3 Checkpoint_Position;
     public bool DebugActivate;
@@ -77,6 +77,12 @@ public class Checkpoint : MonoBehaviour
                     if (!(ID <= ProgressHandler.SCFarthestCheckpoint))
                     {
                         ProgressHandler.SetSCFarthestCheckpoint(ID);
+                    }
+                    break;
+                case CheckpointMode.SPC:
+                    if (!(ID <= ProgressHandler.SPCFarthestCheckpoint))
+                    {
+                        ProgressHandler.SetSPCFarthestCheckpoint(ID);
                     }
                     break;
                 default:

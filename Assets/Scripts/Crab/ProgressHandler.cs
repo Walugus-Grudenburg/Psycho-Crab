@@ -37,6 +37,7 @@ public class ProgressHandler : MonoBehaviour
     public static int FCFarthestCheckpoint;
     public static int GCFarthestCheckpoint;
     public static int PHCFarthestCheckpoint;
+    public static int SPCFarthestCheckpoint;
     private static bool HasDataSaved;
     static int HasDefiedDeath;
     static int AllOriginalUnlocks;
@@ -158,6 +159,7 @@ public class ProgressHandler : MonoBehaviour
         data.GCFarthestCheckpoint = GCFarthestCheckpoint;
         data.PHCFarthestCheckpoint = PHCFarthestCheckpoint;
         data.SCFarthestCheckpoint = SCFarthestCheckpoint;
+        data.SPCFarthestCheckpoint = SPCFarthestCheckpoint;
         formatter.Serialize(file, data);
         file.Close();
     }
@@ -191,6 +193,7 @@ public class ProgressHandler : MonoBehaviour
             GCFarthestCheckpoint = data.GCFarthestCheckpoint;
             PHCFarthestCheckpoint = data.PHCFarthestCheckpoint;
             SCFarthestCheckpoint = data.SCFarthestCheckpoint;
+            SPCFarthestCheckpoint = data.SPCFarthestCheckpoint;
             file.Close();
         }
         else
@@ -309,6 +312,11 @@ public class ProgressHandler : MonoBehaviour
         SaveProgressData();
     }
 
+    public static void SetSPCFarthestCheckpoint(int value)
+    {
+        SPCFarthestCheckpoint = value;
+        SaveProgressData();
+    }
 
     public static void ToggleSpookify()
     {
@@ -340,6 +348,7 @@ public class ResetData
     public int DRCFarthestCheckpoint;
     public int BCFarthestCheckpoint;
     public int SCFarthestCheckpoint;
+    public int SPCFarthestCheckpoint;
     public int FCFarthestCheckpoint;
     public int GCFarthestCheckpoint;
     public int PHCFarthestCheckpoint;

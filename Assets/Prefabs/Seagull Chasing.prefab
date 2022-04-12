@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6715907022957046766}
   - component: {fileID: 4731382997174211682}
   - component: {fileID: 2491771074696671408}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Seagull Chasing
   m_TagString: Area Child
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ PolygonCollider2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6715907022957046759}
   m_Enabled: 1
-  m_Density: 1.4
+  m_Density: 2
   m_Material: {fileID: 6200000, guid: 16553cb35b5fc2747bce8f884aed5b17, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
@@ -115,15 +115,12 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 0.9036865, y: 0.90945435}
-      - {x: 0.25964355, y: -1.4017029}
-      - {x: 0.8306885, y: -1.6762695}
-      - {x: 1.849669, y: -1.8511848}
-      - {x: 1.7470703, y: -2.0891724}
-      - {x: 1.3681257, y: -2.3254187}
+      - {x: 0.20251204, y: -1.5107721}
+      - {x: 1.8398371, y: -1.8511848}
+      - {x: 1.79623, y: -2.0891724}
+      - {x: 1.1157732, y: -2.3352506}
       - {x: 0.586792, y: -2.255249}
-      - {x: -0.05407715, y: -2.1831665}
       - {x: -1.4952393, y: -1.9610596}
-      - {x: -2.3953857, y: -1.4202881}
       - {x: -2.6859658, y: -1.3057584}
       - {x: -3.2142334, y: -1.3577576}
       - {x: -3.2075195, y: -1.236145}
@@ -133,8 +130,7 @@ PolygonCollider2D:
       - {x: -1.0086105, y: 0.07391286}
       - {x: -1.1132812, y: 1.1184082}
       - {x: 0.027898386, y: 1.800164}
-      - {x: 2.4401126, y: 2.346355}
-      - {x: 3.2232666, y: 2.3299255}
+      - {x: 3.082628, y: 2.3600624}
       - {x: 3.2155762, y: 2.1802979}
 --- !u!50 &6715907022957046755
 Rigidbody2D:
@@ -285,6 +281,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsFacingLeft: 0
+  DontDestroyOnContact: 0
+  FixedSpeed: 0
   Speed: 0
 --- !u!114 &4731382997174211682
 MonoBehaviour:
@@ -298,6 +296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 723092a27a890f04abba6b2dbd521341, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TurnOnly: 0
   Speed: 10
   ShoveTime: 1.5
   Target: {fileID: 0}
@@ -317,3 +316,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mat: {fileID: 2100000, guid: f6aa298c5deadc344b012ed39b7f3796, type: 2}
+  UseShapeMode: 0

@@ -32,6 +32,7 @@ public class CrabLeg : MonoBehaviour
         IsWaterUnstickReady = true;
         if (stickjoint) stickjoint.autoConfigureConnectedAnchor = false; // Disables auto reconfigure now that joint is settled
         IsWaitingToStick = false;
+        yield break;
     }
 
     IEnumerator UnStickAfterTime(float time) // Allows sticking after a time in seconds
@@ -46,6 +47,7 @@ public class CrabLeg : MonoBehaviour
 
         IsWaitingToUnStick = false;
         IsSticking = false;
+        yield break;
     }
 
     void  SticktoCollisionFirst(Collision2D collision) // Creates the joint for sticking
@@ -228,7 +230,7 @@ public class CrabLeg : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Water") && IsUnstickReady && IsWaterUnstickReady) // Checks if underwater, and if so, stop sticking
+        if (collision.CompareTag("Water") && IsUnstickReady && IsWaterUnstickReady && !IsWaitingToUnStick && !IsWaitingToStick) // Checks if underwater, and if so, stop sticking
         {
             Unstick(wetsound);
         }

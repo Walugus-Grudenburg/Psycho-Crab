@@ -145,7 +145,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: dedf1c5d16b2f89459ef885db1c6491f, type: 2}
   m_FillPixelPerUnit: 100
   m_StretchTiling: 1
-  m_SplineDetail: 16
+  m_SplineDetail: 4
   m_AdaptiveUV: 1
   m_StretchUV: 1
   m_WorldSpaceUV: 0
@@ -319,6 +319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e7a4fb5f30f92f4cbc83d6127d29594, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DisableRandomSpeed: 0
   Speed: 0
   SpeedMulti: 0
 --- !u!50 &5615020817198770486

@@ -25,6 +25,7 @@ public class VictoryManager : MonoBehaviour
     static int GCNumberOfWins;
     static int PHCNumberOfWins;
     static int SCNumberOfWins;
+    static int SPCNumberOfWins;
     static int RCNumberOfWins;
     // Start is called before the first frame update
     void Start()
@@ -156,6 +157,14 @@ public class VictoryManager : MonoBehaviour
     {
         SCNumberOfWins++;
         SteamUserStats.SetStat("SC_wins", SCNumberOfWins);
+        SteamUserStats.StoreStats();
+        yield return null;
+    }
+
+    IEnumerator SPCWinHandler()
+    {
+        SPCNumberOfWins++;
+        SteamUserStats.SetStat("SPC_wins", SPCNumberOfWins);
         SteamUserStats.StoreStats();
         yield return null;
     }

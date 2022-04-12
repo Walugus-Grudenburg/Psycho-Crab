@@ -32,6 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DRC World 1.unity
     guid: 96de7e9812ae38b41b0a31bd7561bbe8
+  - enabled: 1
+    path: Assets/Scenes/SPC World 1.unity
+    guid: 92b31cbbba97ddd41ba30a104d3b9377
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 166d327f978809d42b7ad056a9b7e139,
       type: 2}

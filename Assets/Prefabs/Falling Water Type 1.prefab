@@ -82,8 +82,8 @@ SpriteShapeRenderer:
   m_ShapeTexture: {fileID: 2800000, guid: fee4c301baca13848989ebbcc5d305fa, type: 3}
   m_Sprites: []
   m_LocalAABB:
-    m_Center: {x: -0.10093504, y: 1.0206268, z: 0}
-    m_Extent: {x: 0.7949392, y: 1.0206268, z: 0}
+    m_Center: {x: -0.11371434, y: 1.0159534, z: 0}
+    m_Extent: {x: 0.77749014, y: 1.0159534, z: 0}
 --- !u!114 &7867870188857913248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,12 +152,12 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 0e57b441f7e3cf240a56c662201cb8c2, type: 2}
   m_FillPixelPerUnit: 100
   m_StretchTiling: 1
-  m_SplineDetail: 16
+  m_SplineDetail: 4
   m_AdaptiveUV: 1
   m_StretchUV: 0
   m_WorldSpaceUV: 0
   m_CornerAngleThreshold: 30
-  m_ColliderDetail: 16
+  m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_UpdateCollider: 1
   m_OptimizeCollider: 1
@@ -191,22 +191,20 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: -0.37574565, y: 0.7741696}
-      - {x: -0.75304246, y: 1.0172306}
+      - {x: -0.5925539, y: 0.8972076}
+      - {x: -0.7868663, y: 1.0513586}
       - {x: -0.8912045, y: 1.2534707}
-      - {x: -0.83682615, y: 1.5472257}
-      - {x: -0.5664388, y: 1.8784012}
-      - {x: -0.29768243, y: 2.0190694}
-      - {x: 0.031615905, y: 2.0296144}
-      - {x: 0.33861977, y: 1.9148936}
-      - {x: 0.5340516, y: 1.7327743}
+      - {x: -0.85811454, y: 1.4995017}
+      - {x: -0.717843, y: 1.7266663}
+      - {x: -0.5269134, y: 1.9105403}
+      - {x: -0.23362917, y: 2.0319068}
+      - {x: 0.097193554, y: 2.01622}
+      - {x: 0.39076358, y: 1.8782141}
       - {x: 0.6637758, y: 1.4684004}
-      - {x: 0.69238365, y: 1.177431}
-      - {x: 0.62114894, y: 0.89233315}
-      - {x: 0.4513461, y: 0.64557487}
-      - {x: 0.23808073, y: 0.52589035}
-      - {x: -0.07359484, y: 0.6061248}
-      - {x: -0.2809125, y: 0.72000325}
-      - {x: -0.32936615, y: 0.7480428}
+      - {x: 0.65590876, y: 0.98470914}
+      - {x: 0.3730613, y: 0.57745373}
+      - {x: 0.13795601, y: 0.5312731}
+      - {x: -0.12672588, y: 0.63311166}
       - {x: -0.37574565, y: 0.7741696}
 --- !u!114 &4460300733795162679
 MonoBehaviour:
@@ -220,6 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e7a4fb5f30f92f4cbc83d6127d29594, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DisableRandomSpeed: 0
   Speed: 0
   SpeedMulti: 0
 --- !u!50 &753269611744534979
