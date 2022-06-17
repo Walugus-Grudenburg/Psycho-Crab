@@ -30,6 +30,7 @@ public class ProgressHandler : MonoBehaviour
     public static bool PrehistoricCrabUnlocked;
     public static bool SantaCrabUnlocked;
     public static int RCFarthestCheckpoint;
+    public static int RCCFarthestCheckpoint;
     public static int DCFarthestCheckpoint;
     public static int DRCFarthestCheckpoint;
     public static int BCFarthestCheckpoint;

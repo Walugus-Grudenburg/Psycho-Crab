@@ -22,6 +22,7 @@ public class CrabLeg : MonoBehaviour
     private bool IsWaitingToUnStick;
     private bool IsInGoo;
     private bool CheckIfSticking;
+    MinecartScript minecartscript;
 
     IEnumerator StickAfterTime(float time) // Allows unsticking after a time in seconds
     {
@@ -64,13 +65,19 @@ public class CrabLeg : MonoBehaviour
     public void Stick(Collision2D collision, AudioSource sound, float pitchmulti = 1f)
     {
         SticktoCollisionFirst(collision);
-        if (stickjoint)
+        if (stickjoint && gameObject.GetComponents<HingeJoint2D>().Length >= 2)
         {
             // Activates a stickdetector script if attatched
             StickDetector stickdetector = collision.gameObject.GetComponent<StickDetector>();
             if (stickdetector)
             {
                 stickdetector.Detected = true;
+            }
+
+            minecartscript = collision.gameObject.GetComponent<MinecartScript>();
+            if (minecartscript)
+            {
+                minecartscript.leggrabbed = this;
             }
 
             // Plays the sound
@@ -152,7 +159,7 @@ public class CrabLeg : MonoBehaviour
 
             }
         }
-        
+
         if ((BoostStrength != 0) && (!stickjoint || !IsSticking || gameObject.GetComponents<HingeJoint2D>().Length < 2))
         {
             BoostStrength = 0;
@@ -190,6 +197,29 @@ public class CrabLeg : MonoBehaviour
         }
 
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Collision2D col = collision;
+        Controls controls = ProgressHandler.controls;
+        if (!IsSticking && !IgnoreSticking)
+        {
+            if ((Mathf.Approximately(controls.Crab.ClickLeft.ReadValue<float>(), 1) & IsLeftLeg) || (Mathf.Approximately(controls.Crab.ClickRight.ReadValue<float>(), 1) & IsLeftLeg == false)) // Checks if stick is pressed
+            {
+                if (!col.gameObject.CompareTag("Player") && !col.gameObject.CompareTag("Ungrabbable")) // Checks that the object isn't a player
+                {
+                    Stick(col, sticksound);
+                }
+            }
+            if (IsInGoo & !col.gameObject.CompareTag("Player") && !col.gameObject.CompareTag("Ungrabbable") && !IsSticking)
+            {
+                Stick(col, sticksound, 0.5f);
+                wetsound.pitch = 0.05f;
+                wetsound.Play();
+            }
+        }
+    }
+
     // OnCollisionStay is called once per frame while objects are colliding
     void OnCollisionStay2D(Collision2D collision)
     {
@@ -249,6 +279,11 @@ public class CrabLeg : MonoBehaviour
 
     public void Unstick(AudioSource sound)
     {
+        if (minecartscript)
+        {
+            minecartscript.leggrabbed = null;
+            minecartscript = null;
+        }
         HasConnnectedToRB = false;
         IsUnstickReady = false;
         IsWaterUnstickReady = false;

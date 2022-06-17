@@ -35,6 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SPC World 1.unity
     guid: 92b31cbbba97ddd41ba30a104d3b9377
+  - enabled: 1
+    path: Assets/Scenes/RC Challenge 1.unity
+    guid: 18024029d3256c947801cc6418911991
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 166d327f978809d42b7ad056a9b7e139,
       type: 2}

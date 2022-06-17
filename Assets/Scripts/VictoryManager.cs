@@ -11,6 +11,7 @@ public class VictoryManager : MonoBehaviour
     public bool DoUnlock2;
     public bool DoUnlock3;
     public bool DoUnlock4;
+    public bool IsSushi;
     public GameObject CrunchText;
     public GameObject Satan;
     public GameObject Sushi;
@@ -27,10 +28,21 @@ public class VictoryManager : MonoBehaviour
     static int SCNumberOfWins;
     static int SPCNumberOfWins;
     static int RCNumberOfWins;
+    static int RCCNumberOfWins;
     // Start is called before the first frame update
     void Start()
     {
         SteamUserStats.GetStat("wins", out NumberOfWins);
+        SteamUserStats.GetStat("BC_wins", out BCNumberOfWins);
+        SteamUserStats.GetStat("DC_wins", out DCNumberOfWins);
+        SteamUserStats.GetStat("DRC_wins", out DRCNumberOfWins);
+        SteamUserStats.GetStat("FC_wins", out FCNumberOfWins);
+        SteamUserStats.GetStat("GC_wins", out GCNumberOfWins);
+        SteamUserStats.GetStat("PHC_wins", out PHCNumberOfWins);
+        SteamUserStats.GetStat("SC_wins", out SCNumberOfWins);
+        SteamUserStats.GetStat("SPC_wins", out SPCNumberOfWins);
+        SteamUserStats.GetStat("RC_wins", out RCNumberOfWins);
+        SteamUserStats.GetStat("RCC_wins", out RCCNumberOfWins);
     }
 
     // Update is called once per frame
@@ -99,7 +111,7 @@ public class VictoryManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && SatanScript.HasChaseStarted)
+        if (collision.CompareTag("Player") && (SatanScript.HasChaseStarted || IsSushi))
         {
             StartCoroutine("Victory", 0f);
         }
@@ -173,6 +185,14 @@ public class VictoryManager : MonoBehaviour
     {
         RCNumberOfWins++;
         SteamUserStats.SetStat("RC_wins", RCNumberOfWins);
+        SteamUserStats.StoreStats();
+        yield return null;
+    }
+
+    IEnumerator RCCWinHandler()
+    {
+        RCNumberOfWins++;
+        SteamUserStats.SetStat("RCC_wins", RCCNumberOfWins);
         SteamUserStats.StoreStats();
         yield return null;
     }
