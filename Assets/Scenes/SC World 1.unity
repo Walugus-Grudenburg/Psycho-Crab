@@ -42023,6 +42023,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863725720047018, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_LocalAABB.m_Center.x
+      value: 95.77942
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725720047018, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_LocalAABB.m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725720047018, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_LocalAABB.m_Extent.x
+      value: 365.7745
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725720047018, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_LocalAABB.m_Extent.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725722593465, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
@@ -47391,7 +47411,7 @@ PrefabInstance:
     - target: {fileID: 3369863726479731638, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_LocalAABB.m_Center.x
-      value: 1927.3131
+      value: 2235.0317
       objectReference: {fileID: 0}
     - target: {fileID: 3369863726479731638, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -47401,7 +47421,7 @@ PrefabInstance:
     - target: {fileID: 3369863726479731638, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_LocalAABB.m_Extent.x
-      value: 1927.3131
+      value: 1619.5944
       objectReference: {fileID: 0}
     - target: {fileID: 3369863726479731638, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -47982,6 +48002,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8248089744809838659, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3369863725522486741, guid: 3467e989d33abdf45bc5f05c58b97676, type: 3}

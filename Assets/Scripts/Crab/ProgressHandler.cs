@@ -39,6 +39,7 @@ public class ProgressHandler : MonoBehaviour
     public static int GCFarthestCheckpoint;
     public static int PHCFarthestCheckpoint;
     public static int SPCFarthestCheckpoint;
+    public static int RKCFarthestCheckpoint;
     private static bool HasDataSaved;
     static int HasDefiedDeath;
     static int AllOriginalUnlocks;
@@ -161,6 +162,7 @@ public class ProgressHandler : MonoBehaviour
         data.PHCFarthestCheckpoint = PHCFarthestCheckpoint;
         data.SCFarthestCheckpoint = SCFarthestCheckpoint;
         data.SPCFarthestCheckpoint = SPCFarthestCheckpoint;
+        data.RKCFarthestCheckpoint = RKCFarthestCheckpoint;
         formatter.Serialize(file, data);
         file.Close();
     }
@@ -195,6 +197,7 @@ public class ProgressHandler : MonoBehaviour
             PHCFarthestCheckpoint = data.PHCFarthestCheckpoint;
             SCFarthestCheckpoint = data.SCFarthestCheckpoint;
             SPCFarthestCheckpoint = data.SPCFarthestCheckpoint;
+            RKCFarthestCheckpoint = data.RKCFarthestCheckpoint;
             file.Close();
         }
         else
@@ -307,6 +310,12 @@ public class ProgressHandler : MonoBehaviour
         SaveProgressData();
     }
 
+    public static void SetRKCFarthestCheckpoint(int value)
+    {
+        RKCFarthestCheckpoint = value;
+        SaveProgressData();
+    }
+
     public static void SetSCFarthestCheckpoint(int value)
     {
         SCFarthestCheckpoint = value;
@@ -353,6 +362,7 @@ public class ResetData
     public int FCFarthestCheckpoint;
     public int GCFarthestCheckpoint;
     public int PHCFarthestCheckpoint;
+    public int RKCFarthestCheckpoint;
     public string SceneToLoad;
     public int BossStage;
 }

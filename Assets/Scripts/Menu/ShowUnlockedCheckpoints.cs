@@ -64,6 +64,12 @@ public class ShowUnlockedCheckpoints : MonoBehaviour
                     buttons[i].SetActive(true);
                 }
                 break;
+            case Checkpoint.CheckpointMode.RKC:
+                for (int i = 0; i < ProgressHandler.RKCFarthestCheckpoint + 1; i++)
+                {
+                    buttons[i].SetActive(true);
+                }
+                break;
             case Checkpoint.CheckpointMode.SC:
                 for (int i = 0; i < ProgressHandler.SCFarthestCheckpoint + 1; i++)
                 {
