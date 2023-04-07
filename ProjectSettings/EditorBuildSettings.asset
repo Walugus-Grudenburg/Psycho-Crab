@@ -41,6 +41,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RKC World 1.unity
     guid: c0372d186cf140f42a89cf9ad9f15e49
+  - enabled: 1
+    path: Assets/Scenes/SDC World 1.unity
+    guid: 93336feb66d993746ac1f1a7fba2a8a3
+  - enabled: 1
+    path: Assets/Scenes/GC Challenge 1.unity
+    guid: a594b4f84aa316a4aa8807b13bd4d0c2
+  - enabled: 1
+    path: Assets/Scenes/DMC World 1.unity
+    guid: 827b2a627d84a0246aefb3c9f074eccb
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 166d327f978809d42b7ad056a9b7e139,
       type: 2}

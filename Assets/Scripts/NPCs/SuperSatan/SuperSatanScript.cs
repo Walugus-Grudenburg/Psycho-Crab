@@ -82,6 +82,7 @@ public class SuperSatanScript : MonoBehaviour
         Spooky.Active = true;
         Spooky.Recharge = true;
         Spooky.ChargeMulti = FlightAmount;
+        Spooky.DisableCameraChanges = true;
         progress.IgnoreControls = true;
         ZoomFixer.enabled = true;
         if (BossStage < 6)
@@ -205,6 +206,7 @@ public class SuperSatanScript : MonoBehaviour
             Spooky.Active = true;
             Spooky.Recharge = true;
             Spooky.ChargeMulti = FlightAmount;
+            Spooky.DisableCameraChanges = true;
             foreach (GameObject wing in Wings)
             {
                 wing.SetActive(true);
@@ -262,6 +264,7 @@ public class SuperSatanScript : MonoBehaviour
             Spooky.Active = true;
             Spooky.Recharge = true;
             Spooky.ChargeMulti = 2.66f;
+            Spooky.DisableCameraChanges = true;
             foreach (GameObject wing in Wings)
             {
                 wing.SetActive(true);

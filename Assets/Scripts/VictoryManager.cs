@@ -6,11 +6,13 @@ using Steamworks;
 
 public class VictoryManager : MonoBehaviour
 {
+    public bool DoVictoryDance = true;
     public bool IsProcessingVictory;
     public bool DoUnlock1;
     public bool DoUnlock2;
     public bool DoUnlock3;
     public bool DoUnlock4;
+    public bool DoUnlock5;
     public bool IsSushi;
     public GameObject CrunchText;
     public GameObject Satan;
@@ -27,9 +29,12 @@ public class VictoryManager : MonoBehaviour
     static int PHCNumberOfWins;
     static int SCNumberOfWins;
     static int SPCNumberOfWins;
+    static int SDCNumberOfWins;
     static int RCNumberOfWins;
     static int RCCNumberOfWins;
     static int RKCNumberOfWins;
+    static int GCCNumberOfWins;
+    static int DMCNumberOfWins;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,12 +44,15 @@ public class VictoryManager : MonoBehaviour
         SteamUserStats.GetStat("DRC_wins", out DRCNumberOfWins);
         SteamUserStats.GetStat("FC_wins", out FCNumberOfWins);
         SteamUserStats.GetStat("GC_wins", out GCNumberOfWins);
+        SteamUserStats.GetStat("GCC_wins", out GCCNumberOfWins);
         SteamUserStats.GetStat("PHC_wins", out PHCNumberOfWins);
         SteamUserStats.GetStat("SC_wins", out SCNumberOfWins);
         SteamUserStats.GetStat("SPC_wins", out SPCNumberOfWins);
+        SteamUserStats.GetStat("SDC_wins", out SDCNumberOfWins);
         SteamUserStats.GetStat("RC_wins", out RCNumberOfWins);
         SteamUserStats.GetStat("RCC_wins", out RCCNumberOfWins);
         SteamUserStats.GetStat("RKC_wins", out RKCNumberOfWins);
+        SteamUserStats.GetStat("DMC_wins", out DMCNumberOfWins);
     }
 
     // Update is called once per frame
@@ -71,10 +79,12 @@ public class VictoryManager : MonoBehaviour
         SteamUserStats.SetStat("wins", NumberOfWins);
         SteamUserStats.StoreStats();
 
-        yield return new WaitForSeconds(1);
-        Destroy(Sushi);
-        CrunchText.SetActive(true);
-
+        if (DoVictoryDance)
+        {
+            yield return new WaitForSeconds(1);
+            Destroy(Sushi);
+            CrunchText.SetActive(true);
+        }
         if (DoUnlock1) {
             yield return new WaitForSeconds(2);
             UnlockText1.SetActive(true);
@@ -102,6 +112,15 @@ public class VictoryManager : MonoBehaviour
             ProgressHandler.SetUnlockSC(true);
         }
 
+        if (DoUnlock5)
+        {
+            yield return new WaitForSeconds(2);
+            UnlockText1.SetActive(true);
+            ProgressHandler.SetUnlockSDC(true);
+            ProgressHandler.SetUnlockBC(true);
+            ProgressHandler.SetUnlockGC(true);
+        }
+
         yield return new WaitForSeconds(2);
         Destroy(UnlockText2);
 
@@ -111,7 +130,7 @@ public class VictoryManager : MonoBehaviour
         SceneManager.LoadScene("Title Screen", LoadSceneMode.Single);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && (SatanScript.HasChaseStarted || IsSushi))
         {
@@ -159,6 +178,14 @@ public class VictoryManager : MonoBehaviour
         yield return null;
     }
 
+    IEnumerator GCCWinHandler()
+    {
+        GCCNumberOfWins++;
+        SteamUserStats.SetStat("GCC_wins", GCCNumberOfWins);
+        SteamUserStats.StoreStats();
+        yield return null;
+    }
+
     IEnumerator PHCWinHandler()
     {
         PHCNumberOfWins++;
@@ -183,6 +210,14 @@ public class VictoryManager : MonoBehaviour
         yield return null;
     }
 
+    IEnumerator SDCWinHandler()
+    {
+        SDCNumberOfWins++;
+        SteamUserStats.SetStat("SDC_wins", SDCNumberOfWins);
+        SteamUserStats.StoreStats();
+        yield return null;
+    }
+
     IEnumerator RCWinHandler()
     {
         RCNumberOfWins++;
@@ -203,6 +238,14 @@ public class VictoryManager : MonoBehaviour
     {
         RKCNumberOfWins++;
         SteamUserStats.SetStat("RKC_wins", RKCNumberOfWins);
+        SteamUserStats.StoreStats();
+        yield return null;
+    }
+
+    IEnumerator DMCWinHandler()
+    {
+        DMCNumberOfWins++;
+        SteamUserStats.SetStat("DMC_wins", DMCNumberOfWins);
         SteamUserStats.StoreStats();
         yield return null;
     }

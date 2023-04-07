@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DeleteAfterTime : MonoBehaviour
 {
+    public bool disableInstead;
     public float timemin;
     public float timemax;
     // Start is called before the first frame update
@@ -20,6 +21,13 @@ public class DeleteAfterTime : MonoBehaviour
 
     void Delete()
     {
-        Destroy(gameObject);
+        if (!disableInstead)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

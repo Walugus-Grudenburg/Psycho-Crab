@@ -184,6 +184,204 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaDirect: 0.5
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
+--- !u!1 &1328475931 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3369863724564501917, guid: 3467e989d33abdf45bc5f05c58b97676,
+    type: 3}
+  m_PrefabInstance: {fileID: 3369863724896972402}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1328475932
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328475931}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c544e0f20fe615d4786a26bc2615a7d7, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1.4
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &1328475933
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328475931}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5782611af5153f140ad41c7dba8b0bf6, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 2
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &3369863724896972402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -191,9 +389,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 111169173, guid: 3467e989d33abdf45bc5f05c58b97676, type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1170396511, guid: 3467e989d33abdf45bc5f05c58b97676, type: 3}
       propertyPath: mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1978318017, guid: 3467e989d33abdf45bc5f05c58b97676, type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724498556954, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724537023074, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724553043798, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724557685536, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724559763580, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3369863724564501890, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -225,6 +456,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863724580211109, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863724580671791, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
@@ -240,6 +476,36 @@ PrefabInstance:
       propertyPath: Checkpoint_Mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863724588505844, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724598190308, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724600591775, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724604122896, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724611263225, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724615232458, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863724620111622, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
@@ -249,6 +515,21 @@ PrefabInstance:
         type: 3}
       propertyPath: ParentInstead
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724670546488, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724686807595, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724709056803, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3369863724709990562, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -281,20 +562,70 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: a96aa73ee2d261c4fb0d3891c9370f77,
         type: 3}
+    - target: {fileID: 3369863724718409125, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724718527863, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724720113943, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863724720963627, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724735621460, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3369863724740566218, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863724752494808, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724754602585, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724762411331, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724767769458, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724771609950, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863724775458311, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724776159225, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3369863724792889601, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -311,15 +642,80 @@ PrefabInstance:
       propertyPath: Checkpoint_Mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863724811243590, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724812829556, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724822807700, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724823377402, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724825022162, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724827754568, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863724840435517, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863724843219895, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724872240402, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863724874600932, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724881862121, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724884997182, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724887735576, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724894757297, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724917778775, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3369863724924054536, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -361,15 +757,40 @@ PrefabInstance:
       propertyPath: Checkpoint_Mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863724937856970, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863724948576924, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863724953216405, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724958095160, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863724962803359, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724970548617, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724972058799, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3369863724973102352, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -377,6 +798,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 09a112e7947cb0c4c9c3e89419370e4a,
         type: 3}
+    - target: {fileID: 3369863724982949576, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725014463845, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725014538188, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_Sprite
@@ -388,20 +819,130 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863725016466311, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725031436960, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725032566859, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725035121448, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725040065449, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725047491315, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725062980700, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863725079434556, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725085935883, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725088973744, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725090431100, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725096760631, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725114292488, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725116275073, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725123839155, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725125002545, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725131544087, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725143681990, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725146617860, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725153130759, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725165928528, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725177269188, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725179106349, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725184661999, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725186429043, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725205364432, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -448,6 +989,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Template
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863725206957627, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725225066700, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725226121762, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
@@ -463,10 +1014,45 @@ PrefabInstance:
       propertyPath: Checkpoint_Mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863725278036603, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725297340346, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725301573657, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725341464924, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725348459678, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725353654593, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725353668996, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725360748157, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725365191360, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -498,10 +1084,85 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.09
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863725372627331, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725377679159, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725382710992, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725390469594, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725390508713, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725396621327, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725434560741, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725463496612, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725474336854, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725477153984, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725482901548, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725486333848, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725486774829, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725488543493, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725488695502, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725502914079, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725519011941, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -513,10 +1174,80 @@ PrefabInstance:
       propertyPath: Checkpoint_Mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863725536553158, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725546282973, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725548727295, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725550683544, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725551095866, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725551602593, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725567627407, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725593722968, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725594070643, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725605979694, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725618048610, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725623317843, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725630234801, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725634459003, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725652187265, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725652411833, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -558,16 +1289,66 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4286972159
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863725670771801, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725675480459, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725683706627, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725699788490, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725703222655, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725711533617, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 09a112e7947cb0c4c9c3e89419370e4a,
         type: 3}
+    - target: {fileID: 3369863725720047012, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725722593465, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725737083955, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725745893350, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725759324807, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725761563599, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.45490196
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725768070056, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -580,30 +1361,150 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 005a1d04f04fef54aa4665954f1f76bd,
         type: 3}
+    - target: {fileID: 3369863725799106364, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725811767007, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725818122978, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725821469869, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725830041828, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725837895305, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863725846955389, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725861546687, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725881009216, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725892777916, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725905053059, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725917800692, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725946688468, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725953032545, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725959619444, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725968696385, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725982331828, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725984603052, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725994779956, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863726022736461, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726024436898, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726031644539, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726043391688, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726050885908, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726052247657, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863726063762072, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726067200922, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726074195823, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726089520827, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3369863726121588353, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -635,15 +1536,100 @@ PrefabInstance:
       propertyPath: m_fontColor.g
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863726154909310, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726182543573, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863726204070984, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863726208179744, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863726212010400, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726230781615, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726235680838, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726247790758, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726249809418, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726257668955, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726266056493, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726268494718, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726272618357, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726283438441, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726287835690, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726315348857, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726317830627, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726319227265, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726324812559, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3369863726359198124, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -676,10 +1662,65 @@ PrefabInstance:
       propertyPath: WinHandlerToCall
       value: DCWinHandler
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863726390523979, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726393488316, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726397825325, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726426078736, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726439412208, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726448912801, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726452273114, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863726468713829, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726469259384, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726479731634, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726481586205, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726493563084, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3369863726497026366, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -692,6 +1733,102 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 005a1d04f04fef54aa4665954f1f76bd,
         type: 3}
+    - target: {fileID: 3369863726530533252, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726534923258, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726543938713, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726546490694, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726551842971, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726555768762, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726565624509, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726584313028, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726586900153, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726614312317, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726616362926, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726618647935, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726625140962, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726627538421, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726634662576, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7896123285171065137, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 69646c3b447681b4a917a1017576f44e,
+        type: 3}
+    - target: {fileID: 7896123285171065137, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.86620915
+      objectReference: {fileID: 0}
+    - target: {fileID: 7896123285171065137, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.4481132
+      objectReference: {fileID: 0}
+    - target: {fileID: 7896123285171065137, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8135214035267558038, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: FlightAmount
@@ -699,3 +1836,411 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3467e989d33abdf45bc5f05c58b97676, type: 3}
+--- !u!1 &3369863724896972403 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3369863725365191362, guid: 3467e989d33abdf45bc5f05c58b97676,
+    type: 3}
+  m_PrefabInstance: {fileID: 3369863724896972402}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3369863724896972404 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3369863725652411833, guid: 3467e989d33abdf45bc5f05c58b97676,
+    type: 3}
+  m_PrefabInstance: {fileID: 3369863724896972402}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3369863724896972405 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3369863726121588353, guid: 3467e989d33abdf45bc5f05c58b97676,
+    type: 3}
+  m_PrefabInstance: {fileID: 3369863724896972402}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3369863724896972406 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3369863724924054538, guid: 3467e989d33abdf45bc5f05c58b97676,
+    type: 3}
+  m_PrefabInstance: {fileID: 3369863724896972402}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &3369863724896972407
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3369863724896972403}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5782611af5153f140ad41c7dba8b0bf6, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1.4
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &3369863724896972408
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3369863724896972404}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 344568abc72d7b741a19da09306a08fc, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 2
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &3369863724896972409
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3369863724896972405}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5782611af5153f140ad41c7dba8b0bf6, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 2.5
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &3369863724896972410
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3369863724896972406}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5782611af5153f140ad41c7dba8b0bf6, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

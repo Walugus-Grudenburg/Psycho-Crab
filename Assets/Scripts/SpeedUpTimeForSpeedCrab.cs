@@ -10,6 +10,8 @@ public class SpeedUpTimeForSpeedCrab : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "SPC World 1")
             Time.timeScale = 2f;
+        else if (SceneManager.GetActiveScene().name == "DMC World 1")
+            Time.timeScale = 0.8f;
         else
             Time.timeScale = 1f;
     }

@@ -12,6 +12,7 @@ public class SpookyJump : MonoBehaviour
     public AudioSource ChargedSound;
     public float ChargeMulti;
     public float Powermulti;
+    public bool DisableCameraChanges;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +40,7 @@ public class SpookyJump : MonoBehaviour
         {
             part.AddForce(gameObject.transform.up * Powermulti * 5000f * (0.9f + (Charged * (0.2f * Mathf.Clamp(((Charged - 5) * 0.15f), 1, 9999999)))));
         }
-        Cam.orthographicSize -= 2f * Charged;
+        if (!DisableCameraChanges) Cam.orthographicSize -= 2f * Charged;
         Charged = 0;
         StopAllCoroutines();
         StartCoroutine(RechargeAfterTime(4.3f - ChargeMulti * 1.3f));
@@ -57,7 +58,7 @@ public class SpookyJump : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         Charged += 1;
-        Cam.orthographicSize += 2f;
+        if (!DisableCameraChanges) Cam.orthographicSize += 2f;
         ChargedSound.pitch = 2f + (Charged * 0.25f);
         ChargedSound.Play();
         if (Charged < 5 * ChargeMulti)

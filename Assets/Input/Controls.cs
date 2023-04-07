@@ -339,6 +339,38 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""C"",
+                    ""type"": ""Button"",
+                    ""id"": ""49037985-8565-4d72-b5b0-ab6eaddb2aad"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""R"",
+                    ""type"": ""Button"",
+                    ""id"": ""91c9b113-2d8c-4e7b-a3d3-5424caedf84d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""A"",
+                    ""type"": ""Button"",
+                    ""id"": ""ea751e3d-204e-4973-b0c0-b8c07cb3360c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""B"",
+                    ""type"": ""Button"",
+                    ""id"": ""a9d0bdf3-4921-4e5c-876f-afaf00518ece"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -572,6 +604,50 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""05ed167e-d73b-4652-8288-132235f2e3fd"",
+                    ""path"": ""<Keyboard>/#(C)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""C"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d8b187da-e3af-439b-91f1-99e2ebd73749"",
+                    ""path"": ""<Keyboard>/#(R)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""R"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6fd492db-2800-4e6f-9899-8ef2ab22bd63"",
+                    ""path"": ""<Keyboard>/#(A)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""A"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1c2fe449-5e0c-4c04-b9ff-4cbe38f5f5c3"",
+                    ""path"": ""<Keyboard>/#(B)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""B"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -591,6 +667,10 @@ public class @Controls : IInputActionCollection, IDisposable
         m_UI_Accept = m_UI.FindAction("Accept", throwIfNotFound: true);
         m_UI_Menu = m_UI.FindAction("Menu", throwIfNotFound: true);
         m_UI_Move = m_UI.FindAction("Move", throwIfNotFound: true);
+        m_UI_C = m_UI.FindAction("C", throwIfNotFound: true);
+        m_UI_R = m_UI.FindAction("R", throwIfNotFound: true);
+        m_UI_A = m_UI.FindAction("A", throwIfNotFound: true);
+        m_UI_B = m_UI.FindAction("B", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -716,6 +796,10 @@ public class @Controls : IInputActionCollection, IDisposable
     private readonly InputAction m_UI_Accept;
     private readonly InputAction m_UI_Menu;
     private readonly InputAction m_UI_Move;
+    private readonly InputAction m_UI_C;
+    private readonly InputAction m_UI_R;
+    private readonly InputAction m_UI_A;
+    private readonly InputAction m_UI_B;
     public struct UIActions
     {
         private @Controls m_Wrapper;
@@ -723,6 +807,10 @@ public class @Controls : IInputActionCollection, IDisposable
         public InputAction @Accept => m_Wrapper.m_UI_Accept;
         public InputAction @Menu => m_Wrapper.m_UI_Menu;
         public InputAction @Move => m_Wrapper.m_UI_Move;
+        public InputAction @C => m_Wrapper.m_UI_C;
+        public InputAction @R => m_Wrapper.m_UI_R;
+        public InputAction @A => m_Wrapper.m_UI_A;
+        public InputAction @B => m_Wrapper.m_UI_B;
         public InputActionMap Get() { return m_Wrapper.m_UI; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -741,6 +829,18 @@ public class @Controls : IInputActionCollection, IDisposable
                 @Move.started -= m_Wrapper.m_UIActionsCallbackInterface.OnMove;
                 @Move.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnMove;
                 @Move.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnMove;
+                @C.started -= m_Wrapper.m_UIActionsCallbackInterface.OnC;
+                @C.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnC;
+                @C.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnC;
+                @R.started -= m_Wrapper.m_UIActionsCallbackInterface.OnR;
+                @R.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnR;
+                @R.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnR;
+                @A.started -= m_Wrapper.m_UIActionsCallbackInterface.OnA;
+                @A.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnA;
+                @A.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnA;
+                @B.started -= m_Wrapper.m_UIActionsCallbackInterface.OnB;
+                @B.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnB;
+                @B.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnB;
             }
             m_Wrapper.m_UIActionsCallbackInterface = instance;
             if (instance != null)
@@ -754,6 +854,18 @@ public class @Controls : IInputActionCollection, IDisposable
                 @Move.started += instance.OnMove;
                 @Move.performed += instance.OnMove;
                 @Move.canceled += instance.OnMove;
+                @C.started += instance.OnC;
+                @C.performed += instance.OnC;
+                @C.canceled += instance.OnC;
+                @R.started += instance.OnR;
+                @R.performed += instance.OnR;
+                @R.canceled += instance.OnR;
+                @A.started += instance.OnA;
+                @A.performed += instance.OnA;
+                @A.canceled += instance.OnA;
+                @B.started += instance.OnB;
+                @B.performed += instance.OnB;
+                @B.canceled += instance.OnB;
             }
         }
     }
@@ -772,5 +884,9 @@ public class @Controls : IInputActionCollection, IDisposable
         void OnAccept(InputAction.CallbackContext context);
         void OnMenu(InputAction.CallbackContext context);
         void OnMove(InputAction.CallbackContext context);
+        void OnC(InputAction.CallbackContext context);
+        void OnR(InputAction.CallbackContext context);
+        void OnA(InputAction.CallbackContext context);
+        void OnB(InputAction.CallbackContext context);
     }
 }

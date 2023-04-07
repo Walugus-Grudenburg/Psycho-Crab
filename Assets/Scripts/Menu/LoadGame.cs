@@ -24,7 +24,9 @@ public class LoadGame : MonoBehaviour
 
     public void LoadLevel()
     {
+        ProgressHandler.DeTermination = false;
         SatanScript.HasChaseStarted = false;
+        Checkpoint.allCheckpoints.Clear();
         SceneToLoad = ProgressHandler.SceneToLoad;
         IsContinuing = Continue;
         if (!MenuInstead) SceneManager.LoadScene(SceneToLoad, LoadSceneMode.Single);
