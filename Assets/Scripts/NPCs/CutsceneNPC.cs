@@ -9,6 +9,7 @@ public class CutsceneNPC : MonoBehaviour
     public float Speed;
     public Rigidbody2D RigidBody;
     public bool IsEvil;
+    public bool useRotation;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,6 @@ public class CutsceneNPC : MonoBehaviour
     void FixedUpdate()
     {
         RigidBody.MovePosition(RigidBody.position + (new Vector2(Direction.x, Direction.y) * Speed * Time.fixedDeltaTime));
-        gameObject.transform.rotation = Quaternion.Euler(Rotation);
+        if (useRotation) gameObject.transform.rotation = Quaternion.Euler(Rotation);
     }
 }

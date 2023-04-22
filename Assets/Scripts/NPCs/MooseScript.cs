@@ -5,14 +5,32 @@ using UnityEngine;
 public class MooseScript : MonoBehaviour
 {
     private Vector2 Direction;
+    public bool isLion;
     public ProgressHandler progress;
+    public SpookyJump jump;
     public float Speed;
+    public float charge;
     public GameObject Target;
     public AudioSource source;
     public Rigidbody2D RigidBody;
     // Start is called before the first frame update
     void Start()
     {
+        if (!progress) progress = ProgressHandler.maininstance;
+        if (!Target)
+        {
+            Target = ProgressHandler.maininstance.gameObject;
+        }
+        if (!jump)
+        {
+            jump = Target.GetComponent<SpookyJump>();
+        }
+        if (isLion) 
+        {
+            SatanScript.HasChaseStarted = true;
+            progress.IgnoreControls = true;
+            jump.ChargeMulti = charge;
+        }
     }
 
     // Update is called once per frame

@@ -16,6 +16,8 @@ TagManager:
   - Ungrabbable
   - Boss Attack
   - Death Lava
+  - Food
+  - Hungry
   layers:
   - Default
   - TransparentFX

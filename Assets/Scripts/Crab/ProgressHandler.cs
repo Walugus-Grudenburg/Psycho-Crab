@@ -9,11 +9,13 @@ using Steamworks;
 
 public class ProgressHandler : MonoBehaviour
 {
+    public static ProgressHandler maininstance;
     public static Controls controls;
     public static Vector3 Checkpoint_Position;
     public bool IgnoreControls;
     public bool ActivateDeTermination;
     public bool ResetLate;
+    public bool IsMainInstance = true;
     public CrabLeg[] Legs;
     public LoadGame loader;
     public GameObject[] Moneys;
@@ -42,6 +44,7 @@ public class ProgressHandler : MonoBehaviour
     public static int SPCFarthestCheckpoint;
     public static int RKCFarthestCheckpoint;
     public static int SDCFarthestCheckpoint;
+    public static int DCCFarthestCheckpoint;
     public static int DMCFarthestCheckpoint;
     private static bool HasDataSaved;
     static int HasDefiedDeath;
@@ -49,6 +52,7 @@ public class ProgressHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (IsMainInstance) maininstance = this;
         controls = new Controls();
         controls.Enable();
         LoadProgressData();
@@ -132,6 +136,8 @@ public class ProgressHandler : MonoBehaviour
         RKCFarthestCheckpoint = 31;
         SDCFarthestCheckpoint = 31;
         DMCFarthestCheckpoint = 31;
+        // remember to change later
+        DCCFarthestCheckpoint = 1;
         SaveProgressData();
     }
 
@@ -200,6 +206,7 @@ public class ProgressHandler : MonoBehaviour
         data.RKCFarthestCheckpoint = RKCFarthestCheckpoint;
         data.SDCFarthestCheckpoint = SDCFarthestCheckpoint;
         data.DMCFarthestCheckpoint = DMCFarthestCheckpoint;
+        data.DCCFarthestCheckpoint = DCCFarthestCheckpoint;
         formatter.Serialize(file, data);
         file.Close();
     }
@@ -239,6 +246,7 @@ public class ProgressHandler : MonoBehaviour
             RKCFarthestCheckpoint = data.RKCFarthestCheckpoint;
             SDCFarthestCheckpoint = data.SDCFarthestCheckpoint;
             DMCFarthestCheckpoint = data.DMCFarthestCheckpoint;
+            DCCFarthestCheckpoint = data.DCCFarthestCheckpoint;
             file.Close();
         }
         else
@@ -269,6 +277,7 @@ public class ProgressHandler : MonoBehaviour
         RKCFarthestCheckpoint = 0;
         SDCFarthestCheckpoint = 0;
         DMCFarthestCheckpoint = 0;
+        DCCFarthestCheckpoint = 0;
         BossStage = 0;
         SceneToLoad = "World 1";
         SaveProgressData();
@@ -343,6 +352,12 @@ public class ProgressHandler : MonoBehaviour
     public static void SetDCFarthestCheckpoint(int value)
     {
         DCFarthestCheckpoint = value;
+        SaveProgressData();
+    }
+
+    public static void SetDCCFarthestCheckpoint(int value)
+    {
+        DCCFarthestCheckpoint = value;
         SaveProgressData();
     }
 
@@ -439,6 +454,7 @@ public class ResetData
     public int RKCFarthestCheckpoint;
     public int SDCFarthestCheckpoint;
     public int DMCFarthestCheckpoint;
+    public int DCCFarthestCheckpoint;
     public string SceneToLoad;
     public int BossStage;
 }

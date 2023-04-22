@@ -8,7 +8,7 @@ public class DeleteAfterTime : MonoBehaviour
     public float timemin;
     public float timemax;
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
         Invoke("Delete", Random.Range(timemin, timemax));
     }

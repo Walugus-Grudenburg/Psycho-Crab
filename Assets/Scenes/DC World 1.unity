@@ -944,6 +944,11 @@ PrefabInstance:
       propertyPath: DopplerLevel
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863725191255033, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: ParentInstead
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725205364432, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_RootOrder

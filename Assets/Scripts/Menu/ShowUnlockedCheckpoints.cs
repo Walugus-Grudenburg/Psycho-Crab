@@ -82,6 +82,12 @@ public class ShowUnlockedCheckpoints : MonoBehaviour
                     buttons[i].SetActive(true);
                 }
                 break;
+            case Checkpoint.CheckpointMode.DCC:
+                for (int i = 0; i < ProgressHandler.DCCFarthestCheckpoint + 1; i++)
+                {
+                    buttons[i].SetActive(true);
+                }
+                break;
             default:
                 break;
         }

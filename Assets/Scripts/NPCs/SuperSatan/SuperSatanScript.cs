@@ -40,6 +40,9 @@ public class SuperSatanScript : MonoBehaviour
     public GameObject BCP;
     public GameObject DeathLava;
     public GameObject chicken;
+    public GameObject music;
+    public GameObject fakeoutmusic;
+    public GameObject desparationMusic;
     public AudioSource EvilLaugh;
     public AreaParent FallingAttack;
     public SpriteRenderer sprite;
@@ -252,6 +255,9 @@ public class SuperSatanScript : MonoBehaviour
         if (BossStage < 6)
         {
             sprite.color = TiredColor2;
+            Destroy(music);
+            Destroy(fakeoutmusic);
+            desparationMusic.SetActive(true);
             Spooky.ShutDown();
             foreach (GameObject wing in Wings)
             {
@@ -296,6 +302,7 @@ public class SuperSatanScript : MonoBehaviour
                 yield return new WaitForSeconds(1f);
             }
             sprite.color = Color.white;
+            desparationMusic.SetActive(false);
             yield return new WaitForSeconds(2f);
             EvilLaugh.Play();
             yield return new WaitForSeconds(2f);

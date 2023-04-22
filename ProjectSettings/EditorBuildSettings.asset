@@ -50,6 +50,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DMC World 1.unity
     guid: 827b2a627d84a0246aefb3c9f074eccb
+  - enabled: 1
+    path: Assets/Scenes/DC Challenge 1.unity
+    guid: 988d2659409eb8a4397c0bcd78953789
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 166d327f978809d42b7ad056a9b7e139,
       type: 2}

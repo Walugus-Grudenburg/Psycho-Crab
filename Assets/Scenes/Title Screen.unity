@@ -10976,6 +10976,7 @@ GameObject:
   - component: {fileID: 920837059}
   - component: {fileID: 920837060}
   - component: {fileID: 920837058}
+  - component: {fileID: 920837061}
   m_Layer: 0
   m_Name: Title Screen Music
   m_TagString: Untagged
@@ -11106,6 +11107,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music: {fileID: 920837058}
+--- !u!114 &920837061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920837057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2322c0e5db43b804ba88dd8c1448b439, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gravityScale: 9.81
 --- !u!1 &966336856
 GameObject:
   m_ObjectHideFlags: 0
@@ -11593,7 +11607,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1014969211}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00cea01a11198b1468ed27abb63ff946, type: 3}
   m_Name: 
@@ -13483,7 +13497,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1114461319
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13516,7 +13530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef99a843696a0c747b00939ea2da28fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneToLoad: DC World 1
+  SceneToLoad: DC Challenge 1
 --- !u!114 &1114461321
 MonoBehaviour:
   m_ObjectHideFlags: 0

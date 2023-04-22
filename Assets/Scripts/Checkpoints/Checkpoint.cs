@@ -8,7 +8,7 @@ public class Checkpoint : MonoBehaviour
     public static List<Checkpoint> allCheckpoints = new List<Checkpoint>();
     public bool dementiaWasLastUsed;
     public GameObject text;
-    public enum CheckpointMode {BC, DC, DRC, FC, GC, PHC, RC, RCC, RKC, SC, SPC, SDC, DMC};
+    public enum CheckpointMode {BC, DC, DRC, FC, GC, PHC, RC, RCC, RKC, SC, SPC, SDC, DMC, DCC};
     public CheckpointMode Checkpoint_Mode;
     private Vector3 Checkpoint_Position;
     public bool DebugActivate;
@@ -130,6 +130,12 @@ public class Checkpoint : MonoBehaviour
                 if (ID > ProgressHandler.SDCFarthestCheckpoint)
                 {
                     ProgressHandler.SetSDCFarthestCheckpoint(ID);
+                }
+                break;
+            case CheckpointMode.DCC:
+                if (ID > ProgressHandler.DCCFarthestCheckpoint)
+                {
+                    ProgressHandler.SetDCCFarthestCheckpoint(ID);
                 }
                 break;
             default:

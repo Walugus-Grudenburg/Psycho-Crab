@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ToggleVisRandomly : MonoBehaviour
 {
-    SpriteRenderer renderer;
+    SpriteRenderer rendererer;
     // Start is called before the first frame update
     void Start()
     {
-        renderer = GetComponent<SpriteRenderer>();
+        rendererer = GetComponent<SpriteRenderer>();
         StartCoroutine(ToggleLoop());
     }
 
@@ -23,7 +23,7 @@ public class ToggleVisRandomly : MonoBehaviour
         yield return new WaitForSeconds(0.05f);
         if (Random.Range(0,100) == 0)
         {
-            renderer.enabled = !renderer.enabled;
+            rendererer.enabled = !rendererer.enabled;
         }
         StartCoroutine(ToggleLoop());
     }
