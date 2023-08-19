@@ -90,6 +90,7 @@ public class ProgressHandler : MonoBehaviour
     }
     void Update()
     {
+        Debug.Log(HasDefiedDeath);
         if (ActivateDeTermination)
         {
             DeTermination = true;
@@ -148,7 +149,7 @@ public class ProgressHandler : MonoBehaviour
             if (HasDefiedDeath == 0)
             {
                 HasDefiedDeath = 1;
-                SteamUserStats.SetStat("HasDefiedDeath", HasDefiedDeath);
+                SteamUserStats.SetStat("Has_Defied_Death", HasDefiedDeath);
                 SteamUserStats.StoreStats();
             }
             return;
