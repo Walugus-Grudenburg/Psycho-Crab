@@ -21,6 +21,7 @@ public class ProgressHandler : MonoBehaviour
     public GameObject[] Moneys;
     public GameObject SignToRotate;
     public static int BossStage;
+    public static int GIGABossStage;
     public static string SceneToLoad;
     public static bool DeTermination;
     public static bool JumpUnlocked;
@@ -136,8 +137,7 @@ public class ProgressHandler : MonoBehaviour
         RKCFarthestCheckpoint = 31;
         SDCFarthestCheckpoint = 31;
         DMCFarthestCheckpoint = 31;
-        // remember to change later
-        DCCFarthestCheckpoint = 1;
+        DCCFarthestCheckpoint = 3;
         SaveProgressData();
     }
 
@@ -207,6 +207,7 @@ public class ProgressHandler : MonoBehaviour
         data.SDCFarthestCheckpoint = SDCFarthestCheckpoint;
         data.DMCFarthestCheckpoint = DMCFarthestCheckpoint;
         data.DCCFarthestCheckpoint = DCCFarthestCheckpoint;
+        data.GIGABossStage = GIGABossStage;
         formatter.Serialize(file, data);
         file.Close();
     }
@@ -247,6 +248,7 @@ public class ProgressHandler : MonoBehaviour
             SDCFarthestCheckpoint = data.SDCFarthestCheckpoint;
             DMCFarthestCheckpoint = data.DMCFarthestCheckpoint;
             DCCFarthestCheckpoint = data.DCCFarthestCheckpoint;
+            GIGABossStage = data.GIGABossStage;
             file.Close();
         }
         else
@@ -279,6 +281,7 @@ public class ProgressHandler : MonoBehaviour
         DMCFarthestCheckpoint = 0;
         DCCFarthestCheckpoint = 0;
         BossStage = 0;
+        GIGABossStage = 0;
         SceneToLoad = "World 1";
         SaveProgressData();
     }
@@ -457,4 +460,5 @@ public class ResetData
     public int DCCFarthestCheckpoint;
     public string SceneToLoad;
     public int BossStage;
+    public int GIGABossStage;
 }

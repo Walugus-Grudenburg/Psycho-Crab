@@ -279,6 +279,11 @@ PrefabInstance:
       propertyPath: mode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1072766520464056022, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetBCFarthestCheckpoint
+      objectReference: {fileID: 0}
     - target: {fileID: 2401904028658168666, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_IsActive
@@ -333,6 +338,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724709990562, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Powermulti
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724709990562, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: JumpParts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724709990562, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: JumpParts.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724709990562, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: JumpParts.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724709990562, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: JumpParts.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724709990562, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: JumpParts.Array.data[4]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3369863724709990585, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}

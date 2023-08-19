@@ -333,6 +333,11 @@ PrefabInstance:
       propertyPath: StrengthStrength
       value: 0.02
       objectReference: {fileID: 0}
+    - target: {fileID: 1072766520464056022, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetFCFarthestCheckpoint
+      objectReference: {fileID: 0}
     - target: {fileID: 1460208659129804953, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size

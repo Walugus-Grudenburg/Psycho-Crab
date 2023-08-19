@@ -401,6 +401,11 @@ PrefabInstance:
       propertyPath: DopplerLevel
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1072766520464056022, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetDCFarthestCheckpoint
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863724498556954, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: DopplerLevel

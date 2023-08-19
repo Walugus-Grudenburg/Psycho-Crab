@@ -71,7 +71,7 @@ public class ShowUnlockedCheckpoints : MonoBehaviour
                 }
                 break;
             case Checkpoint.CheckpointMode.SPC:
-                for (int i = 0; i < ProgressHandler.SDCFarthestCheckpoint + 1; i++)
+                for (int i = 0; i < ProgressHandler.SPCFarthestCheckpoint + 1; i++)
                 {
                     buttons[i].SetActive(true);
                 }

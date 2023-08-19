@@ -230,7 +230,7 @@ public class VictoryManager : MonoBehaviour
 
     IEnumerator RCCWinHandler()
     {
-        RCNumberOfWins++;
+        RCCNumberOfWins++;
         SteamUserStats.SetStat("RCC_wins", RCCNumberOfWins);
         SteamUserStats.StoreStats();
         yield return null;
