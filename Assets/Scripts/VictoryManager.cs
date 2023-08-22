@@ -36,6 +36,7 @@ public class VictoryManager : MonoBehaviour
     static int GCCNumberOfWins;
     static int DMCNumberOfWins;
     static int DCCNumberOfWins;
+    static int PCNumberOfWins;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,6 +56,7 @@ public class VictoryManager : MonoBehaviour
         SteamUserStats.GetStat("RKC_wins", out RKCNumberOfWins);
         SteamUserStats.GetStat("DMC_wins", out DMCNumberOfWins);
         SteamUserStats.GetStat("DCC_wins", out DCCNumberOfWins);
+        SteamUserStats.GetStat("PC_wins", out PCNumberOfWins);
     }
 
     // Update is called once per frame
@@ -255,6 +257,13 @@ public class VictoryManager : MonoBehaviour
     {
         DCCNumberOfWins++;
         SteamUserStats.SetStat("DCC_wins", DCCNumberOfWins);
+        SteamUserStats.StoreStats();
+        yield return null;
+    }
+    IEnumerator PCWinHandler()
+    {
+        PCNumberOfWins++;
+        SteamUserStats.SetStat("PC_wins", PCNumberOfWins);
         SteamUserStats.StoreStats();
         yield return null;
     }

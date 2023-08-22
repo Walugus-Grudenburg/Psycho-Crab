@@ -47,6 +47,7 @@ public class ProgressHandler : MonoBehaviour
     public static int SDCFarthestCheckpoint;
     public static int DCCFarthestCheckpoint;
     public static int DMCFarthestCheckpoint;
+    public static int PCFarthestCheckpoint;
     private static bool HasDataSaved;
     static int HasDefiedDeath;
     static int AllOriginalUnlocks;
@@ -90,7 +91,6 @@ public class ProgressHandler : MonoBehaviour
     }
     void Update()
     {
-        Debug.Log(HasDefiedDeath);
         if (ActivateDeTermination)
         {
             DeTermination = true;
@@ -139,6 +139,7 @@ public class ProgressHandler : MonoBehaviour
         SDCFarthestCheckpoint = 31;
         DMCFarthestCheckpoint = 31;
         DCCFarthestCheckpoint = 3;
+        PCFarthestCheckpoint = 31;
         SaveProgressData();
     }
 
@@ -208,6 +209,7 @@ public class ProgressHandler : MonoBehaviour
         data.SDCFarthestCheckpoint = SDCFarthestCheckpoint;
         data.DMCFarthestCheckpoint = DMCFarthestCheckpoint;
         data.DCCFarthestCheckpoint = DCCFarthestCheckpoint;
+        data.PCFarthestCheckpoint = PCFarthestCheckpoint;
         data.GIGABossStage = GIGABossStage;
         formatter.Serialize(file, data);
         file.Close();
@@ -249,6 +251,7 @@ public class ProgressHandler : MonoBehaviour
             SDCFarthestCheckpoint = data.SDCFarthestCheckpoint;
             DMCFarthestCheckpoint = data.DMCFarthestCheckpoint;
             DCCFarthestCheckpoint = data.DCCFarthestCheckpoint;
+            PCFarthestCheckpoint = data.PCFarthestCheckpoint;
             GIGABossStage = data.GIGABossStage;
             file.Close();
         }
@@ -281,6 +284,7 @@ public class ProgressHandler : MonoBehaviour
         SDCFarthestCheckpoint = 0;
         DMCFarthestCheckpoint = 0;
         DCCFarthestCheckpoint = 0;
+        PCFarthestCheckpoint = 0;
         BossStage = 0;
         GIGABossStage = 0;
         SceneToLoad = "World 1";
@@ -419,6 +423,12 @@ public class ProgressHandler : MonoBehaviour
         SaveProgressData();
     }
 
+    public static void SetPCFarthestCheckpoint(int value)
+    {
+        PCFarthestCheckpoint = value;
+        SaveProgressData();
+    }
+
     public static void ToggleSpookify()
     {
         Spookify = !Spookify;
@@ -459,6 +469,7 @@ public class ResetData
     public int SDCFarthestCheckpoint;
     public int DMCFarthestCheckpoint;
     public int DCCFarthestCheckpoint;
+    public int PCFarthestCheckpoint;
     public string SceneToLoad;
     public int BossStage;
     public int GIGABossStage;

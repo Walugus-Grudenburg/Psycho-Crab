@@ -88,6 +88,12 @@ public class ShowUnlockedCheckpoints : MonoBehaviour
                     buttons[i].SetActive(true);
                 }
                 break;
+            case Checkpoint.CheckpointMode.PC:
+                for (int i = 0; i < ProgressHandler.PCFarthestCheckpoint + 1; i++)
+                {
+                    buttons[i].SetActive(true);
+                }
+                break;
             default:
                 break;
         }
