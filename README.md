@@ -1,7 +1,7 @@
 # Psycho-Crab
 A dumb Unity game about climbing things as a crab. 
 
-Compiled game download at https://drive.google.com/file/d/168C4QSTiiTH6EyMF3SJoSFwDa3bS3K5q/view?usp=sharing
+Compiled game download mirror at https://drive.google.com/file/d/168C4QSTiiTH6EyMF3SJoSFwDa3bS3K5q/view?usp=sharing (is sometimes more up to date than the releases here)
 
 The Steam version, if you want to support me, is here: https://store.steampowered.com/app/1923650/Psycho_Crab/
 The game is out now as Early Access!
