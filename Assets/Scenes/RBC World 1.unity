@@ -3399,6 +3399,11 @@ PrefabInstance:
       propertyPath: Checkpoint_Mode
       value: 17
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863724709990561, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863724709990562, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Active
@@ -3412,12 +3417,12 @@ PrefabInstance:
     - target: {fileID: 3369863724709990562, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3369863724709990562, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Powermulti
-      value: 0
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 3369863724709990562, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -4101,6 +4106,11 @@ PrefabInstance:
     - target: {fileID: 3369863726315348859, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726331996073, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3369863726359198124, guid: 3467e989d33abdf45bc5f05c58b97676,
