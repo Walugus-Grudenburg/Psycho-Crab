@@ -54,7 +54,7 @@ public class SpookyJump : MonoBehaviour
         Active = false;
     }
 
-    IEnumerator RechargeAfterTime(float time)
+    protected virtual IEnumerator RechargeAfterTime(float time)
     {
         yield return new WaitForSeconds(time);
         Charged += 1;

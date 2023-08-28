@@ -3,7 +3,7 @@ using UnityEngine;
 public class RotateGravity : MonoBehaviour
 {
     private Vector2 gravityDirection;
-    public float gravityScale = 1.0f;
+    public float gravityScale;
 
     void Start()
     {

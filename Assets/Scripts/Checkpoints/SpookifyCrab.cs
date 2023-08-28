@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpookifyCrab : MonoBehaviour
+public class SpookifyCrab : MonoBehaviour                                           
 {
     public bool DebugActivate;
     public SpookyScript[] PartsToSpook;
@@ -13,9 +13,9 @@ public class SpookifyCrab : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    // Update is called once per frame                                                                                                                                                                                                                              m                               . 
+void Update()
+{
         if (ProgressHandler.Spookify || DebugActivate)
         {
             Spookify();
@@ -27,7 +27,7 @@ public class SpookifyCrab : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             ProgressHandler.Spookify = true;
-        }
+        }               
     }
 
     public void Spookify()

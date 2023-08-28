@@ -1170,7 +1170,7 @@ PrefabInstance:
     - target: {fileID: 3369863725031436966, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_LocalAABB.m_Center.y
-      value: 1079.1196
+      value: 1064.4763
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725031436966, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -1180,7 +1180,7 @@ PrefabInstance:
     - target: {fileID: 3369863725031436966, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_LocalAABB.m_Extent.y
-      value: 548.8296
+      value: 610.1955
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725031436966, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -1206,6 +1206,43 @@ PrefabInstance:
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725077144005, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725077144011, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_text
+      value: 'You''ve unlocked
+
+        Glass Crab!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725077144011, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_fontColor.a
+      value: 0.5254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725077144011, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725077144011, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725077144011, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725077144011, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 2248147199
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725079896242, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -1505,7 +1542,7 @@ PrefabInstance:
     - target: {fileID: 3369863725272351259, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_LocalAABB.m_Center.x
-      value: 285.3606
+      value: 226.97632
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725272351259, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -1515,7 +1552,7 @@ PrefabInstance:
     - target: {fileID: 3369863725272351259, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_LocalAABB.m_Extent.x
-      value: 2557.4292
+      value: 2499.0444
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725272351259, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -3937,12 +3974,12 @@ PrefabInstance:
     - target: {fileID: 3369863726317830631, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_LocalAABB.m_Center.x
-      value: 1448.6678
+      value: 1160.603
       objectReference: {fileID: 0}
     - target: {fileID: 3369863726317830631, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_LocalAABB.m_Extent.x
-      value: 820.1522
+      value: 1108.217
       objectReference: {fileID: 0}
     - target: {fileID: 3369863726324812787, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -4018,6 +4055,11 @@ PrefabInstance:
         type: 3}
       propertyPath: DoUnlock2
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726381535069, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DoUnlock6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3369863726381535069, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}

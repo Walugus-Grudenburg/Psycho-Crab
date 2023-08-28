@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 789974609370985266}
   - component: {fileID: 789974609370985265}
   - component: {fileID: 2222663604062195506}
+  - component: {fileID: 4373397065460672759}
   m_Layer: 9
   m_Name: Seagull Right
   m_TagString: Area Child
@@ -297,3 +298,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mat: {fileID: 2100000, guid: f6aa298c5deadc344b012ed39b7f3796, type: 2}
   UseShapeMode: 0
+--- !u!114 &4373397065460672759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789974609370985272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92714a2914f43474ca180287a427ac78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

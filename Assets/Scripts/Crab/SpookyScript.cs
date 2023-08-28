@@ -21,6 +21,6 @@ public class SpookyScript : MonoBehaviour
 
     public void Spookify()
     {
-        if (SceneManager.GetActiveScene().name == "World 1") Renderer.sprite = SpookyVersion;
+        if (SceneManager.GetActiveScene().name == "World 1" || SceneManager.GetActiveScene().name == "GLC World 1") Renderer.sprite = SpookyVersion;
     }
 }

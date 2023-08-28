@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ToggleWhenUnlocked : MonoBehaviour
 {
-    public enum Condition {JumpUnlocked,GullcrabUnlocked,BatcrabUnlocked,DizzyCrabUnlocked,PrehistoricCrabUnlocked,SantaCrabUnlocked,SpiderCrabUnlocked,DementiaCrabUnlocked};
+    public enum Condition {JumpUnlocked,GullcrabUnlocked,BatcrabUnlocked,DizzyCrabUnlocked,PrehistoricCrabUnlocked,SantaCrabUnlocked,SpiderCrabUnlocked,DementiaCrabUnlocked, GlassCrabUnlocked};
     public Condition condition;
     public GameObject ObjectToToggle;
     // Start is called before the first frame update
@@ -82,6 +82,14 @@ public class ToggleWhenUnlocked : MonoBehaviour
             if (!ProgressHandler.DementiaCrabUnlocked)
             {
                 ObjectToToggle.SetActive(ProgressHandler.DementiaCrabUnlocked);
+            }
+        }
+
+        if (condition == Condition.GlassCrabUnlocked)
+        {
+            if (!ProgressHandler.GlassCrabUnlocked)
+            {
+                ObjectToToggle.SetActive(ProgressHandler.GlassCrabUnlocked);
             }
         }
     }

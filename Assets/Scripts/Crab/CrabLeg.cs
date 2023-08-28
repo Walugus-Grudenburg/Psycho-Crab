@@ -20,7 +20,8 @@ public class CrabLeg : MonoBehaviour
     public float StrengthStrength;
     private bool IsWaitingToStick;
     private bool IsWaitingToUnStick;
-    private bool IsInGoo;
+    public bool IsInGoo;
+    public bool IsInWater;
     private bool CheckIfSticking;
     MinecartScript minecartscript;
 
@@ -267,10 +268,15 @@ public class CrabLeg : MonoBehaviour
         if (collision.CompareTag("Water") && IsUnstickReady && IsWaterUnstickReady && !IsWaitingToUnStick && !IsWaitingToStick) // Checks if underwater, and if so, stop sticking
         {
             Unstick(wetsound);
+            IsInWater = true;
         }
         if (collision.CompareTag("Goo"))
         {
             IsInGoo = true;
+        }
+        if (collision.CompareTag("Water"))
+        {
+            IsInWater = true;
         }
     }
 
@@ -278,6 +284,10 @@ public class CrabLeg : MonoBehaviour
     {
         if (collision.CompareTag("Goo")) {
             IsInGoo = false;
+        }
+        if (collision.CompareTag("Water"))
+        {
+            IsInWater = false;
         }
     }
 

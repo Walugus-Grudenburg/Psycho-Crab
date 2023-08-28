@@ -59,6 +59,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PC World 1.unity
     guid: 37646a3cd4845384489416cf33131cf9
+  - enabled: 1
+    path: Assets/Scenes/GLC World 1.unity
+    guid: 25a90a2fca053d048ba449cbda71d53b
+  - enabled: 1
+    path: Assets/Scenes/PC Challenge 1.unity
+    guid: 61e82d9427cc28d4ab4eae66c3cec0d2
+  - enabled: 1
+    path: Assets/Scenes/RBC World 1.unity
+    guid: 00526c13695bdb74ca06827534c56311
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 166d327f978809d42b7ad056a9b7e139,
       type: 2}

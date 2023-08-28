@@ -30,6 +30,7 @@ public class MooseScript : MonoBehaviour
             SatanScript.HasChaseStarted = true;
             progress.IgnoreControls = true;
             jump.ChargeMulti = charge;
+            jump.Recharge = true;
         }
     }
 

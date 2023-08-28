@@ -34,6 +34,7 @@ public class ProgressHandler : MonoBehaviour
     public static bool SantaCrabUnlocked;
     public static bool SpiderCrabUnlocked;
     public static bool DementiaCrabUnlocked;
+    public static bool GlassCrabUnlocked;
     public static int RCFarthestCheckpoint;
     public static int DCFarthestCheckpoint;
     public static int DRCFarthestCheckpoint;
@@ -48,6 +49,9 @@ public class ProgressHandler : MonoBehaviour
     public static int DCCFarthestCheckpoint;
     public static int DMCFarthestCheckpoint;
     public static int PCFarthestCheckpoint;
+    public static int GLCFarthestCheckpoint;
+    public static int PCCFarthestCheckpoint;
+    public static int RBCFarthestCheckpoint;
     private static bool HasDataSaved;
     static int HasDefiedDeath;
     static int AllOriginalUnlocks;
@@ -139,7 +143,11 @@ public class ProgressHandler : MonoBehaviour
         SDCFarthestCheckpoint = 31;
         DMCFarthestCheckpoint = 31;
         DCCFarthestCheckpoint = 3;
-        PCFarthestCheckpoint = 31;
+        PCFarthestCheckpoint = 32;
+        GLCFarthestCheckpoint = 31;
+        PCCFarthestCheckpoint = 5;
+        RBCFarthestCheckpoint = 31;
+        GlassCrabUnlocked = true;
         SaveProgressData();
     }
 
@@ -211,6 +219,10 @@ public class ProgressHandler : MonoBehaviour
         data.DCCFarthestCheckpoint = DCCFarthestCheckpoint;
         data.PCFarthestCheckpoint = PCFarthestCheckpoint;
         data.GIGABossStage = GIGABossStage;
+        data.GLCFarthestCheckpoint = GLCFarthestCheckpoint;
+        data.GlassCrabUnlocked = GlassCrabUnlocked;
+        data.PCCFarthestCheckpoint = PCCFarthestCheckpoint;
+        data.RBCFarthestCheckpoint = RBCFarthestCheckpoint;
         formatter.Serialize(file, data);
         file.Close();
     }
@@ -253,6 +265,10 @@ public class ProgressHandler : MonoBehaviour
             DCCFarthestCheckpoint = data.DCCFarthestCheckpoint;
             PCFarthestCheckpoint = data.PCFarthestCheckpoint;
             GIGABossStage = data.GIGABossStage;
+            GLCFarthestCheckpoint = data.GLCFarthestCheckpoint;
+            GlassCrabUnlocked = data.GlassCrabUnlocked;
+            PCCFarthestCheckpoint = data.PCCFarthestCheckpoint;
+            RBCFarthestCheckpoint = data.RBCFarthestCheckpoint;
             file.Close();
         }
         else
@@ -285,6 +301,10 @@ public class ProgressHandler : MonoBehaviour
         DMCFarthestCheckpoint = 0;
         DCCFarthestCheckpoint = 0;
         PCFarthestCheckpoint = 0;
+        GLCFarthestCheckpoint = 0;
+        PCCFarthestCheckpoint = 0;
+        RBCFarthestCheckpoint = 0;
+        GlassCrabUnlocked = false;
         BossStage = 0;
         GIGABossStage = 0;
         SceneToLoad = "World 1";
@@ -344,6 +364,13 @@ public class ProgressHandler : MonoBehaviour
         DementiaCrabUnlocked = value;
         SaveProgressData();
     }
+
+    public static void SetUnlockGLC(bool value)
+    {
+        GlassCrabUnlocked = value;
+        SaveProgressData();
+    }
+
 
     public static void SetBossStage(int value)
     {
@@ -429,6 +456,24 @@ public class ProgressHandler : MonoBehaviour
         SaveProgressData();
     }
 
+    public static void SetGLCFarthestCheckpoint(int value)
+    {
+        GLCFarthestCheckpoint = value;
+        SaveProgressData();
+    }
+
+    public static void SetPCCFarthestCheckpoint(int value)
+    {
+        PCCFarthestCheckpoint = value;
+        SaveProgressData();
+    }
+
+    public static void SetRBCFarthestCheckpoint(int value)
+    {
+        RBCFarthestCheckpoint = value;
+        SaveProgressData();
+    }
+
     public static void ToggleSpookify()
     {
         Spookify = !Spookify;
@@ -470,7 +515,11 @@ public class ResetData
     public int DMCFarthestCheckpoint;
     public int DCCFarthestCheckpoint;
     public int PCFarthestCheckpoint;
+    public int GLCFarthestCheckpoint;
+    public int PCCFarthestCheckpoint;
+    public int RBCFarthestCheckpoint;
     public string SceneToLoad;
     public int BossStage;
     public int GIGABossStage;
+    public bool GlassCrabUnlocked;
 }
