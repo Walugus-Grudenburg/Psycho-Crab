@@ -12,6 +12,7 @@ public class CrabLeg : MonoBehaviour
     public AudioSource wetsound;
     private Controls controls;
     public bool IgnoreSticking;
+    public bool IgnoreWater;
     bool IsSticking;
     bool IsUnstickReady;
     bool IsWaterUnstickReady;
@@ -265,7 +266,7 @@ public class CrabLeg : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Water") && IsUnstickReady && IsWaterUnstickReady && !IsWaitingToUnStick && !IsWaitingToStick) // Checks if underwater, and if so, stop sticking
+        if (collision.CompareTag("Water") && IsUnstickReady && IsWaterUnstickReady && !IsWaitingToUnStick && !IsWaitingToStick && !IgnoreWater) // Checks if underwater, and if so, stop sticking
         {
             Unstick(wetsound);
             IsInWater = true;

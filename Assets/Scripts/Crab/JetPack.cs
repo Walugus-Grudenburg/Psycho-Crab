@@ -6,6 +6,7 @@ public class JetPack : MonoBehaviour
 {
     public Rigidbody2D rigidBody;
     public float speed;
+    public bool isSuperJetpack;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +15,7 @@ public class JetPack : MonoBehaviour
 
     private void OnEnable()
     {
-        speed = 1f;
+        speed = 1f + (10 * (isSuperJetpack ? 1 : 0));
     }
 
     // Update is called once per frame

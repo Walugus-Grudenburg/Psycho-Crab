@@ -191,6 +191,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1110220759463085935, guid: 0f037115b5912ca41a2a41cc0710771c,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: DCC
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110220759823604377, guid: 0f037115b5912ca41a2a41cc0710771c,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: DCC
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110220760135723789, guid: 0f037115b5912ca41a2a41cc0710771c,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: DCC
+      objectReference: {fileID: 0}
     - target: {fileID: 1110220760229726484, guid: 0f037115b5912ca41a2a41cc0710771c,
         type: 3}
       propertyPath: m_Name
@@ -250,6 +265,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110220760375258327, guid: 0f037115b5912ca41a2a41cc0710771c,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: DCC
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110220760898100472, guid: 0f037115b5912ca41a2a41cc0710771c,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110220760898100472, guid: 0f037115b5912ca41a2a41cc0710771c,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResetCrabFarthestCheckpoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110220760898100472, guid: 0f037115b5912ca41a2a41cc0710771c,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: DCC
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110220761144661514, guid: 0f037115b5912ca41a2a41cc0710771c,
+        type: 3}
+      propertyPath: WinHandlerToCall
+      value: DCC
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110220761299233400, guid: 0f037115b5912ca41a2a41cc0710771c,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: DCC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f037115b5912ca41a2a41cc0710771c, type: 3}

@@ -35,6 +35,34 @@ public class ProgressHandler : MonoBehaviour
     public static bool SpiderCrabUnlocked;
     public static bool DementiaCrabUnlocked;
     public static bool GlassCrabUnlocked;
+    public static bool PollutionCrabUnlocked;
+    private static bool HasDataSaved;
+    static int HasDefiedDeath;
+    static int AllOriginalUnlocks;
+
+    public static CrabClass[] allCrabClasses;
+    public static CrabClass RCCrabClass = new CrabClass();
+    public static CrabClass RCCCrabClass = new CrabClass();
+    public static CrabClass DCCrabClass = new CrabClass();
+    public static CrabClass DRCCrabClass = new CrabClass();
+    public static CrabClass BCCrabClass = new CrabClass();
+    public static CrabClass SCCrabClass = new CrabClass();
+    public static CrabClass FCCrabClass = new CrabClass();
+    public static CrabClass GCCrabClass = new CrabClass();
+    public static CrabClass GCCCrabClass = new CrabClass();
+    public static CrabClass PHCCrabClass = new CrabClass();
+    public static CrabClass SPCCrabClass = new CrabClass();
+    public static CrabClass RKCCrabClass = new CrabClass();
+    public static CrabClass SDCCrabClass = new CrabClass();
+    public static CrabClass DCCCrabClass = new CrabClass();
+    public static CrabClass DMCCrabClass = new CrabClass();
+    public static CrabClass PCCrabClass = new CrabClass();
+    public static CrabClass GLCCrabClass = new CrabClass();
+    public static CrabClass PCCCrabClass = new CrabClass();
+    public static CrabClass RBCCrabClass = new CrabClass();
+    public static CrabClass PLCCrabClass = new CrabClass();
+
+    // DEPRECATED, DON'T USE THESE! USE CRAB CLASSES INSTEAD
     public static int RCFarthestCheckpoint;
     public static int DCFarthestCheckpoint;
     public static int DRCFarthestCheckpoint;
@@ -52,16 +80,67 @@ public class ProgressHandler : MonoBehaviour
     public static int GLCFarthestCheckpoint;
     public static int PCCFarthestCheckpoint;
     public static int RBCFarthestCheckpoint;
-    private static bool HasDataSaved;
-    static int HasDefiedDeath;
-    static int AllOriginalUnlocks;
+    // END DEPRECATION
+
     // Start is called before the first frame update
     void Start()
     {
+        allCrabClasses = new CrabClass[] {RCCrabClass, BCCrabClass, DCCCrabClass, DCCrabClass, DMCCrabClass, DRCCrabClass, FCCrabClass, GCCrabClass, GLCCrabClass, GCCCrabClass, PCCCrabClass, PCCrabClass, PHCCrabClass, PLCCrabClass, RBCCrabClass, RCCCrabClass, RKCCrabClass, SCCrabClass, SDCCrabClass, SPCCrabClass };
+        LoadProgressData();
+        // Set up all crab classes
+        BCCrabClass.name = "BC";
+        RCCrabClass.name = "RC";
+        RCCCrabClass.name = "RCC";
+        DCCCrabClass.name = "DCC";
+        DCCrabClass.name = "DC";
+        DMCCrabClass.name = "DMC";
+        DRCCrabClass.name = "DRC";
+        FCCrabClass.name = "FC";
+        GCCrabClass.name = "GCs";
+        GLCCrabClass.name = "GLC";
+        GCCCrabClass.name = "GCC";
+        PCCCrabClass.name = "PCC";
+        PCCrabClass.name = "PC";
+        PHCCrabClass.name = "PHC";
+        PLCCrabClass.name = "PLC";
+        RBCCrabClass.name = "RBC";
+        RKCCrabClass.name = "RKC";
+        SCCrabClass.name = "SC";
+        SDCCrabClass.name = "SDC";
+        SPCCrabClass.name = "SPC";
+        foreach (CrabClass crab in allCrabClasses)
+        {
+            crab.winsStatName = crab.name + "_wins";
+            if (crab.winsStatName == "DCC_wins")
+            {
+                crab.maximumFarthestCheckpoint = 3;
+            }
+            else if (crab.winsStatName == "PCC_wins")
+            {
+                crab.maximumFarthestCheckpoint = 5;
+            }
+            else if (crab.winsStatName == "PC_wins")
+            {
+                crab.maximumFarthestCheckpoint = 32;
+            }
+            else if (crab.winsStatName == "PHC_wins")
+            {
+                crab.maximumFarthestCheckpoint = 35;
+            }
+            else if (crab.winsStatName == "RCC_wins" || crab.winsStatName == "GCC_wins" || crab.winsStatName == "DMC_wins")
+            {
+                crab.maximumFarthestCheckpoint = 0;
+            }
+            else 
+            {
+                crab.maximumFarthestCheckpoint = 31;
+            }
+        }
+        // end crab class setup
+
         if (IsMainInstance) maininstance = this;
         controls = new Controls();
         controls.Enable();
-        LoadProgressData();
         if (!HasDataSaved)
         {
             ResetProgressToDefault();
@@ -120,7 +199,7 @@ public class ProgressHandler : MonoBehaviour
         }
     }
 
-    private void UnlockEverything() 
+    private void UnlockEverything()
     {
         JumpUnlocked = true;
         MoneyUnlocked = true;
@@ -130,24 +209,13 @@ public class ProgressHandler : MonoBehaviour
         PrehistoricCrabUnlocked = true;
         SantaCrabUnlocked = true;
         SpiderCrabUnlocked = true;
-        RCFarthestCheckpoint = 31;
-        DCFarthestCheckpoint = 31;
-        DRCFarthestCheckpoint = 31;
-        BCFarthestCheckpoint = 31;
-        SCFarthestCheckpoint = 31;
-        FCFarthestCheckpoint = 31;
-        GCFarthestCheckpoint = 31;
-        PHCFarthestCheckpoint = 31;
-        SPCFarthestCheckpoint = 31;
-        RKCFarthestCheckpoint = 31;
-        SDCFarthestCheckpoint = 31;
-        DMCFarthestCheckpoint = 31;
-        DCCFarthestCheckpoint = 3;
-        PCFarthestCheckpoint = 32;
-        GLCFarthestCheckpoint = 31;
-        PCCFarthestCheckpoint = 5;
-        RBCFarthestCheckpoint = 31;
         GlassCrabUnlocked = true;
+        PollutionCrabUnlocked = true;
+        DementiaCrabUnlocked = true;
+        foreach (CrabClass crab in allCrabClasses)
+        {
+            crab.farthestCheckpoint = crab.maximumFarthestCheckpoint;
+        }
         SaveProgressData();
     }
 
@@ -164,7 +232,7 @@ public class ProgressHandler : MonoBehaviour
             return;
         }
         Teleport(Checkpoint_Position);
-        
+
         if (SatanScript.HasChaseStarted)
         {
             SatanScript.HasChaseStarted = false;
@@ -204,25 +272,29 @@ public class ProgressHandler : MonoBehaviour
         data.SpiderCrabUnlocked = SpiderCrabUnlocked;
         data.DementiaCrabUnlocked = DementiaCrabUnlocked;
         data.BossStage = BossStage;
-        data.RCFarthestCheckpoint = RCFarthestCheckpoint;
-        data.BCFarthestCheckpoint = BCFarthestCheckpoint;
-        data.DCFarthestCheckpoint = DCFarthestCheckpoint;
-        data.DRCFarthestCheckpoint = DRCFarthestCheckpoint;
-        data.FCFarthestCheckpoint = FCFarthestCheckpoint;
-        data.GCFarthestCheckpoint = GCFarthestCheckpoint;
-        data.PHCFarthestCheckpoint = PHCFarthestCheckpoint;
-        data.SCFarthestCheckpoint = SCFarthestCheckpoint;
-        data.SPCFarthestCheckpoint = SPCFarthestCheckpoint;
-        data.RKCFarthestCheckpoint = RKCFarthestCheckpoint;
-        data.SDCFarthestCheckpoint = SDCFarthestCheckpoint;
-        data.DMCFarthestCheckpoint = DMCFarthestCheckpoint;
-        data.DCCFarthestCheckpoint = DCCFarthestCheckpoint;
-        data.PCFarthestCheckpoint = PCFarthestCheckpoint;
         data.GIGABossStage = GIGABossStage;
-        data.GLCFarthestCheckpoint = GLCFarthestCheckpoint;
         data.GlassCrabUnlocked = GlassCrabUnlocked;
-        data.PCCFarthestCheckpoint = PCCFarthestCheckpoint;
-        data.RBCFarthestCheckpoint = RBCFarthestCheckpoint;
+        data.PollutionCrabUnlocked = PollutionCrabUnlocked;
+        data.RCCrabClass = RCCrabClass;
+        data.RCCCrabClass = RCCCrabClass;
+        data.DCCrabClass = DCCrabClass;
+        data.DRCCrabClass = DRCCrabClass;
+        data.BCCrabClass = BCCrabClass;
+        data.SCCrabClass = SCCrabClass;
+        data.FCCrabClass = FCCrabClass;
+        data.GCCrabClass = GCCrabClass;
+        data.GCCCrabClass = GCCCrabClass;
+        data.PHCCrabClass = PHCCrabClass;
+        data.SPCCrabClass = SPCCrabClass;
+        data.RKCCrabClass = RKCCrabClass;
+        data.SDCCrabClass = SDCCrabClass;
+        data.DCCCrabClass = DCCCrabClass;
+        data.DMCCrabClass = DMCCrabClass;
+        data.PCCrabClass = PCCrabClass;
+        data.GLCCrabClass = GLCCrabClass;
+        data.PCCCrabClass = PCCCrabClass;
+        data.RBCCrabClass = RBCCrabClass;
+        data.PLCCrabClass = PLCCrabClass;
         formatter.Serialize(file, data);
         file.Close();
     }
@@ -250,25 +322,53 @@ public class ProgressHandler : MonoBehaviour
             SpiderCrabUnlocked = data.SpiderCrabUnlocked;
             DementiaCrabUnlocked = data.DementiaCrabUnlocked;
             BossStage = data.BossStage;
-            RCFarthestCheckpoint = data.RCFarthestCheckpoint;
-            BCFarthestCheckpoint = data.BCFarthestCheckpoint;
-            DCFarthestCheckpoint = data.DCFarthestCheckpoint;
-            DRCFarthestCheckpoint = data.DRCFarthestCheckpoint;
-            FCFarthestCheckpoint = data.FCFarthestCheckpoint;
-            GCFarthestCheckpoint = data.GCFarthestCheckpoint;
-            PHCFarthestCheckpoint = data.PHCFarthestCheckpoint;
-            SCFarthestCheckpoint = data.SCFarthestCheckpoint;
-            SPCFarthestCheckpoint = data.SPCFarthestCheckpoint;
-            RKCFarthestCheckpoint = data.RKCFarthestCheckpoint;
-            SDCFarthestCheckpoint = data.SDCFarthestCheckpoint;
-            DMCFarthestCheckpoint = data.DMCFarthestCheckpoint;
-            DCCFarthestCheckpoint = data.DCCFarthestCheckpoint;
-            PCFarthestCheckpoint = data.PCFarthestCheckpoint;
+            if (data.RCCrabClass != null) RCCrabClass = data.RCCrabClass;
+            if (data.RCCCrabClass != null) RCCCrabClass = data.RCCCrabClass;
+            if (data.DCCrabClass != null) DCCrabClass = data.DCCrabClass;
+            if (data.DRCCrabClass != null) DRCCrabClass = data.DRCCrabClass;
+            if (data.BCCrabClass != null) BCCrabClass = data.BCCrabClass;
+            if (data.SCCrabClass != null) SCCrabClass = data.SCCrabClass;
+            if (data.FCCrabClass != null) FCCrabClass = data.FCCrabClass;
+            if (data.GCCrabClass != null) GCCrabClass = data.GCCrabClass;
+            if (data.GCCCrabClass != null) GCCCrabClass = data.GCCCrabClass;
+            if (data.PHCCrabClass != null) PHCCrabClass = data.PHCCrabClass;
+            if (data.SPCCrabClass != null) SPCCrabClass = data.SPCCrabClass;
+            if (data.RKCCrabClass != null) RKCCrabClass = data.RKCCrabClass;
+            if (data.SDCCrabClass != null) SDCCrabClass = data.SDCCrabClass;
+            if (data.DCCCrabClass != null) DCCCrabClass = data.DCCCrabClass;
+            if (data.DMCCrabClass != null) DMCCrabClass = data.DMCCrabClass;
+            if (data.PCCrabClass != null) PCCrabClass = data.PCCrabClass;
+            if (data.GLCCrabClass != null) GLCCrabClass = data.GLCCrabClass;
+            if (data.PCCCrabClass != null) PCCCrabClass = data.PCCCrabClass;
+            if (data.RBCCrabClass != null) RBCCrabClass = data.RBCCrabClass;
+            if (data.PLCCrabClass != null) PLCCrabClass = data.PLCCrabClass;
+            // DEPRECATED, DON'T USE THESE! USE CRAB CLASSES INSTEAD
+            RCCrabClass.legacyFarthestCheckpoint = data.RCFarthestCheckpoint;
+            BCCrabClass.legacyFarthestCheckpoint = data.BCFarthestCheckpoint;
+            DCCrabClass.legacyFarthestCheckpoint = data.DCFarthestCheckpoint;
+            DRCCrabClass.legacyFarthestCheckpoint = data.DRCFarthestCheckpoint;
+            FCCrabClass.legacyFarthestCheckpoint = data.FCFarthestCheckpoint;
+            GCCrabClass.legacyFarthestCheckpoint = data.GCFarthestCheckpoint;
+            PHCCrabClass.legacyFarthestCheckpoint = data.PHCFarthestCheckpoint;
+            SCCrabClass.legacyFarthestCheckpoint = data.SCFarthestCheckpoint;
+            SPCCrabClass.legacyFarthestCheckpoint = data.SPCFarthestCheckpoint;
+            RKCCrabClass.legacyFarthestCheckpoint = data.RKCFarthestCheckpoint;
+            SDCCrabClass.legacyFarthestCheckpoint = data.SDCFarthestCheckpoint;
+            DMCCrabClass.legacyFarthestCheckpoint = data.DMCFarthestCheckpoint;
+            DCCCrabClass.legacyFarthestCheckpoint = data.DCCFarthestCheckpoint;
+            PCCrabClass.legacyFarthestCheckpoint = data.PCFarthestCheckpoint;
+            GLCCrabClass.legacyFarthestCheckpoint = data.GLCFarthestCheckpoint;
+            PCCCrabClass.legacyFarthestCheckpoint = data.PCCFarthestCheckpoint;
+            RBCCrabClass.legacyFarthestCheckpoint= data.RBCFarthestCheckpoint;
+            foreach (CrabClass crab in allCrabClasses)
+            {
+                if (crab.legacyFarthestCheckpoint > crab.farthestCheckpoint) crab.farthestCheckpoint = crab.legacyFarthestCheckpoint;    
+            }
+            // end deprecation
             GIGABossStage = data.GIGABossStage;
-            GLCFarthestCheckpoint = data.GLCFarthestCheckpoint;
             GlassCrabUnlocked = data.GlassCrabUnlocked;
-            PCCFarthestCheckpoint = data.PCCFarthestCheckpoint;
-            RBCFarthestCheckpoint = data.RBCFarthestCheckpoint;
+            PollutionCrabUnlocked = data.PollutionCrabUnlocked;
+            allCrabClasses = new CrabClass[] {RCCrabClass, BCCrabClass, DCCCrabClass, DCCrabClass, DMCCrabClass, DRCCrabClass, FCCrabClass, GCCrabClass, GLCCrabClass, GCCCrabClass, PCCCrabClass, PCCrabClass, PHCCrabClass, PLCCrabClass, RBCCrabClass, RCCCrabClass, RKCCrabClass, SCCrabClass, SDCCrabClass, SPCCrabClass };
             file.Close();
         }
         else
@@ -287,6 +387,9 @@ public class ProgressHandler : MonoBehaviour
         PrehistoricCrabUnlocked = false;
         SantaCrabUnlocked = false;
         SpiderCrabUnlocked = false;
+        PollutionCrabUnlocked = false;
+        DementiaCrabUnlocked = false;
+        // DEPRECATED, DON'T USE THESE! USE CRAB CLASSES INSTEAD
         RCFarthestCheckpoint = 0;
         DCFarthestCheckpoint = 0;
         DRCFarthestCheckpoint = 0;
@@ -304,6 +407,11 @@ public class ProgressHandler : MonoBehaviour
         GLCFarthestCheckpoint = 0;
         PCCFarthestCheckpoint = 0;
         RBCFarthestCheckpoint = 0;
+        //end deprecation
+        foreach (CrabClass crab in allCrabClasses)
+        {
+            crab.farthestCheckpoint = 0;
+        }
         GlassCrabUnlocked = false;
         BossStage = 0;
         GIGABossStage = 0;
@@ -371,6 +479,11 @@ public class ProgressHandler : MonoBehaviour
         SaveProgressData();
     }
 
+    public static void SetUnlockPLC(bool value)
+    {
+        PollutionCrabUnlocked = value;
+        SaveProgressData();
+    }
 
     public static void SetBossStage(int value)
     {
@@ -378,100 +491,23 @@ public class ProgressHandler : MonoBehaviour
         SaveProgressData();
     }
 
-    public static void SetBCFarthestCheckpoint(int value)
+    public static void SetCrabFarthestCheckpoint(CrabClass crab, int value)
     {
-        BCFarthestCheckpoint = value;
-        SaveProgressData();
+        crab.setFarthestCheckpoint(value);
     }
 
-    public static void SetDCFarthestCheckpoint(int value)
+    public void ResetCrabFarthestCheckpoint(string crabName)
     {
-        DCFarthestCheckpoint = value;
-        SaveProgressData();
-    }
-
-    public static void SetDCCFarthestCheckpoint(int value)
-    {
-        DCCFarthestCheckpoint = value;
-        SaveProgressData();
-    }
-
-    public static void SetDRCFarthestCheckpoint(int value)
-    {
-        DRCFarthestCheckpoint = value;
-        SaveProgressData();
-    }
-
-    public static void SetFCFarthestCheckpoint(int value)
-    {
-        FCFarthestCheckpoint = value;
-        SaveProgressData();
-    }
-
-    public static void SetGCFarthestCheckpoint(int value)
-    {
-        GCFarthestCheckpoint = value;
-        SaveProgressData();
-    }
-
-    public static void SetPHCFarthestCheckpoint(int value)
-    {
-        PHCFarthestCheckpoint = value;
-        SaveProgressData();
-    }
-
-    public static void SetRCFarthestCheckpoint(int value)
-    {
-        RCFarthestCheckpoint = value;
-        SaveProgressData();
-    }
-
-    public static void SetRKCFarthestCheckpoint(int value)
-    {
-        RKCFarthestCheckpoint = value;
-        SaveProgressData();
-    }
-
-    public static void SetSCFarthestCheckpoint(int value)
-    {
-        SCFarthestCheckpoint = value;
-        SaveProgressData();
-    }
-
-    public static void SetSPCFarthestCheckpoint(int value)
-    {
-        SPCFarthestCheckpoint = value;
-        SaveProgressData();
-    }
-
-    public static void SetSDCFarthestCheckpoint(int value)
-    {
-        SDCFarthestCheckpoint = value;
-        SaveProgressData();
-    }
-
-    public static void SetPCFarthestCheckpoint(int value)
-    {
-        PCFarthestCheckpoint = value;
-        SaveProgressData();
-    }
-
-    public static void SetGLCFarthestCheckpoint(int value)
-    {
-        GLCFarthestCheckpoint = value;
-        SaveProgressData();
-    }
-
-    public static void SetPCCFarthestCheckpoint(int value)
-    {
-        PCCFarthestCheckpoint = value;
-        SaveProgressData();
-    }
-
-    public static void SetRBCFarthestCheckpoint(int value)
-    {
-        RBCFarthestCheckpoint = value;
-        SaveProgressData();
+        CrabClass crab = null;
+        foreach (CrabClass crab2 in allCrabClasses)
+        {
+            if (crab2.name == crabName)
+            {
+                crab = crab2;
+                break;
+            }
+        }
+        crab.setFarthestCheckpoint(0);
     }
 
     public static void ToggleSpookify()
@@ -501,6 +537,7 @@ public class ResetData
     public bool SantaCrabUnlocked;
     public bool SpiderCrabUnlocked;
     public bool DementiaCrabUnlocked;
+    public bool PollutionCrabUnlocked;
     public int RCFarthestCheckpoint;
     public int DCFarthestCheckpoint;
     public int DRCFarthestCheckpoint;
@@ -518,6 +555,26 @@ public class ResetData
     public int GLCFarthestCheckpoint;
     public int PCCFarthestCheckpoint;
     public int RBCFarthestCheckpoint;
+    public CrabClass RCCrabClass;
+    public CrabClass RCCCrabClass;
+    public CrabClass DCCrabClass;
+    public CrabClass DRCCrabClass;
+    public CrabClass BCCrabClass;
+    public CrabClass SCCrabClass;
+    public CrabClass FCCrabClass;
+    public CrabClass GCCrabClass;
+    public CrabClass GCCCrabClass;
+    public CrabClass PHCCrabClass;
+    public CrabClass SPCCrabClass;
+    public CrabClass RKCCrabClass;
+    public CrabClass SDCCrabClass;
+    public CrabClass DCCCrabClass;
+    public CrabClass DMCCrabClass;
+    public CrabClass PCCrabClass;
+    public CrabClass GLCCrabClass;
+    public CrabClass PCCCrabClass;
+    public CrabClass RBCCrabClass;
+    public CrabClass PLCCrabClass;
     public string SceneToLoad;
     public int BossStage;
     public int GIGABossStage;

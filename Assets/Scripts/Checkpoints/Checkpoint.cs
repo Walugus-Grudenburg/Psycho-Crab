@@ -9,8 +9,8 @@ public class Checkpoint : MonoBehaviour
     public bool dementiaWasLastUsed;
     public bool isPortable;
     public GameObject text;
-    public enum CheckpointMode {BC, DC, DRC, FC, GC, PHC, RC, RCC, RKC, SC, SPC, SDC, DMC, DCC, PC, GLC, PCC, RBC};
-    public CheckpointMode Checkpoint_Mode;
+    public string checkpointModeName;
+    private CrabClass checkpointMode;
     private Vector3 Checkpoint_Position;
     public bool DebugActivate;
     public int ID;
@@ -19,6 +19,7 @@ public class Checkpoint : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SetCheckpointMode();
         allCheckpoints.Add(this);
         Checkpoint_Position = gameObject.transform.position;
     }
@@ -49,6 +50,18 @@ public class Checkpoint : MonoBehaviour
         }    
     }
 
+    void SetCheckpointMode()
+    {
+        foreach (CrabClass crab in ProgressHandler.allCrabClasses)
+        {
+            if (crab.name == checkpointModeName)
+            {
+                checkpointMode = crab;
+                break;
+            }
+        }
+    }
+
     private void DoDementiaCheckpoint()
     {
         foreach (Checkpoint cp in allCheckpoints)
@@ -69,107 +82,7 @@ public class Checkpoint : MonoBehaviour
             ProgressHandler.Checkpoint_Position = Checkpoint_Position;
             ProgressHandler.SaveProgressData();
         }
-        switch (Checkpoint_Mode)
-        {
-            case CheckpointMode.BC:
-                if (ID > ProgressHandler.BCFarthestCheckpoint)
-                {
-                    ProgressHandler.SetBCFarthestCheckpoint(ID);
-                }
-                break;
-            case CheckpointMode.DC:
-                if (ID > ProgressHandler.DCFarthestCheckpoint)
-                {
-                    ProgressHandler.SetDCFarthestCheckpoint(ID);
-                }
-                break;
-            case CheckpointMode.DRC:
-                if (ID > ProgressHandler.DRCFarthestCheckpoint)
-                {
-                    ProgressHandler.SetDRCFarthestCheckpoint(ID);
-                }
-                break;
-            case CheckpointMode.FC:
-                if (ID > ProgressHandler.FCFarthestCheckpoint)
-                {
-                    ProgressHandler.SetFCFarthestCheckpoint(ID);
-                }
-                break;
-            case CheckpointMode.GC:
-                if (ID > ProgressHandler.GCFarthestCheckpoint)
-                {
-                    ProgressHandler.SetGCFarthestCheckpoint(ID);
-                }
-                break;
-            case CheckpointMode.PHC:
-                if (ID > ProgressHandler.PHCFarthestCheckpoint)
-                {
-                    ProgressHandler.SetPHCFarthestCheckpoint(ID);
-                }
-                break;
-            case CheckpointMode.RC:
-                if (ID > ProgressHandler.RCFarthestCheckpoint)
-                {
-                    ProgressHandler.SetRCFarthestCheckpoint(ID);
-                }
-                break;
-            case CheckpointMode.RKC:
-                if (ID > ProgressHandler.RKCFarthestCheckpoint)
-                {
-                    ProgressHandler.SetRKCFarthestCheckpoint(ID);
-                }
-                break;
-            case CheckpointMode.SC:
-                if (ID > ProgressHandler.SCFarthestCheckpoint)
-                {
-                    ProgressHandler.SetSCFarthestCheckpoint(ID);
-                }
-                break;
-            case CheckpointMode.SPC:
-                if (ID > ProgressHandler.SPCFarthestCheckpoint)
-                {
-                    ProgressHandler.SetSPCFarthestCheckpoint(ID);
-                }
-                break;
-            case CheckpointMode.SDC:
-                if (ID > ProgressHandler.SDCFarthestCheckpoint)
-                {
-                    ProgressHandler.SetSDCFarthestCheckpoint(ID);
-                }
-                break;
-            case CheckpointMode.DCC:
-                if (ID > ProgressHandler.DCCFarthestCheckpoint)
-                {
-                    ProgressHandler.SetDCCFarthestCheckpoint(ID);
-                }
-                break;
-            case CheckpointMode.PC:
-                if (ID > ProgressHandler.PCFarthestCheckpoint)
-                {
-                    ProgressHandler.SetPCFarthestCheckpoint(ID);
-                }
-                break;
-            case CheckpointMode.GLC:
-                if (ID > ProgressHandler.GLCFarthestCheckpoint)
-                {
-                    ProgressHandler.SetGLCFarthestCheckpoint(ID);
-                }
-                break;
-            case CheckpointMode.PCC:
-                if (ID > ProgressHandler.PCCFarthestCheckpoint)
-                {
-                    ProgressHandler.SetPCCFarthestCheckpoint(ID);
-                }
-                break;
-            case CheckpointMode.RBC:
-                if (ID > ProgressHandler.RBCFarthestCheckpoint)
-                {
-                    ProgressHandler.SetRBCFarthestCheckpoint(ID);
-                }
-                break;
-            default:
-                break;
-        }
+        if (checkpointMode != null) if (ID > checkpointMode.farthestCheckpoint) checkpointMode.setFarthestCheckpoint(ID);
     }
 
 }

@@ -2033,8 +2033,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 0}
-  Checkpoint_Mode: 16
+  checkpointModeName: PCC
   DebugActivate: 0
   ID: 5
   crabwarp: {fileID: 0}
@@ -2343,8 +2344,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 0}
-  Checkpoint_Mode: 16
+  checkpointModeName: PCC
   DebugActivate: 0
   ID: 4
   crabwarp: {fileID: 0}
@@ -2690,6 +2692,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110220759463085935, guid: 0f037115b5912ca41a2a41cc0710771c,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: PCC
       objectReference: {fileID: 0}
     - target: {fileID: 1110220759591756668, guid: 0f037115b5912ca41a2a41cc0710771c,
         type: 3}
@@ -4752,6 +4759,11 @@ PrefabInstance:
       propertyPath: Checkpoint_Mode
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 1110220759823604377, guid: 0f037115b5912ca41a2a41cc0710771c,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: PCC
+      objectReference: {fileID: 0}
     - target: {fileID: 1110220759823604379, guid: 0f037115b5912ca41a2a41cc0710771c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5806,6 +5818,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1110220760135723789, guid: 0f037115b5912ca41a2a41cc0710771c,
         type: 3}
+      propertyPath: checkpointModeName
+      value: PCC
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110220760135723789, guid: 0f037115b5912ca41a2a41cc0710771c,
+        type: 3}
       propertyPath: buttons.Array.data[4]
       value: 
       objectReference: {fileID: 687443836}
@@ -5949,6 +5966,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110220760375258327, guid: 0f037115b5912ca41a2a41cc0710771c,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: PCC
       objectReference: {fileID: 0}
     - target: {fileID: 1110220760425402223, guid: 0f037115b5912ca41a2a41cc0710771c,
         type: 3}
@@ -13244,8 +13266,13 @@ PrefabInstance:
       objectReference: {fileID: 1982598962}
     - target: {fileID: 1110220760898100472, guid: 0f037115b5912ca41a2a41cc0710771c,
         type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetPCCFarthestCheckpoint
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110220760898100472, guid: 0f037115b5912ca41a2a41cc0710771c,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: PCC
       objectReference: {fileID: 0}
     - target: {fileID: 1110220760902468382, guid: 0f037115b5912ca41a2a41cc0710771c,
         type: 3}
@@ -13291,7 +13318,7 @@ PrefabInstance:
     - target: {fileID: 1110220761144661514, guid: 0f037115b5912ca41a2a41cc0710771c,
         type: 3}
       propertyPath: WinHandlerToCall
-      value: PCCWinHandler
+      value: PCC
       objectReference: {fileID: 0}
     - target: {fileID: 1110220761144661526, guid: 0f037115b5912ca41a2a41cc0710771c,
         type: 3}
@@ -13383,6 +13410,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110220761299233400, guid: 0f037115b5912ca41a2a41cc0710771c,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: PCC
       objectReference: {fileID: 0}
     - target: {fileID: 1110220761299233402, guid: 0f037115b5912ca41a2a41cc0710771c,
         type: 3}
@@ -13687,6 +13719,7 @@ MonoBehaviour:
   sprite: {fileID: 2027016075}
   pogoCharge: 0
   boing: {fileID: 2027016073}
+  ignoreControls: 0
 --- !u!1 &2027016081 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1110220761310714106, guid: 0f037115b5912ca41a2a41cc0710771c,
@@ -13816,6 +13849,7 @@ MonoBehaviour:
   sprite: {fileID: 2027016082}
   pogoCharge: 0
   boing: {fileID: 2027016083}
+  ignoreControls: 0
 --- !u!1 &2027016085 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1110220760408880091, guid: 0f037115b5912ca41a2a41cc0710771c,

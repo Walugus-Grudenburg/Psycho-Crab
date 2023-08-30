@@ -3911,8 +3911,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 0}
-  Checkpoint_Mode: 13
+  checkpointModeName: 
   DebugActivate: 0
   ID: 3
   crabwarp: {fileID: 0}
@@ -15766,8 +15767,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 0}
-  Checkpoint_Mode: 13
+  checkpointModeName: 
   DebugActivate: 0
   ID: 0
   crabwarp: {fileID: 0}
@@ -20884,8 +20886,11 @@ MonoBehaviour:
   sticksound: {fileID: 1110220759911754704}
   wetsound: {fileID: 1110220759911754705}
   IgnoreSticking: 0
+  IgnoreWater: 0
   BoostStrength: 0
   StrengthStrength: 1
+  IsInGoo: 0
+  IsInWater: 0
 --- !u!82 &1110220759911754704
 AudioSource:
   m_ObjectHideFlags: 0
@@ -30292,7 +30297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30ea4a81481fc0c4e804f665eb349862, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mode: 13
+  checkpointModeName: 
   buttons:
   - {fileID: 1110220760950128707}
   - {fileID: 1110220760298876769}
@@ -41324,8 +41329,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 0}
-  Checkpoint_Mode: 13
+  checkpointModeName: 
   DebugActivate: 0
   ID: 1
   crabwarp: {fileID: 0}
@@ -66873,7 +66879,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1110220760173162101}
         m_TargetAssemblyTypeName: ProgressHandler, Assembly-CSharp
-        m_MethodName: SetDCCFarthestCheckpoint
+        m_MethodName: ResetCrabFarthestCheckpoint
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -80651,8 +80657,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 0}
-  Checkpoint_Mode: 13
+  checkpointModeName: 
   DebugActivate: 0
   ID: 2
   crabwarp: {fileID: 0}
@@ -80864,8 +80871,11 @@ MonoBehaviour:
   sticksound: {fileID: 1110220761310714097}
   wetsound: {fileID: 1110220761310714098}
   IgnoreSticking: 0
+  IgnoreWater: 0
   BoostStrength: 0
   StrengthStrength: 1
+  IsInGoo: 0
+  IsInWater: 0
 --- !u!82 &1110220761310714097
 AudioSource:
   m_ObjectHideFlags: 0

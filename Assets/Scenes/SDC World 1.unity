@@ -195,10 +195,14 @@ PrefabInstance:
       propertyPath: mode
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 1170396511, guid: 3467e989d33abdf45bc5f05c58b97676, type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
+      objectReference: {fileID: 0}
     - target: {fileID: 1072766520464056022, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetSCFarthestCheckpoint
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: SDC
       objectReference: {fileID: 0}
     - target: {fileID: 3369863724564501891, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -225,20 +229,40 @@ PrefabInstance:
       propertyPath: Checkpoint_Mode
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863724580671791, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863724583062628, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724583062628, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
       objectReference: {fileID: 0}
     - target: {fileID: 3369863724585365900, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863724585365900, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863724620111622, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724620111622, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
       objectReference: {fileID: 0}
     - target: {fileID: 3369863724709990562, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -266,45 +290,90 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 5ab560025692e954bbb405d9ba40e5aa,
         type: 3}
+    - target: {fileID: 3369863724709990587, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_Mass
+      value: 12.320284
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863724720963627, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724720963627, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
       objectReference: {fileID: 0}
     - target: {fileID: 3369863724740566218, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863724740566218, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863724775458311, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724775458311, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
       objectReference: {fileID: 0}
     - target: {fileID: 3369863724792889601, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863724792889601, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863724797352968, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724797352968, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
       objectReference: {fileID: 0}
     - target: {fileID: 3369863724805843665, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863724805843665, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863724840435517, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724840435517, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724874600932, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3369863724874600932, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
-      propertyPath: Checkpoint_Mode
-      value: 11
+      propertyPath: checkpointModeName
+      value: SDC
       objectReference: {fileID: 0}
     - target: {fileID: 3369863724883170562, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -341,10 +410,20 @@ PrefabInstance:
       propertyPath: Checkpoint_Mode
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863724931763831, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863724948576924, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724948576924, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
       objectReference: {fileID: 0}
     - target: {fileID: 3369863724955331836, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -496,6 +575,11 @@ PrefabInstance:
       propertyPath: Checkpoint_Mode
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863724962803359, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863724973102352, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_Sprite
@@ -545,22 +629,42 @@ PrefabInstance:
     - target: {fileID: 3369863724973102358, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_Mass
-      value: 10.647444
+      value: 17.228962
       objectReference: {fileID: 0}
     - target: {fileID: 3369863724973102359, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_Density
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863724973102359, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.902
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863724973102359, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.041
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725040065449, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725040065449, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725062980700, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725062980700, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
-      propertyPath: Checkpoint_Mode
-      value: 11
+      propertyPath: checkpointModeName
+      value: SDC
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725074643416, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -582,6 +686,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 15.720001
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863725074643417, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_Mass
+      value: 28.521662
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725074643419, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_TagString
@@ -591,6 +700,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725125002545, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725205364432, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -657,10 +771,20 @@ PrefabInstance:
       propertyPath: Checkpoint_Mode
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863725226121762, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725239851353, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725239851353, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725239851354, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -677,10 +801,20 @@ PrefabInstance:
       propertyPath: Checkpoint_Mode
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863725261078298, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725348459678, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725348459678, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725358604946, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -722,20 +856,40 @@ PrefabInstance:
       propertyPath: Checkpoint_Mode
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863725488695502, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725519011941, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725519011941, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725520605771, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863725520605771, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725567627407, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725567627407, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725652411833, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -778,6 +932,16 @@ PrefabInstance:
       propertyPath: m_Density
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863725711533620, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.902
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725711533620, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.041
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725711533621, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -816,7 +980,7 @@ PrefabInstance:
     - target: {fileID: 3369863725711533623, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_Mass
-      value: 10.647446
+      value: 17.228962
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725711533626, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -827,6 +991,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725722593465, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725761563596, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -847,6 +1016,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725768070056, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725772252423, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -888,10 +1062,20 @@ PrefabInstance:
       propertyPath: Checkpoint_Mode
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863725821469869, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725837895305, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725837895305, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
       objectReference: {fileID: 0}
     - target: {fileID: 3369863725861546686, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -908,15 +1092,30 @@ PrefabInstance:
       propertyPath: Checkpoint_Mode
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863725861546687, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725994779956, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: Checkpoint_Mode
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725994779956, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726063762072, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3369863726063762072, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
-      propertyPath: Checkpoint_Mode
-      value: 11
+      propertyPath: checkpointModeName
+      value: SDC
       objectReference: {fileID: 0}
     - target: {fileID: 3369863726063762075, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -2428,10 +2627,20 @@ PrefabInstance:
       propertyPath: Checkpoint_Mode
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863726204070984, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863726212010400, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726212010400, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
       objectReference: {fileID: 0}
     - target: {fileID: 3369863726331996068, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -2448,6 +2657,11 @@ PrefabInstance:
       propertyPath: Checkpoint_Mode
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863726359198124, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863726381535069, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: DoUnlock1
@@ -2461,7 +2675,7 @@ PrefabInstance:
     - target: {fileID: 3369863726381535069, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: WinHandlerToCall
-      value: SDCWinHandler
+      value: SDC
       objectReference: {fileID: 0}
     - target: {fileID: 3369863726403189536, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -2473,10 +2687,20 @@ PrefabInstance:
       propertyPath: Checkpoint_Mode
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863726468713829, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863726497026366, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726497026366, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: checkpointModeName
+      value: SDC
       objectReference: {fileID: 0}
     - target: {fileID: 3369863726500286718, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -2572,6 +2796,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[28].y
       value: -5.4886894
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726626836772, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_Mass
+      value: 28.521662
       objectReference: {fileID: 0}
     - target: {fileID: 3369863726626836774, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}

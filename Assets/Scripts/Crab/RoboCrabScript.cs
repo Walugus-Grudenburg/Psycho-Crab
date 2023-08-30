@@ -74,9 +74,9 @@ public class RoboCrabScript : SpookyJump
     {
         while (gadgetToSelect == Gadget.None)
         {
-            if (Random.Range(0, 5) == 0)  // medium chance to just pick anything instead of running logic again
+            if (Random.Range(0, 30) == 0)  // small chance to just pick anything instead of running logic again
             {
-                switch (Random.Range(0,9))
+                switch (Random.Range(0,8))
                 {
                     case 0:
                         gadgetToSelect = Gadget.Jetpack;
@@ -100,22 +100,20 @@ public class RoboCrabScript : SpookyJump
                         gadgetToSelect = Gadget.PortableCheckpoint;
                         break;
                     case 7:
-                        gadgetToSelect = Gadget.SeagullBeam;
-                        break;
-                    case 8:
                         gadgetToSelect = Gadget.Evaporator;
                         break;
                     default:
                         break;
                 }
-                if (Random.Range(0, 10) == 0) gadgetToSelect = Gadget.Bomb;// low chance bomb
-                if (Random.Range(0, 10) == 0 & GadgetGroundCheck.anyIsGrounded) gadgetToSelect = Gadget.PortableCheckpoint;// low chance portable checkpoint if grounded
-                if (Random.Range(0, 10) == 0 & !GadgetGroundCheck.anyIsGrounded) gadgetToSelect = Gadget.GravityControl;// low chance gravity control if midair
-                if (Random.Range(0, 5) == 0 & !GadgetGroundCheck.anyIsGrounded) gadgetToSelect = Gadget.Bomb;// medium chance bomb if midair
-                if (Random.Range(0, 5) == 0 & !GadgetGroundCheck.anyIsGrounded) gadgetToSelect = Gadget.Jetpack;// medium chance jetpack if midair
-                if (rigidBody.velocity.magnitude > 50 & Random.Range(0, 2) == 0) gadgetToSelect = Gadget.PogoStick;// high chance air brake if really fast
-                if (rigidBody.velocity.y < -30 & Random.Range(0, 2) == 0) gadgetToSelect = Gadget.PogoStick;// high chance pogo stick if fast downwards
-                if (nearestSeagullDistance < 200 & Random.Range(0, 2) == 0) gadgetToSelect = Gadget.SeagullBeam;//high chance seagull beam if seagull near
+                if (Random.Range(0, 15) == 0) gadgetToSelect = Gadget.Bomb;// low chance bomb
+                if (Random.Range(0, 10) == 0 && GadgetGroundCheck.anyIsGrounded) gadgetToSelect = Gadget.PortableCheckpoint;// low chance portable checkpoint if grounded
+                if (Random.Range(0, 10) == 0 && !GadgetGroundCheck.anyIsGrounded) gadgetToSelect = Gadget.GravityControl;// low chance gravity control if midair
+                if (Random.Range(0, 5) == 0 && !GadgetGroundCheck.anyIsGrounded) gadgetToSelect = Gadget.Bomb;// medium chance bomb if midair
+                if (Random.Range(0, 5) == 0 && !GadgetGroundCheck.anyIsGrounded) gadgetToSelect = Gadget.Jetpack;// medium chance jetpack if midair
+                if (Random.Range(0, 981) > Physics2D.gravity.y * -100) gadgetToSelect = Gadget.GravityControl; //Higher chance of gravity control the less down it goes
+                if (Random.Range(15, 100) < rigidBody.velocity.magnitude) gadgetToSelect = Gadget.AirBrake;// high chance air brake if really fast
+                if (Random.Range(0, 60) < -1 * rigidBody.velocity.y) gadgetToSelect = Gadget.PogoStick;// high chance pogo stick if fast downwards
+                if (Random.Range(0, 100) > nearestSeagullDistance) gadgetToSelect = Gadget.SeagullBeam;//high chance seagull beam if seagull near
                 bool isInWater = false; // needs to do some checks for evaporator logic
                 bool isInGoo = false;
                 foreach (CrabLeg crabLeg in crabLegs)
@@ -125,7 +123,8 @@ public class RoboCrabScript : SpookyJump
                 }
                 if (isInWater & Random.Range(0, 2) == 0) gadgetToSelect = Gadget.Evaporator;// high chance evaporator if in water. really high if goo
                 if (isInGoo & Random.Range(0, 3) < 2) gadgetToSelect = Gadget.Evaporator; // goo check
-                if (nearestLavaDistance < 100 & Random.Range(0, 2) == 0) gadgetToSelect = Gadget.EnergyShield;// high chance energy shield if near lava
+                if (Random.Range(0, 200) > nearestLavaDistance) gadgetToSelect = Gadget.EnergyShield;// high chance energy shield if near lava
+                if (SatanScript.HasChaseStarted) gadgetToSelect = Gadget.AirBrake;// guarantee air brake during chase
             }
         }
     }

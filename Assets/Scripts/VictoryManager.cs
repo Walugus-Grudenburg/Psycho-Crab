@@ -14,6 +14,7 @@ public class VictoryManager : MonoBehaviour
     public bool DoUnlock4;
     public bool DoUnlock5;
     public bool DoUnlock6;
+    public bool DoUnlock7;
     public bool IsSushi;
     public GameObject CrunchText;
     public GameObject Satan;
@@ -22,48 +23,14 @@ public class VictoryManager : MonoBehaviour
     public GameObject UnlockText2;
     public string WinHandlerToCall;
     static int NumberOfWins;
-    static int BCNumberOfWins;
-    static int DCNumberOfWins;
-    static int DRCNumberOfWins;
-    static int FCNumberOfWins;
-    static int GCNumberOfWins;
-    static int PHCNumberOfWins;
-    static int SCNumberOfWins;
-    static int SPCNumberOfWins;
-    static int SDCNumberOfWins;
-    static int RCNumberOfWins;
-    static int RCCNumberOfWins;
-    static int RKCNumberOfWins;
-    static int GCCNumberOfWins;
-    static int DMCNumberOfWins;
-    static int DCCNumberOfWins;
-    static int PCNumberOfWins;
-    static int GLCNumberOfWins;
-    static int PCCNumberOfWins;
-    static int RBCNumberOfWins;
     // Start is called before the first frame update
     void Start()
     {
         SteamUserStats.GetStat("wins", out NumberOfWins);
-        SteamUserStats.GetStat("BC_wins", out BCNumberOfWins);
-        SteamUserStats.GetStat("DC_wins", out DCNumberOfWins);
-        SteamUserStats.GetStat("DRC_wins", out DRCNumberOfWins);
-        SteamUserStats.GetStat("FC_wins", out FCNumberOfWins);
-        SteamUserStats.GetStat("GC_wins", out GCNumberOfWins);
-        SteamUserStats.GetStat("GCC_wins", out GCCNumberOfWins);
-        SteamUserStats.GetStat("PHC_wins", out PHCNumberOfWins);
-        SteamUserStats.GetStat("SC_wins", out SCNumberOfWins);
-        SteamUserStats.GetStat("SPC_wins", out SPCNumberOfWins);
-        SteamUserStats.GetStat("SDC_wins", out SDCNumberOfWins);
-        SteamUserStats.GetStat("RC_wins", out RCNumberOfWins);
-        SteamUserStats.GetStat("RCC_wins", out RCCNumberOfWins);
-        SteamUserStats.GetStat("RKC_wins", out RKCNumberOfWins);
-        SteamUserStats.GetStat("DMC_wins", out DMCNumberOfWins);
-        SteamUserStats.GetStat("DCC_wins", out DCCNumberOfWins);
-        SteamUserStats.GetStat("PC_wins", out PCNumberOfWins);
-        SteamUserStats.GetStat("GLC_wins", out GLCNumberOfWins);
-        SteamUserStats.GetStat("PCC_wins", out PCCNumberOfWins);
-        SteamUserStats.GetStat("RBC_wins", out RBCNumberOfWins);
+        foreach (CrabClass crab in ProgressHandler.allCrabClasses)
+        {
+            SteamUserStats.GetStat(crab.winsStatName, out crab.numberOfWins);
+        }
     }
 
     // Update is called once per frame
@@ -81,13 +48,23 @@ public class VictoryManager : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         if (IsProcessingVictory) yield break;
-        StartCoroutine(WinHandlerToCall, 0f);
+        CrabClass crab = null;
+        foreach (CrabClass crab2 in ProgressHandler.allCrabClasses)
+        {
+            if (crab2.name == WinHandlerToCall)
+            {
+                crab = crab2;
+                break;
+            }
+        }
         IsProcessingVictory = true;
         Destroy(Satan);
         SatanScript.HasChaseStarted = false;
         ProgressHandler.DeTermination = true;
         NumberOfWins++;
+        crab.numberOfWins++;
         SteamUserStats.SetStat("wins", NumberOfWins);
+        SteamUserStats.SetStat(crab.winsStatName, crab.numberOfWins);
         SteamUserStats.StoreStats();
 
         if (DoVictoryDance)
@@ -139,6 +116,13 @@ public class VictoryManager : MonoBehaviour
             ProgressHandler.SetUnlockGLC(true);
         }
 
+        if (DoUnlock6)
+        {
+            yield return new WaitForSeconds(2);
+            UnlockText1.SetActive(true);
+            ProgressHandler.SetUnlockPLC(true);
+        }
+
         yield return new WaitForSeconds(2);
         Destroy(UnlockText2);
 
@@ -156,151 +140,4 @@ public class VictoryManager : MonoBehaviour
         }
     }
 
-    IEnumerator BCWinHandler()
-    {
-        BCNumberOfWins++;
-        SteamUserStats.SetStat("BC_wins", BCNumberOfWins);
-        SteamUserStats.StoreStats();
-        yield return null;
-    }
-
-    IEnumerator DCWinHandler()
-    {
-        DCNumberOfWins++;
-        SteamUserStats.SetStat("DC_wins", DCNumberOfWins);
-        SteamUserStats.StoreStats();
-        yield return null;
-    }
-
-    IEnumerator DRCWinHandler()
-    {
-        DRCNumberOfWins++;
-        SteamUserStats.SetStat("DRC_wins", DRCNumberOfWins);
-        SteamUserStats.StoreStats();
-        yield return null;
-    }
-
-    IEnumerator FCWinHandler()
-    {
-        FCNumberOfWins++;
-        SteamUserStats.SetStat("FC_wins", FCNumberOfWins);
-        SteamUserStats.StoreStats();
-        yield return null;
-    }
-
-    IEnumerator GCWinHandler()
-    {
-        GCNumberOfWins++;
-        SteamUserStats.SetStat("GC_wins", GCNumberOfWins);
-        SteamUserStats.StoreStats();
-        yield return null;
-    }
-
-    IEnumerator GCCWinHandler()
-    {
-        GCCNumberOfWins++;
-        SteamUserStats.SetStat("GCC_wins", GCCNumberOfWins);
-        SteamUserStats.StoreStats();
-        yield return null;
-    }
-
-    IEnumerator PHCWinHandler()
-    {
-        PHCNumberOfWins++;
-        SteamUserStats.SetStat("PHC_wins", PHCNumberOfWins);
-        SteamUserStats.StoreStats();
-        yield return null;
-    }
-
-    IEnumerator SCWinHandler()
-    {
-        SCNumberOfWins++;
-        SteamUserStats.SetStat("SC_wins", SCNumberOfWins);
-        SteamUserStats.StoreStats();
-        yield return null;
-    }
-
-    IEnumerator SPCWinHandler()
-    {
-        SPCNumberOfWins++;
-        SteamUserStats.SetStat("SPC_wins", SPCNumberOfWins);
-        SteamUserStats.StoreStats();
-        yield return null;
-    }
-
-    IEnumerator SDCWinHandler()
-    {
-        SDCNumberOfWins++;
-        SteamUserStats.SetStat("SDC_wins", SDCNumberOfWins);
-        SteamUserStats.StoreStats();
-        yield return null;
-    }
-
-    IEnumerator RCWinHandler()
-    {
-        RCNumberOfWins++;
-        SteamUserStats.SetStat("RC_wins", RCNumberOfWins);
-        SteamUserStats.StoreStats();
-        yield return null;
-    }
-
-    IEnumerator RCCWinHandler()
-    {
-        RCCNumberOfWins++;
-        SteamUserStats.SetStat("RCC_wins", RCCNumberOfWins);
-        SteamUserStats.StoreStats();
-        yield return null;
-    }
-
-    IEnumerator RKCWinHandler()
-    {
-        RKCNumberOfWins++;
-        SteamUserStats.SetStat("RKC_wins", RKCNumberOfWins);
-        SteamUserStats.StoreStats();
-        yield return null;
-    }
-
-    IEnumerator DMCWinHandler()
-    {
-        DMCNumberOfWins++;
-        SteamUserStats.SetStat("DMC_wins", DMCNumberOfWins);
-        SteamUserStats.StoreStats();
-        yield return null;
-    }
-    IEnumerator DCCWinHandler()
-    {
-        DCCNumberOfWins++;
-        SteamUserStats.SetStat("DCC_wins", DCCNumberOfWins);
-        SteamUserStats.StoreStats();
-        yield return null;
-    }
-    IEnumerator PCWinHandler()
-    {
-        PCNumberOfWins++;
-        SteamUserStats.SetStat("PC_wins", PCNumberOfWins);
-        SteamUserStats.StoreStats();
-        yield return null;
-    }
-    IEnumerator GLCWinHandler()
-    {
-        GLCNumberOfWins++;
-        SteamUserStats.SetStat("GLC_wins", GLCNumberOfWins);
-        SteamUserStats.StoreStats();
-        yield return null;
-    }
-    IEnumerator PCCWinHandler()
-    {
-        PCCNumberOfWins++;
-        SteamUserStats.SetStat("PCC_wins", PCCNumberOfWins);
-        SteamUserStats.StoreStats();
-        yield return null;
-    }
-
-    IEnumerator RBCWinHandler()
-    {
-        RBCNumberOfWins++;
-        SteamUserStats.SetStat("RBC_wins", RBCNumberOfWins);
-        SteamUserStats.StoreStats();
-        yield return null;
-    }
 }

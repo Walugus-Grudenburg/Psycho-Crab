@@ -172,8 +172,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 1
   crabwarp: {fileID: 0}
@@ -333,8 +334,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 4
   crabwarp: {fileID: 0}
@@ -576,8 +578,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 7
   crabwarp: {fileID: 0}
@@ -655,8 +658,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 15
   crabwarp: {fileID: 0}
@@ -734,8 +738,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 0
   crabwarp: {fileID: 0}
@@ -813,8 +818,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 12
   crabwarp: {fileID: 0}
@@ -892,8 +898,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 12
   crabwarp: {fileID: 0}
@@ -971,8 +978,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 24
   crabwarp: {fileID: 0}
@@ -1132,8 +1140,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 20
   crabwarp: {fileID: 0}
@@ -1525,8 +1534,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 29
   crabwarp: {fileID: 0}
@@ -1604,8 +1614,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 14
   crabwarp: {fileID: 0}
@@ -1860,8 +1871,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 8
   crabwarp: {fileID: 0}
@@ -2021,8 +2033,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 7
   crabwarp: {fileID: 0}
@@ -2441,8 +2454,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 0
   crabwarp: {fileID: 0}
@@ -3012,8 +3026,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 22
   crabwarp: {fileID: 0}
@@ -3369,8 +3384,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 5
   crabwarp: {fileID: 0}
@@ -3530,8 +3546,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 9
   crabwarp: {fileID: 0}
@@ -3691,8 +3708,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 3
   crabwarp: {fileID: 0}
@@ -3770,8 +3788,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 3
   crabwarp: {fileID: 0}
@@ -4013,8 +4032,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 0
   crabwarp: {fileID: 0}
@@ -4270,8 +4290,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 2
   crabwarp: {fileID: 0}
@@ -4363,8 +4384,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 2
   crabwarp: {fileID: 0}
@@ -4606,8 +4628,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 0
   crabwarp: {fileID: 0}
@@ -5095,8 +5118,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 26
   crabwarp: {fileID: 0}
@@ -5174,8 +5198,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 18
   crabwarp: {fileID: 0}
@@ -5599,8 +5624,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 17
   crabwarp: {fileID: 0}
@@ -5741,8 +5767,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 1
   crabwarp: {fileID: 0}
@@ -5902,8 +5929,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 8
   crabwarp: {fileID: 0}
@@ -6063,8 +6091,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 5
   crabwarp: {fileID: 0}
@@ -6224,8 +6253,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 12
   crabwarp: {fileID: 0}
@@ -6467,8 +6497,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 12
   crabwarp: {fileID: 0}
@@ -6628,8 +6659,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 8
   crabwarp: {fileID: 0}
@@ -7131,8 +7163,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 2
   crabwarp: {fileID: 0}
@@ -7210,8 +7243,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 25
   crabwarp: {fileID: 0}
@@ -7371,8 +7405,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 9
   crabwarp: {fileID: 0}
@@ -7614,8 +7649,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 29
   crabwarp: {fileID: 0}
@@ -7693,8 +7729,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 24
   crabwarp: {fileID: 0}
@@ -8182,8 +8219,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 6
   crabwarp: {fileID: 0}
@@ -8507,8 +8545,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 0
   crabwarp: {fileID: 0}
@@ -8668,8 +8707,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 12
   crabwarp: {fileID: 0}
@@ -9163,8 +9203,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 12
   crabwarp: {fileID: 0}
@@ -9406,8 +9447,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 0
   crabwarp: {fileID: 0}
@@ -9760,8 +9802,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 11
   crabwarp: {fileID: 0}
@@ -10085,8 +10128,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 28
   crabwarp: {fileID: 0}
@@ -10164,8 +10208,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 8
   crabwarp: {fileID: 0}
@@ -10899,8 +10944,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 19
   crabwarp: {fileID: 0}
@@ -11224,8 +11270,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 20
   crabwarp: {fileID: 0}
@@ -11303,8 +11350,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 27
   crabwarp: {fileID: 0}
@@ -11792,8 +11840,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 10
   crabwarp: {fileID: 0}
@@ -11953,8 +12002,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 21
   crabwarp: {fileID: 0}
@@ -12292,8 +12342,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 2
   crabwarp: {fileID: 0}
@@ -12371,8 +12422,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 22
   crabwarp: {fileID: 0}
@@ -12450,8 +12502,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 31
   crabwarp: {fileID: 0}
@@ -13021,8 +13074,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 6
   crabwarp: {fileID: 0}
@@ -13378,8 +13432,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 2
   crabwarp: {fileID: 0}
@@ -14031,8 +14086,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 25
   crabwarp: {fileID: 0}
@@ -14292,8 +14348,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 4
   crabwarp: {fileID: 0}
@@ -14699,8 +14756,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 15
   crabwarp: {fileID: 0}
@@ -14778,8 +14836,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 16
   crabwarp: {fileID: 0}
@@ -15267,8 +15326,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
+  isPortable: 0
   text: {fileID: 207063597}
-  Checkpoint_Mode: 12
+  checkpointModeName: 
   DebugActivate: 0
   ID: 23
   crabwarp: {fileID: 0}
@@ -15907,6 +15967,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1170396511, guid: 3467e989d33abdf45bc5f05c58b97676, type: 3}
+      propertyPath: checkpointModeName
+      value: DMC
+      objectReference: {fileID: 0}
     - target: {fileID: 1190201145, guid: 3467e989d33abdf45bc5f05c58b97676, type: 3}
       propertyPath: m_fontStyle
       value: 103
@@ -15958,6 +16022,11 @@ PrefabInstance:
     - target: {fileID: 2133579213, guid: 3467e989d33abdf45bc5f05c58b97676, type: 3}
       propertyPath: m_fontStyle
       value: 103
+      objectReference: {fileID: 0}
+    - target: {fileID: 1072766520464056022, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: DMC
       objectReference: {fileID: 0}
     - target: {fileID: 2144752927654919526, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -17208,7 +17277,7 @@ PrefabInstance:
     - target: {fileID: 3369863726381535069, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: WinHandlerToCall
-      value: DMCWinHandler
+      value: DMC
       objectReference: {fileID: 0}
     - target: {fileID: 3369863726468713828, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}

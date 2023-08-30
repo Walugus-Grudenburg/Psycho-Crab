@@ -29,6 +29,7 @@ public class LoadGame : MonoBehaviour
         Checkpoint.allCheckpoints.Clear();
         SceneToLoad = ProgressHandler.SceneToLoad;
         IsContinuing = Continue;
+        Physics2D.gravity = new Vector2(0, -9.84f);
         if (!MenuInstead) SceneManager.LoadScene(SceneToLoad, LoadSceneMode.Single);
         else
         {

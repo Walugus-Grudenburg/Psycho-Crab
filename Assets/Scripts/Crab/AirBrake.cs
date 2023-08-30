@@ -16,7 +16,7 @@ public class AirBrake : MonoBehaviour
         foreach (Rigidbody2D toSlow in objectsToSlow)
         {
             toSlow.drag = 0.65f;
-            toSlow.angularDrag = 0.5f;
+            if (!SatanScript.HasChaseStarted) toSlow.angularDrag = 0.5f;
         }
         StartCoroutine("RemoveAirBrake");
     }

@@ -32,7 +32,7 @@ public class Lava : MonoBehaviour
         ProgressHandler Victim = collision.GetComponent<ProgressHandler>();
         if (Victim)
         {
-            if (IsDeadly) 
+            if (IsDeadly && !OilFire.hasFireStarted) 
             {
                 Victim.Reset();
                 if (!ProgressHandler.DeTermination)
@@ -57,7 +57,7 @@ public class Lava : MonoBehaviour
         ProgressHandler Victim = collision.GetComponent<ProgressHandler>();
         if (Victim)
         {
-            if (IsDeadly)
+            if (IsDeadly && !OilFire.hasFireStarted)
             {
                 Victim.Reset();
                 if (!ProgressHandler.DeTermination)

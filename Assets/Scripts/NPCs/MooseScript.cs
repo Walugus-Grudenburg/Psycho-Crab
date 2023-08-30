@@ -13,6 +13,9 @@ public class MooseScript : MonoBehaviour
     public GameObject Target;
     public AudioSource source;
     public Rigidbody2D RigidBody;
+    public bool dieWhenEatingCrab;
+    public GameObject deathTarget;
+    public bool isHarmless;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,10 +47,22 @@ public class MooseScript : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && !isHarmless)
         {
             progress.Reset();
             source.Play();
+            if (dieWhenEatingCrab)
+            {
+                Speed = 0;
+                Target = deathTarget;
+                isHarmless = true;
+                Invoke("SetGrabbable", 3f);
+            }
         }
+    }
+
+    void SetGrabbable()
+    {
+        gameObject.tag = "Cutscene NPC";
     }
 }

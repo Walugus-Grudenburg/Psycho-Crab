@@ -20,9 +20,12 @@ public class Remote_Checkpoint : MonoBehaviour
 
     public void Warp()
     {
-        ProgressHandler.Checkpoint_Position = Destination.gameObject.transform.position;
-        ProgressHandler.SaveProgressData();
-        CrabToWarp.Reset(true);
+        if (Destination)
+        {
+            ProgressHandler.Checkpoint_Position = Destination.gameObject.transform.position;
+            ProgressHandler.SaveProgressData();
+            CrabToWarp.Reset(true);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

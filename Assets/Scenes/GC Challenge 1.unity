@@ -9071,8 +9071,11 @@ MonoBehaviour:
   sticksound: {fileID: 205938978}
   wetsound: {fileID: 205938977}
   IgnoreSticking: 0
+  IgnoreWater: 0
   BoostStrength: 0
   StrengthStrength: 1
+  IsInGoo: 0
+  IsInWater: 0
 --- !u!233 &205938980
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -19355,8 +19358,11 @@ MonoBehaviour:
   sticksound: {fileID: 388141492}
   wetsound: {fileID: 388141491}
   IgnoreSticking: 0
+  IgnoreWater: 0
   BoostStrength: 0
   StrengthStrength: 1
+  IsInGoo: 0
+  IsInWater: 0
 --- !u!233 &388141494
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -23214,8 +23220,11 @@ MonoBehaviour:
   sticksound: {fileID: 457190317}
   wetsound: {fileID: 457190316}
   IgnoreSticking: 1
+  IgnoreWater: 0
   BoostStrength: 0
   StrengthStrength: 0.66
+  IsInGoo: 0
+  IsInWater: 0
 --- !u!233 &457190319
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -26350,13 +26359,14 @@ MonoBehaviour:
   DoUnlock3: 0
   DoUnlock4: 0
   DoUnlock5: 0
+  DoUnlock6: 0
   IsSushi: 1
   CrunchText: {fileID: 0}
   Satan: {fileID: 1087173966}
   Sushi: {fileID: 0}
   UnlockText1: {fileID: 0}
   UnlockText2: {fileID: 0}
-  WinHandlerToCall: GCCWinHandler
+  WinHandlerToCall: GCC
 --- !u!4 &512492146
 Transform:
   m_ObjectHideFlags: 0
@@ -59799,8 +59809,11 @@ MonoBehaviour:
   sticksound: {fileID: 1107814391}
   wetsound: {fileID: 1107814390}
   IgnoreSticking: 1
+  IgnoreWater: 0
   BoostStrength: 0
   StrengthStrength: 0.66
+  IsInGoo: 0
+  IsInWater: 0
 --- !u!233 &1107814393
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -83295,6 +83308,7 @@ MonoBehaviour:
   IgnoreControls: 0
   ActivateDeTermination: 0
   ResetLate: 0
+  IsMainInstance: 1
   Legs:
   - {fileID: 1107814392}
   - {fileID: 457190318}
@@ -103227,8 +103241,11 @@ MonoBehaviour:
   sticksound: {fileID: 1787073295}
   wetsound: {fileID: 1787073294}
   IgnoreSticking: 0
+  IgnoreWater: 0
   BoostStrength: 0
   StrengthStrength: 1
+  IsInGoo: 0
+  IsInWater: 0
 --- !u!233 &1787073297
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -121542,8 +121559,11 @@ MonoBehaviour:
   sticksound: {fileID: 2119484264}
   wetsound: {fileID: 2119484263}
   IgnoreSticking: 0
+  IgnoreWater: 0
   BoostStrength: 0
   StrengthStrength: 1
+  IsInGoo: 0
+  IsInWater: 0
 --- !u!233 &2119484266
 HingeJoint2D:
   m_ObjectHideFlags: 0
