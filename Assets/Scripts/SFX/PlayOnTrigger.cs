@@ -5,10 +5,11 @@ using UnityEngine;
 public class PlayOnTrigger : MonoBehaviour
 {
     public AudioSource SoundToPlay;
+    public bool playersOnly;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (!SoundToPlay) SoundToPlay = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -19,8 +20,12 @@ public class PlayOnTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!SoundToPlay.isPlaying) {
-            SoundToPlay.Play();
+        if (!playersOnly || collision.CompareTag("Player"))
+        {
+            if (!SoundToPlay.isPlaying)
+            {
+                SoundToPlay.Play();
+            }
         }
     }
 }

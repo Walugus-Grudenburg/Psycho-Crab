@@ -96,7 +96,7 @@ public class ProgressHandler : MonoBehaviour
         DMCCrabClass.name = "DMC";
         DRCCrabClass.name = "DRC";
         FCCrabClass.name = "FC";
-        GCCrabClass.name = "GCs";
+        GCCrabClass.name = "GC";
         GLCCrabClass.name = "GLC";
         GCCCrabClass.name = "GCC";
         PCCCrabClass.name = "PCC";

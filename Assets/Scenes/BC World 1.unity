@@ -2072,6 +2072,33 @@ PrefabInstance:
       propertyPath: checkpointModeName
       value: BC
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863725849184962, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: ObjectToSpawn.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725849184962, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: ObjectToSpawn.Array.data[1]
+      value: 
+      objectReference: {fileID: 5342984990598127848, guid: 5778dc286f21c714783f461ddbdab59d,
+        type: 3}
+    - target: {fileID: 3369863725849184962, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: ObjectToSpawn.Array.data[2]
+      value: 
+      objectReference: {fileID: 350225693134926118, guid: 4dd405a112a83b2468f2c9a65f69a67f,
+        type: 3}
+    - target: {fileID: 3369863725849184989, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -764.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863725849184989, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -984.8
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725861546687, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: Checkpoint_Mode

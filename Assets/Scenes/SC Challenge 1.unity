@@ -879,8 +879,11 @@ MonoBehaviour:
   sticksound: {fileID: 76458510}
   wetsound: {fileID: 76458509}
   IgnoreSticking: 0
+  IgnoreWater: 0
   BoostStrength: 0
   StrengthStrength: 1
+  IsInGoo: 0
+  IsInWater: 0
 --- !u!233 &76458512
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -5255,8 +5258,11 @@ MonoBehaviour:
   sticksound: {fileID: 551476546}
   wetsound: {fileID: 551476545}
   IgnoreSticking: 0
+  IgnoreWater: 0
   BoostStrength: 0
   StrengthStrength: 0.85
+  IsInGoo: 0
+  IsInWater: 0
 --- !u!1 &564632030
 GameObject:
   m_ObjectHideFlags: 0
@@ -6298,8 +6304,11 @@ MonoBehaviour:
   sticksound: {fileID: 663693414}
   wetsound: {fileID: 663693413}
   IgnoreSticking: 0
+  IgnoreWater: 0
   BoostStrength: 0
   StrengthStrength: 1
+  IsInGoo: 0
+  IsInWater: 0
 --- !u!233 &663693416
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -8625,8 +8634,11 @@ MonoBehaviour:
   sticksound: {fileID: 792816724}
   wetsound: {fileID: 792816723}
   IgnoreSticking: 0
+  IgnoreWater: 0
   BoostStrength: 0
   StrengthStrength: 1
+  IsInGoo: 0
+  IsInWater: 0
 --- !u!233 &792816726
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -10948,8 +10960,11 @@ MonoBehaviour:
   sticksound: {fileID: 1035313192}
   wetsound: {fileID: 1035313191}
   IgnoreSticking: 0
+  IgnoreWater: 0
   BoostStrength: 0
   StrengthStrength: 1.25
+  IsInGoo: 0
+  IsInWater: 0
 --- !u!1 &1042654574
 GameObject:
   m_ObjectHideFlags: 0
@@ -11480,8 +11495,11 @@ MonoBehaviour:
   sticksound: {fileID: 1065446718}
   wetsound: {fileID: 1065446717}
   IgnoreSticking: 0
+  IgnoreWater: 0
   BoostStrength: 0
   StrengthStrength: 1
+  IsInGoo: 0
+  IsInWater: 0
 --- !u!233 &1065446720
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -14103,6 +14121,8 @@ MonoBehaviour:
   DoUnlock3: 0
   DoUnlock4: 0
   DoUnlock5: 0
+  DoUnlock6: 0
+  DoUnlock7: 0
   IsSushi: 0
   CrunchText: {fileID: 248159323}
   Satan: {fileID: 1886843177}
@@ -14177,7 +14197,7 @@ MonoBehaviour:
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
-    - position: {x: -79.11279, y: -791.3911, z: 0}
+    - position: {x: -690.8913, y: -199.03415, z: 0}
       leftTangent: {x: -166.6203, y: -344.29626, z: 0}
       rightTangent: {x: 37.111816, y: 76.6864, z: 0}
       mode: 1
@@ -14187,7 +14207,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: -118.85272, y: 68.293335, z: 0}
+    - position: {x: -730.6312, y: 660.6502, z: 0}
       leftTangent: {x: -59.084473, y: -59.54718, z: 0}
       rightTangent: {x: 71.668945, y: 72.231384, z: 0}
       mode: 1
@@ -14197,7 +14217,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 1081.7943, y: -26.463379, z: 0}
+    - position: {x: 470.0158, y: 565.89355, z: 0}
       leftTangent: {x: -130.05444, y: -28.325928, z: 0}
       rightTangent: {x: 218.44653, y: 47.57794, z: 0}
       mode: 1
@@ -14207,7 +14227,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 1030.5122, y: -818.13196, z: 0}
+    - position: {x: 418.7337, y: -225.775, z: 0}
       leftTangent: {x: 304.87585, y: 239.16998, z: 0}
       rightTangent: {x: -425.77045, y: -334.01038, z: 0}
       mode: 1
@@ -14280,7 +14300,7 @@ SpriteShapeRenderer:
   m_Sprites:
   - {fileID: 21300000, guid: 5037524e1d54d1b46903c1c3f545c65a, type: 3}
   m_LocalAABB:
-    m_Center: {x: 559.0451, y: -487.49707, z: 0}
+    m_Center: {x: -52.7334, y: 104.85983, z: 0}
     m_Extent: {x: 693.2206, y: 571.90784, z: 0}
 --- !u!4 &1481018013
 Transform:
@@ -14290,7 +14310,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1481018009}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -628, y: 567, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -17815,7 +17835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30ea4a81481fc0c4e804f665eb349862, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mode: 9
+  checkpointModeName: 
   buttons:
   - {fileID: 585673185}
   - {fileID: 407496455}
@@ -17938,7 +17958,6 @@ GameObject:
   - component: {fileID: 1886843183}
   - component: {fileID: 1886843182}
   - component: {fileID: 1886843181}
-  - component: {fileID: 1886843180}
   - component: {fileID: 1886843179}
   - component: {fileID: 1886843178}
   m_Layer: 0
@@ -17969,23 +17988,50 @@ MonoBehaviour:
   Legs:
   - {fileID: 1035313197}
   - {fileID: 551476550}
-  ObjectsToActivate:
-  - {fileID: 1663077127}
-  currentRegularColor: {r: 1, g: 0, b: 0, a: 0.5882353}
   TiredColor1: {r: 1, g: 0.3537736, b: 0.3537736, a: 0.6862745}
   TiredColor2: {r: 1, g: 0.514151, b: 0.514151, a: 0.8156863}
   TiredColor3: {r: 1, g: 0.4575472, b: 0.4575472, a: 0.9372549}
   TiredColor4: {r: 1, g: 1, b: 1, a: 1}
-  attackColor1: {r: 0.49474904, g: 0.9622642, b: 0.9141866, a: 0.8156863}
-  attackColor2: {r: 0.6671642, g: 0.9245283, b: 0.36196154, a: 0.7372549}
-  attackColor3: {r: 0.39147854, g: 0.17661981, b: 0.46226418, a: 0.4627451}
+  Victory: {fileID: 0}
+  ObjectsToActivate:
+  - {fileID: 1663077127}
+  Wings: []
+  ObjectsToDestroy: []
+  Anvils: []
+  Anvils2: []
+  Anvils3: []
+  Seagulls: []
+  Seagulls2: []
+  Parasols: []
+  Waypoints: []
+  Arenas: []
+  Swans: []
+  Swans2: []
+  Coral: []
+  Pianos: []
+  Pianos2: []
+  FallingBodies: []
+  FallingBodiesWithSeagulls: []
+  Swing1: {fileID: 0}
+  BCP: {fileID: 0}
+  DeathLava: {fileID: 0}
+  chicken: {fileID: 0}
   music: {fileID: 1820142680}
   fakeoutmusic: {fileID: 1663077127}
   desparationMusic: {fileID: 888990082}
   EvilLaugh: {fileID: 1886843179}
-  ownSprite: {fileID: 1980076194}
+  FallingAttack: {fileID: 0}
+  sprite: {fileID: 0}
   Camera: {fileID: 1695933281}
   ZoomFixer: {fileID: 1695933279}
+  currentRegularColor: {r: 1, g: 0, b: 0, a: 0.5882353}
+  attackColor1: {r: 0.49474904, g: 0.9622642, b: 0.9141866, a: 0.8156863}
+  attackColor2: {r: 0.6671642, g: 0.9245283, b: 0.36196154, a: 0.7372549}
+  attackColor3: {r: 0.39147854, g: 0.17661981, b: 0.46226418, a: 0.4627451}
+  stopAllAttacks: 0
+  worrySpeed: 1
+  crabBeams: []
+  firePlumes: []
 --- !u!82 &1886843179
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18082,22 +18128,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!58 &1886843180
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1886843177}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 3.8
 --- !u!114 &1886843181
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -75,7 +75,7 @@ public class Checkpoint : MonoBehaviour
         text.SetActive(true);
     }
 
-    private void DoCheckpoint()
+    public void DoCheckpoint()
     {
         if (ProgressHandler.Checkpoint_Position != Checkpoint_Position)
         {

@@ -17,6 +17,7 @@ public class SatanScript : MonoBehaviour
     public RushdownNPC SatanChaseScript;
     public SpookyJump Spooky;
     public ProgressHandler progress;
+    public Checkpoint checkpointBeforeSatan;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +37,10 @@ public class SatanScript : MonoBehaviour
     
     public void StartChaseSequence()
     {
+        if (checkpointBeforeSatan)
+        {
+            checkpointBeforeSatan.DoCheckpoint();
+        }
         HasChaseStarted = true;
         progress.IgnoreControls = true;
         foreach (GameObject obj in ObjectsToDestroy)

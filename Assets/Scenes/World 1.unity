@@ -446,6 +446,16 @@ PrefabInstance:
       propertyPath: checkpointModeName
       value: RC
       objectReference: {fileID: 0}
+    - target: {fileID: 5438517957228412047, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1914.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5438517957228412047, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1541.1
+      objectReference: {fileID: 0}
     - target: {fileID: 6714482217908972388, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_IsActive
