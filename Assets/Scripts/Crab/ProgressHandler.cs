@@ -16,6 +16,7 @@ public class ProgressHandler : MonoBehaviour
     public bool ActivateDeTermination;
     public bool ResetLate;
     public bool IsMainInstance = true;
+    public bool ResetInvincibility;
     public CrabLeg[] Legs;
     public LoadGame loader;
     public GameObject[] Moneys;
@@ -174,6 +175,11 @@ public class ProgressHandler : MonoBehaviour
     }
     void Update()
     {
+        if (ResetInvincibility)
+        {
+            DeTermination = false;
+            OilFire.hasFireStarted = false;
+        }
         if (ActivateDeTermination)
         {
             DeTermination = true;
