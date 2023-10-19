@@ -71,6 +71,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PLC World 1.unity
     guid: 08bb96275605cbc4c91038cfafa93e44
+  - enabled: 1
+    path: Assets/Scenes/CC World 1.unity
+    guid: 23b8510de2b8eb24c8a4e84e962b139d
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 166d327f978809d42b7ad056a9b7e139,
       type: 2}
