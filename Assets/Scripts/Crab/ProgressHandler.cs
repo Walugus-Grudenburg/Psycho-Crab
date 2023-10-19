@@ -62,6 +62,7 @@ public class ProgressHandler : MonoBehaviour
     public static CrabClass PCCCrabClass = new CrabClass();
     public static CrabClass RBCCrabClass = new CrabClass();
     public static CrabClass PLCCrabClass = new CrabClass();
+    public static CrabClass CCCrabClass = new CrabClass();
 
     // DEPRECATED, DON'T USE THESE! USE CRAB CLASSES INSTEAD
     public static int RCFarthestCheckpoint;
@@ -109,6 +110,7 @@ public class ProgressHandler : MonoBehaviour
         SCCrabClass.name = "SC";
         SDCCrabClass.name = "SDC";
         SPCCrabClass.name = "SPC";
+        CCCrabClass.name = "CC";
         foreach (CrabClass crab in allCrabClasses)
         {
             crab.winsStatName = crab.name + "_wins";
@@ -301,6 +303,7 @@ public class ProgressHandler : MonoBehaviour
         data.PCCCrabClass = PCCCrabClass;
         data.RBCCrabClass = RBCCrabClass;
         data.PLCCrabClass = PLCCrabClass;
+        data.CCCrabClass = CCCrabClass;
         formatter.Serialize(file, data);
         file.Close();
     }
@@ -348,6 +351,7 @@ public class ProgressHandler : MonoBehaviour
             if (data.PCCCrabClass != null) PCCCrabClass = data.PCCCrabClass;
             if (data.RBCCrabClass != null) RBCCrabClass = data.RBCCrabClass;
             if (data.PLCCrabClass != null) PLCCrabClass = data.PLCCrabClass;
+            if (data.CCCrabClass != null) CCCrabClass = data.CCCrabClass;
             // DEPRECATED, DON'T USE THESE! USE CRAB CLASSES INSTEAD
             RCCrabClass.legacyFarthestCheckpoint = data.RCFarthestCheckpoint;
             BCCrabClass.legacyFarthestCheckpoint = data.BCFarthestCheckpoint;
@@ -374,7 +378,31 @@ public class ProgressHandler : MonoBehaviour
             GIGABossStage = data.GIGABossStage;
             GlassCrabUnlocked = data.GlassCrabUnlocked;
             PollutionCrabUnlocked = data.PollutionCrabUnlocked;
-            allCrabClasses = new CrabClass[] {RCCrabClass, BCCrabClass, DCCCrabClass, DCCrabClass, DMCCrabClass, DRCCrabClass, FCCrabClass, GCCrabClass, GLCCrabClass, GCCCrabClass, PCCCrabClass, PCCrabClass, PHCCrabClass, PLCCrabClass, RBCCrabClass, RCCCrabClass, RKCCrabClass, SCCrabClass, SDCCrabClass, SPCCrabClass };
+            //Update below when adding a new crab
+            allCrabClasses = new CrabClass[] 
+            {
+                RCCrabClass,
+                BCCrabClass, 
+                DCCCrabClass, 
+                DCCrabClass, 
+                DMCCrabClass, 
+                DRCCrabClass, 
+                FCCrabClass, 
+                GCCrabClass, 
+                GLCCrabClass, 
+                GCCCrabClass, 
+                PCCCrabClass, 
+                PCCrabClass, 
+                PHCCrabClass, 
+                PLCCrabClass, 
+                RBCCrabClass, 
+                RCCCrabClass, 
+                RKCCrabClass, 
+                SCCrabClass, 
+                SDCCrabClass, 
+                SPCCrabClass, 
+                CCCrabClass
+            };
             file.Close();
         }
         else
@@ -581,6 +609,7 @@ public class ResetData
     public CrabClass PCCCrabClass;
     public CrabClass RBCCrabClass;
     public CrabClass PLCCrabClass;
+    public CrabClass CCCrabClass;
     public string SceneToLoad;
     public int BossStage;
     public int GIGABossStage;

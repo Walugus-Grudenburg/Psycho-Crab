@@ -70,7 +70,7 @@ public class VictoryManager : MonoBehaviour
         if (DoVictoryDance)
         {
             yield return new WaitForSeconds(1);
-            Destroy(Sushi);
+            if (Sushi) Destroy(Sushi);
             CrunchText.SetActive(true);
         }
         if (DoUnlock1) {

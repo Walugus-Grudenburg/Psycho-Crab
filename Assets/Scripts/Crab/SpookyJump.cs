@@ -13,6 +13,7 @@ public class SpookyJump : MonoBehaviour
     public float ChargeMulti;
     public float Powermulti;
     public bool DisableCameraChanges;
+    public int MaximumCharges = 99999999;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,10 +23,12 @@ public class SpookyJump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Jump if it's pressed and ready
         if (ProgressHandler.controls.Crab.Jump.triggered && Active & Charged > 0)
         {
             Jump();
         }
+        // Otherwise recharge if it needs it
         else if (Recharge && Charged == 0)
         {
             Recharge = false;
@@ -34,13 +37,16 @@ public class SpookyJump : MonoBehaviour
 
     }
 
-    public void Jump()
+    public virtual void Jump()
     {
+        // Add velocity to all of the parts
         foreach (Rigidbody2D part in JumpParts)
         {
             part.AddForce(gameObject.transform.up * Powermulti * 5000f * (0.9f + (Charged * (0.2f * Mathf.Clamp(((Charged - 5) * 0.15f), 1, 9999999)))));
         }
+        // Change the camera back if it's supposed to be changed
         if (!DisableCameraChanges) Cam.orthographicSize -= 2f * Charged;
+        // Reset everything to charge again
         Charged = 0;
         StopAllCoroutines();
         StartCoroutine(RechargeAfterTime(4.3f - ChargeMulti * 1.3f));
@@ -61,7 +67,7 @@ public class SpookyJump : MonoBehaviour
         if (!DisableCameraChanges) Cam.orthographicSize += 2f;
         ChargedSound.pitch = 2f + (Charged * 0.25f);
         ChargedSound.Play();
-        if (Charged < 5 * ChargeMulti)
+        if (Charged < 5 * ChargeMulti && Charged < MaximumCharges)
         {
             StartCoroutine(RechargeAfterTime((1 + Charged / ChargeMulti) / ChargeMulti));
         }
