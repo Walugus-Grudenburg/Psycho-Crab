@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 5615020817198770489}
   - component: {fileID: 5615020817198770490}
   - component: {fileID: 5615020817198770491}
-  - component: {fileID: 5615020817198770484}
   - component: {fileID: 5615020817198770485}
   - component: {fileID: 5615020817198770486}
   - component: {fileID: 8405116900541512866}
+  - component: {fileID: 3049985928607942229}
   m_Layer: 0
   m_Name: Falling Rock Type 3
   m_TagString: Cutscene NPC
@@ -85,8 +85,8 @@ SpriteShapeRenderer:
   m_Sprites:
   - {fileID: 21300000, guid: 5037524e1d54d1b46903c1c3f545c65a, type: 3}
   m_LocalAABB:
-    m_Center: {x: -0.13811481, y: 0.39875042, z: -0.00005}
-    m_Extent: {x: 1.4366045, y: 1.2268686, z: 0.00005}
+    m_Center: {x: -0.1610874, y: 0.39838558, z: 0}
+    m_Extent: {x: 1.3977389, y: 1.2253573, z: 0}
 --- !u!114 &5615020817198770489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,40 +273,6 @@ MonoBehaviour:
   maxvolume: 0
   UseRandomMode: 0
   Hitsound: {fileID: 0}
---- !u!60 &5615020817198770484
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5615020817198770487}
-  m_Enabled: 1
-  m_Density: 3
-  m_Material: {fileID: 6200000, guid: f5ce81d7c412925439e9bd06a04e30dc, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -1.164879, y: 0.69936633}
-      - {x: -0.8122289, y: 1.2703658}
-      - {x: 0.18298267, y: 1.1164325}
-      - {x: 0.9533404, y: -0.20302972}
-      - {x: 0.6985835, y: -0.4946238}
-      - {x: -0.6508593, y: -0.32397515}
-      - {x: -1.1865088, y: -0.008528309}
-      - {x: -1.1983297, y: 0.56904507}
-      - {x: -1.164879, y: 0.69936633}
 --- !u!114 &5615020817198770485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,7 +300,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 7.904909
+  m_Mass: 18.41297
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 3
@@ -357,3 +323,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mat: {fileID: 2100000, guid: f6aa298c5deadc344b012ed39b7f3796, type: 2}
   UseShapeMode: 1
+--- !u!58 &3049985928607942229
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5615020817198770487}
+  m_Enabled: 1
+  m_Density: 3
+  m_Material: {fileID: 6200000, guid: f5ce81d7c412925439e9bd06a04e30dc, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.16108745, y: 0.39838573}
+  serializedVersion: 2
+  m_Radius: 1.3977394

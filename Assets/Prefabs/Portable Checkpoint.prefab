@@ -111,21 +111,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.5383564, y: -0.918574}
-      - {x: -1.405633, y: -1.2892598}
-      - {x: -1.333713, y: -1.4424434}
-      - {x: -1.1455803, y: -1.302635}
+    - - {x: -1.4561256, y: -1.4686747}
       - {x: -0.6262355, y: -0.9846672}
       - {x: 0.07765055, y: -1.3429078}
       - {x: 1.0472589, y: -0.9746952}
-      - {x: 1.4026513, y: -1.4705219}
-      - {x: 1.5449309, y: -1.3431828}
+      - {x: 1.5118791, y: -1.4705219}
       - {x: 1.5625682, y: 0.64622974}
-      - {x: 0.98591805, y: 0.9816959}
-      - {x: 0.09557629, y: 1.0942054}
-      - {x: -0.7747688, y: 1.0046141}
-      - {x: -0.9004946, y: 0.84287477}
-      - {x: -1.0054498, y: 0.47264123}
+      - {x: 0.3569007, y: 1.2549579}
+      - {x: -0.24886909, y: 1.2263167}
       - {x: -1.5567336, y: 0.5854728}
 --- !u!50 &2859510905095513684
 Rigidbody2D:
@@ -139,7 +132,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 80.84048
+  m_Mass: 83.45694
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -483,7 +476,7 @@ MonoBehaviour:
   dementiaWasLastUsed: 0
   isPortable: 1
   text: {fileID: 0}
-  Checkpoint_Mode: 17
+  checkpointModeName: 
   DebugActivate: 0
   ID: 0
   crabwarp: {fileID: 0}

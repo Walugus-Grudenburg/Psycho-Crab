@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 1997414931668572744}
   - component: {fileID: 1997414931668572741}
   - component: {fileID: 1997414931668572740}
-  - component: {fileID: 1997414931668572747}
   - component: {fileID: 1997414931668572746}
   - component: {fileID: 1997414931668572745}
+  - component: {fileID: 3965781124919024813}
   m_Layer: 9
   m_Name: Giga Can II
   m_TagString: Cutscene NPC
@@ -98,7 +98,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 419.99402
+  m_Mass: 419.6656
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -107,39 +107,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!60 &1997414931668572747
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1997414931668572751}
-  m_Enabled: 1
-  m_Density: 1.2
-  m_Material: {fileID: 6200000, guid: a0a2ee3d55df53b48b59cab91f34615e, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.53, y: 2}
-    newSize: {x: 12.64, y: 17.44}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.60406494, y: -0.85745865}
-      - {x: -0.50563174, y: -0.99764705}
-      - {x: 0.57362366, y: -0.9952378}
-      - {x: 0.67662907, y: -0.8550729}
-      - {x: 0.66700447, y: 0.65644515}
-      - {x: 0.60226417, y: 0.9422003}
-      - {x: -0.54521376, y: 0.93202245}
-      - {x: -0.5977363, y: 0.70131755}
 --- !u!82 &1997414931668572746
 AudioSource:
   m_ObjectHideFlags: 0
@@ -255,3 +222,29 @@ MonoBehaviour:
   maxvolume: 0
   UseRandomMode: 0
   Hitsound: {fileID: 0}
+--- !u!61 &3965781124919024813
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997414931668572751}
+  m_Enabled: 1
+  m_Density: 1.2
+  m_Material: {fileID: 6200000, guid: a0a2ee3d55df53b48b59cab91f34615e, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.036559165, y: -0.04488492}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.53, y: 2}
+    newSize: {x: 12.64, y: 17.44}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2713755, y: 1.9102302}
+  m_EdgeRadius: 0

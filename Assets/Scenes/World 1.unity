@@ -281,6 +281,11 @@ PrefabInstance:
       propertyPath: checkpointModeName
       value: RC
       objectReference: {fileID: 0}
+    - target: {fileID: 3369863725074643417, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_Mass
+      value: 53.478096
+      objectReference: {fileID: 0}
     - target: {fileID: 3369863725125002545, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: checkpointModeName
@@ -545,6 +550,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Points.Array.data[30].y
       value: -172.87787
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726626836772, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_Mass
+      value: 53.478104
       objectReference: {fileID: 0}
     - target: {fileID: 5438517957228412047, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}

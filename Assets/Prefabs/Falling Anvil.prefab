@@ -124,12 +124,10 @@ PolygonCollider2D:
       - {x: 1.451648, y: -3.2025285}
       - {x: 3.7226985, y: -4.8733997}
       - {x: 4.96696, y: -4.5763826}
-      - {x: 4.9480133, y: -2.847982}
       - {x: 4.105131, y: 0.3527966}
       - {x: 2.1013331, y: 0.6150173}
-      - {x: 2.841622, y: 2.0216742}
-      - {x: 7.8942485, y: 3.9117303}
-      - {x: 7.7749906, y: 4.545038}
+      - {x: 2.3617501, y: 1.7304688}
+      - {x: 8.134691, y: 4.4936333}
       - {x: -7.3270535, y: 4.8752055}
 --- !u!50 &7781476964066160613
 Rigidbody2D:
@@ -143,7 +141,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 1796.8749
+  m_Mass: 1752.1017
   m_LinearDrag: 0
   m_AngularDrag: 0.001
   m_GravityScale: 1.8
@@ -297,6 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83a01503edb954a8701386d420d51a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disableInstead: 0
   timemin: 1.901
   timemax: 4.501
 --- !u!114 &3311289071677455152

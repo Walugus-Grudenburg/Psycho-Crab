@@ -85,8 +85,8 @@ SpriteShapeRenderer:
   m_Sprites:
   - {fileID: 21300000, guid: 5037524e1d54d1b46903c1c3f545c65a, type: 3}
   m_LocalAABB:
-    m_Center: {x: 0.27823305, y: 3.6950352, z: -0.00014999999}
-    m_Extent: {x: 4.63636, y: 3.6950352, z: 0.00014999999}
+    m_Center: {x: 0.27248907, y: 5.814151, z: 0}
+    m_Extent: {x: 4.630328, y: 1.5759192, z: 0}
 --- !u!114 &2521797004964801669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_CornerAngleThreshold: 30
   m_ColliderDetail: 4
   m_ColliderOffset: 0
-  m_UpdateCollider: 1
+  m_UpdateCollider: 0
   m_OptimizeCollider: 1
   m_OptimizeGeometry: 1
   m_EnableTangents: 0
@@ -318,28 +318,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -4.027469, y: 7.0696783}
-      - {x: -1.6603279, y: 6.4590383}
-      - {x: 4.63973, y: 5.840236}
-      - {x: 4.210965, y: 5.3193974}
-      - {x: 3.907901, y: 5.066721}
-      - {x: 3.543801, y: 4.8697743}
-      - {x: 3.1300848, y: 4.7856817}
-      - {x: 2.678027, y: 4.871582}
-      - {x: 2.1832516, y: 5.0341983}
-      - {x: 1.4916327, y: 5.0581965}
-      - {x: 0.47376797, y: 4.8892055}
-      - {x: -0.6185542, y: 4.9551125}
-      - {x: -1.5528184, y: 4.7762837}
-      - {x: -2.240449, y: 4.5685244}
-      - {x: -2.6468167, y: 4.514015}
-      - {x: -3.117504, y: 4.544119}
-      - {x: -3.4648378, y: 4.7324133}
-      - {x: -3.7103193, y: 5.1120663}
-      - {x: -3.8716078, y: 5.602873}
-      - {x: -4.0120716, y: 6.596512}
-      - {x: -4.0265694, y: 6.9386425}
-      - {x: -4.027469, y: 7.0696783}
+    - - {x: -4.6341944, y: 7.521695}
+      - {x: 5.0651507, y: 6.085428}
+      - {x: 4.576542, y: 4.6872163}
+      - {x: -3.853837, y: 4.158505}
 --- !u!114 &2521797004964801673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -367,7 +349,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 36.118824
+  m_Mass: 64.54364
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 3

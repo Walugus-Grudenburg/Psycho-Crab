@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4210100087547323380}
   - component: {fileID: 2904034467268794946}
   - component: {fileID: 1782885380374757812}
+  - component: {fileID: 6940042909104159986}
   m_Layer: 9
   m_Name: Parasol Up
   m_TagString: Area Child
@@ -113,61 +114,20 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.84, y: 7.68}
-      - {x: 12.66, y: 8.34}
+    - - {x: -0.19771945, y: 7.8467884}
+      - {x: 12.706456, y: 7.997125}
       - {x: 12.66, y: 9.36}
-      - {x: 12.54, y: 9.46}
       - {x: 11.498413, y: 9.54184}
       - {x: 1.4495239, y: 13.66614}
-      - {x: 0.97685325, y: 14.722153}
       - {x: -0.13467413, y: 15.064263}
-      - {x: -0.6811666, y: 14.759243}
-      - {x: -2.477431, y: 12.865064}
-      - {x: -7.311035, y: 10.08136}
-      - {x: -8.958842, y: 9.379614}
-      - {x: -10.56958, y: 8.514313}
-      - {x: -11.216919, y: 8.280151}
-      - {x: -11.8, y: 8.54}
-      - {x: -11.938599, y: 8.344837}
+      - {x: -2.5633252, y: 13.184044}
+      - {x: -9.575848, y: 8.815849}
       - {x: -12.219999, y: 8.7}
       - {x: -12.28, y: 8.66}
-      - {x: -12.28, y: 6.68}
-      - {x: -12.259999, y: 6.6}
-      - {x: -11.94, y: 6.72}
-      - {x: -11.535088, y: 6.728893}
-      - {x: -11.08, y: 6.66}
-      - {x: -10.46, y: 6.56}
+      - {x: -12.193055, y: 6.6736593}
       - {x: -10.179999, y: 6.62}
-      - {x: -9.8, y: 6.98}
-      - {x: -9.599999, y: 7.3199997}
-      - {x: -9.3, y: 7.5}
-      - {x: -8.92, y: 7.8199997}
       - {x: -7.6237793, y: 7.2784424}
-      - {x: -6.06, y: 7.8799996}
-      - {x: -5.7999997, y: 7.7799997}
-      - {x: -5.48, y: 7.5}
-      - {x: -5.1, y: 7.14}
-      - {x: -4.52, y: 7.1}
-      - {x: -4.3199997, y: 7.12}
-      - {x: -4.18, y: 6.8999996}
-      - {x: -3.62, y: 6.94}
-      - {x: -3.4399998, y: 7.08}
-      - {x: -3.36, y: 7.2799997}
-      - {x: -3.04, y: 7.16}
-      - {x: -2.8, y: 6.98}
-      - {x: -2.6799998, y: 7.02}
-      - {x: -2.7, y: 7.08}
-      - {x: -2.78, y: 7.2999997}
-      - {x: -2.8, y: 7.8399997}
-      - {x: -2.72, y: 7.7799997}
-      - {x: -2, y: 7.62}
-      - {x: -0.76, y: 7.52}
-      - {x: -0.62, y: 7.64}
-      - {x: -0.24, y: 7.74}
-      - {x: 0.04675293, y: 7.3220215}
-      - {x: 0.61242676, y: -15.2153015}
-      - {x: 1.7350537, y: -15.184099}
-      - {x: 1.66, y: -13.84}
+      - {x: -3.7564533, y: 6.94}
 --- !u!114 &998542429366402433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,7 +155,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 16.133913
+  m_Mass: 19.578386
   m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -333,3 +293,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mat: {fileID: 2100000, guid: f6aa298c5deadc344b012ed39b7f3796, type: 2}
   UseShapeMode: 0
+--- !u!61 &6940042909104159986
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3584368480964806518}
+  m_Enabled: 1
+  m_Density: 1.6
+  m_Material: {fileID: 6200000, guid: c8868567aacff144b920b3737b721d85, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.71879244, y: -3.706171}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 25.32, y: 30.56}
+    newSize: {x: 12.66, y: 15.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.806819, y: 23.14766}
+  m_EdgeRadius: 0

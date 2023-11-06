@@ -360,7 +360,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 12.566053
+  m_Mass: 13.26462
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 5
@@ -399,9 +399,7 @@ PolygonCollider2D:
       - {x: 0.46828175, y: 0.12338567}
       - {x: -1.4520813, y: 0.5214939}
       - {x: -1.4056566, y: 0.9341278}
-      - {x: 0.32022643, y: 0.658761}
-      - {x: 0.51581717, y: 0.6872883}
-      - {x: 1.1828415, y: 0.0045421124}
+      - {x: 0.7686334, y: 0.6447215}
       - {x: 1.5017855, y: -0.6067343}
 --- !u!233 &8876550528143846219
 HingeJoint2D:
@@ -718,7 +716,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 12.566052
+  m_Mass: 13.264621
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 5
@@ -757,9 +755,7 @@ PolygonCollider2D:
       - {x: 0.46828175, y: 0.12338567}
       - {x: -1.4520813, y: 0.5214939}
       - {x: -1.4056566, y: 0.9341278}
-      - {x: 0.32022643, y: 0.658761}
-      - {x: 0.51581717, y: 0.6872883}
-      - {x: 1.1828415, y: 0.0045421124}
+      - {x: 0.7686334, y: 0.6447215}
       - {x: 1.5017855, y: -0.6067343}
 --- !u!233 &6631450411133553640
 HingeJoint2D:
@@ -1076,7 +1072,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 12.566054
+  m_Mass: 13.264623
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 5
@@ -1115,9 +1111,7 @@ PolygonCollider2D:
       - {x: 0.46828175, y: 0.12338567}
       - {x: -1.4520813, y: 0.5214939}
       - {x: -1.4056566, y: 0.9341278}
-      - {x: 0.32022643, y: 0.658761}
-      - {x: 0.51581717, y: 0.6872883}
-      - {x: 1.1828415, y: 0.0045421124}
+      - {x: 0.7686334, y: 0.6447215}
       - {x: 1.5017855, y: -0.6067343}
 --- !u!233 &6631450412160266943
 HingeJoint2D:
@@ -1516,7 +1510,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 12.566054
+  m_Mass: 13.264622
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 5
@@ -1555,9 +1549,7 @@ PolygonCollider2D:
       - {x: 0.46828175, y: 0.12338567}
       - {x: -1.4520813, y: 0.5214939}
       - {x: -1.4056566, y: 0.9341278}
-      - {x: 0.32022643, y: 0.658761}
-      - {x: 0.51581717, y: 0.6872883}
-      - {x: 1.1828415, y: 0.0045421124}
+      - {x: 0.7686334, y: 0.6447215}
       - {x: 1.5017855, y: -0.6067343}
 --- !u!233 &8269607510844652159
 HingeJoint2D:
@@ -1873,7 +1865,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 21.317413
+  m_Mass: 22.029589
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 5
@@ -1934,12 +1926,10 @@ PolygonCollider2D:
     - - {x: -0.45604873, y: -0.7966585}
       - {x: -0.7021384, y: -0.46316814}
       - {x: -0.5301851, y: 0.21882367}
-      - {x: -0.19105154, y: 0.4158101}
       - {x: -0.39763618, y: 0.5176215}
       - {x: 0.20732474, y: 0.8218794}
       - {x: 0.52132654, y: 0.68247914}
-      - {x: 0.6782783, y: -0.082205534}
-      - {x: 0.37994564, y: -0.4818225}
+      - {x: 0.67827857, y: -0.28367868}
       - {x: -0.07069993, y: -0.76982546}
 --- !u!114 &8269607510905698627
 MonoBehaviour:
@@ -2217,7 +2207,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 21.317413
+  m_Mass: 22.02959
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 5
@@ -2278,12 +2268,10 @@ PolygonCollider2D:
     - - {x: -0.45604873, y: -0.7966585}
       - {x: -0.7021384, y: -0.46316814}
       - {x: -0.5301851, y: 0.21882367}
-      - {x: -0.19105154, y: 0.4158101}
       - {x: -0.39763618, y: 0.5176215}
       - {x: 0.20732474, y: 0.8218794}
       - {x: 0.52132654, y: 0.68247914}
-      - {x: 0.6782783, y: -0.082205534}
-      - {x: 0.37994564, y: -0.4818225}
+      - {x: 0.67827857, y: -0.28367868}
       - {x: -0.07069993, y: -0.76982546}
 --- !u!114 &8269607511800712362
 MonoBehaviour:
@@ -2410,7 +2398,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 33.387638
+  m_Mass: 32.759056
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 5
@@ -2444,19 +2432,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.2501845, y: -0.41516733}
-      - {x: 1.4333467, y: -0.43331528}
-      - {x: 1.44627, y: -0.26317596}
-      - {x: 1.5861967, y: -0.23392153}
+    - - {x: 1.5861967, y: -0.23392153}
       - {x: 1.5866667, y: 0.08}
-      - {x: 1.488719, y: 0.09306145}
       - {x: 1.3593872, y: 0.32976198}
-      - {x: 0.9277477, y: 0.41306877}
-      - {x: 0.046666667, y: 0.43}
-      - {x: -0.84055316, y: 0.28329515}
+      - {x: -0.32069755, y: 0.43}
       - {x: -1.513587, y: -0.09793663}
-      - {x: -1.5211843, y: -0.2500019}
-      - {x: -1.3771087, y: -0.3964567}
       - {x: -1.4966667, y: -0.51666665}
       - {x: 1.1766667, y: -0.51666665}
 --- !u!82 &8269607511982525673
@@ -2567,6 +2547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83a01503edb954a8701386d420d51a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disableInstead: 0
   timemin: 5
   timemax: 20
 --- !u!114 &470935069995050614
@@ -2946,7 +2927,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 12.5660515
+  m_Mass: 13.264621
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 5
@@ -2985,9 +2966,7 @@ PolygonCollider2D:
       - {x: 0.46828175, y: 0.12338567}
       - {x: -1.4520813, y: 0.5214939}
       - {x: -1.4056566, y: 0.9341278}
-      - {x: 0.32022643, y: 0.658761}
-      - {x: 0.51581717, y: 0.6872883}
-      - {x: 1.1828415, y: 0.0045421124}
+      - {x: 0.7686334, y: 0.6447215}
       - {x: 1.5017855, y: -0.6067343}
 --- !u!233 &8269607512243800414
 HingeJoint2D:
@@ -3305,7 +3284,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 12.566052
+  m_Mass: 13.26462
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 5
@@ -3344,9 +3323,7 @@ PolygonCollider2D:
       - {x: 0.46828175, y: 0.12338567}
       - {x: -1.4520813, y: 0.5214939}
       - {x: -1.4056566, y: 0.9341278}
-      - {x: 0.32022643, y: 0.658761}
-      - {x: 0.51581717, y: 0.6872883}
-      - {x: 1.1828415, y: 0.0045421124}
+      - {x: 0.7686334, y: 0.6447215}
       - {x: 1.5017855, y: -0.6067343}
 --- !u!233 &8547978739636104097
 HingeJoint2D:
