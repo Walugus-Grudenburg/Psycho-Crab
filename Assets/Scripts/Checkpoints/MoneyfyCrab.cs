@@ -9,7 +9,7 @@ public class MoneyfyCrab : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Moneys = ProgressHandler.maininstance.Moneys;
     }
 
     // Update is called once per frame

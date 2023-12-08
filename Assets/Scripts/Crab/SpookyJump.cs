@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SpookyJump : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class SpookyJump : MonoBehaviour
     public float Powermulti;
     public bool DisableCameraChanges;
     public int MaximumCharges = 99999999;
+    public UnityEvent jumpEvent;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +41,7 @@ public class SpookyJump : MonoBehaviour
 
     public virtual void Jump()
     {
+        jumpEvent.Invoke();
         // Add velocity to all of the parts
         foreach (Rigidbody2D part in JumpParts)
         {

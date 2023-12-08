@@ -16,7 +16,10 @@ public class AreaParent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (!Target)
+        {
+            Target = ProgressHandler.maininstance.gameObject;
+        }
     }
 
     // Update is called once per frame
@@ -28,12 +31,12 @@ public class AreaParent : MonoBehaviour
         }
     }
 
-    void SpawnChild() 
+    void SpawnChild()
     {
         float spawnX = Random.Range(SpawnXMin, SpawnXMax);
         float spawnY = Random.Range(SpawnYMin, SpawnYMax);
         GameObject newchild = GameObject.Instantiate<GameObject>(ObjectToSpawn[Random.Range(0, ObjectToSpawn.Length)]);
         newchild.transform.parent = transform;
-        newchild.transform.localPosition = new Vector3 (spawnX, spawnY, 0f);
+        newchild.transform.localPosition = new Vector3(spawnX, spawnY, 0f);
     }
 }

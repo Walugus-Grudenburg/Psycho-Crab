@@ -6,6 +6,7 @@ public class SatanScript : MonoBehaviour
 {
     public bool StartChaseSoon;
     public bool DebugStartChase;
+    public bool allowFreeEntry;
     public static bool HasChaseStarted;
     public float FlightAmount;
     public float SpeedUpAmount = 0.5f;
@@ -78,7 +79,7 @@ public class SatanScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (ProgressHandler.MoneyUnlocked && !HasChaseStarted && collision.gameObject.CompareTag("Player"))
+        if ((ProgressHandler.MoneyUnlocked || allowFreeEntry) && !HasChaseStarted && collision.gameObject.CompareTag("Player"))
         {
             StartChaseSequence();
         }

@@ -50,6 +50,10 @@ public class Lava : MonoBehaviour
                 Sound.Play();
             }
         }
+        else if (collision.CompareTag("Collectable"))
+        {
+            Destroy(collision.gameObject);
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -74,6 +78,10 @@ public class Lava : MonoBehaviour
                     }
                 }
             }
+        }
+        else if (collision.CompareTag("Collectable"))
+        {
+            Destroy(collision.gameObject);
         }
     }
 }

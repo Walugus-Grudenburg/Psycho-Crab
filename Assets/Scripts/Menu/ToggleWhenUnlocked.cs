@@ -1,16 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Steamworks;
 
 public class ToggleWhenUnlocked : MonoBehaviour
 {
-    public enum Condition {JumpUnlocked,GullcrabUnlocked,BatcrabUnlocked,DizzyCrabUnlocked,PrehistoricCrabUnlocked,SantaCrabUnlocked,SpiderCrabUnlocked,DementiaCrabUnlocked, GlassCrabUnlocked, PollutionCrabUnlocked};
+    public enum Condition {JumpUnlocked,GullcrabUnlocked,BatcrabUnlocked,DizzyCrabUnlocked,PrehistoricCrabUnlocked,SantaCrabUnlocked,SpiderCrabUnlocked,DementiaCrabUnlocked, GlassCrabUnlocked, PollutionCrabUnlocked, GoldCrabUnlocked};
     public Condition condition;
     public GameObject ObjectToToggle;
+    private int numberOfWins;
     // Start is called before the first frame update
     void Start()
     {
-
+        SteamUserStats.GetStat("wins", out numberOfWins);
     }
 
     // Update is called once per frame
@@ -98,6 +100,14 @@ public class ToggleWhenUnlocked : MonoBehaviour
             if (!ProgressHandler.PollutionCrabUnlocked)
             {
                 ObjectToToggle.SetActive(ProgressHandler.PollutionCrabUnlocked);
+            }
+        }
+
+        if (condition == Condition.GoldCrabUnlocked)
+        {
+            if (numberOfWins < 10)
+            {
+                ObjectToToggle.SetActive(false);
             }
         }
     }

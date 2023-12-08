@@ -19,6 +19,7 @@ TagManager:
   - Food
   - Hungry
   - Anti Seagull Beam
+  - Collectable
   layers:
   - Default
   - TransparentFX

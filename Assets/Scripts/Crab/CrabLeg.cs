@@ -13,6 +13,10 @@ public class CrabLeg : MonoBehaviour
     private Controls controls;
     public bool IgnoreSticking;
     public bool IgnoreWater;
+    public bool useDecaySystem;
+    public float decayTime;
+    float decayProgress;
+    public float decayStrengthMultiplier; //Multiplier to strength while decaying
     bool IsSticking;
     bool IsUnstickReady;
     bool IsWaterUnstickReady;
@@ -136,6 +140,15 @@ public class CrabLeg : MonoBehaviour
 
     void Update()
     {
+        // Handles decay
+        if (useDecaySystem)
+        {
+            decayProgress += (Time.deltaTime / decayTime);
+            if (decayProgress > 1) decayProgress = 1;
+            StrengthStrength = decayStrengthMultiplier * (1 - decayProgress);
+        }
+
+        // End decay handling
 
         if (!IgnoreSticking)
         {
@@ -144,11 +157,12 @@ public class CrabLeg : MonoBehaviour
                 Unstick(sticksound);
             }
 
-            foreach (HingeJoint2D hinge in GetComponents<HingeJoint2D>())
+            foreach (HingeJoint2D hinge in GetComponents<HingeJoint2D>()) //Checks each hinge
             {
-                if (hinge.connectedBody)
+                if (hinge.connectedBody) // Checks if there's a nonstatic hinge
                 {
-                    if (!hinge.connectedBody.CompareTag("Player")) 
+                    // Checks if the nonstatic hinge is anything besides the rest of the crab. and sets flags accordingly 
+                    if (!hinge.connectedBody.CompareTag("Player"))
                     {
                         CheckIfSticking = true;
                         HasConnnectedToRB = true;
@@ -313,5 +327,10 @@ public class CrabLeg : MonoBehaviour
             }
         }
         StartCoroutine(UnStickAfterTime(0.25f));
+    }
+    
+    public void ResetDecay()
+    {
+        decayProgress = 0;
     }
 }
