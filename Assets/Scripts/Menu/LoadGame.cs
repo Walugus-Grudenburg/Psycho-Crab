@@ -10,6 +10,7 @@ public class LoadGame : MonoBehaviour
     string SceneToLoad;
     public static bool IsContinuing;
     public bool MenuInstead;
+    public bool Level2Instead;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +31,11 @@ public class LoadGame : MonoBehaviour
         SceneToLoad = ProgressHandler.SceneToLoad;
         IsContinuing = Continue;
         Physics2D.gravity = new Vector2(0, -9.84f);
-        if (!MenuInstead) SceneManager.LoadScene(SceneToLoad, LoadSceneMode.Single);
+        if (!MenuInstead && !Level2Instead) SceneManager.LoadScene(SceneToLoad, LoadSceneMode.Single);
+        else if (!MenuInstead) 
+        {
+            SceneManager.LoadScene("World 2", LoadSceneMode.Single);
+        }
         else
         {
             SceneManager.LoadScene("Title Screen", LoadSceneMode.Single);

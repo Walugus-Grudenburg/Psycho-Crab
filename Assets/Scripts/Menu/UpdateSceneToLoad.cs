@@ -5,6 +5,7 @@ using UnityEngine;
 public class UpdateSceneToLoad : MonoBehaviour
 {
     public string SceneToLoad;
+    public GameObject CrabToSpawn;
     // Start is called before the first frame update
     void Start()
     {
