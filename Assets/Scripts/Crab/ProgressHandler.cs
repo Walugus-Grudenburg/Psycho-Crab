@@ -123,26 +123,32 @@ public class ProgressHandler : MonoBehaviour
             if (crab.winsStatName == "DCC_wins")
             {
                 crab.maximumFarthestCheckpoint = 3;
+                crab.maximumFarthestCheckpointLevel2 = 99;
             }
             else if (crab.winsStatName == "PCC_wins")
             {
                 crab.maximumFarthestCheckpoint = 5;
+                crab.maximumFarthestCheckpointLevel2 = 0;
             }
             else if (crab.winsStatName == "PC_wins")
             {
                 crab.maximumFarthestCheckpoint = 32;
+                crab.maximumFarthestCheckpointLevel2 = 99;
             }
             else if (crab.winsStatName == "PHC_wins")
             {
                 crab.maximumFarthestCheckpoint = 35;
+                crab.maximumFarthestCheckpointLevel2 = 99;
             }
             else if (crab.winsStatName == "RCC_wins" || crab.winsStatName == "GCC_wins" || crab.winsStatName == "DMC_wins")
             {
                 crab.maximumFarthestCheckpoint = 0;
+                crab.maximumFarthestCheckpointLevel2 = 0;
             }
             else 
             {
                 crab.maximumFarthestCheckpoint = 31;
+                crab.maximumFarthestCheckpointLevel2 = 99;
             }
         }
         // end crab class setup
@@ -230,6 +236,7 @@ public class ProgressHandler : MonoBehaviour
         foreach (CrabClass crab in allCrabClasses)
         {
             crab.farthestCheckpoint = crab.maximumFarthestCheckpoint;
+            crab.farthestCheckpointLevel2 = crab.maximumFarthestCheckpointLevel2;
         }
         SaveProgressData();
     }

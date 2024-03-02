@@ -8,6 +8,7 @@ public class Checkpoint : MonoBehaviour
     public static List<Checkpoint> allCheckpoints = new List<Checkpoint>();
     public bool dementiaWasLastUsed;
     public bool isPortable;
+    public bool level2;
     public GameObject text;
     public string checkpointModeName;
     private CrabClass checkpointMode;
@@ -82,7 +83,11 @@ public class Checkpoint : MonoBehaviour
             ProgressHandler.Checkpoint_Position = Checkpoint_Position;
             ProgressHandler.SaveProgressData();
         }
-        if (checkpointMode != null) if (ID > checkpointMode.farthestCheckpoint) checkpointMode.setFarthestCheckpoint(ID);
+        if (checkpointMode != null)
+        {
+            if (!level2 && ID > checkpointMode.farthestCheckpoint) checkpointMode.setFarthestCheckpoint(ID);
+            else if (ID > checkpointMode.farthestCheckpointLevel2) checkpointMode.setFarthestCheckpointLevel2(ID);
+        }
     }
 
 }

@@ -1618,6 +1618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 80459503}
 --- !u!60 &80459505
 PolygonCollider2D:
@@ -2279,8 +2280,12 @@ MonoBehaviour:
   IsLeftLeg: 1
   sticksound: {fileID: 193624936}
   wetsound: {fileID: 193624937}
+  sulfurSound: {fileID: 0}
   IgnoreSticking: 0
   IgnoreWater: 0
+  useDecaySystem: 0
+  decayTime: 0
+  decayStrengthMultiplier: 0
   BoostStrength: 0
   StrengthStrength: 1
   IsInGoo: 0
@@ -2307,7 +2312,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 171.31042
-  Pan2D: 0
+  Pan2D: -0.5
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -2403,7 +2408,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 171.31042
-  Pan2D: 0
+  Pan2D: -0.5
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -4221,6 +4226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 454476236}
 --- !u!60 &454476238
 PolygonCollider2D:
@@ -4594,6 +4600,7 @@ MonoBehaviour:
   ActivateDeTermination: 0
   ResetLate: 0
   IsMainInstance: 1
+  ResetInvincibility: 0
   Legs:
   - {fileID: 1601685576}
   - {fileID: 193624935}
@@ -4727,6 +4734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Continue: 1
   MenuInstead: 0
+  Level2Instead: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4990,6 +4998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 592288074}
 --- !u!60 &592288076
 PolygonCollider2D:
@@ -7291,7 +7300,7 @@ SpriteShapeRenderer:
   m_SortingOrder: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
-  m_ShapeTexture: {fileID: 2800000, guid: e4559c02f218e744ca28948198fe21ee, type: 3}
+  m_ShapeTexture: {fileID: 0}
   m_Sprites:
   - {fileID: 21300000, guid: e4559c02f218e744ca28948198fe21ee, type: 3}
   - {fileID: 21300000, guid: e4559c02f218e744ca28948198fe21ee, type: 3}
@@ -7902,6 +7911,7 @@ MonoBehaviour:
   DoUnlock4: 0
   DoUnlock5: 0
   DoUnlock6: 0
+  DoUnlock7: 0
   IsSushi: 1
   CrunchText: {fileID: 332479471}
   Satan: {fileID: 0}
@@ -9259,6 +9269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1319318605}
 --- !u!60 &1319318607
 PolygonCollider2D:
@@ -10707,7 +10718,7 @@ SpriteShapeRenderer:
   m_SortingOrder: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
-  m_ShapeTexture: {fileID: 2800000, guid: e4559c02f218e744ca28948198fe21ee, type: 3}
+  m_ShapeTexture: {fileID: 0}
   m_Sprites:
   - {fileID: 21300000, guid: e4559c02f218e744ca28948198fe21ee, type: 3}
   - {fileID: 21300000, guid: e4559c02f218e744ca28948198fe21ee, type: 3}
@@ -11168,7 +11179,7 @@ SpriteShapeRenderer:
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
-  m_ShapeTexture: {fileID: 2800000, guid: e4559c02f218e744ca28948198fe21ee, type: 3}
+  m_ShapeTexture: {fileID: 0}
   m_Sprites:
   - {fileID: 21300000, guid: e4559c02f218e744ca28948198fe21ee, type: 3}
   - {fileID: 21300000, guid: e4559c02f218e744ca28948198fe21ee, type: 3}
@@ -12024,8 +12035,12 @@ MonoBehaviour:
   IsLeftLeg: 0
   sticksound: {fileID: 1601685577}
   wetsound: {fileID: 1601685578}
+  sulfurSound: {fileID: 0}
   IgnoreSticking: 0
   IgnoreWater: 0
+  useDecaySystem: 0
+  decayTime: 0
+  decayStrengthMultiplier: 0
   BoostStrength: 0
   StrengthStrength: 1
   IsInGoo: 0
@@ -12052,7 +12067,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 0.066833496
   MaxDistance: 178.8377
-  Pan2D: 0
+  Pan2D: 0.5
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -12148,7 +12163,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 0.066833496
   MaxDistance: 178.8377
-  Pan2D: 0
+  Pan2D: 0.5
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -12719,7 +12734,7 @@ SpriteShapeRenderer:
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
-  m_ShapeTexture: {fileID: 2800000, guid: e4559c02f218e744ca28948198fe21ee, type: 3}
+  m_ShapeTexture: {fileID: 0}
   m_Sprites:
   - {fileID: 21300000, guid: e4559c02f218e744ca28948198fe21ee, type: 3}
   - {fileID: 21300000, guid: e4559c02f218e744ca28948198fe21ee, type: 3}
@@ -12997,6 +13012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Continue: 0
   MenuInstead: 1
+  Level2Instead: 0
 --- !u!1 &1772030573
 GameObject:
   m_ObjectHideFlags: 0
@@ -13663,6 +13679,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 0
   ObjectToToggle: {fileID: 0}
+  invertCondition: 0
 --- !u!114 &1912723838
 MonoBehaviour:
   m_ObjectHideFlags: 0

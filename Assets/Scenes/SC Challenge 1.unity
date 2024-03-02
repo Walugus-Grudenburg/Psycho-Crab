@@ -878,8 +878,12 @@ MonoBehaviour:
   IsLeftLeg: 1
   sticksound: {fileID: 76458510}
   wetsound: {fileID: 76458509}
+  sulfurSound: {fileID: 0}
   IgnoreSticking: 0
   IgnoreWater: 0
+  useDecaySystem: 0
+  decayTime: 0
+  decayStrengthMultiplier: 0
   BoostStrength: 0
   StrengthStrength: 1
   IsInGoo: 0
@@ -3990,6 +3994,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 0
   ObjectToToggle: {fileID: 1214578855}
+  invertCondition: 0
 --- !u!114 &381787882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4939,7 +4944,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 171.31042
-  Pan2D: 0
+  Pan2D: -0.5
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -5035,7 +5040,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 171.31042
-  Pan2D: 0
+  Pan2D: -0.5
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -5257,8 +5262,12 @@ MonoBehaviour:
   IsLeftLeg: 1
   sticksound: {fileID: 551476546}
   wetsound: {fileID: 551476545}
+  sulfurSound: {fileID: 0}
   IgnoreSticking: 0
   IgnoreWater: 0
+  useDecaySystem: 0
+  decayTime: 0
+  decayStrengthMultiplier: 0
   BoostStrength: 0
   StrengthStrength: 0.85
   IsInGoo: 0
@@ -6303,8 +6312,12 @@ MonoBehaviour:
   IsLeftLeg: 0
   sticksound: {fileID: 663693414}
   wetsound: {fileID: 663693413}
+  sulfurSound: {fileID: 0}
   IgnoreSticking: 0
   IgnoreWater: 0
+  useDecaySystem: 0
+  decayTime: 0
+  decayStrengthMultiplier: 0
   BoostStrength: 0
   StrengthStrength: 1
   IsInGoo: 0
@@ -6562,6 +6575,7 @@ MonoBehaviour:
   ActivateDeTermination: 1
   ResetLate: 0
   IsMainInstance: 1
+  ResetInvincibility: 0
   Legs:
   - {fileID: 1035313197}
   - {fileID: 551476550}
@@ -6630,6 +6644,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Continue: 1
   MenuInstead: 0
+  Level2Instead: 0
 --- !u!114 &699896820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6657,6 +6672,10 @@ MonoBehaviour:
   ChargeMulti: 1
   Powermulti: 1
   DisableCameraChanges: 0
+  MaximumCharges: 99999999
+  jumpEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!82 &699896821
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8633,8 +8652,12 @@ MonoBehaviour:
   IsLeftLeg: 0
   sticksound: {fileID: 792816724}
   wetsound: {fileID: 792816723}
+  sulfurSound: {fileID: 0}
   IgnoreSticking: 0
   IgnoreWater: 0
+  useDecaySystem: 0
+  decayTime: 0
+  decayStrengthMultiplier: 0
   BoostStrength: 0
   StrengthStrength: 1
   IsInGoo: 0
@@ -10620,7 +10643,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 0.066833496
   MaxDistance: 178.8377
-  Pan2D: 0
+  Pan2D: 0.5
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -10716,7 +10739,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 0.066833496
   MaxDistance: 178.8377
-  Pan2D: 0
+  Pan2D: 0.5
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -10959,8 +10982,12 @@ MonoBehaviour:
   IsLeftLeg: 0
   sticksound: {fileID: 1035313192}
   wetsound: {fileID: 1035313191}
+  sulfurSound: {fileID: 0}
   IgnoreSticking: 0
   IgnoreWater: 0
+  useDecaySystem: 0
+  decayTime: 0
+  decayStrengthMultiplier: 0
   BoostStrength: 0
   StrengthStrength: 1.25
   IsInGoo: 0
@@ -11494,8 +11521,12 @@ MonoBehaviour:
   IsLeftLeg: 1
   sticksound: {fileID: 1065446718}
   wetsound: {fileID: 1065446717}
+  sulfurSound: {fileID: 0}
   IgnoreSticking: 0
   IgnoreWater: 0
+  useDecaySystem: 0
+  decayTime: 0
+  decayStrengthMultiplier: 0
   BoostStrength: 0
   StrengthStrength: 1
   IsInGoo: 0
@@ -14808,6 +14839,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Continue: 0
   MenuInstead: 1
+  Level2Instead: 0
 --- !u!114 &1557453413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17836,6 +17868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkpointModeName: 
+  level2: 0
   buttons:
   - {fileID: 585673185}
   - {fileID: 407496455}

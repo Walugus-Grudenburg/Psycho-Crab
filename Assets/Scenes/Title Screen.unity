@@ -3650,6 +3650,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 641819877}
+        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
+        m_MethodName: ClearTimerData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 770338378}
+        m_TargetAssemblyTypeName: ProgressHandler, Assembly-CSharp
+        m_MethodName: ResetCheckpointData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 770338378}
+        m_TargetAssemblyTypeName: ProgressHandler, Assembly-CSharp
+        m_MethodName: SaveProgressData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &184471486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9523,6 +9559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 0
   ObjectToToggle: {fileID: 550803255}
+  invertCondition: 0
 --- !u!114 &641819877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14011,6 +14048,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 3
   ObjectToToggle: {fileID: 233821952}
+  invertCondition: 0
 --- !u!114 &1014969214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14025,6 +14063,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 5
   ObjectToToggle: {fileID: 83827069}
+  invertCondition: 0
 --- !u!114 &1014969215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14039,6 +14078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 4
   ObjectToToggle: {fileID: 1585118609}
+  invertCondition: 0
 --- !u!114 &1014969216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14053,6 +14093,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 0
   ObjectToToggle: {fileID: 1073370531}
+  invertCondition: 0
 --- !u!114 &1014969217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14067,6 +14108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 3
   ObjectToToggle: {fileID: 1114461318}
+  invertCondition: 0
 --- !u!114 &1014969218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14081,6 +14123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 1
   ObjectToToggle: {fileID: 1697460149}
+  invertCondition: 0
 --- !u!114 &1014969219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14095,6 +14138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 2
   ObjectToToggle: {fileID: 684646006}
+  invertCondition: 0
 --- !u!1 &1021278409
 GameObject:
   m_ObjectHideFlags: 0
@@ -22454,6 +22498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 1
   ObjectToToggle: {fileID: 878599435}
+  invertCondition: 0
 --- !u!114 &1538125822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22468,6 +22513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 2
   ObjectToToggle: {fileID: 636183240}
+  invertCondition: 0
 --- !u!114 &1538125823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22482,6 +22528,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 3
   ObjectToToggle: {fileID: 1904349347}
+  invertCondition: 0
 --- !u!114 &1538125824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22496,6 +22543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 4
   ObjectToToggle: {fileID: 1986703789}
+  invertCondition: 0
 --- !u!114 &1538125825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22510,6 +22558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 0
   ObjectToToggle: {fileID: 1518333688}
+  invertCondition: 0
 --- !u!114 &1538125826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22524,6 +22573,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 5
   ObjectToToggle: {fileID: 1879729815}
+  invertCondition: 0
 --- !u!114 &1538125827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22538,6 +22588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 3
   ObjectToToggle: {fileID: 1853253517}
+  invertCondition: 0
 --- !u!114 &1538125828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22552,6 +22603,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 2
   ObjectToToggle: {fileID: 842764101}
+  invertCondition: 0
 --- !u!114 &1538125829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22566,6 +22618,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 6
   ObjectToToggle: {fileID: 574594251}
+  invertCondition: 0
 --- !u!114 &1538125830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22580,6 +22633,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 7
   ObjectToToggle: {fileID: 830696173}
+  invertCondition: 0
 --- !u!114 &1538125831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22594,6 +22648,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 8
   ObjectToToggle: {fileID: 2021041902}
+  invertCondition: 0
 --- !u!114 &1538125832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22608,6 +22663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 1
   ObjectToToggle: {fileID: 276195289}
+  invertCondition: 0
 --- !u!114 &1538125833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22622,6 +22678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 9
   ObjectToToggle: {fileID: 1211562317}
+  invertCondition: 0
 --- !u!114 &1538125834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22636,6 +22693,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 1
   ObjectToToggle: {fileID: 1649155090}
+  invertCondition: 0
 --- !u!114 &1538125835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22650,6 +22708,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 10
   ObjectToToggle: {fileID: 342086482}
+  invertCondition: 0
 --- !u!1 &1541375396
 GameObject:
   m_ObjectHideFlags: 0
@@ -31345,6 +31404,42 @@ MonoBehaviour:
       - m_Target: {fileID: 2052761210}
         m_TargetAssemblyTypeName: SelectLevel, Assembly-CSharp
         m_MethodName: DoSelectLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 641819877}
+        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
+        m_MethodName: ClearTimerData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 770338378}
+        m_TargetAssemblyTypeName: ProgressHandler, Assembly-CSharp
+        m_MethodName: ResetCheckpointData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 770338378}
+        m_TargetAssemblyTypeName: ProgressHandler, Assembly-CSharp
+        m_MethodName: SaveProgressData
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

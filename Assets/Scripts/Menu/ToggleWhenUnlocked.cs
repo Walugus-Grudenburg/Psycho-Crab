@@ -8,25 +8,16 @@ public class ToggleWhenUnlocked : MonoBehaviour
     public enum Condition {JumpUnlocked,GullcrabUnlocked,BatcrabUnlocked,DizzyCrabUnlocked,PrehistoricCrabUnlocked,SantaCrabUnlocked,SpiderCrabUnlocked,DementiaCrabUnlocked, GlassCrabUnlocked, PollutionCrabUnlocked, GoldCrabUnlocked};
     public Condition condition;
     public GameObject ObjectToToggle;
+    public bool invertCondition;
     private int numberOfWins;
     // Start is called before the first frame update
     void Start()
     {
         SteamUserStats.GetStat("wins", out numberOfWins);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void LateUpdate()
-    {
         if (condition == Condition.JumpUnlocked)
         {
             if (!ProgressHandler.JumpUnlocked)
-            { 
+            {
                 ObjectToToggle.SetActive(ProgressHandler.JumpUnlocked);
             }
         }
@@ -110,5 +101,16 @@ public class ToggleWhenUnlocked : MonoBehaviour
                 ObjectToToggle.SetActive(false);
             }
         }
+
+        if (invertCondition)
+        {
+            ObjectToToggle.SetActive(!ObjectToToggle.activeSelf);
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }

@@ -1024,6 +1024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220759384872742}
 --- !u!82 &1110220759384872742
 AudioSource:
@@ -3722,6 +3723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220759462237535}
 --- !u!82 &1110220759462237535
 AudioSource:
@@ -3914,6 +3916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
   isPortable: 0
+  level2: 0
   text: {fileID: 0}
   checkpointModeName: 
   DebugActivate: 0
@@ -6234,6 +6237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220759535387911}
 --- !u!82 &1110220759535387911
 AudioSource:
@@ -11564,6 +11568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220759665315780}
 --- !u!82 &1110220759665315780
 AudioSource:
@@ -14562,6 +14567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220759803690371}
 --- !u!82 &1110220759803690371
 AudioSource:
@@ -15690,6 +15696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220759823593471}
 --- !u!82 &1110220759823593471
 AudioSource:
@@ -15882,6 +15889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
   isPortable: 0
+  level2: 0
   text: {fileID: 0}
   checkpointModeName: 
   DebugActivate: 0
@@ -21109,8 +21117,12 @@ MonoBehaviour:
   IsLeftLeg: 1
   sticksound: {fileID: 1110220759911754704}
   wetsound: {fileID: 1110220759911754705}
+  sulfurSound: {fileID: 0}
   IgnoreSticking: 0
   IgnoreWater: 0
+  useDecaySystem: 0
+  decayTime: 0
+  decayStrengthMultiplier: 0
   BoostStrength: 0
   StrengthStrength: 1
   IsInGoo: 0
@@ -21137,7 +21149,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 171.31042
-  Pan2D: 0
+  Pan2D: -0.5
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -21233,7 +21245,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 171.31042
-  Pan2D: 0
+  Pan2D: -0.5
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -25120,6 +25132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220760002217600}
 --- !u!82 &1110220760002217600
 AudioSource:
@@ -27315,6 +27328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220760061835495}
 --- !u!82 &1110220760061835495
 AudioSource:
@@ -30522,6 +30536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkpointModeName: 
+  level2: 0
   buttons:
   - {fileID: 1110220760950128707}
   - {fileID: 1110220760298876769}
@@ -32124,6 +32139,7 @@ MonoBehaviour:
   ActivateDeTermination: 0
   ResetLate: 0
   IsMainInstance: 1
+  ResetInvincibility: 0
   Legs:
   - {fileID: 1110220761310714096}
   - {fileID: 1110220759911754719}
@@ -32267,6 +32283,10 @@ MonoBehaviour:
   ChargeMulti: 1.6
   Powermulti: 1
   DisableCameraChanges: 0
+  MaximumCharges: 99999999
+  jumpEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1110220760173162090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32281,6 +32301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Continue: 1
   MenuInstead: 0
+  Level2Instead: 0
 --- !u!114 &1110220760173162103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32586,6 +32607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220760176996265}
 --- !u!82 &1110220760176996265
 AudioSource:
@@ -33326,6 +33348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220760188585106}
 --- !u!82 &1110220760188585106
 AudioSource:
@@ -41556,6 +41579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
   isPortable: 0
+  level2: 0
   text: {fileID: 0}
   checkpointModeName: 
   DebugActivate: 0
@@ -44074,6 +44098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220760444413739}
 --- !u!82 &1110220760444413739
 AudioSource:
@@ -44864,6 +44889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220760453350937}
 --- !u!82 &1110220760453350937
 AudioSource:
@@ -45653,6 +45679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220760469269583}
 --- !u!82 &1110220760469269583
 AudioSource:
@@ -46200,6 +46227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Continue: 0
   MenuInstead: 1
+  Level2Instead: 0
 --- !u!1 &1110220760473468047
 GameObject:
   m_ObjectHideFlags: 0
@@ -50183,6 +50211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220760574039801}
 --- !u!82 &1110220760574039801
 AudioSource:
@@ -53533,6 +53562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220760649568142}
 --- !u!82 &1110220760649568142
 AudioSource:
@@ -57849,6 +57879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220760744280979}
 --- !u!82 &1110220760744280979
 AudioSource:
@@ -64167,6 +64198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 0
   ObjectToToggle: {fileID: 0}
+  invertCondition: 0
 --- !u!114 &1110220760859167174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64998,6 +65030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220760861590710}
 --- !u!82 &1110220760861590710
 AudioSource:
@@ -70111,6 +70144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220760962984193}
 --- !u!82 &1110220760962984193
 AudioSource:
@@ -70472,6 +70506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220760989287418}
 --- !u!82 &1110220760989287418
 AudioSource:
@@ -71168,6 +71203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220760999204727}
 --- !u!82 &1110220760999204727
 AudioSource:
@@ -71938,6 +71974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220761010142154}
 --- !u!82 &1110220761010142154
 AudioSource:
@@ -74303,6 +74340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220761102874378}
 --- !u!82 &1110220761102874378
 AudioSource:
@@ -75597,6 +75635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220761157298288}
 --- !u!82 &1110220761157298288
 AudioSource:
@@ -77006,6 +77045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220761207335415}
 --- !u!82 &1110220761207335415
 AudioSource:
@@ -80997,6 +81037,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dementiaWasLastUsed: 0
   isPortable: 0
+  level2: 0
   text: {fileID: 0}
   checkpointModeName: 
   DebugActivate: 0
@@ -81319,8 +81360,12 @@ MonoBehaviour:
   IsLeftLeg: 0
   sticksound: {fileID: 1110220761310714097}
   wetsound: {fileID: 1110220761310714098}
+  sulfurSound: {fileID: 0}
   IgnoreSticking: 0
   IgnoreWater: 0
+  useDecaySystem: 0
+  decayTime: 0
+  decayStrengthMultiplier: 0
   BoostStrength: 0
   StrengthStrength: 1
   IsInGoo: 0
@@ -81347,7 +81392,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 0.066833496
   MaxDistance: 178.8377
-  Pan2D: 0
+  Pan2D: 0.5
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -81443,7 +81488,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 0.066833496
   MaxDistance: 178.8377
-  Pan2D: 0
+  Pan2D: 0.5
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -81905,6 +81950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220761316957118}
 --- !u!82 &1110220761316957118
 AudioSource:
@@ -83926,6 +83972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220761354025398}
 --- !u!82 &1110220761354025398
 AudioSource:
@@ -84282,6 +84329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220761354270947}
 --- !u!82 &1110220761354270947
 AudioSource:
@@ -85407,6 +85455,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220761371207365}
 --- !u!82 &1110220761371207365
 AudioSource:
@@ -86676,6 +86725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1110220761407577415}
 --- !u!82 &1110220761407577415
 AudioSource:

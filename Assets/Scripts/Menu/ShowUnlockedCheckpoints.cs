@@ -6,6 +6,7 @@ public class ShowUnlockedCheckpoints : MonoBehaviour
 {
     public string checkpointModeName;
     private CrabClass checkpointMode;
+    public bool level2;
     public GameObject[] buttons;
 
     void Start()
@@ -32,9 +33,19 @@ public class ShowUnlockedCheckpoints : MonoBehaviour
         {
             button.SetActive(false);
         }
-        for (int i = 0; i < checkpointMode.farthestCheckpoint + 1; i++)
+        if (!level2)
         {
-              buttons[i].SetActive(true);
+            for (int i = 0; i < checkpointMode.farthestCheckpoint + 1; i++)
+            {
+                buttons[i].SetActive(true);
+            }
+        }
+        else 
+        {
+            for (int i = 0; i < checkpointMode.farthestCheckpointLevel2; i++)
+            {
+                buttons[i].SetActive(true);
+            }
         }
     }
 

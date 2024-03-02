@@ -6,6 +6,7 @@ using Steamworks;
 public class Lava : MonoBehaviour
 {
     public bool IsDeadly;
+    public bool alwaysKills;
     public AudioSource Sound;
     static int LavaDeathCount;
     // Start is called before the first frame update
@@ -29,59 +30,50 @@ public class Lava : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        ProgressHandler Victim = collision.GetComponent<ProgressHandler>();
-        if (Victim)
-        {
-            if (IsDeadly && !OilFire.hasFireStarted) 
-            {
-                Victim.Reset();
-                if (!ProgressHandler.DeTermination)
-                {
-                    LavaDeathCount++;
-                    SteamUserStats.SetStat("Deaths_Lava", LavaDeathCount);
-                    if (LavaDeathCount == 1)
-                    {
-                        SteamUserStats.StoreStats();
-                    }
-                }
-            }
-            if (Sound)
-            {
-                Sound.Play();
-            }
-        }
-        else if (collision.CompareTag("Collectable"))
-        {
-            Destroy(collision.gameObject);
-        }
+        CheckLavaKill(collision);
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        ProgressHandler Victim = collision.GetComponent<ProgressHandler>();
+        CheckLavaKill(collision);
+    }
+
+    void CheckLavaKill(Collider2D victimcollider)
+    {
+        ProgressHandler Victim = victimcollider.GetComponent<ProgressHandler>();
         if (Victim)
         {
-            if (IsDeadly && !OilFire.hasFireStarted)
+            LavaKill(Victim);
+        }
+        else if (victimcollider.CompareTag("Collectable"))
+        {
+            Destroy(victimcollider.gameObject);
+        }
+    }
+
+    void LavaKill(ProgressHandler Victim)
+    {
+        if (IsDeadly && alwaysKills)
+        {
+            Victim.Reset(true);
+        }
+        else if (IsDeadly && !OilFire.hasFireStarted)
+        {
+            Victim.Reset();
+            if (!ProgressHandler.DeTermination)
             {
-                Victim.Reset();
-                if (!ProgressHandler.DeTermination)
+                LavaDeathCount++;
+                SteamUserStats.SetStat("Deaths_Lava", LavaDeathCount);
+                if (LavaDeathCount == 1)
                 {
-                    LavaDeathCount++;
-                    SteamUserStats.SetStat("Deaths_Lava", LavaDeathCount);
-                    if (LavaDeathCount == 1)
-                    {
-                        SteamUserStats.StoreStats();
-                    }
-                    if (Sound)
-                    {
-                        Sound.Play();
-                    }
+                    SteamUserStats.StoreStats();
                 }
             }
         }
-        else if (collision.CompareTag("Collectable"))
+
+        if (Sound)
         {
-            Destroy(collision.gameObject);
+            Sound.Play();
         }
     }
 }

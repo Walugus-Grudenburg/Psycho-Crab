@@ -336,6 +336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Continue: 1
   MenuInstead: 0
+  Level2Instead: 0
 --- !u!82 &12239158
 AudioSource:
   m_ObjectHideFlags: 0
@@ -458,6 +459,10 @@ MonoBehaviour:
   ChargeMulti: 1.15
   Powermulti: 1.4
   DisableCameraChanges: 0
+  MaximumCharges: 99999999
+  jumpEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &12239160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -502,6 +507,7 @@ MonoBehaviour:
   ActivateDeTermination: 0
   ResetLate: 0
   IsMainInstance: 1
+  ResetInvincibility: 0
   Legs:
   - {fileID: 946057753}
   - {fileID: 2028055287}
@@ -8097,6 +8103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 563881231}
 --- !u!60 &563881233
 PolygonCollider2D:
@@ -10104,9 +10111,16 @@ MonoBehaviour:
   IsLeftLeg: 1
   sticksound: {fileID: 716739520}
   wetsound: {fileID: 716739519}
+  sulfurSound: {fileID: 0}
   IgnoreSticking: 0
+  IgnoreWater: 0
+  useDecaySystem: 0
+  decayTime: 0
+  decayStrengthMultiplier: 0
   BoostStrength: 0
   StrengthStrength: 1
+  IsInGoo: 0
+  IsInWater: 0
 --- !u!233 &716739522
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -10718,6 +10732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 840690426}
 --- !u!60 &840690428
 PolygonCollider2D:
@@ -12329,7 +12344,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 0.066833496
   MaxDistance: 178.8377
-  Pan2D: 0
+  Pan2D: 0.5
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -12419,9 +12434,16 @@ MonoBehaviour:
   IsLeftLeg: 0
   sticksound: {fileID: 946057752}
   wetsound: {fileID: 946057751}
+  sulfurSound: {fileID: 0}
   IgnoreSticking: 0
+  IgnoreWater: 0
+  useDecaySystem: 0
+  decayTime: 0
+  decayStrengthMultiplier: 0
   BoostStrength: 0
   StrengthStrength: 1
+  IsInGoo: 0
+  IsInWater: 0
 --- !u!233 &946057754
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -13573,6 +13595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1053765679}
 --- !u!60 &1053765681
 PolygonCollider2D:
@@ -14908,6 +14931,8 @@ MonoBehaviour:
   DoUnlock3: 0
   DoUnlock4: 0
   DoUnlock5: 0
+  DoUnlock6: 0
+  DoUnlock7: 0
   IsSushi: 1
   CrunchText: {fileID: 332479471}
   Satan: {fileID: 0}
@@ -15138,6 +15163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1103020077}
 --- !u!60 &1103020079
 PolygonCollider2D:
@@ -16292,9 +16318,16 @@ MonoBehaviour:
   IsLeftLeg: 0
   sticksound: {fileID: 1216470599}
   wetsound: {fileID: 1216470598}
+  sulfurSound: {fileID: 0}
   IgnoreSticking: 0
+  IgnoreWater: 0
+  useDecaySystem: 0
+  decayTime: 0
+  decayStrengthMultiplier: 0
   BoostStrength: 0
   StrengthStrength: 1
+  IsInGoo: 0
+  IsInWater: 0
 --- !u!233 &1216470601
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -17113,6 +17146,9 @@ MonoBehaviour:
   Target: {fileID: 0}
   source: {fileID: 1357999440}
   RigidBody: {fileID: 1357999441}
+  dieWhenEatingCrab: 0
+  deathTarget: {fileID: 0}
+  isHarmless: 0
 --- !u!60 &1357999443
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -18896,6 +18932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 1439855763}
 --- !u!60 &1439855765
 PolygonCollider2D:
@@ -21338,6 +21375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Continue: 0
   MenuInstead: 1
+  Level2Instead: 0
 --- !u!1 &1772030573
 GameObject:
   m_ObjectHideFlags: 0
@@ -23067,9 +23105,16 @@ MonoBehaviour:
   IsLeftLeg: 1
   sticksound: {fileID: 1851145740}
   wetsound: {fileID: 1851145739}
+  sulfurSound: {fileID: 0}
   IgnoreSticking: 0
+  IgnoreWater: 0
+  useDecaySystem: 0
+  decayTime: 0
+  decayStrengthMultiplier: 0
   BoostStrength: 0
   StrengthStrength: 1
+  IsInGoo: 0
+  IsInWater: 0
 --- !u!233 &1851145742
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -23750,6 +23795,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 0
   ObjectToToggle: {fileID: 0}
+  invertCondition: 0
 --- !u!114 &1912723838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23936,6 +23982,9 @@ MonoBehaviour:
   Target: {fileID: 0}
   source: {fileID: 1920647932}
   RigidBody: {fileID: 1920647933}
+  dieWhenEatingCrab: 0
+  deathTarget: {fileID: 0}
+  isHarmless: 0
 --- !u!60 &1920647935
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -25515,7 +25564,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 171.31042
-  Pan2D: 0
+  Pan2D: -0.5
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -25605,9 +25654,16 @@ MonoBehaviour:
   IsLeftLeg: 1
   sticksound: {fileID: 2028055286}
   wetsound: {fileID: 2028055285}
+  sulfurSound: {fileID: 0}
   IgnoreSticking: 0
+  IgnoreWater: 0
+  useDecaySystem: 0
+  decayTime: 0
+  decayStrengthMultiplier: 0
   BoostStrength: 0
   StrengthStrength: 1
+  IsInGoo: 0
+  IsInWater: 0
 --- !u!233 &2028055288
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -27099,9 +27155,16 @@ MonoBehaviour:
   IsLeftLeg: 0
   sticksound: {fileID: 2093516899}
   wetsound: {fileID: 2093516898}
+  sulfurSound: {fileID: 0}
   IgnoreSticking: 0
+  IgnoreWater: 0
+  useDecaySystem: 0
+  decayTime: 0
+  decayStrengthMultiplier: 0
   BoostStrength: 0
   StrengthStrength: 1
+  IsInGoo: 0
+  IsInWater: 0
 --- !u!233 &2093516901
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -28593,6 +28656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeadly: 1
+  alwaysKills: 0
   Sound: {fileID: 8542739583497844960}
 --- !u!114 &7685023638202868931
 MonoBehaviour:

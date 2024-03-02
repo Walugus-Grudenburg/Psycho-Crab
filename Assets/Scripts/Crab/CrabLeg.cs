@@ -10,6 +10,7 @@ public class CrabLeg : MonoBehaviour
     Rigidbody2D rb2d;
     public AudioSource sticksound;
     public AudioSource wetsound;
+    public AudioSource sulfurSound;
     private Controls controls;
     public bool IgnoreSticking;
     public bool IgnoreWater;
@@ -270,7 +271,12 @@ public class CrabLeg : MonoBehaviour
             wetsound.pitch = 0.5f;
             wetsound.Play();
         }
-        if (collision.CompareTag("Goo")) // Same with goo
+        else if (collision.CompareTag("Sulfuric Water")) // Same with sulfuric water
+        {
+            sulfurSound.pitch = 1f;
+            sulfurSound.Play();
+        }
+        else if (collision.CompareTag("Goo")) // Same with goo
         {
             IsInGoo = true;
             wetsound.pitch = 0.1f;
@@ -280,7 +286,7 @@ public class CrabLeg : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Water") && IsUnstickReady && IsWaterUnstickReady && !IsWaitingToUnStick && !IsWaitingToStick && !IgnoreWater) // Checks if underwater, and if so, stop sticking
+        if ((collision.CompareTag("Water") || collision.CompareTag("Sulfuric Water")) && IsUnstickReady && IsWaterUnstickReady && !IsWaitingToUnStick && !IsWaitingToStick && !IgnoreWater) // Checks if underwater, and if so, stop sticking
         {
             Unstick(wetsound);
             IsInWater = true;
@@ -289,7 +295,7 @@ public class CrabLeg : MonoBehaviour
         {
             IsInGoo = true;
         }
-        if (collision.CompareTag("Water"))
+        if (collision.CompareTag("Water") || collision.CompareTag("Sulfuric Water"))
         {
             IsInWater = true;
         }
@@ -300,7 +306,7 @@ public class CrabLeg : MonoBehaviour
         if (collision.CompareTag("Goo")) {
             IsInGoo = false;
         }
-        if (collision.CompareTag("Water"))
+        if (collision.CompareTag("Water") || collision.CompareTag("Sulfuric Water"))
         {
             IsInWater = false;
         }

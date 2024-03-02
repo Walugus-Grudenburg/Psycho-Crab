@@ -10,6 +10,7 @@ public class FadeAway : MonoBehaviour
     public bool isFading;
     public bool destroySelfWhenFadeEnds;
     public bool hasAlreadyInvokedFadeEvent;
+    public bool sulfuricDissolve;
     public SpriteRenderer[] sprites;
     public GameObject[] musicToDisable;
     public GameObject moneyMaker;
@@ -104,5 +105,19 @@ public class FadeAway : MonoBehaviour
             colorWithTransparency.a = 1f - fadeProgress;
             sprite.color = colorWithTransparency;
         }
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        CancelInvoke();
+        if (collision.CompareTag("Sulfuric Water"))
+        {
+            DamageObject(2f);
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        Invoke("ResetFading", 2f);
     }
 }
