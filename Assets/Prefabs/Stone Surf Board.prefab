@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8119037358342985275
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 422718696328024156, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: m_Density
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 422718696328024156, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: f5ce81d7c412925439e9bd06a04e30dc, type: 2}
+    - target: {fileID: 422718696328024157, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: m_Name
+      value: Stone Surf Board
+      objectReference: {fileID: 0}
+    - target: {fileID: 422718696328024158, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422718696328024158, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422718696328024158, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422718696328024158, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422718696328024158, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9050128
+      objectReference: {fileID: 0}
+    - target: {fileID: 422718696328024158, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422718696328024158, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422718696328024158, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.42538446
+      objectReference: {fileID: 0}
+    - target: {fileID: 422718696328024158, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422718696328024158, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422718696328024158, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -50.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 422718696328024159, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.2999733
+      objectReference: {fileID: 0}
+    - target: {fileID: 422718696328024159, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.47487426
+      objectReference: {fileID: 0}
+    - target: {fileID: 422718696328024159, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.5943396
+      objectReference: {fileID: 0}
+    - target: {fileID: 422718696328024160, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: maximumSurfingSpeed
+      value: 4.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 422718696328024160, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: minimumSurfingSpeed
+      value: 1.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 422718696328024160, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: surfingHeightMultiplier
+      value: 1.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 422718696328024161, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1716.0321
+      objectReference: {fileID: 0}
+    - target: {fileID: 422718696328024161, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: f5ce81d7c412925439e9bd06a04e30dc, type: 2}
+    - target: {fileID: 422718696328024163, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: randomFadeTimeMax
+      value: 47.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 422718696328024163, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: randomFadeTimeMin
+      value: 18.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4339825855384292560, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f19a7a0b060582e409a8d3ad2c305866, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c6e7d9c0666b60944bb13e9e20a9ed8d, type: 3}

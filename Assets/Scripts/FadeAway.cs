@@ -11,6 +11,7 @@ public class FadeAway : MonoBehaviour
     public bool destroySelfWhenFadeEnds;
     public bool hasAlreadyInvokedFadeEvent;
     public bool sulfuricDissolve;
+    public bool allowedToResetSulfuriceDissolve;
     public SpriteRenderer[] sprites;
     public GameObject[] musicToDisable;
     public GameObject moneyMaker;
@@ -73,7 +74,7 @@ public class FadeAway : MonoBehaviour
         else
         {
             fadeProgress += damage / fadeTime;
-            if (fadeTime - fadeProgress * fadeTime >= 5) musicToPlay.time += 5;
+            if ((fadeTime - fadeProgress * fadeTime >= damage) && musicToPlay) musicToPlay.time += damage;
             if (moneyMakerInstance) moneyMakerInstance.GetComponent<AreaParent>().DesiredChildCount++;
         }
     }
@@ -112,12 +113,12 @@ public class FadeAway : MonoBehaviour
         CancelInvoke();
         if (collision.CompareTag("Sulfuric Water"))
         {
-            DamageObject(2f);
+            DamageObject(1.22f);
         }
     }
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        Invoke("ResetFading", 2f);
+        if (allowedToResetSulfuriceDissolve && collision.CompareTag("Sulfuric Water")) Invoke("ResetFading", 0.9f);
     }
 }
