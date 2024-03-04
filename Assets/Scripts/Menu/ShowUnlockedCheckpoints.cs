@@ -42,7 +42,7 @@ public class ShowUnlockedCheckpoints : MonoBehaviour
         }
         else 
         {
-            for (int i = 0; i < checkpointMode.farthestCheckpointLevel2; i++)
+            for (int i = 0; i < checkpointMode.farthestCheckpointLevel2 && i < buttons.Length; i++)
             {
                 buttons[i].SetActive(true);
             }
