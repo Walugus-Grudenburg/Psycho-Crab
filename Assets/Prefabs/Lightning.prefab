@@ -47,13 +47,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ca954922fe6bb4c8eee63eb5142176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disturbRushdownNPCS: 1
   randomTime: 0
   minRandomTime: 0
   maxRandomTime: 0
   timeToExplode: 0
   timeOfExplosion: 4
-  explosionRadius: 50
-  explosionForce: 22500
+  explosionRadius: 95
+  explosionForce: 14500
   explosionSound: {fileID: 0}
   changeSprite: 0
   deleteAfter: 1

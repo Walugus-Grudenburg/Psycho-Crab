@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HorizontalChild : MonoBehaviour
 {
+    public bool disableVelocity;
     public bool IsFacingLeft;
     public bool DontDestroyOnContact;
     public bool FixedSpeed;
@@ -20,7 +21,10 @@ public class HorizontalChild : MonoBehaviour
     // Update is called once per frames
     void Update()
     {
-        rb.velocity = new Vector2 (0, rb.velocity.y) + Vector2.right * Speed;
+        if (!disableVelocity)
+        {
+            rb.velocity = new Vector2(0, rb.velocity.y) + Vector2.right * Speed;
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {

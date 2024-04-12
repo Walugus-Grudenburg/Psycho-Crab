@@ -314,6 +314,7 @@ public class CrabLeg : MonoBehaviour
 
     public void Unstick(AudioSource sound)
     {
+        sticksound.Stop();
         if (minecartscript)
         {
             minecartscript.leggrabbed = null;

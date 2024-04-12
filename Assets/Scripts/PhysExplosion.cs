@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PhysExplosion : MonoBehaviour
 {
+    public bool disturbRushdownNPCS;
     public bool randomTime;
     public float minRandomTime;
     public float maxRandomTime;
@@ -36,9 +37,20 @@ public class PhysExplosion : MonoBehaviour
         foreach (Collider2D hit in colliders)
         {
             Rigidbody2D rb = hit.GetComponent<Rigidbody2D>();
-            if (rb != null && !rb.isKinematic)
-                rb.AddExplosionForce2D(gameObject.transform.position, explosionForce, explosionRadius);
-
+            if (rb != null)
+            {
+                RushdownNPC rushdown = rb.gameObject.GetComponent<RushdownNPC>();
+                if (disturbRushdownNPCS && rushdown)
+                {
+                    rushdown.enabled = false;
+                    rb.gravityScale = 1;
+                    rb.drag /= 100;
+                }
+                if (!rb.isKinematic)
+                {
+                    rb.AddExplosionForce2D(gameObject.transform.position, explosionForce, explosionRadius);
+                }
+            }
         }
         if (explosionSound) explosionSound.Play();
         if (changeSprite) spriteToChange.sprite = spriteToChangeTo;
