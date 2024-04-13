@@ -10,6 +10,7 @@ public class Play_Sound_on_Collision : MonoBehaviour
     public float minvolume;
     public float maxvolume;
     public bool UseRandomMode;
+    public bool onlyActivateOnPlayer;
     public AudioSource Hitsound;
     void Start()
     {
@@ -23,7 +24,7 @@ public class Play_Sound_on_Collision : MonoBehaviour
     {
         //Plays sound on collision
         float force = collision.relativeVelocity.magnitude;
-        if (force > minforce) {
+        if (force > minforce && (!onlyActivateOnPlayer || collision.gameObject.CompareTag("Player"))) {
             // Make a temporary object to make the sound at the collision point
             GameObject soundObject = new GameObject("Audio Temp");
             soundObject.transform.position = collision.GetContact(0).point;

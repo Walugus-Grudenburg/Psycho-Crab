@@ -261,6 +261,12 @@ MonoBehaviour:
   disableInstead: 0
   timemin: 0.005
   timemax: 8.005
+--- !u!233 &15021440 stripped
+HingeJoint2D:
+  m_CorrespondingSourceObject: {fileID: 3369863724973102356, guid: 3467e989d33abdf45bc5f05c58b97676,
+    type: 3}
+  m_PrefabInstance: {fileID: 3369863724896972402}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &17420197
 GameObject:
   m_ObjectHideFlags: 0
@@ -840,6 +846,12 @@ MonoBehaviour:
   disableInstead: 0
   timemin: 0.005
   timemax: 8.005
+--- !u!1 &70888498 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 59654736367471723, guid: 3467e989d33abdf45bc5f05c58b97676,
+    type: 3}
+  m_PrefabInstance: {fileID: 3369863724896972402}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &75953309
 GameObject:
   m_ObjectHideFlags: 0
@@ -989,6 +1001,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &75953313
 PolygonCollider2D:
@@ -1842,6 +1855,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &173095035
 AudioSource:
@@ -2467,6 +2481,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &180939619
 PolygonCollider2D:
@@ -3138,6 +3153,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &235874151
 PolygonCollider2D:
@@ -3533,6 +3549,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &268411019
 PolygonCollider2D:
@@ -6494,6 +6511,12 @@ MonoBehaviour:
   disableInstead: 0
   timemin: 0.005
   timemax: 8.005
+--- !u!233 &518492572 stripped
+HingeJoint2D:
+  m_CorrespondingSourceObject: {fileID: 3369863725711533621, guid: 3467e989d33abdf45bc5f05c58b97676,
+    type: 3}
+  m_PrefabInstance: {fileID: 3369863724896972402}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519466305
 GameObject:
   m_ObjectHideFlags: 0
@@ -6829,7 +6852,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.37, y: 1.74, z: -0.5}
   m_LocalScale: {x: 1.3, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1410561779}
   m_Father: {fileID: 1065094176}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7009,6 +7033,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireSound: {fileID: 552041829}
+  legjoints:
+  - {fileID: 518492572}
+  - {fileID: 15021440}
 --- !u!82 &552041829
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7434,6 +7461,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &573885733
 PolygonCollider2D:
@@ -8313,6 +8341,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &619851286
 AudioSource:
@@ -8777,6 +8806,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &654900207
 AudioSource:
@@ -10015,6 +10045,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &737072139
 PolygonCollider2D:
@@ -12469,6 +12500,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &950708606
 AudioSource:
@@ -12935,6 +12967,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &972772567
 AudioSource:
@@ -14476,6 +14509,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &1103405074
 PolygonCollider2D:
@@ -15456,6 +15490,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &1151414950
 AudioSource:
@@ -16165,6 +16200,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &1199066396
 AudioSource:
@@ -17177,6 +17213,12 @@ MonoBehaviour:
   disableInstead: 0
   timemin: 0.005
   timemax: 8.005
+--- !u!1 &1304626172 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7684872647848755535, guid: 3467e989d33abdf45bc5f05c58b97676,
+    type: 3}
+  m_PrefabInstance: {fileID: 3369863724896972402}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1311063464 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3369863726052247653, guid: 3467e989d33abdf45bc5f05c58b97676,
@@ -17702,6 +17744,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &1338448916
 PolygonCollider2D:
@@ -18138,6 +18181,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &1358460972
 AudioSource:
@@ -18610,6 +18654,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &1386467030
 AudioSource:
@@ -19023,6 +19068,54 @@ MonoBehaviour:
   disableInstead: 0
   timemin: 0.005
   timemax: 8.005
+--- !u!1 &1410561778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1410561779}
+  - component: {fileID: 1410561780}
+  m_Layer: 12
+  m_Name: Oil Fire Postprocessing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1410561779
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410561778}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 552041824}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1410561780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410561778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 7b2780f7c2c0dc545bda0e2fb81c1114, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 1
 --- !u!1 &1412927123
 GameObject:
   m_ObjectHideFlags: 0
@@ -20935,6 +21028,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &1587007313
 PolygonCollider2D:
@@ -21447,6 +21541,12 @@ MonoBehaviour:
   disableInstead: 0
   timemin: 0.005
   timemax: 8.005
+--- !u!1 &1632181267 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8297013445498075117, guid: 3467e989d33abdf45bc5f05c58b97676,
+    type: 3}
+  m_PrefabInstance: {fileID: 3369863724896972402}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1632248895
 GameObject:
   m_ObjectHideFlags: 0
@@ -23088,6 +23188,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &1787020643
 AudioSource:
@@ -25364,6 +25465,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &1970592044
 PolygonCollider2D:
@@ -26883,6 +26985,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &2094982018
 AudioSource:
@@ -27450,6 +27553,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &2118897590
 PolygonCollider2D:
@@ -27794,6 +27898,11 @@ PrefabInstance:
     - target: {fileID: 1659949522, guid: 3467e989d33abdf45bc5f05c58b97676, type: 3}
       propertyPath: dieWhenEatingCrab
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 955718673022263397, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 1072766520464056022, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -28833,7 +28942,7 @@ PrefabInstance:
     - target: {fileID: 3369863726258914862, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: m_Mass
-      value: 648604.06
+      value: 648182
       objectReference: {fileID: 0}
     - target: {fileID: 3369863726288259811, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -28849,6 +28958,16 @@ PrefabInstance:
         type: 3}
       propertyPath: checkpointModeName
       value: PLC
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726381535069, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DoUnlock1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369863726381535069, guid: 3467e989d33abdf45bc5f05c58b97676,
+        type: 3}
+      propertyPath: DoUnlock2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3369863726381535069, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -28944,7 +29063,7 @@ PrefabInstance:
     - target: {fileID: 8135214035267558038, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: ObjectsToDestroy.Array.size
-      value: 30
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 8135214035267558038, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
@@ -29110,22 +29229,22 @@ PrefabInstance:
         type: 3}
       propertyPath: ObjectsToDestroy.Array.data[30]
       value: 
-      objectReference: {fileID: 268411015}
+      objectReference: {fileID: 1632181267}
     - target: {fileID: 8135214035267558038, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: ObjectsToDestroy.Array.data[31]
       value: 
-      objectReference: {fileID: 268411015}
+      objectReference: {fileID: 70888498}
     - target: {fileID: 8135214035267558038, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: ObjectsToDestroy.Array.data[32]
       value: 
-      objectReference: {fileID: 268411015}
+      objectReference: {fileID: 1304626172}
     - target: {fileID: 8135214035267558038, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: ObjectsToDestroy.Array.data[33]
       value: 
-      objectReference: {fileID: 268411015}
+      objectReference: {fileID: 0}
     - target: {fileID: 8135214035267558038, guid: 3467e989d33abdf45bc5f05c58b97676,
         type: 3}
       propertyPath: ObjectsToDestroy.Array.data[34]

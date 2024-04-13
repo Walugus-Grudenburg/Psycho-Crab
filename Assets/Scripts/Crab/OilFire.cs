@@ -6,10 +6,15 @@ public class OilFire : MonoBehaviour
 {
     public AudioSource fireSound;
     public static bool hasFireStarted;
+    public HingeJoint2D[] legjoints;
     // Start is called before the first frame update
     void Start()
     {
         hasFireStarted = true;
+        foreach (HingeJoint2D joint in legjoints)
+        {
+            joint.breakForce = float.PositiveInfinity;
+        }
     }
 
     // Update is called once per frame

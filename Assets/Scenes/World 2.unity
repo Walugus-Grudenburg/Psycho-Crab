@@ -673,6 +673,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &33791234
 AudioSource:
@@ -2222,6 +2223,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!68 &72268992
 EdgeCollider2D:
@@ -4525,6 +4527,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!60 &156196442
 PolygonCollider2D:
@@ -5293,6 +5296,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &162741706
 AudioSource:
@@ -7235,6 +7239,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!60 &225723895
 PolygonCollider2D:
@@ -8195,6 +8200,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!60 &258681678
 PolygonCollider2D:
@@ -8366,6 +8372,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &261846649
 AudioSource:
@@ -11026,6 +11033,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &345175699
 AudioSource:
@@ -11704,6 +11712,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &351227564
 AudioSource:
@@ -12047,6 +12056,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!60 &370445708
 PolygonCollider2D:
@@ -12560,6 +12570,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &376184430
 AudioSource:
@@ -13098,6 +13109,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &403442980
 AudioSource:
@@ -14731,6 +14743,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &445092060
 PolygonCollider2D:
@@ -15759,6 +15772,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &470484231
 PolygonCollider2D:
@@ -15899,6 +15913,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &470741383
 AudioSource:
@@ -16201,6 +16216,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &478167541
 AudioSource:
@@ -16774,6 +16790,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!60 &518421345
 PolygonCollider2D:
@@ -17088,6 +17105,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &524890419
 AudioSource:
@@ -17431,6 +17449,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!60 &527728574
 PolygonCollider2D:
@@ -17878,6 +17897,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &535230497
 AudioSource:
@@ -19467,6 +19487,7 @@ MonoBehaviour:
   minvolume: 0.01
   maxvolume: 1.01
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 578135358}
 --- !u!82 &578135356
 AudioSource:
@@ -19600,6 +19621,7 @@ MonoBehaviour:
   minvolume: 0.01
   maxvolume: 1.01
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 578135356}
 --- !u!82 &578135358
 AudioSource:
@@ -20058,6 +20080,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 579285513}
 --- !u!1 &584413496
 GameObject:
@@ -20098,6 +20121,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &584413498
 AudioSource:
@@ -20501,6 +20525,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &595375149
 AudioSource:
@@ -21625,6 +21650,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &654457851
 AudioSource:
@@ -22101,6 +22127,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &674370011
 AudioSource:
@@ -24670,6 +24697,7 @@ MonoBehaviour:
   minvolume: 0.01
   maxvolume: 1.01
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 792500994}
 --- !u!82 &792500996
 AudioSource:
@@ -24794,6 +24822,7 @@ MonoBehaviour:
   minvolume: 0.01
   maxvolume: 1.01
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 792500996}
 --- !u!68 &792500998
 EdgeCollider2D:
@@ -26399,6 +26428,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!60 &826453973
 PolygonCollider2D:
@@ -29203,6 +29233,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!60 &933852038
 PolygonCollider2D:
@@ -30183,6 +30214,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!60 &957855825
 PolygonCollider2D:
@@ -30636,6 +30668,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &975647870
 AudioSource:
@@ -31362,6 +31395,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &1056929211
 AudioSource:
@@ -32721,6 +32755,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &1165019350
 AudioSource:
@@ -33957,6 +33992,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &1203793564
 AudioSource:
@@ -34465,6 +34501,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!60 &1221525309
 PolygonCollider2D:
@@ -34637,6 +34674,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &1221657895
 AudioSource:
@@ -35360,6 +35398,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!60 &1241284800
 PolygonCollider2D:
@@ -36596,6 +36635,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!68 &1273759265
 EdgeCollider2D:
@@ -37805,6 +37845,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &1283026932
 PolygonCollider2D:
@@ -37955,6 +37996,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &1286904871
 AudioSource:
@@ -39862,6 +39904,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &1357703730
 AudioSource:
@@ -41071,6 +41114,7 @@ MonoBehaviour:
   minvolume: 0.6
   maxvolume: 1
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 1390757508}
 --- !u!82 &1390757508
 AudioSource:
@@ -41262,6 +41306,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &1398648044
 AudioSource:
@@ -41632,6 +41677,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &1413357651
 PolygonCollider2D:
@@ -42552,6 +42598,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!60 &1447693715
 PolygonCollider2D:
@@ -42723,6 +42770,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &1465014895
 AudioSource:
@@ -42957,6 +43005,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &1465900433
 AudioSource:
@@ -43218,6 +43267,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &1481258627
 AudioSource:
@@ -43889,6 +43939,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!60 &1494448965
 PolygonCollider2D:
@@ -45937,6 +45988,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!60 &1564813465
 PolygonCollider2D:
@@ -46420,6 +46472,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &1580579172
 AudioSource:
@@ -47940,6 +47993,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!60 &1623038956
 PolygonCollider2D:
@@ -49651,6 +49705,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &1692432210
 AudioSource:
@@ -50008,6 +50063,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!60 &1692559403
 PolygonCollider2D:
@@ -51413,6 +51469,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &1737058481
 AudioSource:
@@ -52991,6 +53048,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!60 &1807409522
 PolygonCollider2D:
@@ -53259,6 +53317,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!60 &1809178020
 PolygonCollider2D:
@@ -54279,6 +54338,7 @@ MonoBehaviour:
   minvolume: 0.01
   maxvolume: 1.01
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 1815359093}
 --- !u!82 &1815359095
 AudioSource:
@@ -54403,6 +54463,7 @@ MonoBehaviour:
   minvolume: 0.01
   maxvolume: 1.01
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 1815359095}
 --- !u!68 &1815359097
 EdgeCollider2D:
@@ -54750,6 +54811,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &1834293064
 PolygonCollider2D:
@@ -54937,6 +54999,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &1845412375
 AudioSource:
@@ -55914,6 +55977,7 @@ MonoBehaviour:
   minvolume: 0.88
   maxvolume: 1
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 1858761582}
 --- !u!82 &1858761582
 AudioSource:
@@ -56155,6 +56219,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!60 &1861101439
 PolygonCollider2D:
@@ -56518,6 +56583,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &1872189718
 PolygonCollider2D:
@@ -57252,6 +57318,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &1884873812
 AudioSource:
@@ -58148,6 +58215,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!60 &1938458802
 PolygonCollider2D:
@@ -58578,6 +58646,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &1955913366
 AudioSource:
@@ -58973,6 +59042,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &1977082031
 AudioSource:
@@ -60001,6 +60071,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &1999006175
 AudioSource:
@@ -60583,6 +60654,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &2009705929
 AudioSource:
@@ -61920,6 +61992,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &2056718457
 AudioSource:
@@ -63353,6 +63426,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &2089342373
 PolygonCollider2D:
@@ -64080,6 +64154,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &2099030248
 PolygonCollider2D:
@@ -64951,6 +65026,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!82 &2110006479
 AudioSource:
@@ -65322,6 +65398,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 1
   Hitsound: {fileID: 0}
 --- !u!60 &2111060404
 PolygonCollider2D:
@@ -65641,6 +65718,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &2114575345
 AudioSource:
