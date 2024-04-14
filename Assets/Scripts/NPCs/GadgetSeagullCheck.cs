@@ -26,7 +26,7 @@ public class GadgetSeagullCheck : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Anti Seagull Beam")) Invoke("Delete", 0.1f);
+        if (other.CompareTag("Anti Seagull Beam") || other.CompareTag("Sulfuric Water")) Invoke("Delete", 0.1f);
     }
 
     void Delete()

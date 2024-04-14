@@ -21,6 +21,7 @@ TagManager:
   - Anti Seagull Beam
   - Collectable
   - Sulfuric Water
+  - Dark Area
   layers:
   - Default
   - TransparentFX
@@ -35,7 +36,7 @@ TagManager:
   - Moose
   - PogoGadget
   - PostProcessing
-  - 
+  - Don'tCollideWithSelf
   - 
   - 
   - 

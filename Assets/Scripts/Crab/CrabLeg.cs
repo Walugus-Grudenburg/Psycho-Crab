@@ -217,6 +217,10 @@ public class CrabLeg : MonoBehaviour
             rb2d.AddTorque(moveforce, ForceMode2D.Impulse);
         }
 
+        if (!stickjoint && sticksound.pitch == 0.5f)
+        {
+            sticksound.Stop();
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)

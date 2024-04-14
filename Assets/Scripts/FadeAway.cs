@@ -27,7 +27,7 @@ public class FadeAway : MonoBehaviour
     {
         if (useRandomFadeTime) fadeTime = Random.Range(randomFadeTimeMin, randomFadeTimeMax);
     }
-    
+
     // Update is called once per frame
     void Update()
     {
@@ -51,6 +51,10 @@ public class FadeAway : MonoBehaviour
                 if (destroySelfWhenFadeEnds) Destroy(gameObject);
             }
             UpdateAllSpriteColors();
+        }
+        if (allowedToResetSulfuriceDissolve && !IsInvoking())
+        {
+            Invoke("ResetFading", 0.9f);
         }
     }
 
@@ -110,15 +114,19 @@ public class FadeAway : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        CancelInvoke();
         if (collision.CompareTag("Sulfuric Water"))
         {
+            CancelInvoke();
             DamageObject(1.22f);
         }
     }
 
-    void OnTriggerExit2D(Collider2D collision)
+    void OnTriggerStay2D(Collider2D collision)
     {
-        if (allowedToResetSulfuriceDissolve && collision.CompareTag("Sulfuric Water")) Invoke("ResetFading", 0.9f);
+        if (collision.CompareTag("Sulfuric Water"))
+        {
+            CancelInvoke();
+        }
     }
+
 }
