@@ -12,6 +12,11 @@ public class Timer : MonoBehaviour
     public float debugtime;
     static float time;
     public TextMeshProUGUI text;
+
+    private void OnDisable()
+    {
+        SaveTimerData();
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +30,6 @@ public class Timer : MonoBehaviour
         {
             time += Time.deltaTime;
             if (debugtime > 0) time = debugtime;
-            SaveTimerData();
             text.text = TimeSpan.FromSeconds(Mathf.Round(time * 10f) / 10f).ToString() + ".0";
         }
     }

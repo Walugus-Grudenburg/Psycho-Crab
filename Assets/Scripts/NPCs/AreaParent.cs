@@ -12,6 +12,7 @@ public class AreaParent : MonoBehaviour
     public GameObject Target;
     public int DesiredChildCount;
     public float DeactivationDistance;
+    private int maximumObjectsToSpawnInOneFrame;
 
     // Start is called before the first frame update
     void Start()
@@ -20,14 +21,17 @@ public class AreaParent : MonoBehaviour
         {
             Target = ProgressHandler.maininstance.gameObject;
         }
+        maximumObjectsToSpawnInOneFrame = (DesiredChildCount / 100) + 1;
     }
 
     // Update is called once per frame
     void Update()
     {
-        while (gameObject.transform.childCount < DesiredChildCount && Vector3.Distance(transform.position, Target.transform.position) < DeactivationDistance)
+        int objectsSpawnedThisFrame = 0;
+        while (gameObject.transform.childCount < DesiredChildCount && Vector3.Distance(transform.position, Target.transform.position) < DeactivationDistance && objectsSpawnedThisFrame < maximumObjectsToSpawnInOneFrame)
         {
             SpawnChild();
+            objectsSpawnedThisFrame++;
         }
     }
 
