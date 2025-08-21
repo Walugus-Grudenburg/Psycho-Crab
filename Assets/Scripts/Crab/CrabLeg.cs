@@ -122,6 +122,10 @@ public class CrabLeg : MonoBehaviour
                 case "Cutscene NPC":
                     BoostStrength = 3;
                     break;
+                
+                case "Item":
+                    BoostStrength = 3;
+                    break;
 
                 case "Food":
                     BoostStrength = 3;

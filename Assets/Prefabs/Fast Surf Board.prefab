@@ -97,6 +97,11 @@ PrefabInstance:
       propertyPath: surfingHeightMultiplier
       value: 1.45
       objectReference: {fileID: 0}
+    - target: {fileID: 422718696328024161, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
+        type: 3}
+      propertyPath: m_Mass
+      value: 430.91086
+      objectReference: {fileID: 0}
     - target: {fileID: 422718696328024163, guid: c6e7d9c0666b60944bb13e9e20a9ed8d,
         type: 3}
       propertyPath: randomFadeTimeMax

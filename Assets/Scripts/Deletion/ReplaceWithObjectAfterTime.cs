@@ -10,6 +10,9 @@ public class ReplaceWithObjectAfterTime : MonoBehaviour
     public float minTimeUntilReplace;
     public float maxTimeUntilReplace;
     public GameObject replacementObject;
+    public bool gainOpacity;
+    public SpriteRenderer sprite;
+    private Color targetColor;
     // Start is called before the first frame update
     void Awake()
     {
@@ -17,6 +20,7 @@ public class ReplaceWithObjectAfterTime : MonoBehaviour
         {
             timeUntilReplace = Random.Range(minTimeUntilReplace, maxTimeUntilReplace);
         }
+        if (gainOpacity) targetColor = sprite.color;
     }
 
     // Update is called once per frame
@@ -35,6 +39,12 @@ public class ReplaceWithObjectAfterTime : MonoBehaviour
             {
                 Destroy(gameObject);
             }
+        }
+        if (gainOpacity) 
+        {
+            float targetOpacity =  1 - (timeUntilReplace / maxTimeUntilReplace);
+            targetColor.a = targetOpacity;
+            sprite.color = targetColor;
         }
     }
 

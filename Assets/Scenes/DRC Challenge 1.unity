@@ -491,6 +491,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cam: {fileID: 519420031}
   ZoomAmount: 11
+  ObjectsToDarkenInDarkAreas: []
+  ObjectsToDisableInDarkAreas: []
+  PostProcessingForDarkAreas: {fileID: 0}
 --- !u!114 &12239162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1125,6 +1128,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &31922725
 GameObject:
@@ -1167,6 +1171,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &31922727
 AudioSource:
@@ -1769,6 +1774,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &53085965
 AudioSource:
@@ -2481,6 +2487,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &109852859
 AudioSource:
@@ -3237,6 +3244,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &159661394
 AudioSource:
@@ -3486,6 +3494,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &163879638
 PolygonCollider2D:
@@ -4376,7 +4385,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '*crab noises*'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4440,7 +4449,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &241681019
@@ -5221,6 +5230,7 @@ MonoBehaviour:
   minvolume: 0.3
   maxvolume: 0.6
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!68 &288861144
 EdgeCollider2D:
@@ -6131,6 +6141,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &393999361
 GameObject:
@@ -6561,6 +6572,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &431868226
 PolygonCollider2D:
@@ -7229,6 +7241,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &512118893
 AudioSource:
@@ -7729,6 +7742,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &534905960
 AudioSource:
@@ -8937,7 +8951,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '*unfazed crab noises*'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -9001,7 +9015,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &606637235
@@ -9468,6 +9482,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &673079385
 AudioSource:
@@ -11196,7 +11211,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Challenge Complete!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -11260,7 +11275,7 @@ MonoBehaviour:
   m_margin: {x: -123.44694, y: 0, z: -126.592125, w: -63.6892}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &893898682
@@ -11746,6 +11761,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &935464091
 PolygonCollider2D:
@@ -11925,6 +11941,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &942309049
 AudioSource:
@@ -12758,7 +12775,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Resume
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -12822,7 +12839,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &981858270
@@ -13138,6 +13155,7 @@ MonoBehaviour:
   minvolume: 0.3
   maxvolume: 0.6
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!114 &1024076187
 MonoBehaviour:
@@ -13998,6 +14016,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &1055896315
 AudioSource:
@@ -14531,6 +14550,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &1073910451
 PolygonCollider2D:
@@ -15950,6 +15970,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &1201981279
 PolygonCollider2D:
@@ -16630,7 +16651,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Reset Level
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -16694,7 +16715,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1226925040
@@ -16788,6 +16809,7 @@ MonoBehaviour:
   - {fileID: 5149999955887996974, guid: 68237013c025a744da5404e92d973b65, type: 3}
   - {fileID: 5149999955887996974, guid: 68237013c025a744da5404e92d973b65, type: 3}
   - {fileID: 8003978636567591432, guid: 10213a10b8ba30e40899f433dc1017c2, type: 3}
+  AvoidSpawningOnTopOfCollision: 0
   SpawnXMin: -45
   SpawnXMax: 45
   SpawnYMin: -15
@@ -17937,6 +17959,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &1388474124
 AudioSource:
@@ -18261,7 +18284,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '*vocal crab noises*'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -18325,7 +18348,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1393159118
@@ -18628,6 +18651,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &1418537506
 PolygonCollider2D:
@@ -19466,6 +19490,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &1476320999
 PolygonCollider2D:
@@ -20132,6 +20157,7 @@ MonoBehaviour:
   minvolume: 0.3
   maxvolume: 0.6
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1539709825
 GameObject:
@@ -20393,6 +20419,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &1552345561
 AudioSource:
@@ -21436,8 +21463,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 00:00:00.0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
+  m_sharedMaterial: {fileID: -1541504999109867327, guid: 779b1e9e808bae24ead1549c9269d185,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -21752,6 +21780,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &1807619995
 PolygonCollider2D:
@@ -22312,6 +22341,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &1830182444
 AudioSource:
@@ -22752,6 +22782,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &1837942393
 PolygonCollider2D:
@@ -23433,6 +23464,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &1886216949
 AudioSource:
@@ -24708,6 +24740,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!61 &1993011807
 BoxCollider2D:
@@ -24858,6 +24891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectToSpawn:
   - {fileID: 1460223191198918248, guid: a487e64ab88b27e4f856b25b724530aa, type: 3}
+  AvoidSpawningOnTopOfCollision: 0
   SpawnXMin: -50
   SpawnXMax: 50
   SpawnYMin: -30
@@ -24966,7 +25000,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '*spooky crab noises*'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -25030,7 +25064,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1996945654
@@ -26023,6 +26057,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &2047825135
 GameObject:
@@ -26083,7 +26118,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Exit To Menu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -26147,7 +26182,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2047825138
@@ -26345,6 +26380,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &2055743168
 AudioSource:
@@ -27561,6 +27597,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &2113780842
 PolygonCollider2D:
@@ -27894,6 +27931,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &2143210533
 AudioSource:
@@ -28238,7 +28276,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Music
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -28302,7 +28340,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!60 &2008128587648177433

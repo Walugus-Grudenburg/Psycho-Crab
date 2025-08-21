@@ -22,6 +22,7 @@ TagManager:
   - Collectable
   - Sulfuric Water
   - Dark Area
+  - Item
   layers:
   - Default
   - TransparentFX

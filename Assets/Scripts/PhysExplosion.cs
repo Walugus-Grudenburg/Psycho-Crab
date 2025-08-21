@@ -33,6 +33,8 @@ public class PhysExplosion : MonoBehaviour
     void Explode()
     {
         int ignoreIgnoreRaycast = 1 << LayerMask.NameToLayer("IgnoreRaycast");
+        ignoreIgnoreRaycast = ignoreIgnoreRaycast & (1 << LayerMask.NameToLayer("Don'tCollideWithSelf"));
+        
         Collider2D[] colliders = Physics2D.OverlapCircleAll(gameObject.transform.position, explosionRadius, ~ignoreIgnoreRaycast,-1000,1000);
         foreach (Collider2D hit in colliders)
         {

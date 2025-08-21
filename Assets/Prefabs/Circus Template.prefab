@@ -500,6 +500,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759378103029
 GameObject:
@@ -1833,6 +1834,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759401080311
 GameObject:
@@ -2112,6 +2114,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759409573195
 GameObject:
@@ -2902,6 +2905,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759422618159
 GameObject:
@@ -3329,6 +3333,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759455115638
 GameObject:
@@ -4311,6 +4316,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759476928437
 GameObject:
@@ -4981,6 +4987,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759508468481
 GameObject:
@@ -6681,6 +6688,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759559242489
 GameObject:
@@ -7058,6 +7066,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759569852772
 GameObject:
@@ -7799,6 +7808,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &1110220759597975699
 PolygonCollider2D:
@@ -8298,6 +8308,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759602836522
 GameObject:
@@ -8644,6 +8655,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &1110220759607477778
 PolygonCollider2D:
@@ -9201,6 +9213,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!50 &1110220759614763688
 Rigidbody2D:
@@ -10019,6 +10032,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759651603302
 GameObject:
@@ -10397,6 +10411,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759654237347
 GameObject:
@@ -10675,6 +10690,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759658152703
 GameObject:
@@ -11052,6 +11068,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759658569934
 GameObject:
@@ -11256,7 +11273,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Resume
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -11320,7 +11337,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1110220759665315777
@@ -12008,6 +12025,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759681322306
 GameObject:
@@ -13105,6 +13123,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759762149219
 GameObject:
@@ -14147,7 +14166,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -14211,7 +14230,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1110220759803690369
@@ -15041,6 +15060,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759818250988
 GameObject:
@@ -16470,6 +16490,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759833427248
 GameObject:
@@ -16767,6 +16788,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &1110220759833427249
 PolygonCollider2D:
@@ -17411,6 +17433,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759845528192
 GameObject:
@@ -17676,6 +17699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectToSpawn:
   - {fileID: 129376699840047244, guid: edbec7ed98a85e14694bac3a5b1a94af, type: 3}
+  AvoidSpawningOnTopOfCollision: 0
   SpawnXMin: -75
   SpawnXMax: 125
   SpawnYMin: -10
@@ -17750,7 +17774,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Challenge Complete!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -17814,7 +17838,7 @@ MonoBehaviour:
   m_margin: {x: -123.44694, y: 0, z: -126.592125, w: -63.6892}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1110220759868210043
@@ -18244,6 +18268,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759869121324
 GameObject:
@@ -18605,6 +18630,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759889896694
 GameObject:
@@ -18982,6 +19008,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759890776292
 GameObject:
@@ -19257,6 +19284,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759893947999
 GameObject:
@@ -19784,6 +19812,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759903182699
 GameObject:
@@ -20261,6 +20290,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759906135081
 GameObject:
@@ -20610,6 +20640,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!50 &1110220759910984360
 Rigidbody2D:
@@ -20908,6 +20939,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759911754713
 GameObject:
@@ -21595,6 +21627,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759913818316
 GameObject:
@@ -21874,6 +21907,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759913926647
 GameObject:
@@ -22712,6 +22746,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759947492428
 GameObject:
@@ -23466,6 +23501,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &1110220759960203092
 AudioSource:
@@ -24215,6 +24251,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759992229341
 GameObject:
@@ -24592,6 +24629,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220759999359004
 GameObject:
@@ -24871,6 +24909,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760002190694
 GameObject:
@@ -25527,6 +25566,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760007317374
 GameObject:
@@ -25923,6 +25963,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760034414572
 GameObject:
@@ -26315,6 +26356,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &1110220760052774747
 PolygonCollider2D:
@@ -26777,6 +26819,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760053986290
 GameObject:
@@ -27923,6 +27966,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!68 &1110220760075520590
 EdgeCollider2D:
@@ -28098,7 +28142,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Reset Checkpoints
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -28162,7 +28206,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1110220760088373011
@@ -28668,6 +28712,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760094534578
 GameObject:
@@ -29080,6 +29125,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760104871084
 GameObject:
@@ -29359,6 +29405,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760106654746
 GameObject:
@@ -30108,6 +30155,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760134030422
 GameObject:
@@ -30482,6 +30530,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760135723787
 GameObject:
@@ -30820,6 +30869,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760148008008
 GameObject:
@@ -31368,6 +31418,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760156862237
 GameObject:
@@ -31647,6 +31698,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760159601453
 GameObject:
@@ -32161,6 +32213,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cam: {fileID: 1110220760262256839}
   ZoomAmount: 11
+  ObjectsToDarkenInDarkAreas: []
+  ObjectsToDisableInDarkAreas: []
+  PostProcessingForDarkAreas: {fileID: 0}
 --- !u!82 &1110220760173162089
 AudioSource:
   m_ObjectHideFlags: 0
@@ -33101,6 +33156,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760188585119
 GameObject:
@@ -33743,6 +33799,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760196571502
 GameObject:
@@ -34022,6 +34079,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760204484167
 GameObject:
@@ -34301,6 +34359,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760205733700
 GameObject:
@@ -34727,6 +34786,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760212915992
 GameObject:
@@ -35105,6 +35165,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760220390383
 GameObject:
@@ -35381,6 +35442,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!50 &1110220760220390373
 Rigidbody2D:
@@ -35780,6 +35842,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760229726484
 GameObject:
@@ -36491,6 +36554,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760262256836
 GameObject:
@@ -38219,6 +38283,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760319804558
 GameObject:
@@ -39348,6 +39413,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760342148486
 GameObject:
@@ -39624,6 +39690,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760343481708
 GameObject:
@@ -40002,6 +40069,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760354932591
 GameObject:
@@ -40380,6 +40448,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760357040303
 GameObject:
@@ -40906,6 +40975,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760371354946
 GameObject:
@@ -41185,6 +41255,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760373980583
 GameObject:
@@ -41563,6 +41634,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760375258326
 GameObject:
@@ -42359,6 +42431,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760407771717
 GameObject:
@@ -42790,6 +42863,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &1110220760409532216
 AudioSource:
@@ -43863,6 +43937,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760442381249
 GameObject:
@@ -44554,6 +44629,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760451139287
 GameObject:
@@ -45494,6 +45570,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760469269580
 GameObject:
@@ -46073,7 +46150,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 3
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -46137,7 +46214,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1110220760471224817
@@ -46613,6 +46690,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760479720114
 GameObject:
@@ -46891,6 +46969,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760482880213
 GameObject:
@@ -46960,8 +47039,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 00:00:00.0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
+  m_sharedMaterial: {fileID: -1541504999109867327, guid: 779b1e9e808bae24ead1549c9269d185,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -47800,6 +47880,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760503341291
 GameObject:
@@ -48785,6 +48866,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760546702344
 GameObject:
@@ -49623,6 +49705,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760566806792
 GameObject:
@@ -51142,6 +51225,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760595964762
 GameObject:
@@ -51812,6 +51896,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760615136833
 GameObject:
@@ -52647,6 +52732,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760626726452
 GameObject:
@@ -54018,6 +54104,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760652862298
 GameObject:
@@ -54457,6 +54544,7 @@ MonoBehaviour:
   minvolume: 0.3
   maxvolume: 0.6
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &1110220760675229633
 AudioSource:
@@ -54850,6 +54938,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760689778751
 GameObject:
@@ -54920,7 +55009,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '*sound of food spinning down stomach*'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -54984,7 +55073,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!82 &1110220760689778738
@@ -55801,6 +55890,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760702606646
 GameObject:
@@ -56179,6 +56269,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760705113517
 GameObject:
@@ -56784,6 +56875,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760717051548
 GameObject:
@@ -57167,7 +57259,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Exit To Menu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -57231,7 +57323,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1110220760727541849
@@ -57468,6 +57560,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &1110220760730018740
 AudioSource:
@@ -59021,6 +59114,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &1110220760745463351
 AudioSource:
@@ -59452,6 +59546,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760755246048
 GameObject:
@@ -59731,6 +59826,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760757722745
 GameObject:
@@ -60109,6 +60205,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760761124684
 GameObject:
@@ -60177,7 +60274,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Confirm Reset Checkpoints?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -60241,7 +60338,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1110220760771710761
@@ -60770,6 +60867,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760789561106
 GameObject:
@@ -61459,6 +61557,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760812909663
 GameObject:
@@ -62401,6 +62500,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &1110220760812909648
 AudioSource:
@@ -62574,7 +62674,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -62638,7 +62738,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1110220760831466684
@@ -63407,6 +63507,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760844279423
 GameObject:
@@ -63704,6 +63805,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!60 &1110220760844279408
 PolygonCollider2D:
@@ -64067,6 +64169,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760854123507
 GameObject:
@@ -64565,6 +64668,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760860467151
 GameObject:
@@ -64844,6 +64948,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760861590707
 GameObject:
@@ -65482,6 +65587,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760865565456
 GameObject:
@@ -65909,6 +66015,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760875884020
 GameObject:
@@ -66478,6 +66585,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760882883529
 GameObject:
@@ -66806,6 +66914,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760887271302
 GameObject:
@@ -67201,7 +67310,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1110220760898100359
 RectTransform:
   m_ObjectHideFlags: 0
@@ -67785,6 +67894,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760906957857
 GameObject:
@@ -68919,6 +69029,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760917609874
 GameObject:
@@ -69117,7 +69228,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '*spinning noises*'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -69181,7 +69292,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!82 &1110220760923737560
@@ -69692,6 +69803,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220760937466250
 GameObject:
@@ -71788,6 +71900,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220761010142167
 GameObject:
@@ -72219,7 +72332,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Reset Level
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -72283,7 +72396,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1110220761014901035
@@ -72836,6 +72949,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220761022144869
 GameObject:
@@ -73115,6 +73229,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220761025429982
 GameObject:
@@ -73394,6 +73509,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220761034880490
 GameObject:
@@ -74100,6 +74216,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220761064109607
 GameObject:
@@ -74889,6 +75006,7 @@ MonoBehaviour:
   minvolume: 0.3
   maxvolume: 0.6
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &1110220761126099911
 AudioSource:
@@ -75246,7 +75364,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 2
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -75310,7 +75428,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1110220761144661526
@@ -76367,6 +76485,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!68 &1110220761182323546
 EdgeCollider2D:
@@ -77501,6 +77620,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220761209004488
 GameObject:
@@ -77759,6 +77879,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!68 &1110220761209004490
 EdgeCollider2D:
@@ -78074,6 +78195,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220761220984161
 GameObject:
@@ -78244,6 +78366,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &1110220761220984162
 AudioSource:
@@ -78792,7 +78915,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '*speeding up spinning noises*'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -78856,7 +78979,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!82 &1110220761230749171
@@ -79454,6 +79577,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220761250126797
 GameObject:
@@ -79959,7 +80083,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Select Checkpoint
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -80023,7 +80147,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1110220761268811481
@@ -80304,6 +80428,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220761271509342
 GameObject:
@@ -82505,6 +82630,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220761331917483
 GameObject:
@@ -83031,6 +83157,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220761342641419
 GameObject:
@@ -83409,6 +83536,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220761352344564
 GameObject:
@@ -83787,6 +83915,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220761354025395
 GameObject:
@@ -84696,6 +84825,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &1110220761360277246
 AudioSource:
@@ -85237,6 +85367,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220761370186768
 GameObject:
@@ -86056,6 +86187,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220761378166269
 GameObject:
@@ -86231,6 +86363,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &1110220761378166257
 AudioSource:
@@ -87123,6 +87256,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!82 &1110220761411411412
 AudioSource:
@@ -87696,6 +87830,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220761430718572
 GameObject:
@@ -88087,7 +88222,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '"SPEEEEEN!"'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -88151,7 +88286,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -1.0445404, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!82 &1110220761434662857
@@ -88528,6 +88663,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220761437008769
 GameObject:
@@ -88884,7 +89020,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '*even faster spinning noises*'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -88948,7 +89084,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!82 &1110220761456580163
@@ -89383,6 +89519,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220761464416116
 GameObject:
@@ -89761,6 +89898,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220761471297474
 GameObject:
@@ -90040,6 +90178,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!114 &1110220761471297338
 MonoBehaviour:
@@ -90386,6 +90525,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220761483253957
 GameObject:
@@ -90912,6 +91052,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220761493400395
 GameObject:
@@ -91289,6 +91430,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &1110220761500565198
 GameObject:
@@ -91995,6 +92137,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &7741612889347731545
 GameObject:
@@ -92256,6 +92399,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!1 &8106007019149655157
 GameObject:
@@ -92435,7 +92579,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Music
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 779b1e9e808bae24ead1549c9269d185, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -92499,7 +92643,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &8976028864878655194
@@ -92768,6 +92912,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!114 &4436495056081842446
 MonoBehaviour:

@@ -116,7 +116,7 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 0.9036865, y: 0.90945435}
-      - {x: 0.20251204, y: -1.5107721}
+      - {x: 0.29401883, y: -1.4529785}
       - {x: 1.8398371, y: -1.8511848}
       - {x: 1.79623, y: -2.0891724}
       - {x: 1.1157732, y: -2.3352506}
@@ -124,10 +124,10 @@ PolygonCollider2D:
       - {x: -2.6859658, y: -1.3057584}
       - {x: -3.2586358, y: -1.3064299}
       - {x: -2.5566406, y: -0.79644775}
-      - {x: -1.1945904, y: -0.4308684}
-      - {x: -0.9152119, y: 1.3825008}
+      - {x: -1.2860972, y: -0.45013297}
+      - {x: -1.0539231, y: 1.4477766}
       - {x: 1.9169283, y: 2.2726145}
-      - {x: 3.2155762, y: 2.1802979}
+      - {x: 3.329809, y: 2.351647}
 --- !u!50 &6715907022957046755
 Rigidbody2D:
   serializedVersion: 4
@@ -140,7 +140,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 20.812386
+  m_Mass: 21.855728
   m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -263,6 +263,7 @@ MonoBehaviour:
   minvolume: 0
   maxvolume: 0
   UseRandomMode: 0
+  onlyActivateOnPlayer: 0
   Hitsound: {fileID: 0}
 --- !u!114 &6715907022957046766
 MonoBehaviour:

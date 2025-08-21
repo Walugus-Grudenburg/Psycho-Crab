@@ -5,6 +5,7 @@ using UnityEngine;
 public class AreaParent : MonoBehaviour
 {
     public GameObject[] ObjectToSpawn;
+    public bool AvoidSpawningOnTopOfCollision;
     public float SpawnXMin;
     public float SpawnXMax;
     public float SpawnYMin;
@@ -13,7 +14,7 @@ public class AreaParent : MonoBehaviour
     public int DesiredChildCount;
     public float DeactivationDistance;
     private int maximumObjectsToSpawnInOneFrame;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -30,15 +31,27 @@ public class AreaParent : MonoBehaviour
         int objectsSpawnedThisFrame = 0;
         while (gameObject.transform.childCount < DesiredChildCount && Vector3.Distance(transform.position, Target.transform.position) < DeactivationDistance && objectsSpawnedThisFrame < maximumObjectsToSpawnInOneFrame)
         {
-            SpawnChild();
+            TryToSpawnChild();
             objectsSpawnedThisFrame++;
         }
     }
 
-    void SpawnChild()
+    void TryToSpawnChild()
     {
         float spawnX = Random.Range(SpawnXMin, SpawnXMax);
         float spawnY = Random.Range(SpawnYMin, SpawnYMax);
+        if (!AvoidSpawningOnTopOfCollision)
+        {
+            SpawnChild(spawnX, spawnY);
+        }
+        else if (!Physics2D.OverlapPoint(new Vector2 (spawnX, spawnY)))
+        {
+            SpawnChild(spawnX, spawnY);
+        }
+    }
+
+    void SpawnChild(float spawnX, float spawnY)
+    {
         GameObject newchild = GameObject.Instantiate<GameObject>(ObjectToSpawn[Random.Range(0, ObjectToSpawn.Length)]);
         newchild.transform.parent = transform;
         newchild.transform.localPosition = new Vector3(spawnX, spawnY, 0f);
