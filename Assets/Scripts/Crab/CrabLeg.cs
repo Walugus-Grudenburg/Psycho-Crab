@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -29,6 +30,7 @@ public class CrabLeg : MonoBehaviour
     public bool IsInGoo;
     public bool IsInWater;
     private bool CheckIfSticking;
+    public static event Action<HingeJoint2D> StickStarted;
     MinecartScript minecartscript;
 
     IEnumerator StickAfterTime(float time) // Allows unsticking after a time in seconds
@@ -38,7 +40,14 @@ public class CrabLeg : MonoBehaviour
         IsWaitingToStick = true;
         yield return new WaitForSeconds(time);
         IsWaterUnstickReady = true;
-        if (stickjoint) stickjoint.autoConfigureConnectedAnchor = false; // Disables auto reconfigure now that joint is settled
+        if (stickjoint)
+        {
+            stickjoint.autoConfigureConnectedAnchor = false; // Disables auto reconfigure now that joint is settled
+            if (StickStarted != null)
+            {
+                StickStarted(stickjoint);
+            }
+        }
         IsWaitingToStick = false;
         yield break;
     }

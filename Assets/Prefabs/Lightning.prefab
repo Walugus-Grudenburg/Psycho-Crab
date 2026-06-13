@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 202848593268272067}
   - component: {fileID: 6994594874839964157}
-  - component: {fileID: 3472842887000532380}
+  - component: {fileID: 1744180556082347034}
   m_Layer: 0
   m_Name: Lightning
   m_TagString: Anti Seagull Beam
@@ -61,7 +61,7 @@ MonoBehaviour:
   deleteAfter: 1
   spriteToChangeTo: {fileID: 0}
   spriteToChange: {fileID: 0}
---- !u!82 &3472842887000532380
+--- !u!82 &1744180556082347034
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -79,8 +79,8 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 38
-  DopplerLevel: 0
+  Priority: 12
+  DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
@@ -132,7 +132,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -254,18 +254,18 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5b08b99d4edcd8f4cb1a37e6321cbba7, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 13
+  Priority: 150
   DopplerLevel: 0
   MinDistance: 100
   MaxDistance: 400
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -273,23 +273,32 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.25
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: -4.0016
+      outSlope: -4.0016
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.5
+      value: 0.5
+      inSlope: -1.0004
+      outSlope: -1.0004
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
       time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
+      value: 0.119903564
+      inSlope: -0.2501
+      outSlope: -0.2501
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -313,7 +322,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.08888889
+      value: 0.044444446
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -393,7 +402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsDeadly: 1
   alwaysKills: 0
-  Sound: {fileID: 3472842887000532380}
+  Sound: {fileID: 1744180556082347034}
 --- !u!1 &8033100609484526607
 GameObject:
   m_ObjectHideFlags: 0

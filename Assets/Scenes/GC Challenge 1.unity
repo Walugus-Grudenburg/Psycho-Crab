@@ -56339,21 +56339,23 @@ MonoBehaviour:
   m_MoveRepeatRate: 0.1
   m_ActionsAsset: {fileID: -944628639613478452, guid: db30a6da807549448b2352dca211cc99,
     type: 3}
-  m_PointAction: {fileID: 0}
+  m_PointAction: {fileID: -8715352867143680627, guid: db30a6da807549448b2352dca211cc99,
+    type: 3}
   m_MoveAction: {fileID: -2250188739719683950, guid: db30a6da807549448b2352dca211cc99,
     type: 3}
   m_SubmitAction: {fileID: 6580737126068718596, guid: db30a6da807549448b2352dca211cc99,
     type: 3}
   m_CancelAction: {fileID: -6733565321104649512, guid: db30a6da807549448b2352dca211cc99,
     type: 3}
-  m_LeftClickAction: {fileID: 0}
+  m_LeftClickAction: {fileID: 4767975397043603089, guid: db30a6da807549448b2352dca211cc99,
+    type: 3}
   m_MiddleClickAction: {fileID: 0}
   m_RightClickAction: {fileID: 0}
   m_ScrollWheelAction: {fileID: 0}
   m_TrackedDevicePositionAction: {fileID: 0}
   m_TrackedDeviceOrientationAction: {fileID: 0}
   m_DeselectOnBackgroundClick: 1
-  m_PointerBehavior: 0
+  m_PointerBehavior: 1
 --- !u!114 &1039462641
 MonoBehaviour:
   m_ObjectHideFlags: 0

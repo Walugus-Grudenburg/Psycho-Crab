@@ -30,8 +30,9 @@ public class RushdownNPC : MonoBehaviour
     void FixedUpdate()
     {
         Direction = (Target.transform.position - transform.position).normalized;
+        Quaternion goalDirection = Quaternion.LookRotation(Direction) * Quaternion.AngleAxis(90f, Vector3.up);
         if (!TurnOnly) RigidBody.MovePosition(RigidBody.position + (new Vector2(Direction.x, Direction.y) * Speed * Time.fixedDeltaTime));
-        transform.rotation = Quaternion.LookRotation(Direction) * Quaternion.Euler(0,90,0);
+        transform.rotation = goalDirection;
     }
 
     void OnCollisionEnter2D(Collision2D collision)

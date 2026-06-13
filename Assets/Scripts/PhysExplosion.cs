@@ -17,6 +17,7 @@ public class PhysExplosion : MonoBehaviour
     public bool deleteAfter;
     public Sprite spriteToChangeTo;
     public SpriteRenderer spriteToChange;
+    public Behaviour[] ComponentsToToggle;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,6 +57,10 @@ public class PhysExplosion : MonoBehaviour
         }
         if (explosionSound) explosionSound.Play();
         if (changeSprite) spriteToChange.sprite = spriteToChangeTo;
+        foreach (Behaviour component in ComponentsToToggle)
+        {
+            component.enabled = !component.enabled;
+        }
         if (deleteAfter) Invoke("Delete", timeOfExplosion);
     }
 

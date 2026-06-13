@@ -219,11 +219,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46cd839dcf8481a48b077aadecf94d32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minforce: 4
+  minforce: 9
   minpitch: 0.55
   maxpitch: 0.8
-  minvolume: 0.77
-  maxvolume: 1
+  minvolume: 0.5
+  maxvolume: 0.7
   UseRandomMode: 0
   onlyActivateOnPlayer: 0
   Hitsound: {fileID: 4570961132645160029}
@@ -359,7 +359,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 198
   DopplerLevel: 1
   MinDistance: 25
   MaxDistance: 100

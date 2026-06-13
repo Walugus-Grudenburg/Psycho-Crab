@@ -225,4 +225,6 @@ MonoBehaviour:
   replacementObject: {fileID: 202848593268272065, guid: c664305d94187e24a82aeb813a95a77f,
     type: 3}
   gainOpacity: 1
+  scaleSound: 1
   sprite: {fileID: 7990586811577336973}
+  source: {fileID: 7990586811577336963}

@@ -38,7 +38,7 @@ TagManager:
   - PogoGadget
   - PostProcessing
   - Don'tCollideWithSelf
-  - 
+  - OnlyCollideWithCrab
   - 
   - 
   - 

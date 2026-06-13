@@ -9,12 +9,15 @@ public class HorizontalChild : MonoBehaviour
     public bool DontDestroyOnContact;
     public bool FixedSpeed;
     public float Speed;
+    public float RandomSpeedMult = 1;
+    public bool ReplaceInsteadOfDestroy;
+    public GameObject ReplacementObject;
     private Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        if (!FixedSpeed) Speed = Random.Range(10f, 20f);
+        if (!FixedSpeed) Speed = Random.Range(10f, 20f) * RandomSpeedMult;
         if (IsFacingLeft) Speed *= -1;
     }
 
@@ -30,6 +33,7 @@ public class HorizontalChild : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Area Parent"))
         {
+            if (ReplaceInsteadOfDestroy) Instantiate(ReplacementObject, transform.position, transform.rotation); 
             Destroy(gameObject);
         }
     }
@@ -38,6 +42,7 @@ public class HorizontalChild : MonoBehaviour
     {
         if (!collision.gameObject.CompareTag("Ungrabbable") && !collision.gameObject.CompareTag("Player") & !collision.gameObject.CompareTag("Cutscene NPC") && !DontDestroyOnContact)
         {
+            if (ReplaceInsteadOfDestroy) Instantiate(ReplacementObject, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }

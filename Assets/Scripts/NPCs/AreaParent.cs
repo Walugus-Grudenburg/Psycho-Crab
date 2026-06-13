@@ -40,11 +40,15 @@ public class AreaParent : MonoBehaviour
     {
         float spawnX = Random.Range(SpawnXMin, SpawnXMax);
         float spawnY = Random.Range(SpawnYMin, SpawnYMax);
+        ContactFilter2D contactFilter = new ContactFilter2D();
+        contactFilter.useTriggers = false;
+        Collider2D[] nothing = new Collider2D[0];
+        contactFilter.useTriggers = false;
         if (!AvoidSpawningOnTopOfCollision)
         {
             SpawnChild(spawnX, spawnY);
         }
-        else if (!Physics2D.OverlapPoint(new Vector2 (spawnX, spawnY)))
+        else if (Physics2D.OverlapPoint(new Vector2(spawnX, spawnY), contactFilter, nothing) == 0)
         {
             SpawnChild(spawnX, spawnY);
         }

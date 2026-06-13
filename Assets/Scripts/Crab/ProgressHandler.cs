@@ -467,6 +467,7 @@ public class ProgressHandler : MonoBehaviour
         foreach (CrabClass crab in allCrabClasses)
         {
             crab.farthestCheckpoint = 0;
+            crab.farthestCheckpointLevel2 = 0;
         }
         GlassCrabUnlocked = false;
         BossStage = 0;
@@ -558,8 +559,19 @@ public class ProgressHandler : MonoBehaviour
         crab.setFarthestCheckpoint(value);
     }
 
+    public static void SetCrabFarthestCheckpointLevel2(CrabClass crab, int value)
+    {
+        crab.setFarthestCheckpointLevel2(value);
+    }
+
     public void ResetCrabFarthestCheckpoint(string crabName)
     {
+        
+        double levelnum = char.GetNumericValue(crabName[crabName.Length - 1]);
+        if (levelnum > -1)
+        {
+            crabName = crabName.Remove(crabName.Length - 1);
+        }
         CrabClass crab = null;
         foreach (CrabClass crab2 in allCrabClasses)
         {
@@ -569,7 +581,18 @@ public class ProgressHandler : MonoBehaviour
                 break;
             }
         }
-        crab.setFarthestCheckpoint(0);
+        switch (levelnum)
+        {
+            case 2:
+                crab.setFarthestCheckpointLevel2(0);
+                break;
+            case 1:
+                crab.setFarthestCheckpoint(0);
+                break;
+            default:
+                crab.setFarthestCheckpoint(0);
+                break;
+        }
     }
 
     public static void ToggleSpookify()
